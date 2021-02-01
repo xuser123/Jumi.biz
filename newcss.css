@@ -1,7 +1,12 @@
- /* 23-07-2019 */
-*{
-    margin: 0px;
-    padding: 0px;
+
+body{
+    background-image: url("pics/b.png");
+    background-position-y: 7vh;
+    background-repeat: no-repeat;
+    background-color: #808099;
+    color: rgb(226, 226, 226);
+    width: 100%;
+    margin-top: 0px;
     box-sizing: border-box;
 
 }
@@ -9,52 +14,19 @@ header {
     text-align: center;
 
 }
-.header nav {
+header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 5vh;
+    min-height: 45px;
     background-color: #5d4954;
     font-family: 'Sarpanch', sans-serif;
     width: 100%;
 
 }
-body{
-    background-image: url("pics/b.png");
-    background-position-y: 7vh;
-    background-repeat: no-repeat;
-    background-color: #808099;
-    color: rgb(226, 226, 226)
-
-}
-h1, h2, h3 { /* Überschriften */
-    color: #EBEB99;
-    font-family: 'Sarpanch', sans-serif;
-    letter-spacing: 5px;
-    text-shadow: 1px 2px 0 black;
-
-}
 a {
     text-decoration: none;
     color: rgb(226, 226, 226);
-
-}
-br { /* Line Breaks */
-    line-height: 1.5em;
-
-}
-code, #htme { /* CODE */
-    display: inline-block;
-    font-size: 0.8em;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.2em;
-    color: black;
-    text-align: left;
-    border: 2px;
-    border-style: inset;
-    background-color: rgb(195, 195, 195);
-    line-height: 1.5em;
-
 
 }
 #logo a{ /* J U M I . B I Z */
@@ -77,7 +49,8 @@ code, #htme { /* CODE */
     color: rgb(226, 226, 226);
     letter-spacing: 4px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
+    text-shadow: 1px 2px 0 black;
 
 }
 
@@ -85,7 +58,7 @@ nav{ /* NAVIGATION */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 5vh;
+    min-height: 45px;
     background-color: #5d4954;
     font-family: 'Sarpanch', sans-serif;
   
@@ -117,28 +90,29 @@ nav{ /* NAVIGATION */
     }
     .menu{
       display: block;
-  
     }
+    
     .navLinks{
-      font-size: 20px;
-      position: absolute;
-      right: 0px;
-      height: 95vh;
-      top: 5vh;
-      background-color: #5d4954;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 30%;
-      transform: translateX(100%);
+        font-size: 20px;
+        position: absolute;
+        right: -10px;
+        height: 70vh;
+        top: 20px;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 20%;
+        transform: translateX(100%);
+        border-bottom-left-radius: 16px;
+      
 
     }
-
 }
 
 .nav-active{ /* MENU-CLICKED*/
     transform: translateX(0%);
-    transition: transform 0.25s ease-in;
+    transition: transform 0.15s ease-in;
 
 }
 /* MENU-ANIMATION */
@@ -162,37 +136,6 @@ nav{ /* NAVIGATION */
 .cross .line2{
     transform: rotate(+45deg) translate(-5px, -6px);
 }
-.mid {
-    font-size: 40px;
-    min-height: 300px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: float;
-    margin-top: 3%;
-
-
-}
-
-.helow { /* Welcome Text */
-    width: 50%;
-    height: 100%;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-weight: bolt;
-    font-size: 12px;
-    letter-spacing: 2.5px;
-    line-height: 1.5em;
-    margin-top: 2%;
-    padding-bottom: 4%;
-
-
-}
-#notes img{
-    width: 260px;
-}
-
 #liste li{
     list-style-type: none;
     text-align: left;
@@ -200,18 +143,20 @@ nav{ /* NAVIGATION */
     margin-left: 15%;
 
 }
-
-#projects {
+h1, h2, h3 { /* Überschriften */
+    color: #EBEB99;
     font-family: 'Sarpanch', sans-serif;
-    font-size: 12px;
-    text-align: center;
-
+    letter-spacing: 5px;
+    text-shadow: 1px 2px 0 black;
+    font-size: 18px;
 }
-
-
-
-
-
-
-
-/* Zuletzt hier 26.07.*/
+main {
+    width: 50%;
+    padding: 4.5em;
+    margin: auto;
+}
+footer {
+    position: relative;
+    margin-bottom: 1vh;
+    text-align: center;
+}
