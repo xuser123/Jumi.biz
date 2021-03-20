@@ -1,6 +1,7 @@
+/*www.jumi.biz - 03.2021*/
 
-body{
-    background-image: url("pics/b.png");
+body {
+    background-image: url("pics/b.png"); /* Bild einfügen */
     background-position-y: 7vh;
     background-repeat: no-repeat;
     background-color: #808099;
@@ -8,7 +9,11 @@ body{
     width: 100%;
     margin-top: 0px;
     box-sizing: border-box;
-
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
 }
 header {
     text-align: center;
@@ -29,46 +34,47 @@ a {
     color: rgb(226, 226, 226);
 
 }
-#logo a{ /* J U M I . B I Z */
+#logo a{ /* "jumi.biz"-Logo */
     color: #67897E;
     font-weight: bold;
     font-size: 29px;
     letter-spacing: 6px;
     cursor: pointer;
+    text-shadow: 1px 1px 0 black;
 
 }
-.navLinks {
-    display: flex;
-    justify-content: space-around;
-    width: 60%;
-    text-transform: uppercase;
-
-}
-.navLinks li{ /* MENU-LINKs */
-    list-style: none;
-    color: rgb(226, 226, 226);
-    letter-spacing: 4px;
-    font-weight: bold;
-    font-size: 15px;
-    text-shadow: 1px 2px 0 black;
-
-}
-
-nav{ /* NAVIGATION */
+nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 45px;
     background-color: #5d4954;
     font-family: 'Sarpanch', sans-serif;
+    box-shadow: 0px 0.5px black;
   
 }
-.menu{ /* MENU */
+.navLinks { /* Navigations-Leiste */
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    text-transform: uppercase;
+
+}
+.navLinks li{ /* Navigations-Hyperlinks */
+    list-style: none;
+    color: rgb(226, 226, 226);
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 0.5px 0.5px 0 black;
+
+}
+.menu{ /* Menü Icon Container versteckt */
     display: none;
     cursor: pointer;
 
 }
-.menu div{ /* MENU-DIVs */
+.menu div{ /* Menü Icon Elemente */
     width: 28px;
     height: 3px;
     background-color: rgb(226, 226, 226);
@@ -76,23 +82,21 @@ nav{ /* NAVIGATION */
     transition: all 0.15s ease;
 
 }
-/* SCREEN */
 @media screen and (max-width: 1024px){
     .nav-links{
     width: 60%;
 
     }
-  }
+}
 @media screen and (max-width: 768px){
     html, body{
       overflow-x: hidden;
 
     }
-    .menu{
+    .menu{ /* Menü Icon Container */
       display: block;
     }
-    
-    .navLinks{
+    .navLinks{ /* Navigations-Menü */
         font-size: 20px;
         position: absolute;
         right: -10px;
@@ -105,18 +109,16 @@ nav{ /* NAVIGATION */
         width: 20%;
         transform: translateX(100%);
         border-bottom-left-radius: 16px;
-      
-
+        
     }
 }
 
-.nav-active{ /* MENU-CLICKED*/
+.nav-active{ /* Menü Icon geklickt */
     transform: translateX(0%);
     transition: transform 0.15s ease-in;
 
 }
-/* MENU-ANIMATION */
-@keyframes navLinkFade{
+@keyframes navLinkFade{ /* Menü Animation */
     from{
       opacity: 0;
       transform: translateX(50px);
@@ -135,28 +137,30 @@ nav{ /* NAVIGATION */
 }
 .cross .line2{
     transform: rotate(+45deg) translate(-5px, -6px);
-}
-#liste li{
-    list-style-type: none;
-    text-align: left;
-    position: absolute;
-    margin-left: 15%;
 
-}
 h1, h2, h3 { /* Überschriften */
     color: #EBEB99;
     font-family: 'Sarpanch', sans-serif;
     letter-spacing: 5px;
-    text-shadow: 1px 2px 0 black;
+    text-shadow: 1px 1px 0 black;
     font-size: 18px;
 }
 main {
-    width: 50%;
-    padding: 4.5em;
+    width: 80%;
     margin: auto;
+    padding-top: 3.5em;
+    padding-left: 1em;
+    padding-bottom: 3.5rem;
 }
-footer {
-    position: relative;
-    margin-bottom: 1vh;
+footer { /* Impressum */
+    position: absolute;
     text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #5d4954;
+    color: #67897E;
+    text-shadow: 1px 1px 0 black;
+    
 }
