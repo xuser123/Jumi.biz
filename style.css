@@ -1,40 +1,34 @@
-/*www.jumi.biz - 03.2021*/
-
+/* footer unten halten - Lösung: https://matthewjamestaylor.com/bottom-footer*/
+/*www.jumi.biz - 22.03.2021*/
 body {
     margin: 0px;
     padding: 0px;
+    height: 100%; /* Footer Lösung */
+    width: 100%; /* Footer Lösung */
     box-sizing: border-box;
     background-image: url("pics/b.png"); /* Bild einfügen */
     background-position-y: 7vh;
     background-repeat: no-repeat;
     background-color: #808099;
     color: rgb(226, 226, 226);
-    width: 100%;
-    margin-top: 0px;
-    box-sizing: border-box;
-    /* footer unten halten - Lösung */
-    height:100%;
-    position:relative;
-    /* footer unten halten - Lösung */
+    position: relative; /* Footer Lösung */
+    min-height: 100vh; /* Footer Lösung */
+
 }
-.container {
+#container {
     width: 80%;
-    padding-top: 3.5em;
-    padding-left: 1em;
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-bottom: 3.5rem;
     margin: auto;
-    min-height:100%;
-    /* margin-bottom: 5px; /*TEST, margin: auto; ersetzt */
-    padding-bottom: 3.5em;
 
 }
 footer { /* Impressum */
-    /* footer unten halten - Lösung */
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0; /* Footer Lösung */
     width: 100%;
-    height: 3.5em;
-    /* footer unten halten - Lösung */
+    height: 3.5rem; /* Footer Lösung */
     background-color: #5d4954;
     color: #67897E;
     text-align: center;
