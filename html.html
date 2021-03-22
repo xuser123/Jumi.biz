@@ -46,9 +46,9 @@
   oder mit Sprachenangabe. ( <em>"en" = English / "de" = Deutsch /...</em>)<br><br>
   <code>&lt;html lang="<mark>en</mark>"&gt</code>.<br><br>
   Dieser wird ganz am Ende des gesamten Seiten-Quellcodes mit dem Endtag <code>&lt;<mark>/</mark>html&gt;</code><br><br>
-  abgeschlossen. Endtags erkennt man am Schrägstrich.<br>
+  abgeschlossen. Endtags erkennt man am Schrägstrich. 
   Nach dem html-tag kommt der head-Tag, haupsächlich zum betiteln des Browserfensters.<br>
-  Weitere Informationen wie Zeichenkodierung (<em>UTF-8 für üäö</em>) und Metadaten<br>
+  Weitere Informationen wie Zeichenkodierung (<em>UTF-8 für üäö</em>) und Metadaten 
   zur Website sind auch möglich. („<b>Standalone-Tag“</b>)<br>
   <code>&lt;meta charset="<mark>utf-8</mark>"&gt;</code><br><br>
   Suchmaschienen registrieren den Inhalt des "describtion"-Containers.<br><br>
@@ -68,17 +68,16 @@
   Mit dem "Script"-Tag werden Skripte (<em>außerhalb HTML</em>) eingebettet.</p>
   <code>
   &lt;script src="<mark>EinSkript.js</mark>"&gt;&lt;/script&gt;</code><br><br><p>
-  Dabei muss aber die Position dieses Tags beachtet werden,<br>
-  da im HTML-Dokument alles von oben nach unten ausgeführt wird<br>
-  Das Erscheinungsbild wird dann aus einer "<b>CSS</b>"-Datei ausgelesen<br>
-  und im Head-Bereich verlinkt. So wird vermieden dass man den Stil<br>
-  mehrerer Websites nicht wiederholt coden muss.<br>Hier Zwei Varianten:<br><br>
+  Dabei muss aber die Position dieses Tags beachtet werden, 
+  da im HTML-Dokument alles von oben nach unten ausgeführt wird 
+  Das Erscheinungsbild wird dann aus einer "<b>CSS</b>"-Datei ausgelesen 
+  und im Head-Bereich verlinkt. So wird vermieden dass man den Stil 
+  mehrerer Websites nicht wiederholt coden muss. Hier Zwei Varianten:<br><br>
   <code>
     &lt;link rel="stylesheet" href="<mark>style.css</mark>"&gt;</code><br><code>&lt;link rel="stylesheet" type="text/css" href="<mark>cssdatei.css</mark>"&gt;</code></pre><br><br>
-    Der Code in der CSS-Datei hat eine eigene Scriptsprache die sich um<br>
-     die Darstellung der Inhalte im html-body kümmert.<br>
-     Hier hier steht das "p" für alle Paragraphen:<br>
-     <br>
+    Der Code in der CSS-Datei hat eine eigene Scriptsprache die sich um 
+     die Darstellung der Inhalte im html-body kümmert. 
+     Hier hier steht das "p" für alle Paragraphen:<br><br>
   <pre><code>
   <mark>p</mark> {
     font-family: arial, sans-serif;
@@ -87,34 +86,35 @@
   }<br>
 </code></pre>
   <br><br>
-  Das geht mit allen HTML Haupt-Elementen, wie "body" und "div".<br>
-  "<b>div</b>"-Tags spielen eine große Rolle. Sie definieren so genannte "Blöcke".<br>
+  Das geht mit allen HTML Haupt-Elementen, wie "body" und "div". 
+  "<b>div</b>"-Tags spielen eine große Rolle. Sie definieren so genannte "Blöcke". 
   Diesen Blöcken kann man ID's geben. z.B.:<br>
   <br><code>&lt;div class="<mark>Objekt-Klasse</mark>" id="<mark>eineID</mark>"&gt;</code><br><br>
-  Auf diese ID's wird dann in externen Skripten zurückgegriffen.<br>
-  Die Tag-Namen, "div's" & Objekte mit class oder id sind wie<br>
+  Auf diese ID's wird dann in externen Skripten zurückgegriffen. 
+  Die Tag-Namen, "div's" & Objekte mit class oder id sind wie 
   Code-Brücken zu anderen Scriptsprachen, welche die Seitenausgabe mitbestimmen.<br><br>
-  <ins><b>HTML Code Vorlagen:</b></ins></p><br>
-  Basis<br>
-  <object id="htme" type="text/plain" data="txt/bas.txt" height="260px" width="520px">
-  <param name="src" value="txt/bas.txt"></object><br>Metadaten<br>
-  <object id="htme" type="text/plain" data="txt/met.txt" height="260px" width="520px">
-  <param name="src" value="met.txt"></object><br>Hintergrundfarbe<br>
-  <object id="htme" type="text/plain" data="txt/sty.txt" height="260px" width="520px">
-  <param name="src" value="txt/sty.txt"></object><br>Bilder<br>
-  <object id="htme" type="text/plain" data="txt/img.txt" height="260px" width="520px">
-  <param name="src" value="txt/img.txt"></object><br>Links<br>
-  <object id="htme" type="text/plain" data="txt/lin.txt" height="260px" width="520px">
-  <param name="src" value="txt/lin.txt"></object><br>Listen<br>
-  <object id="htme" type="text/plain" data="txt/lis.txt" height="260px" width="520px">
-  <param name="src" value="txt/lis.txt"></object><br>Benutzereingaben<br>
-  <object id="htme" type="text/plain" data="txt/inp.txt" height="260px" width="520px">
-  <param name="src" value="txt/inp.txt"></object><br>Scrollbare Textbox (auch HTML-Dateien möglich)<br>
-  <object id="htme" type="text/plain" data="txt/scr.txt" height="260px" width="520px">
-  <param name="src" value="txt/scr.txt"></object><br>Schrifttext-Formatierung<br>
-  <object id="htme" type="text/html" data="txt/form.html" height="260px" width="520px">
+  <ins><b>HTML Code Vorlagen:</b></ins></p>
+  <object id="htme" type="text/plain" data="txt/met.txt" height="260px" width="500px">
+  <param name="src" value="met.txt"></object><br><br>
+  <object id="htme" type="text/plain" data="txt/bas.txt" height="260px" width="500px">
+  <param name="src" value="txt/bas.txt"></object><br><br>
+  <object id="htme" type="text/plain" data="txt/div.txt" height="260px" width="500px">
+  <param name="src" value="txt/div.txt"></object><br><br>
+  <object id="htme" type="text/plain" data="txt/sty.txt" height="260px" width="500px">
+  <param name="src" value="txt/sty.txt"></object><br><br>
+  <object id="htme" type="text/plain" data="txt/img.txt" height="260px" width="500px">
+  <param name="src" value="txt/img.txt"></object><br><br>
+  <object id="htme" type="text/plain" data="txt/lin.txt" height="260px" width="500px">
+  <param name="src" value="txt/lin.txt"></object><br><br>
+  <object id="htme" type="text/plain" data="txt/lis.txt" height="260px" width="500px">
+  <param name="src" value="txt/lis.txt"></object><br><br>
+  <object id="htme" type="text/plain" data="txt/inp.txt" height="260px" width="500px">
+  <param name="src" value="txt/inp.txt"></object><br><br>
+  <object id="htme" type="text/plain" data="txt/scr.txt" height="260px" width="500px">
+  <param name="src" value="txt/scr.txt"></object><br><br>
+  <object id="htme" type="text/html" data="txt/form.html" height="260px" width="500px"><br>
   <param name="src" value="txt/form.html"></object><br><br><ins><b>CSS Code dieser Website:<br></b></ins><br>
-  <object id="htme" type="text/plain" data="txt/css.txt" height="520px" width="520px">
+  <object id="htme" type="text/plain" data="txt/css.txt" height="260px" width="500px">
   <param name="src" value="txt/css.txt"></object><br><br>
   </main>
 </div>

@@ -24,7 +24,8 @@ body {
 
 }
 main {
-    font-size:smaller;
+    font-size: smaller;
+    
 }
 footer { /* Impressum */
     position: absolute;
@@ -173,5 +174,5 @@ code, #htme { /* Code Fenster in html.html */
     border-style: inset;
     background-color: rgb(195, 195, 195);
     line-height: 1.5em;
-    
+
 }
