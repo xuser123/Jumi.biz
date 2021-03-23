@@ -36,27 +36,27 @@
     <main>
     <h2>Ports & netstat</h2><br>
     <p>
-    Ein Internet-Browser schickt seine Anfragen über:<br>
-    <b>HTTP</b>, das <em>Hypertext-Transfer Protocol</em><br>
-    oder (heutzutage) vorzugsweise über das, besser gesicherte HTTPS (= HTTP <em>Secure</em>)<br>
+    Ein Internet-Browser schickt seine Anfragen über
+    <b>HTTP</b>, das<br><em>Hypertext-Transfer Protocol</em>
+    oder (heutzutage) vorzugsweise über das besser gesicherte HTTPS (= HTTP <em>Secure</em>).<br>
     <b>Ports</b> sind wie Datenpacket-Tunnel.<br><br>
-    Betriebssysteme stellen Portanfragen um Verbindungen annehmen zu können.<br>
-    Es gibt Standard-Ports, für bestimmte Programme fest-zugeordnete Portnummern.<br>
-    HTTP läuft auf <mark>Port 80</mark> über TCP. Das HTTP-S dagegen hat <mark>Port 443</mark>.<br><br>
-    Wenn man im Windows <mark>Taskmanager</mark> (oder in Linux mit den Befehlen: top; ps; tree)<br>
-    die "PID" (Prozess ID) eines laufenden Programms findet kann man diesen verwenden<br>
-    um über den (CMD-)Terminal-Befehl <mark><b>netstat -nano</b></mark> (&lt;-Vorhanden in Windows und Linux) die Ports<br>
+    Betriebssysteme stellen Portanfragen um Verbindungen annehmen zu können. 
+    Es gibt Standard-Ports, für bestimmte Programme<br>fest-zugeordnete Portnummern. 
+    HTTP läuft auf <mark>Port 80</mark> über TCP.<br>Das HTTP-S dagegen hat <mark>Port 443</mark>.<br><br>
+    Wenn man im Windows <mark>Taskmanager</mark><br>(oder in Linux mit den Befehlen: top; ps; tree).
+    die "PID" (Prozess ID) eines laufenden Programms findet kann man diesen verwenden
+    um über den (CMD-)Terminal-Befehl <mark><b>netstat -nano</b></mark>, vorhanden in Windows und Linux. die Ports
     und deren Adressierung, sprich deren IPs, ausfinding machen.<br><br>
     <img src="pics/netstat.jpg"><br><br>
     Die Ports benutzen 2 Arten von Protokolle. Entweder "TCP oder "UDP".<br>
-    Ein Programm kann über mehrere Ports laufen und beide Protokolle verwenden.<br>
-    <b>TCP</b> = Transmission Control Protocol / <b>UDP</b> = User Datagramm Protocol<br>
-    Über TCP verlaufen Daten "zuverlässig" im bidirektionalem Datenaustausch,<br>
-    ein Verlust von Datenpacketen wird hier verhindert.<br>
-    Der Schwerpunkt dieses Protokolls ist die verbindungsorientierte Paketvermittlung,<br>
-    wärend bei UDP nicht wichtig ist dass "alles" ankommt, sondern "konstant" übertragen<br>
-    wird, mit geduldeden "Unterbrechungen", beispielsweise beim Stream gucken oder<br>
-    bei Sprachübertragungen. Daher ist der Durchlass hier größer,<br>
+    Ein Programm kann über mehrere Ports laufen und beide Protokolle verwenden. 
+    <b>TCP</b> = Transmission Control Protocol / <b>UDP</b> = User Datagramm Protocol
+    Über TCP verlaufen Daten "zuverlässig" im bidirektionalem Datenaustausch, 
+    ein Verlust von Datenpacketen wird hier verhindert.
+    Der Schwerpunkt dieses Protokolls ist die verbindungsorientierte Paketvermittlung,
+    wärend bei UDP nicht wichtig ist dass "alles" ankommt, sondern "konstant" übertragen
+    wird, mit geduldeden "Unterbrechungen", beispielsweise beim Stream gucken oder
+    bei Sprachübertragungen. Daher ist der Durchlass hier größer, 
     dafür aber unzuverlässiger als über TCP.<br><br>
     <img src="pics/netstat1.jpg"><br><br>
     </main>
