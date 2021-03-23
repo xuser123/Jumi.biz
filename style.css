@@ -131,7 +131,7 @@ nav {
         align-items: flex-start;
         width: 20%;
         transform: translateX(100%);
-        border-bottom-left-radius: 16px;
+        border-bottom-left-radius: 14px;
       
     }
 }

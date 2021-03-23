@@ -1,19 +1,43 @@
-/*www.jumi.biz - 03.2021*/
-
+/* Footer unten halten - Lösung: https://matthewjamestaylor.com/bottom-footer*/
+/*www.jumi.biz - 22.03.2021*/
 body {
     margin: 0px;
     padding: 0px;
+    height: 100%; /* Footer Lösung */
+    width: 100%;
     box-sizing: border-box;
     background-image: url("pics/b.png"); /* Bild einfügen */
     background-position-y: 7vh;
     background-repeat: no-repeat;
     background-color: #808099;
     color: rgb(226, 226, 226);
+    position: relative; /* Footer Lösung */
+    min-height: 100vh; /* Footer Lösung */
+
+}
+#container {
+    width: 85%;
+    padding-top: 3.8em;
+    padding-left: 1em;
+    padding-bottom: 3.5em; /* Footer Höhe */
+    margin: auto;
+
+}
+main {
+    font-size: smaller;
+    padding-bottom: 3.2em; 
+
+}
+footer { /* Impressum */
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
     width: 100%;
-    margin-top: 0px;
-    box-sizing: border-box;
-    position: relative;
-    min-height: 100vh;
+    height: 3.5em; /* Footer Höhe */
+    background-color: #5d4954;
+    color: #67897E;
+    text-align: center;
+    text-shadow: 1px 1px 0 black;
 
 }
 header {
@@ -21,7 +45,6 @@ header {
 
 }
 header nav {
-    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,15 +57,17 @@ header nav {
 a {
     text-decoration: none;
     color: rgb(226, 226, 226);
-
 }
-#logo a { /* "jumi.biz"-Logo */
+main a:hover {
+    text-decoration: underline;
+}
+#logo a { /* Jumi.biz Logo */
     color: #67897E;
     font-weight: bold;
     font-size: 29px;
     letter-spacing: 6px;
     cursor: pointer;
-    text-shadow: 1px 1px 0 black;
+    text-shadow: 0.7px 0.7px 0 black;
 
 }
 nav {
@@ -55,14 +80,14 @@ nav {
     box-shadow: 0px 0.5px black;
 
 }
-.navLinks { /* Navigations-Leiste */
+.navLinks { /* Navigations Leiste */
     display: flex;
     justify-content: space-around;
     width: 60%;
     text-transform: uppercase;
 
 }
-.navLinks li { /* Navigations-Hyperlinks */
+.navLinks li { /* Navigations Hyperlinks */
     list-style: none;
     color: rgb(226, 226, 226);
     letter-spacing: 4px;
@@ -94,7 +119,7 @@ nav {
     .menu { /* Menü Icon Container */
         display: block;
     }
-    .navLinks { /* Navigations-Menü */
+    .navLinks { /* Navigations Menü */
         font-size: 20px;
         position: absolute;
         right: -10px;
@@ -106,7 +131,7 @@ nav {
         align-items: flex-start;
         width: 20%;
         transform: translateX(100%);
-        border-bottom-left-radius: 16px;
+        border-bottom-left-radius: 14px;
       
     }
 }
@@ -133,7 +158,6 @@ nav {
 .cross .line2 {
     transform: rotate(+45deg) translate(-5px, -6px);
 }
-
 h1, h2, h3 { /* Überschriften */
     color: #EBEB99;
     font-family: 'Sarpanch', sans-serif;
@@ -142,27 +166,7 @@ h1, h2, h3 { /* Überschriften */
     font-size: 18px;
 
 }
-main {
-    width: 80%;
-    padding-top: 3.5em;
-    padding-left: 1em;
-    margin: auto;
-    padding-bottom: 3.5rem;
-
-}
-footer { /* Impressum */
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 3.5rem;
-    background-color: #5d4954;
-    color: #67897E;
-    text-align: center;
-    text-shadow: 1px 1px 0 black;
-
-}
-code, #htme { /* CODE */
+code, #htme { /* Code Fenster in html.html */
     display: inline-block;
     font-size: 0.8em;
     font-family: Arial, Helvetica, sans-serif;
@@ -173,4 +177,5 @@ code, #htme { /* CODE */
     border-style: inset;
     background-color: rgb(195, 195, 195);
     line-height: 1.5em;
+
 }

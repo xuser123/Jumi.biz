@@ -44,18 +44,18 @@
     Es gibt Standard-Ports, für bestimmte Programme<br>fest-zugeordnete Portnummern. 
     HTTP läuft auf <mark>Port 80</mark> über TCP.<br>Das HTTP-S dagegen hat <mark>Port 443</mark>.<br><br>
     Wenn man im Windows <mark>Taskmanager</mark><br>(oder in Linux mit den Befehlen: top; ps; tree).
-    die "PID" (Prozess ID) eines laufenden Programms findet kann man diesen verwenden
-    um über den (CMD-)Terminal-Befehl <mark><b>netstat -nano</b></mark>, vorhanden in Windows und Linux. die Ports
+    die "PID" (Prozess ID) eines laufenden Programms findet kann man<br>diesen verwenden
+    um über den (CMD-)Terminal-Befehl <mark><b>netstat -nano</b></mark>, vorhanden in Windows und Linux,<br> die Ports
     und deren Adressierung, sprich deren IPs, ausfinding machen.<br><br>
     <img src="pics/netstat.jpg"><br><br>
-    Die Ports benutzen 2 Arten von Protokolle. Entweder "TCP oder "UDP".<br>
+    Die Ports benutzen 2 Arten von Protokolle. Entweder TCP oder UDP.<br>
     Ein Programm kann über mehrere Ports laufen und beide Protokolle verwenden. 
     <b>TCP</b> = Transmission Control Protocol / <b>UDP</b> = User Datagramm Protocol
     Über TCP verlaufen Daten "zuverlässig" im bidirektionalem Datenaustausch, 
     ein Verlust von Datenpacketen wird hier verhindert.
     Der Schwerpunkt dieses Protokolls ist die verbindungsorientierte Paketvermittlung,
-    wärend bei UDP nicht wichtig ist dass "alles" ankommt, sondern "konstant" übertragen
-    wird, mit geduldeden "Unterbrechungen", beispielsweise beim Stream gucken oder
+    wärend bei UDP nicht wichtig ist dass ALLES ankommt, sondern KONSTANT übertragen
+    wird, mit geduldeden Unterbrechungen, beispielsweise beim Stream gucken oder
     bei Sprachübertragungen. Daher ist der Durchlass hier größer, 
     dafür aber unzuverlässiger als über TCP.<br><br>
     <img src="pics/netstat1.jpg">
