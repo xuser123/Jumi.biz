@@ -135,6 +135,9 @@ nav {
         border-bottom-left-radius: 14px;
       
     }
+    footer {
+        font-size: small;
+    }
 }
 .nav-active { /* Menü Icon geklickt */
     transform: translateX(0%);
