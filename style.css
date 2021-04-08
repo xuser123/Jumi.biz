@@ -92,7 +92,7 @@ nav {
     color: rgb(226, 226, 226);
     letter-spacing: 4px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 12px;
     text-shadow: 0.5px 0.5px 0 black;
 
 }
@@ -112,7 +112,7 @@ nav {
         width: 60%;
     }
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     
     html, body {
         overflow-x: hidden;
@@ -124,7 +124,7 @@ nav {
         font-size: 20px;
         position: absolute;
         right: -10px;
-        height: 70vh;
+        height: 36vh;
         top: 20px;
         background-color: #5d4954;
         display: flex;
