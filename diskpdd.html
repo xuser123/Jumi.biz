@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
    <head>
       <title>Jumi</title>
       <link href="https://fonts.googleapis.com/css?family=Sarpanch&display=swap" rel="stylesheet">
@@ -33,16 +33,16 @@
       </header>
       <script src="navibar.js"></script>
       <div id="page">
-         <div id="container">
+         <div class="container">
             <main>
                <h2>Diskpart & dd</h2>
                <br>
                <p>
                   <b>Diskpart</b> ist das Windows-eigene Programm zum Formatieren von Datenträgern.<br>
-                  Man öffnet es über die CMD-Eingabeaufforderung mit dem Befehl <b>diskpart</b>.<br>
+                  Man öffnet es über die CMD-Eingabeaufforderung mit dem Befehl <b>diskpart</b>.<br><br>
                   <img src="pics/dp.jpg"><br><br>
                   Zuerst lässt man sich alle Datenträger anzeigen mit <b>list disk</b>.<br>
-                  Dann selektiert man den gewünschten Datenträger mit <b> select disk</b> und dessen <b>Nummer</b>.<br>
+                  Dann selektiert man den gewünschten Datenträger mit <b> select disk</b> und dessen <b>Nummer</b>.<br><br>
                   <img src="pics/dp1.jpg"><br><br>
                   Auf Datenträger sind Partitionen. Auf Partitionen sind Volumen.<br>
                   Beides lässt sich mit dem list-Befehl anzeigen (wenn der Datenträger selektiert wurde).<br>
@@ -51,7 +51,7 @@
                   seine weitere Verwendung "neu formatiert werden", so bekommt er eine frische Partition<br>
                   mit freiem Volumen (Speicherplatz).<br><br>
                   <b>dd</b> (Disk Dump) ist die Linux Variante. Achtung! Hier kann ein Fehler großen Schaden anrichten.<br>
-                  Man kann ganze Festplatten und Partitionen löschen oder klonen und mehr. Die Syntax vom dd-Befehl ist folgende:<br>
+                  Man kann ganze Festplatten und Partitionen löschen oder klonen und mehr. Die Syntax vom dd-Befehl ist folgende:<br><br>
                   <code>dd if=<i>[input file]</i> of=<i>[output file]</i> &lt;<i>Optionen</i>&gt;</code><br>
                   <code>dd if=/dev/sda of=/dev/sdb bs=BYTE</code><br><br>
                   Eine wichtige Rolle beim Formatieren spielt das gewählte Datei-System.<br>
@@ -64,7 +64,7 @@
             </main>
          </div>
          <footer>
-            <p>www.jumi.biz | github.com/xuser123 | portfm8@gmail.com</p>
+            <p>www.jumi.biz | <a id="footer-link" href="github.com/xuser123" target="_blank">github.com/xuser123</a> | portfm8@gmail.com</p>
          </footer>
       </div>
    </body>

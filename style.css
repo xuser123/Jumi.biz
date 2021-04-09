@@ -15,7 +15,7 @@ body {
     min-height: 100vh; /* Footer Lösung */
 
 }
-#container {
+.container {
     width: 85%;
     padding-top: 3.8em;
     padding-left: 1em;
@@ -26,6 +26,10 @@ body {
 main {
     font-size: smaller;
     padding-bottom: 3.2em; 
+
+}
+main > img {
+    max-width: 80vw;
 
 }
 footer { /* Impressum */
@@ -39,6 +43,9 @@ footer { /* Impressum */
     text-align: center;
     text-shadow: 1px 1px 0 black;
 
+}
+#footer-link { /* github.com/xuser123 */
+    color: #67897E;
 }
 header {
     text-align: center;
@@ -77,7 +84,7 @@ nav {
     min-height: 45px;
     background-color: #5d4954;
     font-family: 'Sarpanch', sans-serif;
-    box-shadow: 0px 0.5px black;
+    box-shadow: 0px 0.6px black;
 
 }
 .navLinks { /* Navigations Leiste */
@@ -133,7 +140,11 @@ nav {
         width: 25%;
         transform: translateX(100%);
         border-bottom-left-radius: 14px;
+        box-shadow: 0px 0.6px black;
       
+    }
+    .container {
+        padding-top: 2em;
     }
     footer {
         font-size: small;

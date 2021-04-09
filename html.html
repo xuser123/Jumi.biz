@@ -34,86 +34,86 @@
       </header>
       <script src="navibar.js"></script>
       <div id="page">
-        <div id="container">
-        <main>
-        <h2>HTML „Hypertext Markup Language“<br>CSS „Cascading Style Sheets“</h2>
-        <p><ins><b>Grundlagen:</b></ins><br>
-        <em>(HTML = Auszeichnungs-Sprache / Strukturierung)<br>
-        (CSS = "Stylesheet"-Sprache / Gestaltungsvorgaben)</em><br><br>
-        Jeder Quellcode einer Website beginnt mit <code>&lt;<mark>!doctype</mark> html&gt;</code><br><br>
-        Ein sogenannter „<b>Tag</b>“ mit Dokumenten-Typ-Definition.<br>
-        Damit weiß der Browser dass es sich um ein <b>HTML</b>-Dokument handelt.<br>
-        Üblicherweise folgt dann der html-Starttag <code> &lt;html&gt;</code><br><br>
-        oder mit Sprachenangabe. ( <em>"en" = English / "de" = Deutsch /...</em>)<br><br>
-        <code>&lt;html lang="<mark>en</mark>"&gt</code>.<br><br>
-        Dieser wird ganz am Ende des gesamten Seiten-Quellcodes mit dem Endtag <code>&lt;<mark>/</mark>html&gt;</code><br><br>
-        abgeschlossen. Endtags erkennt man am Schrägstrich. 
-        Nach dem html-tag kommt der head-Tag, haupsächlich zum betiteln des Browserfensters.<br>
-        Weitere Informationen wie Zeichenkodierung (<em>UTF-8 für üäö</em>) und Metadaten 
-        zur Website sind auch möglich. („<b>Standalone-Tag“</b>)<br>
-        <code>&lt;meta charset="<mark>utf-8</mark>"&gt;</code><br><br>
-        Suchmaschienen registrieren den Inhalt des "describtion"-Containers.<br><br>
-        <code>&lt;meta name="<mark>description</mark>" content="IT methods for beginners in Project Website of Jumi"&gt;</code><br><br><br>
-        Über das <em>Hypertext-Transfer-Protokoll</em> (<b>HTTP</b>) kommuniziert der <b>Server</b> zum <b>Browser</b>.<br><br>
-        <img src="pics/htm.png"></img><img src="pics/htm3.png"></img><img src="pics/htm2.png"></img><br><br>
-        Der eigentliche Webseiteninhalt steckt im <b>&lt;body&gt;</b>-Bereich.<br>
-        Im Beispiel mit einer Überschrift und Text darunter:<br>
-        <pre><code>
-        &lt;body&gt;
-        &lt;h1&gt;<mark>Große Überschrift</mark>&lt;/h1&gt;
-        &lt;p&gt;<mark>Paragraph für die Überschrift</mark>&lt;/p&gt;<br>
-        </code></pre><br>
-        Mit dem "Script"-Tag werden Skripte (<em>außerhalb HTML</em>) eingebettet.</p>
-        <code>&lt;script src="<mark>EinSkript.js</mark>"&gt;&lt;/script&gt;</code><br><br><p>
-        Dabei muss aber die Position dieses Tags beachtet werden, 
-        da im HTML-Dokument alles von oben nach unten ausgeführt wird 
-        Das Erscheinungsbild wird dann aus einer "<b>CSS</b>"-Datei ausgelesen 
-        und im Head-Bereich verlinkt. So wird vermieden dass man den Stil 
-        mehrerer Websites nicht wiederholt coden muss. Hier Zwei Varianten:<br><br>
-        <code>&lt;link rel="stylesheet" href="<mark>style.css</mark>"&gt;</code><br><code>&lt;link rel="stylesheet" type="text/css" href="<mark>cssdatei.css</mark>"&gt;</code></pre><br><br>
-        Der Code in der CSS-Datei hat eine eigene Scriptsprache die sich um 
-        die Darstellung der Inhalte im html-body kümmert. 
-        Hier hier steht das "p" für alle Paragraphen:<br><br>
-        <pre><code>
-        <mark>p</mark> {
-          font-family: arial, sans-serif;
-          line-height: 150%;
-          usw…
-        }<br></code></pre><br><br>
-        Das geht mit allen HTML Haupt-Elementen, wie "body" und "div". 
-        "<b>div</b>"-Tags spielen eine große Rolle. Sie definieren so genannte "Blöcke". 
-        Diesen Blöcken kann man ID's geben. z.B.:<br>
-        <br><code>&lt;div class="<mark>Objekt-Klasse</mark>" id="<mark>eineID</mark>"&gt;</code><br><br>
-        Auf diese ID's wird dann in externen Skripten zurückgegriffen. 
-        Die Tag-Namen, "div's" & Objekte mit class oder id sind wie 
-        Code-Brücken zu anderen Scriptsprachen, welche die Seitenausgabe mitbestimmen.<br><br>
-        <ins><b>HTML Code Vorlagen:</b></ins></p>
-        <object id="htme" type="text/plain" data="txt/met.txt" height="260px" width="500px">
-        <param name="src" value="met.txt"></object><br><br>
-        <object id="htme" type="text/plain" data="txt/bas.txt" height="260px" width="500px">
-        <param name="src" value="txt/bas.txt"></object><br><br>
-        <object id="htme" type="text/plain" data="txt/div.txt" height="260px" width="500px">
-        <param name="src" value="txt/div.txt"></object><br><br>
-        <object id="htme" type="text/plain" data="txt/sty.txt" height="260px" width="500px">
-        <param name="src" value="txt/sty.txt"></object><br><br>
-        <object id="htme" type="text/plain" data="txt/img.txt" height="260px" width="500px">
-        <param name="src" value="txt/img.txt"></object><br><br>
-        <object id="htme" type="text/plain" data="txt/lin.txt" height="260px" width="500px">
-        <param name="src" value="txt/lin.txt"></object><br><br>
-        <object id="htme" type="text/plain" data="txt/lis.txt" height="260px" width="500px">
-        <param name="src" value="txt/lis.txt"></object><br><br>
-        <object id="htme" type="text/plain" data="txt/inp.txt" height="260px" width="500px">
-        <param name="src" value="txt/inp.txt"></object><br><br>
-        <object id="htme" type="text/plain" data="txt/scr.txt" height="260px" width="500px">
-        <param name="src" value="txt/scr.txt"></object><br><br>
-        <object id="htme" type="text/html" data="txt/form.html" height="260px" width="500px"><br>
-        <param name="src" value="txt/form.html"></object><br><br><ins><b>CSS Code dieser Website:<br></b></ins><br>
-        <object id="htme" type="text/plain" data="txt/css.txt" height="260px" width="500px">
-        <param name="src" value="txt/css.txt"></object>
-        </main>
+         <div class="container">
+         <main>
+            <h2>HTML „Hypertext Markup Language“<br>CSS „Cascading Style Sheets“</h2>
+            <p><ins><b>Grundlagen:</b></ins><br>
+            <em>(HTML = Auszeichnungs-Sprache / Strukturierung)<br>
+            (CSS = "Stylesheet"-Sprache / Gestaltungsvorgaben)</em><br><br>
+            Jeder Quellcode einer Website beginnt mit <code>&lt;<mark>!doctype</mark> html&gt;</code><br><br>
+            Ein sogenannter „<b>Tag</b>“ mit Dokumenten-Typ-Definition.<br>
+            Damit weiß der Browser dass es sich um ein <b>HTML</b>-Dokument handelt.<br>
+            Üblicherweise folgt dann der html-Starttag <code> &lt;html&gt;</code><br><br>
+            oder mit Sprachenangabe. ( <em>"en" = English / "de" = Deutsch /...</em>)<br><br>
+            <code>&lt;html lang="<mark>en</mark>"&gt</code>.<br><br>
+            Dieser wird ganz am Ende des gesamten Seiten-Quellcodes mit dem Endtag <code>&lt;<mark>/</mark>html&gt;</code><br><br>
+            abgeschlossen. Endtags erkennt man am Schrägstrich. 
+            Nach dem html-tag kommt der head-Tag, haupsächlich zum betiteln des Browserfensters.<br>
+            Weitere Informationen wie Zeichenkodierung (<em>UTF-8 für üäö</em>) und Metadaten 
+            zur Website sind auch möglich. („<b>Standalone-Tag“</b>)<br>
+            <code>&lt;meta charset="<mark>utf-8</mark>"&gt;</code><br><br>
+            Suchmaschienen registrieren den Inhalt des "describtion"-Containers.<br><br>
+            <code>&lt;meta name="<mark>description</mark>" content="IT methods for beginners in Project Website of Jumi"&gt;</code><br><br><br>
+            Über das <em>Hypertext-Transfer-Protokoll</em> (<b>HTTP</b>) kommuniziert der <b>Server</b> zum <b>Browser</b>.<br><br>
+            <img src="pics/htm.png"></img><img src="pics/htm3.png"></img><img src="pics/htm2.png"></img><br><br>
+            Der eigentliche Webseiteninhalt steckt im <b>&lt;body&gt;</b>-Bereich.<br>
+            Im Beispiel mit einer Überschrift und Text darunter:<br>
+            <pre><code>
+            &lt;body&gt;
+            &lt;h1&gt;<mark>Große Überschrift</mark>&lt;/h1&gt;
+            &lt;p&gt;<mark>Paragraph für die Überschrift</mark>&lt;/p&gt;<br>
+            </code></pre><br>
+            Mit dem "Script"-Tag werden Skripte (<em>außerhalb HTML</em>) eingebettet.</p>
+            <code>&lt;script src="<mark>EinSkript.js</mark>"&gt;&lt;/script&gt;</code><br><br><p>
+            Dabei muss aber die Position dieses Tags beachtet werden, 
+            da im HTML-Dokument alles von oben nach unten ausgeführt wird 
+            Das Erscheinungsbild wird dann aus einer "<b>CSS</b>"-Datei ausgelesen 
+            und im Head-Bereich verlinkt. So wird vermieden dass man den Stil 
+            mehrerer Websites nicht wiederholt coden muss. Hier Zwei Varianten:<br><br>
+            <code>&lt;link rel="stylesheet" href="<mark>style.css</mark>"&gt;</code><br><code>&lt;link rel="stylesheet" type="text/css" href="<mark>cssdatei.css</mark>"&gt;</code></pre><br><br>
+            Der Code in der CSS-Datei hat eine eigene Scriptsprache die sich um 
+            die Darstellung der Inhalte im html-body kümmert. 
+            Hier hier steht das "p" für alle Paragraphen:<br><br>
+            <pre><code>
+            <mark>p</mark> {
+            font-family: arial, sans-serif;
+            line-height: 150%;
+            usw…
+            }<br></code></pre><br><br>
+            Das geht mit allen HTML Haupt-Elementen, wie "body" und "div". 
+            "<b>div</b>"-Tags spielen eine große Rolle. Sie definieren so genannte "Blöcke". 
+            Diesen Blöcken kann man ID's geben. z.B.:<br>
+            <br><code>&lt;div class="<mark>Objekt-Klasse</mark>" id="<mark>eineID</mark>"&gt;</code><br><br>
+            Auf diese ID's wird dann in externen Skripten zurückgegriffen. 
+            Die Tag-Namen, "div's" & Objekte mit class oder id sind wie 
+            Code-Brücken zu anderen Scriptsprachen, welche die Seitenausgabe mitbestimmen.<br><br>
+            <ins><b>HTML Code Vorlagen:</b></ins></p>
+            <object id="htme" type="text/plain" data="txt/met.txt" height="260px" width="500px">
+            <param name="src" value="met.txt"></object><br><br>
+            <object id="htme" type="text/plain" data="txt/bas.txt" height="260px" width="500px">
+            <param name="src" value="txt/bas.txt"></object><br><br>
+            <object id="htme" type="text/plain" data="txt/div.txt" height="260px" width="500px">
+            <param name="src" value="txt/div.txt"></object><br><br>
+            <object id="htme" type="text/plain" data="txt/sty.txt" height="260px" width="500px">
+            <param name="src" value="txt/sty.txt"></object><br><br>
+            <object id="htme" type="text/plain" data="txt/img.txt" height="260px" width="500px">
+            <param name="src" value="txt/img.txt"></object><br><br>
+            <object id="htme" type="text/plain" data="txt/lin.txt" height="260px" width="500px">
+            <param name="src" value="txt/lin.txt"></object><br><br>
+            <object id="htme" type="text/plain" data="txt/lis.txt" height="260px" width="500px">
+            <param name="src" value="txt/lis.txt"></object><br><br>
+            <object id="htme" type="text/plain" data="txt/inp.txt" height="260px" width="500px">
+            <param name="src" value="txt/inp.txt"></object><br><br>
+            <object id="htme" type="text/plain" data="txt/scr.txt" height="260px" width="500px">
+            <param name="src" value="txt/scr.txt"></object><br><br>
+            <object id="htme" type="text/html" data="txt/form.html" height="260px" width="500px"><br>
+            <param name="src" value="txt/form.html"></object><br><br><ins><b>CSS Code dieser Website:<br></b></ins><br>
+            <object id="htme" type="text/plain" data="txt/css.txt" height="260px" width="500px">
+            <param name="src" value="txt/css.txt"></object>
+         </main>
       </div>
       <footer>
-        <p>www.jumi.biz | github.com/xuser123 | portfm8@gmail.com</p>
+         <p>www.jumi.biz | <a id="footer-link" href="github.com/xuser123" target="_blank">github.com/xuser123</a> | portfm8@gmail.com</p>
       </footer>
     </div>
   </body>
