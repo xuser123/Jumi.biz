@@ -1,17 +1,10 @@
-<!--scrollable Textbox (.../txt.txt)-->
-
-<!doctype html>
-<html>
-<head>
-</head>
+<!--scrollbare Textbox-->
 <body>
-<object type="text/plain" data="txt.txt" height="230" width="400">
-<param name="src" value="txt.txt">
-</object>
+   <object type="text/plain" data="txt.txt" height="230" width="400">
+      <param name="src" value="txt.txt">
+   </object>
 </body>
-</html>
+<!--Textdatei: txt.txt-->
 
 
-<!--Textdatei:-->
 
-<!--(...Desktop/Neuer Ordner/txt.txt)-->

@@ -30,11 +30,11 @@ body {
     grid-gap: 1em;
     text-shadow: 0.5px 0.5px #1f1f1f;
     justify-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 main {
     padding-bottom: 3.2em; 
     width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 0.3px;
     line-height: 1.4em;
 }
@@ -182,7 +182,7 @@ h1, h2, h3, h5 { /* Überschriften */
 }
 code, #htme { /* Code Fenster in html.html */
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.2em;
     color: #000;
@@ -192,10 +192,13 @@ code, #htme { /* Code Fenster in html.html */
     background-color: rgb(195, 195, 195);
     line-height: 1.5em;
     text-shadow: none;
+    max-width: 480px;
 
 }
 .right_grid {
     padding-top: 2.5em;
+    padding-bottom: 3.2em; 
+    width: 100%;
     font-size: smaller;
     text-shadow: 0.5px 0.5px 0 #1f1f1f;
     line-height: 1.4em;

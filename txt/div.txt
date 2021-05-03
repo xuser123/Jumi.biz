@@ -1,14 +1,9 @@
-<!--Div-Container (Div = Division / Teilung)-->
-
-<!DOCTYPE html>
-<html>
-<head>
-</head>
+<!--Div-Container-->
 <body>
-<div id="Container">
-    <div id="Inhalt">
-
-    </div>
-</div>
+   <div id="Container">
+      <div id="Inhalt">
+         Container-Inhalt
+      </div>
+   </div>
 </body>
-</html>
+

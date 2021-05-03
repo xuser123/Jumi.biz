@@ -1,18 +1,12 @@
-<!--Lists-->
-
-<!DOCTYPE html>
-<html>
-<head>
-</head>
+<!--Liste-->
 <body>
-<ul>
- <li>unorderedlistitem1</li>
- <li>unorderedlistitem2</li>
-</ul>
-<ol>
- <li>orderedlistitem1</li>
- <li>orderedlistitem2</li>
-</ol>
+   <ul>
+      <li>ungeordnet</li>
+      <li>ungeordnet</li>
+   </ul>
+   <ol>
+      <li>geordnet</li>
+      <li>geordnet</li>
+   </ol>
 </body>
-</html>
 

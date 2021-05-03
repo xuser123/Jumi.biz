@@ -1,15 +1,12 @@
 <!--Stylings-->
-
-<!DOCTYPE html>
-<html>
 <head>
-<style>
-body {background-color:black;}
-h1 {color:red;}
-</style>
+   <style>
+      body {background-color:black;}
+      h1 {color:red;}
+   </style>
 </head>
 <body>
-<h1>redonblack</h1>
+   <h1>redonblack</h1>
 </body>
-</html>
+
 
