@@ -6,8 +6,8 @@ body {
     height: 100%; /* Footer Lösung */
     width: 100%;
     box-sizing: border-box;
-    background-image: url("pics/b.png"); /* Bild einfügen */
-    background-position-y: 7vh;
+    background-image: url("pics/b.jpg"); /* Bild einfügen */
+    background-position-y: bottom;
     background-repeat: no-repeat;
     background-color: #808099;
     color: #F0FFFF;
