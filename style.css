@@ -22,18 +22,25 @@ body {
     margin: auto;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 52% 48%;
     grid-gap: 1em;
     text-shadow: 0.5px 0.5px #1f1f1f;
     justify-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 main {
-    padding-bottom: 3.2em; 
     width: 100%;
     letter-spacing: 0.3px;
     line-height: 1.4em;
 
+}
+.right_grid {
+    padding-bottom: 3.2em; 
+    width: 100%;
+    font-size: smaller;
+    text-shadow: 0.5px 0.5px 0 #1f1f1f;
+    line-height: 1.4em;
+    
 }
 footer { /* Impressum */
     position: absolute;
@@ -125,7 +132,7 @@ main a:hover {
         font-size: 12px;
         position: absolute;
         right: -10px;
-        height: 52vh;
+        height: 62vh;
         top: 20px;
         background-color: #5d4954;
         display: flex;
@@ -176,7 +183,7 @@ h1, h2, h3 { /* Überschriften */
 code, #box { /* Code Fenster in html.html */
     display: inline-block;
     font-size: 0.6em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Source Code Pro', monospace;
     letter-spacing: 0.2em;
     color: #000;
     text-align: left;
@@ -187,14 +194,6 @@ code, #box { /* Code Fenster in html.html */
     text-shadow: none;
     max-width: 480px;
 
-}
-.right_grid {
-    padding-top: 2.5em;
-    padding-bottom: 3.2em; 
-    width: 100%;
-    font-size: smaller;
-    text-shadow: 0.5px 0.5px 0 #1f1f1f;
-    line-height: 1.4em;
 }
 dl > dt {
     color: #fff;
