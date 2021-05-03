@@ -10,23 +10,33 @@ body {
     background-position-y: 7vh;
     background-repeat: no-repeat;
     background-color: #808099;
-    color: rgb(226, 226, 226);
+    color: #F0FFFF;
     position: relative; /* Footer Lösung */
     min-height: 100vh; /* Footer Lösung */
 
 }
+.page {
+    width: 100%;
+    height: 100%;
+}
 .container {
-    width: 85%;
-    padding-top: 3.8em;
-    padding-left: 1em;
+    width: 93%;
+    padding-top: 2.3em;
     padding-bottom: 3.5em; /* Footer Höhe */
     margin: auto;
-
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em;
+    text-shadow: 0.5px 0.5px #1f1f1f;
+    justify-items: center;
 }
 main {
-    font-size: smaller;
     padding-bottom: 3.2em; 
-
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.3px;
+    line-height: 1.4em;
 }
 main > img {
     max-width: 80vw;
@@ -41,7 +51,7 @@ footer { /* Impressum */
     background-color: #5d4954;
     color: #67897E;
     text-align: center;
-    text-shadow: 1px 1px 0 black;
+    text-shadow: 1px 1px #1f1f1f;
 
 }
 #footer-link { /* github.com/xuser123 */
@@ -52,18 +62,19 @@ header {
 
 }
 header nav {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 45px;
     background-color: #5d4954;
     font-family: 'Sarpanch', sans-serif;
-    width: 100%;
+    box-shadow: 0px 0.6px #1f1f1f;
 
 }
 a {
     text-decoration: none;
-    color: rgb(226, 226, 226);
+    color: #fff;
 }
 main a:hover {
     text-decoration: underline;
@@ -74,17 +85,7 @@ main a:hover {
     font-size: 29px;
     letter-spacing: 6px;
     cursor: pointer;
-    text-shadow: 0.7px 0.7px 0 black;
-
-}
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 45px;
-    background-color: #5d4954;
-    font-family: 'Sarpanch', sans-serif;
-    box-shadow: 0px 0.6px black;
+    text-shadow: 2.3px 2.3px #1f1f1f;
 
 }
 .navLinks { /* Navigations Leiste */
@@ -100,7 +101,7 @@ nav {
     letter-spacing: 4px;
     font-weight: bold;
     font-size: 12px;
-    text-shadow: 0.5px 0.5px 0 black;
+    text-shadow: 0.5px 0.5px #1f1f1f;
 
 }
 .menu { /* Menü Icon Container versteckt */
@@ -140,11 +141,11 @@ nav {
         width: 25%;
         transform: translateX(100%);
         border-bottom-left-radius: 14px;
-        box-shadow: 0px 0.6px black;
+        box-shadow: 0px 0.6px 1f1f1f;
       
     }
     .container {
-        padding-top: 2em;
+        padding-top: 1.6em;
     }
     footer {
         font-size: small;
@@ -173,12 +174,10 @@ nav {
 .cross .line2 {
     transform: rotate(+45deg) translate(-5px, -6px);
 }
-h1, h2, h3 { /* Überschriften */
+h1, h2, h3, h5 { /* Überschriften */
     color: #EBEB99;
     font-family: 'Sarpanch', sans-serif;
-    letter-spacing: 5px;
-    text-shadow: 1px 1px 0 black;
-    font-size: 18px;
+    letter-spacing: 3.2px;
 
 }
 code, #htme { /* Code Fenster in html.html */
@@ -186,11 +185,21 @@ code, #htme { /* Code Fenster in html.html */
     font-size: 0.8em;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.2em;
-    color: black;
+    color: #000;
     text-align: left;
     border: 2px;
     border-style: inset;
     background-color: rgb(195, 195, 195);
     line-height: 1.5em;
+    text-shadow: none;
 
+}
+.right_grid {
+    padding-top: 2.5em;
+    font-size: smaller;
+    text-shadow: 0.5px 0.5px 0 #1f1f1f;
+    line-height: 1.4em;
+}
+dl > dt {
+    color: #fff;
 }
