@@ -35,33 +35,32 @@
       <div id="page">
          <div class="container">
             <main>
-               <h2>Diskpart & dd</h2>
-               <br>
-               <p>
-                  <b>Diskpart</b> ist das Windows-eigene Programm zum Formatieren von Datenträgern.<br>
-                  Man öffnet es über die CMD-Eingabeaufforderung mit dem Befehl <b>diskpart</b>.<br><br>
-                  <img src="pics/dp.jpg"><br><br>
-                  Zuerst lässt man sich alle Datenträger anzeigen mit <b>list disk</b>.<br>
-                  Dann selektiert man den gewünschten Datenträger mit <b> select disk</b> und dessen <b>Nummer</b>.<br><br>
-                  <img src="pics/dp1.jpg"><br><br>
-                  Auf Datenträger sind Partitionen. Auf Partitionen sind Volumen.<br>
-                  Beides lässt sich mit dem list-Befehl anzeigen (wenn der Datenträger selektiert wurde).<br>
-                  Der einfachste Weg um dann diese beiden Formatierungen, sprich <ins>"alles" zu löschen<br>
-                  geht mit dem <b>clean all</b> Befehl.</ins> Anschließend muss der Datenträger für<br>
-                  seine weitere Verwendung "neu formatiert werden", so bekommt er eine frische Partition<br>
-                  mit freiem Volumen (Speicherplatz).<br><br>
-                  <b>dd</b> (Disk Dump) ist die Linux Variante. Achtung! Hier kann ein Fehler großen Schaden anrichten.<br>
-                  Man kann ganze Festplatten und Partitionen löschen oder klonen und mehr. Die Syntax vom dd-Befehl ist folgende:<br><br>
-                  <code>dd if=<i>[input file]</i> of=<i>[output file]</i> &lt;<i>Optionen</i>&gt;</code><br>
-                  <code>dd if=/dev/sda of=/dev/sdb bs=BYTE</code><br><br>
-                  Eine wichtige Rolle beim Formatieren spielt das gewählte Datei-System.<br>
-                  <b>FAT32/exFAT</b> ist der Standard für USB-Sticks und andere "Wechseldatenträger".<br>
-                  Es wird von den meisten Systemen unterstützt/erkannt, hat aber einige Beschränkungen.<br>
-                  <b>NTFS</b> dagegen ist für Betriebssysteme geeignet, da es Eigenschaften wie Blockeinträge,<br>
-                  Zugriffsberechtigung, Datum usw. in einem reservierten MFT (Master File Table) abspeichert.<br>
-                  Es sind mehrere Partitionen gleichzeit möglich und das Limit für Dateigrößen ist über 4 GiB.
-               </p>
+               <h3>Diskpart & fdisk</h3>
+               <p><b>Diskpart</b> ist das Windows-eigene Programm zum Formatieren von Datenträgern.
+               Man öffnet es über die CMD-Eingabeaufforderung mit dem Befehl <b>diskpart</b>.</p>
+               <img src="pics/dp.jpg">
+               <p>Zuerst lässt man sich alle Datenträger anzeigen mit <b>list disk</b>.
+               Dann selektiert man den gewünschten Datenträger mit <b> select disk</b> und dessen <b>Nummer</b>.</p>
+               <img src="pics/dp1.jpg">
+               <p>Auf Datenträger sind Partitionen. Auf Partitionen sind Volumen.
+               Beides lässt sich mit dem list-Befehl anzeigen (wenn der Datenträger selektiert wurde).
+               Der einfachste Weg um dann diese beiden Formatierungen, sprich <ins>"alles" zu löschen</ins>
+               geht mit dem <b>clean all</b> Befehl. Anschließend muss der Datenträger für
+               seine weitere Verwendung "neu formatiert werden", so bekommt er eine frische Partition
+               mit freiem Volumen (Speicherplatz).
+               <b>dd</b> (Disk Dump) ist die Linux Variante. Achtung! Hier kann ein Fehler großen Schaden anrichten.
+               Man kann ganze Festplatten und Partitionen löschen oder klonen und mehr. Die Syntax vom dd-Befehl ist folgende:</p>
+               <code>dd if=<i>[input file]</i> of=<i>[output file]</i> &lt;<i>Optionen</i>&gt;<br>
+               dd if=/dev/sda of=/dev/sdb bs=BYTE</code>
+               <p>Eine wichtige Rolle beim Formatieren spielt das gewählte Datei-System.
+               <b>FAT32/exFAT</b> ist der Standard für USB-Sticks und andere "Wechseldatenträger".
+               Es wird von den meisten Systemen unterstützt/erkannt, hat aber einige Beschränkungen.
+               <b>NTFS</b> dagegen ist für Betriebssysteme geeignet, da es Eigenschaften wie Blockeinträge,
+               Zugriffsberechtigung, Datum usw. in einem reservierten MFT (Master File Table) abspeichert.
+               Es sind mehrere Partitionen gleichzeit möglich und das Limit für Dateigrößen ist über 4 GiB.</p>
             </main>
+            <div class="right_grid">
+            </div>
          </div>
          <footer>
             <p>Jumi.biz | <a id="footer-link" href="https://github.com/xuser123" target="_blank">github.com/xuser123</a> | portfm8@gmail.com</p>

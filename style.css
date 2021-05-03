@@ -37,9 +37,6 @@ main {
     width: 100%;
     letter-spacing: 0.3px;
     line-height: 1.4em;
-}
-main > img {
-    max-width: 80vw;
 
 }
 footer { /* Impressum */
@@ -82,7 +79,7 @@ main a:hover {
 #logo a { /* Jumi.biz Logo */
     color: #67897E;
     font-weight: bold;
-    font-size: 29px;
+    font-size: 28px;
     letter-spacing: 6px;
     cursor: pointer;
     text-shadow: 2.3px 2.3px #1f1f1f;
@@ -174,7 +171,7 @@ main a:hover {
 .cross .line2 {
     transform: rotate(+45deg) translate(-5px, -6px);
 }
-h1, h2, h3, h5 { /* Überschriften */
+h1, h2, h3 { /* Überschriften */
     color: #EBEB99;
     font-family: 'Sarpanch', sans-serif;
     letter-spacing: 3.2px;
