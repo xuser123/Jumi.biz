@@ -35,6 +35,7 @@ main {
 
 }
 .right_grid {
+    padding-top: 5.5em;
     padding-bottom: 3.2em; 
     width: 100%;
     font-size: smaller;
@@ -178,6 +179,7 @@ h1, h2, h3 { /* Überschriften */
     color: #EBEB99;
     font-family: 'Sarpanch', sans-serif;
     letter-spacing: 3.2px;
+    font-size: larger;
 
 }
 code, #box { /* Code Fenster in html.html */
