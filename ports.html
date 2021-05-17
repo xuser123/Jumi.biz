@@ -37,37 +37,65 @@
          <div class="container">
             <main>
                <h3>Protokolle und Ports</h3>
-               <p>Der Internet-Browser schickt Anfragen über
-               <b>HTTP</b>, das<br><em>Hypertext-Transfer Protocol</em>
+               <p>Wenn man von <b>TCP/IP</b> spricht, meint man manchmal die komplette Internetprotokollfamilie,
+               hierzu zählen ca. 500 Protokolle. Das <mark>TCP/IP-Modell</mark> verwendet den gleichen Aufbau
+               wie im OSI-Modell und besteht aus <mark>4 Schichten</mark>: <b>Netzzugangsschicht</b>,
+               <b>Internetschicht</b>, <b>Transportschicht</b> und <b>Anwendungsschicht</b>. Was machen Ports?
+               Im Kontext erklärt: Um einen Brief an Jemanden zu schicken,
+               der in einem Hochhaus wohnt und an seinem Briefkast, aus Schutzgründen, keinen Namen hat,
+               braucht man Straße, Hausnummer, Postleitzahl und die Apartment-Nummer.</p>
+               <p>Im Netzwerk besteht die Adresse aus <mark>32 Bits</mark>. Also 32 Nullen und Einsen,
+               bestehend aus 4 Oktette, die jeweils in Dezimal umgewandelt und mit Punkten getrennt,
+               eine <mark>IP-Adresse</mark> bilden.</p><p>11000000 10101000 10110010 00100101 ... 192.168.178.37
+               <p>Die IP-Adresse bekommt jetzt noch eine Port-Nummer, die wie im o.g. Beispiel die Tür des Empfängers ist.
+               <mark>IPv6</mark>, das neuere Internet Protokoll benutzt Hexadezimale Adressen,
+               das heißt mit Zeichen von 0 bis 9 und A bis F auf Basis 16. Eine IPv6-Adresse besteht aus <mark>128 Bits</mark>.</p>
+               <p>Ports sind Teil der <b>Transportschicht</b> (Layer 4) im OSI-Modell.
+               Mit der <b>Sitzungsschicht</b> (Layer 5) wird die Kommunikation gesteuert, über s.g. Sessions und Sockets.</p>
+               <p>Ports können verschiedene Zustände haben: offen, geschlossen und gefiltert bzw. geblockt.
+               Man unterscheidet 2 Arten von Ports: Eingehende Ports (<b>INBOUND</b>) und Ausgehende Ports (<b>OUTBOUND</b>).
+               Bei Eingehende Ports wartet der Computer oder Server auf eine Verbindungsanfrage.
+               Ausgehende Ports identifizieren sich mit ihrer Nummer bei den Server-Diensten.</p>
+               <p>Der Internet-Browser schickt Anfragen über <b>HTTP</b>, das <em>Hypertext-Transfer Protocol</em>
                oder vorzüglich über das verschlüsselte HTTPS (= HTTP <em>Secure</em>).
-               <b>Ports</b> sind wie Datenpacket-Tunnel.
-               Betriebssysteme stellen Portanfragen um Verbindungen annehmen zu können. 
+               Computer stellen Portanfragen um daraufhin Verbindungen vom Server entgegenzunehmen. 
                Es gibt Standard-Ports, für bestimmte Programme fest-zugeordnete Portnummern.
-               HTTP läuft auf <mark>Port 80</mark> über TCP. Das HTTP-S dagegen hat <mark>Port 443</mark>.</p>
+               HTTP läuft auf <b>Port 80</b> über TCP. Das HTTP-S dagegen hat <b>Port 443</b>.</p>
                <p>Wenn man im Windows Taskmanager (oder in Linux mit den Befehlen: top; ps; tree).
                die "PID" (Prozess ID) eines laufenden Programms findet kann man diesen verwenden
-               um über den (CMD-)Terminal-Befehl <mark>netstat -nano</mark>, vorhanden in Windows und Linux,
+               um über den (CMD-)Terminal-Befehl <code>netstat -nano</code>, vorhanden in Windows und Linux,
                die Ports und deren Adressierung, sprich deren IPs, ausfinding machen.</p>
                <img src="pics/netstat1.jpg" width="100%">
-               <p>Die Ports benutzen 2 Arten von Protokolle. Entweder TCP oder UDP.<br>
-               Ein Programm kann über mehrere Ports laufen und beide Protokolle verwenden.<br>
-               <b>TCP</b> = Transmission Control Protocol / <b>UDP</b> = User Datagramm Protocol</p>
-               <p>Über TCP verlaufen Daten "zuverlässig" im bidirektionalem Datenaustausch, 
-               ein Verlust von Datenpacketen wird hier verhindert.
+               <p>Ports sind wie Daten-Tunnel. Sie benutzen s.g. Stream- und Datagram Sockets. Entweder TCP oder UDP.
+               Ein Programm kann über mehrere Ports laufen und beide Protokolle verwenden.
+               Über <b>TCP</b> verlaufen Daten "zuverlässig" im bidirektionalem Datenaustausch, 
+               ein Verlust von Datenpacketen wird verhindert.
                Der Schwerpunkt dieses Protokolls ist die verbindungsorientierte Paketvermittlung,
-               wärend bei UDP nicht wichtig ist dass ALLES ankommt, sondern KONSTANT übertragen
+               wärend bei <b>UDP</b> nicht wichtig ist dass ALLES ankommt, sondern KONSTANT übertragen
                wird, mit geduldeden Unterbrechungen, beispielsweise beim Stream gucken oder
                bei Sprachübertragungen. Daher ist der Durchlass hier größer, 
                dafür aber unzuverlässiger als über TCP.</p>
+               <p>Mit dem Linux Shell Befehl <code>ss -lntp</code> kann man Sockets untersuchen.
+               Dateien die von Protokolle benutzt werden findet man mit lsof -i <Protokoll>.
+               Zum Test kann man Ports mit <code>nmap -sT -p- localhost</code> abscannen.
+               <strong>Portscans im Internet sind illegal!</strong> Um einen Port zu schließen benutzt man
+               <code>iptables -A INPUT -p tcp --dport <portnummer> -m state --state NEW,ESTABLISHED j REJECT</code>, als eine Zeile.
+               REJECT simuliert unreachable-Pakete und verschleiert die Firewall-Funktion, normalerweise geht auch </code>DROP</code>.
+               In Windows 10 gibt es für die PowerShell den Befehl <code>Get-NetTcpConnection</code> um aktive und lauschende Ports anzuzeigen.</p>
             </main>
-            <div class="right_grid">
-            <dl>
+            <dl class="right_grid">
+             <dt>0 - 1023 (<b>Bekannte</b> Ports)</dt>
+            <dd><em><small>FTP 21, HTTPS 443, SSH 22, usw.</small></em></dd>
+            <dt>1024 - 49.151 (<b>Registrierte</b> Ports)</dt>
+            <dd><em><small>Microsoft SQL Server Port 1433,<br>Remote Desktop Protocol Port 3389, usw.<br>Registriert durch IANA (Internet Assigned Numbers Authority).</small></em></dd>
+            <dt>49.152 - 65.535 (<b>Dynamische</b> Ports)</dt>
+            <dd><em><small>Brauchen keine IANA-Registrierung<br>Gaming, Instant Messaging, ...</small></em></dd><br>
             <dt><b>FTP File Transfer Protocol</b><br>Transportprotokoll: TCP<br>Port 21 (Anfrage vom Client)<br>Port 20 (Übertragung)</dt>
-            <dd><em><small>Sichere Alternative: SFTP, Port 22</small></em></dd><br>
+            <dd><em><small>Datenübertragung<br>Sichere Alternative: SFTP, Port 22</small></em></dd><br>
             <dt><b>Telnet</b><br>Transportprotokoll: TCP<br>Port 23<br></dt>
-            <dd><em><small>Remote zugriff auf entfernte Computer<br>Datenbankzugriffe<br>Sichere Alternative: SSH, Port 22</small></em></dd><br>
+            <dd><em><small>Remote zugriff auf entfernte Computer<br>Datenbankzugriffe<br>Unverschlüsselt (Klartext)<br>Sichere Alternative: SSH, Port 22</small></em></dd><br>
             <dt><b>SMTP Simple Mail Transfer Protocol</b><br>Transportprotokoll: TCP<br>Port 25</dt>
-            <dd><em><small>E-Mails in Computernetzwerken verschicken<br>IMAP und POP3 E-Mails in Computernetzwerken verschicken<br>Sichere Alternative: SMTP mit SSL/TLS, Port 465/587</small></em></dd><br>
+            <dd><em><small>E-Mails in Computernetzwerken verschicken<br>IMAP und POP3 E-Mails verschicken<br>Sichere Alternative: SMTP mit SSL/TLS, Port 465/587</small></em></dd><br>
             <dt><b>DNS Domain Name System</b><br>Transportprotokoll: TCP/UDP<br>Port 53<br></dt>
             <dd><em><small>Namensauflösung, wie “Telefon-Auskunft”<br>Sichere Alternative: AlternDNS mit SSL/TLS, Port 853ativen</small></em></dd><br>
             <dt><b>DHCP Dynamic Host Configuration Protocol</b><br>Transportprotokoll: UDP<br>Server: Port 67<br>Client: Port 68</dt>
@@ -81,13 +109,32 @@
             <dt><b>IMAP Internet Message Access Protocol</b><br>Transportprotokoll: TCP<br>Port 143</dt>
             <dd><em><small>Bereitstellung von E-Mails auf Servern, die dann auf synchronisierten Geräten mit SMTP angefordert werden können<br>Mehr Funktionen als POP3<br>Sichere Alternative: IMAP mit SSL/TLS, Port 993</small></em></dd><br>
             <dt><b>LDAP Lightweight Directory Access Protocol</b><br>Transportprotokoll: TCP/UDP<br>Port 389</dt>
-            <dd><em><small>Abfrage und Änderung (von Informationen) in verteilten Verzeichnisdiensten Speicherung von X.500 Objekten (Beschreibt den Aufbau von Verzeichnis-Diensten)<br>Authentifizierung, Authorisierung, Adress- und Benutzerverzeichnisse<br>Sichere Alternative: LDAP mit SSL/TLS, Port 636</small></em></dd>
-            <!--<dt><b>Name</b>Transportprotokoll: Protokoll<br>Port</dt>
-            <dd><em><small>Aufgabe<br>Aufgabe<br><br>Aufgabe<br>Aufgabe<br><br>Aufgabe<br>Sichere Alternative: Alternativen</small></em></dd><br>-->
-            </dl>
-            </div>
-            <div class="right_grid">
-            </div>
+            <dd><em><small>Abfrage und Änderung (von Informationen) in verteilten Verzeichnisdiensten Speicherung von X.500 Objekten (Beschreibt den Aufbau von Verzeichnis-Diensten)<br>Authentifizierung, Authorisierung, Adress- und Benutzerverzeichnisse<br>Sichere Alternative: LDAP mit SSL/TLS, Port 636</small></em></dd><br>
+            <dt><b>HTTPS </b>HTTP-Secure<br>Port 443 (TCP)</dt>
+            <dd><em><small>Verschlüsseltes HTTP</small></em></dd>
+            <dt><b>NBT </b>NetBIOS over TCP/IP<br>Port 137 - 139 (TCP/UDP)</dt>
+            <dd><em><small>Namensauflösung, Datenaustausch, Fehlerkorrektur, ...</small></em></dd>
+            <dt><b>SIP </b>Session Initiation Protocol<br>Port 5060, 5061 (TCP/UDP)</dt>
+            <dd><em><small>Kommunikationssitzung, IP-Telefonie, ...</small></em></dd>
+            <dt><b>H.323 </b>Port 1720 (TCP/UDP)</dt>
+            <dd><em><small>H.-Standard, Öffentliche telefonnetze</small></em></dd>
+            <dt><b>MGCP </b>Media Gateway Control Protocol<br>Port 2427, 2727 (UDP)</dt>
+            <dd><em><small>VoIP-Gateways, einfacher als H.323</small></em></dd>
+            <dt><b>SNMP </b>Simple Network Management Protocol<br>Port 161 (UDP)</dt>
+            <dd><em><small>Netzwerkelemente steuern<br>Router, Server, Switches, Drucker, Computer, ...</small></em></dd>
+            <dt><b>SSH </b>Secure Shell<br>Port 22 (TCP/UDP)</dt>
+            <dd><em><small>Datenübertragung und Fernsteuerung<br>Anwendungsschicht, Kryptographisch (CryptiCore)</small></em></dd>
+            <dt><b>TFTP </b>Trivial File Transfer Protocol<br>Port 69 (UDP)</dt>
+            <dd><em><small>Einfache Datei-Übertragung<br>Dateien lesen und schreiben</small></em></dd>
+            <dt><b>SMP </b>Server Message Blocks<br>Port 445, 139 (TCP/IP)</dt>
+            <dd><em><small>Microsoft Windows Network Server<br>NBT-unabhängig, tief in Windows eingebettet</small></em></dd>
+            <dt><b>RTP </b>Real-Time Transport Protocol <br>Port 5004, 5005 (UDP)</dt>
+            <dd><em><small>Audiovisuelle Daten, Paket-basiert<br>Unicast/Multicast Kommunikation<br>IP-Telefonie, # RTCP, H.323, SIP, DCCP</small></em></dd>
+            <dt><b>RDP </b>Remote Desktop Protocol<br>Port 3389 (TCP/UDP)</dt>
+            <dd><em><small>Fernzugriff auf Computer<br>Entwickelt von Microsoft<br>Anfällig für Man-In-The-Middle und Remote-Code-Execution<br>AnyDesk-Scammer-Methode</small></em></dd>
+            <dt><b>Microsoft SQL Server</b><br>Port 1433 (TCP)</dt>
+            <dd><em><small>Datenbanksprache, relationales Algebra<br>Structured Query Language (Einfache Syntax)<br>SELECT FROM WHERE, ...</small></em></dd>
+           </dl>
          </div>
          <footer>
             <p>Jumi.biz | <a id="footer-link" href="https://github.com/xuser123" target="_blank">github.com/xuser123</a> | portfm8@gmail.com</p>

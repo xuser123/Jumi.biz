@@ -35,7 +35,7 @@ main {
 
 }
 .right_grid {
-    padding-top: 5.5em;
+    padding-top: 5.3em;
     padding-bottom: 3.2em; 
     width: 100%;
     font-size: smaller;
@@ -192,7 +192,7 @@ code, #box { /* Code Fenster in html.html */
     border: 2px;
     border-style: inset;
     background-color: rgb(195, 195, 195);
-    line-height: 1.5em;
+    line-height: 1.3em;
     text-shadow: none;
     max-width: 480px;
 
