@@ -38,18 +38,18 @@
             <main>
                <h3>Protokolle und Ports</h3>
                <p>Wenn man von <b>TCP/IP</b> spricht, meint man manchmal die komplette Internetprotokollfamilie,
-               hierzu zählen ca. 500 Protokolle. Das <mark>TCP/IP-Modell</mark> verwendet den gleichen Aufbau
-               wie im OSI-Modell und besteht aus <mark>4 Schichten</mark>: <b>Netzzugangsschicht</b>,
-               <b>Internetschicht</b>, <b>Transportschicht</b> und <b>Anwendungsschicht</b>. Was machen Ports?
-               Im Kontext erklärt: Um einen Brief an Jemanden zu schicken,
+               hierzu zählen ca. 500 Protokolle. Das <b>TCP/IP-Modell</b> verwendet den gleichen Aufbau
+               wie im OSI-Modell und besteht aus 4 Schichten: <b>Netzzugangsschicht</b>,
+               <b>Internetschicht</b>, <b>Transportschicht</b> und <b>Anwendungsschicht</b>.</p>
+               <p>Was machen Ports? Im Kontext erklärt: Um einen Brief an Jemanden zu schicken,
                der in einem Hochhaus wohnt und an seinem Briefkast, aus Schutzgründen, keinen Namen hat,
                braucht man Straße, Hausnummer, Postleitzahl und die Apartment-Nummer.</p>
-               <p>Im Netzwerk besteht die Adresse aus <mark>32 Bits</mark>. Also 32 Nullen und Einsen,
+               <p>Im Netzwerk besteht die Adresse aus <b>32 Bits</b>. Also 32 Nullen und Einsen,
                bestehend aus 4 Oktette, die jeweils in Dezimal umgewandelt und mit Punkten getrennt,
-               eine <mark>IP-Adresse</mark> bilden.</p><p>11000000 10101000 10110010 00100101 ... 192.168.178.37
+               eine <b>IP-Adresse</b> bilden.</p><p>11000000 10101000 10110010 00100101 ... 192.168.178.37
                <p>Die IP-Adresse bekommt jetzt noch eine Port-Nummer, die wie im o.g. Beispiel die Tür des Empfängers ist.
-               <mark>IPv6</mark>, das neuere Internet Protokoll benutzt Hexadezimale Adressen,
-               das heißt mit Zeichen von 0 bis 9 und A bis F auf Basis 16. Eine IPv6-Adresse besteht aus <mark>128 Bits</mark>.</p>
+               <b>IPv6</b>, das neuere Internet Protokoll benutzt Hexadezimale Adressen,
+               das heißt mit Zeichen von 0 bis 9 und A bis F auf Basis 16. Eine IPv6-Adresse besteht aus <b>128 Bits</b>.</p>
                <p>Ports sind Teil der <b>Transportschicht</b> (Layer 4) im OSI-Modell.
                Mit der <b>Sitzungsschicht</b> (Layer 5) wird die Kommunikation gesteuert, über s.g. Sessions und Sockets.</p>
                <p>Ports können verschiedene Zustände haben: offen, geschlossen und gefiltert bzw. geblockt.
@@ -60,7 +60,7 @@
                oder vorzüglich über das verschlüsselte HTTPS (= HTTP <em>Secure</em>).
                Computer stellen Portanfragen um daraufhin Verbindungen vom Server entgegenzunehmen. 
                Es gibt Standard-Ports, für bestimmte Programme fest-zugeordnete Portnummern.
-               HTTP läuft auf <b>Port 80</b> über TCP. Das HTTP-S dagegen hat <b>Port 443</b>.</p>
+               HTTP läuft auf <b>Port 80</b> über TCP. <b>HTTPS</b> benutzt <b>Port 443</b>.</p>
                <p>Wenn man im Windows Taskmanager (oder in Linux mit den Befehlen: top; ps; tree).
                die "PID" (Prozess ID) eines laufenden Programms findet kann man diesen verwenden
                um über den (CMD-)Terminal-Befehl <code>netstat -nano</code>, vorhanden in Windows und Linux,
@@ -83,8 +83,9 @@
                REJECT simuliert unreachable-Pakete und verschleiert die Firewall-Funktion, normalerweise geht auch </code>DROP</code>.
                In Windows 10 gibt es für die PowerShell den Befehl <code>Get-NetTcpConnection</code> um aktive und lauschende Ports anzuzeigen.</p>
             </main>
-            <dl class="right_grid">
-             <dt>0 - 1023 (<b>Bekannte</b> Ports)</dt>
+            <div class="right_grid">
+            <dl>
+            <dt>0 - 1023 (<b>Bekannte</b> Ports)</dt>
             <dd><em><small>FTP 21, HTTPS 443, SSH 22, usw.</small></em></dd>
             <dt>1024 - 49.151 (<b>Registrierte</b> Ports)</dt>
             <dd><em><small>Microsoft SQL Server Port 1433,<br>Remote Desktop Protocol Port 3389, usw.<br>Registriert durch IANA (Internet Assigned Numbers Authority).</small></em></dd>
@@ -134,7 +135,11 @@
             <dd><em><small>Fernzugriff auf Computer<br>Entwickelt von Microsoft<br>Anfällig für Man-In-The-Middle und Remote-Code-Execution<br>AnyDesk-Scammer-Methode</small></em></dd>
             <dt><b>Microsoft SQL Server</b><br>Port 1433 (TCP)</dt>
             <dd><em><small>Datenbanksprache, relationales Algebra<br>Structured Query Language (Einfache Syntax)<br>SELECT FROM WHERE, ...</small></em></dd>
+            <dt><b>SMP </b>Server Message Blocks<br>Port 445, 139 (TCP/IP)</dt>
+            <dd><em><small>Microsoft Windows Network Server<br>NBT-unabhängig, tief in Windows eingebettet</small></em></dd>
            </dl>
+           <a href="osip.pdf">&#128279 Liste von Netzwerk-Protokolle aus dem OSI-Modell</a>
+           </div>
          </div>
          <footer>
             <p>Jumi.biz | <a id="footer-link" href="https://github.com/xuser123" target="_blank">github.com/xuser123</a> | portfm8@gmail.com</p>

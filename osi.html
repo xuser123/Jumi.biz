@@ -37,32 +37,42 @@
       <div id="page">
          <div class="container">
             <main>
-            <h3>OSI „Open Systems Interconnection“</h3>
-            <p>Das OSI Modell beschreibt wie Daten übermittelt werden.<br>
+            <h3>OSI Open Systems Interconnection</h3>
+            <p>Das OSI Modell beschreibt wie Daten übermittelt werden.
             Es hat 7 Schichten, in denen Daten verkapselt und weiterverkapselt werden. 
             Die Nummerierung ist aber nicht als Reihenfolge zu verstehen,
-            da die Informationen in beide Richtungen fließen.
-            Auch "ISO-OSI-Modell" genannt.</p>
+            da die Informationen in beide Richtungen fließen. Daher auch "ISO-OSI-Modell" genannt.</p>
             <img src="pics/osi.jpg" width="90%">
+            <a href="osip.pdf"><br>&#128279 Liste von Netzwerk-Protokolle aus dem OSI-Modell</a>
             </main>
             <div class="right_grid">
-            <dl>
-            <dt><b>#1 Physical</b><br>Bitübertragungsschicht</dt>
-            <dd><em><small>Bits - binär, physikalisch</small></em></dd><br>
-            <dt><b>#2 Data Link</b><br>Sicherungsschicht</dt>
-            <dd><em><small>Frames - regelt Zugriff auf Übertragungsmedium</small></em></dd><br>
-            <dt><b>#3 Network</b><br>Vermittlungsschicht</dt>
-            <dd><em><small>Pakete - Router</small></em></dd><br>
-            <dt><b>#4 Transport</b><br>Transportschicht</dt>
-            <dd><em><small>Quelle und Ziel - Adressierung</small></em></dd><br>
-            <dt><b>#5 Session</b><br>Sitzungsschicht</dt>
-            <dd><em><small>Benutzerinformationen und Metadaten</small></em></dd><br>
-            <dt><b>#6 Presentation</b><br>Darstellungsschicht</dt>
-            <dd><em><small>Der ausgeführte Prozess - "sichtbar"</small></em></dd><br>
-            <dt><b>#7 Application</b><br>Anwendungsschicht</dt>
-            <dd><em><small>Der ausgeführte Prozess - "unsichtbar"</small></em></dd>
-            </dl>
             <img src="pics/matroschka.jpg">
+            <h4>Layer 1 Physical Bitübertragungsschicht</h4>
+            <p>Responsible for the transmission and reception of unstructured raw data between a device and a physical transmission medium.
+            It converts the digital bits into electrical, radio, or optical signals.</p>
+            <h4>Layer 2 Data Link Sicherungsschicht</h4>
+            <p>The data link layer provides node-to-node data transfer, a link between two directly connected nodes.
+            It detects and possibly corrects errors that may occur in the physical layer.
+            IEEE 802 divides the data link layer into two sublayers. It converts the digital bits into electrical, radio, or optical signals.
+            Layer specifications define characteristics such as voltage levels, the timing of voltage changes, physical data rates,
+            maximum transmission distances, modulation scheme, channel access method and physical connectors.</p>
+            <h4>Layer 3 Network Vermittlungsschicht</h4>
+            <p>The network layer provides the functional and procedural means of transferring packets from one node to another connected in "different networks".
+            A network is a medium to which many nodes can be connected, on which every node has an address and which permits nodes connected to it to transfer messages to
+            other nodes connected to it by merely providing the content of a message and the address of the destination node and letting the network find the way to
+            deliver the message to the destination node, possibly routing it through intermediate nodes.</p>
+            <h4>Layer 4 Transport Transportschicht</h4>
+            <p>The transport layer provides the functional and procedural means of transferring variable-length data sequences from a source to a destination host,
+            while maintaining the quality of service functions. The transport layer controls the reliability of a given link through flow control, segmentation/desegmentation, and error control.</p>
+            <h4>Layer 5 Session Sitzungsschicht</h4>
+            <p>The session layer controls the dialogues (connections) between computers. It establishes, manages and terminates the connections between the local and remote application.
+            It provides for full-duplex, half-duplex, or simplex operation, and establishes procedures for checkpointing, suspending, restarting, and terminating a session.</p>
+            <h4>Layer 6 Presentation Darstellungsschicht</h4>
+            <p>The presentation layer establishes context between application-layer entities, in which the application-layer entities may use different syntax and semantics if the
+            presentation service provides a mapping between them. If a mapping is available, presentation protocol data units are encapsulated into session protocol data units and passed down the protocol stack. </p>
+            <h4>Layer 7 Application Anwendungsschicht</h4>
+            <p>The application layer is the OSI layer closest to the end user, which means both the OSI application layer and the user interact directly with the software application.
+            This layer interacts with software applications that implement a communicating component.</p>
             </div>
          </div>
          <footer>
