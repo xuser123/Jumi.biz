@@ -1,0 +1,57 @@
+<head><style>dl {font-size:12px;}</style></head>
+<dl>
+    <dt><b>ifconfig </b>Netzwerk-Schnittstellen Infos:</dt>
+    <dd><code>ifconfig -a</code></dd>
+    <dt>Netzwerk-Adapter ein-/ausschalten</dt>
+    <dd><code>ifconfig wlan0 up # oder "down"</code></dd>
+    <dt><b>iwconfig </b>Drahtlose Netzwerk-Schnittstellen zeigen</dt>
+    <dd><code>iwconfig</code></dd>
+    <dt><b>iwlist </b>Suche nach Wifi-Zugänge</dt>
+    <dd><code>iwlist scan</code></dd>
+    <dt><b>ping </b>Netzwerk Verbindungstest</dt>
+    <dt>Erreichbarkeit prüfen</dt>
+    <dd><code>ping 8.8.8.8 # oder www.microsoft.com</code></dd>
+    <dt><b>arp -a </b>Verbundene Netzwerk-Geräte zeigen:</dt>
+    <dd><code>arp -a</code></dd>
+    <dt><b>arp-scan </b>Netzwerk-Geräte suchen:</dt>
+    <dd><code>arp-scan 192.168.0.0/24</code></dd>
+    <dt><b>netstat </b>Netzwerkverbindungen TCP/IP zeigen</dt>
+    <dd><code>netstat -nano</code></dd>
+    <dt><b>route -n </b>Lokale Routing-Tabelle:</dt>
+    <dd><code>route -n</code></dd>
+    <dt><b>traceroute </b>Internet-Packetverfolgung:</dt>
+    <dt>Zeigt Gateway-Routen mittles ICMP TIME_EXCEEDED Anfragen:</dt>
+    <dd><code>traceroute 8.8.8.8</code></dd>
+    <dt><b>tracepath </b>traceroute-Alternative (mittels MTU, UDP):</dt>
+    <dt>In Debian mit <code>apt-get install iputils-tracepath</code> herunterladen.</dt>
+    <dd><code>tracepath 8.8.8.8</code></dd>
+    <dt><b>tcpdump </b> Tool für Netzwerk-Monitoring</dt>
+    <dt>In Debian mit <code>apt-get install tcpdump</code> herunterladen.</dt>
+    <dd><code>tcpdump -i eth0 -n net 192.168.0.1</code></dd>
+    <dt><b>iptables </b>Port schließen</dt>
+    <dd><code>iptables -A INPUT -p tcp --dport 23 -m state --state NEW,ESTABLISHED -j DROP</code></dd>
+    <dt>Filterfunktion verbergen</dt>
+    <dd><code>iptables -A INPUT -p tcp --dport 23 -m state --state NEW,ESTABLISHED -j REJECT</code></dd>
+    <dt><b>service </b>Netzwerk-Reset</dt>
+    <dd><code>service networking restart</code></dd>
+    <dt><b>systemctl </b>Systemstart-Dienste konfigurieren</dt>
+    <dd><code>systemctl</code></dd>
+    <dt><b>ss </b>Socket Statistics</dt>
+    <dt>Zeigt "Kommunikations-Punkte"</dt>
+    <dd><code>ss -a</code></dd>
+    <dt><b>Befehl </b>Betreff</dt>
+    <dt>Beschreibung</dt>
+    <dd><code>Syntax</code></dd>
+    <dt><b>Befehl </b>Betreff</dt>
+    <dt>Beschreibung</dt>
+    <dd><code>Syntax</code></dd>
+    <dt><b>Befehl </b>Betreff</dt>
+    <dt>Beschreibung</dt>
+    <dd><code>Syntax</code></dd>
+    <dt><b>Befehl </b>Betreff</dt>
+    <dt>Beschreibung</dt>
+    <dd><code>Syntax</code></dd>
+    <dt><b>Befehl </b>Betreff</dt>
+    <dt>Beschreibung</dt>
+    <dd><code>Syntax</code></dd>
+</dl>

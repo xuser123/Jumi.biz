@@ -69,19 +69,21 @@
                <p>Ports sind wie Daten-Tunnel. Sie benutzen s.g. Stream- und Datagram Sockets. Entweder TCP oder UDP.
                Ein Programm kann über mehrere Ports laufen und beide Protokolle verwenden.
                Über <b>TCP</b> verlaufen Daten "zuverlässig" im bidirektionalem Datenaustausch, 
-               ein Verlust von Datenpacketen wird verhindert.
+               ein Verlust von Datenpacketen wird verhindert. 
                Der Schwerpunkt dieses Protokolls ist die verbindungsorientierte Paketvermittlung,
                wärend bei <b>UDP</b> nicht wichtig ist dass ALLES ankommt, sondern KONSTANT übertragen
                wird, mit geduldeden Unterbrechungen, beispielsweise beim Stream gucken oder
                bei Sprachübertragungen. Daher ist der Durchlass hier größer, 
                dafür aber unzuverlässiger als über TCP.</p>
                <p>Mit dem Linux Shell Befehl <code>ss -lntp</code> kann man Sockets untersuchen.
-               Dateien die von Protokolle benutzt werden findet man mit lsof -i <Protokoll>.
+               Dateien die von Protokolle benutzt werden findet man mit <code>lsof -i</code> <Protokoll>.
                Zum Test kann man Ports mit <code>nmap -sT -p- localhost</code> abscannen.
                <strong>Portscans im Internet sind illegal!</strong> Um einen Port zu schließen benutzt man
                <code>iptables -A INPUT -p tcp --dport <portnummer> -m state --state NEW,ESTABLISHED j REJECT</code>, als eine Zeile.
                REJECT simuliert unreachable-Pakete und verschleiert die Firewall-Funktion, normalerweise geht auch </code>DROP</code>.
-               In Windows 10 gibt es für die PowerShell den Befehl <code>Get-NetTcpConnection</code> um aktive und lauschende Ports anzuzeigen.</p>
+               In Windows 10 gibt es für die PowerShell den Befehl <code>Get-NetTcpConnection</code> um aktive und lauschende Ports anzuzeigen.
+               Unter Linux (Debian) findet man im APT Advanced Package Tool ein Programm namens <b>tcpdump</b> <code>apt install tcpdump</code>
+               dass alle TCP-Packete in Echtzeit monitarisieren kann. <code>tcpdump -i eth0 -n net 192.168.0.1</code>. Man kann auch Logfiles durchlaufen lassen, <code>tail -f /var/log/proxy/access.log</code>.</p>
             </main>
             <div class="right_grid">
             <dl>
@@ -138,7 +140,7 @@
             <dt><b>SMP </b>Server Message Blocks<br>Port 445, 139 (TCP/IP)</dt>
             <dd><em><small>Microsoft Windows Network Server<br>NBT-unabhängig, tief in Windows eingebettet</small></em></dd>
            </dl>
-           <a href="osip.pdf">&#128279 Liste von Netzwerk-Protokolle aus dem OSI-Modell</a>
+           <a href="osip.pdf">&#128279 Liste von Netzwerk-Protokollen aus dem OSI-Modell</a>
            </div>
          </div>
          <footer>
