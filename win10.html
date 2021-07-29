@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <title>Jumi</title>
+      <link href="https://fonts.googleapis.com/css?family=Sarpanch&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="pics/y.png">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="OSI model for beginners in Project Website of Jumi">
+      <meta name="keywords" content="osi, model, Jumi,Website,IT,methods">
+      <meta name="author" content="Jumi">
+      <style>body{background-image:none;}</style>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <div id="logo"><a href="https://www.jumi.biz/">jumi.biz</a></div>
+            <ul class="navLinks">
+               <li><a href="html.html">html</a></li>
+               <li><a href="ports.html">tcp</a></li>
+               <li><a href="osi.html">osi</a></li>
+               <li><a href="linux.html">linux</a></li>
+               <li><a href="notes.html">links</a></li>
+            </ul>
+            <div class="menu">
+               <div class="line0"></div>
+               <div class="line1"></div>
+               <div class="line2"></div>
+            </div>
+         </nav>
+      </header>
+      <script src="navibar.js"></script>
+      <div id="page">
+         <div class="container">
+            <main>
+            <h3>Windows 10 Installation und Einrichtung</h3>
+            <p>Das OSI Modell beschreibt wie Daten übermittelt werden.
+            Es hat 7 Schichten, in denen Daten verkapselt und weiterverkapselt werden. 
+            Die Nummerierung ist aber nicht als Reihenfolge zu verstehen,
+            da die Informationen in beide Richtungen fließen. Daher auch "ISO-OSI-Modell" genannt.</p>
+            <img src="pics/get-filehash.jpg" width="90%">
+            <a href="win10einrichten.pdf"><br>&#128279 Komplette Anleitung als PDF herunterladen</a>
+            </main>
+            <div class="right_grid">
+            <img src="pics/win10edit.png" width="90%">
+            <img src="pics/win10part.png" width="90%">
+            <img src="pics/win10install.png" width="90%">
+            <h4>Layer 1 Physical Bitübertragungsschicht</h4>
+            <p>Verantwortlich für die Übertragung und den Empfang unstrukturierter Rohdaten zwischen einem Gerät und einem physischen Übertragungsmedium. Es wandelt die digitalen Bits in elektrische, Funk- oder optische Signale um.</p>
+            <h4>Layer 2 Data Link Sicherungsschicht</h4>
+            <p>Die Datenverbindungsschicht ermöglicht den Knoten-zu-Knoten-Datenübertragung, eine Verbindung zwischen zwei direkt verbundenen Knoten. Es erkennt und korrigiert möglicherweise Fehler, die in der physischen Schicht auftreten können. IEEE 802 teilt die Datenverbindungsschicht in zwei Unterschichten. Es wandelt die digitalen Bits in elektrische, Funk- oder optische Signale um. Layer-Spezifikationen definieren Eigenschaften wie Spannungspegel, den Zeitpunkt der Spannungsänderungen, der physikalischen Datenraten, maximale Übertragungsabstände, Modulationsschema, Kanalzugriffsverfahren und physikalische Anschlüsse.</p>
+            <h4>Layer 3 Network Vermittlungsschicht</h4>
+            <p>Die Netzwerkschicht stellt das Funktions- und Verfahrensmittel zur Übertragung von Paketen von einem Knoten zur anderen in "verschiedenen Netzwerken" bereit. Ein Netzwerk ist ein Medium, an dem viele Knoten angeschlossen werden können, auf denen jeder Knoten eine Adresse hat und die mit ihm angeschlossenen Knoten aufweist, um Nachrichten an andere mit ihm angeschlossene Knoten zu übertragen, indem er lediglich den Inhalt einer Nachricht und der Adresse des Ziels anbietet Knoten und das Netzwerk lassen Sie den Weg finden, um die Nachricht an den Zielknoten zu liefern und möglicherweise durch Zwischenknoten zu leiten.</p>
+            <h4>Layer 4 Transport Transportschicht</h4>
+            <p>Die Transportschicht stellt das Funktions- und Verfahrensmittel zur Übertragung von Datensequenzen mit variabler Länge von einer Quelle an einen Zielhost bereit, während die Qualität der Servicefunktionen aufrechterhält. Die Transportschicht steuert die Zuverlässigkeit eines bestimmten Links durch Durchflusssteuerung, Segmentierung / Desegmentierung und Fehlersteuerung.</p>
+            <h4>Layer 5 Session Sitzungsschicht</h4>
+            <p>Die Sitzungsschicht steuert die Dialoge (Verbindungen) zwischen Computern. Es etabliert, verwaltet und beendet die Verbindungen zwischen der lokalen und entfernten Anwendung. Es bietet Full-Duplex, Halbduplex- oder Simplex-Betrieb und etabliert Verfahren zum Prüfen, Aufhängen, Neustart und Beenden einer Sitzung.</p>
+            <h4>Layer 6 Presentation Darstellungsschicht</h4>
+            <p>Die Präsentationsschicht stellt den Kontext zwischen Anwendungsschicht-Entitäten her, in dem die Application-Layer-Entitäten unterschiedliche Syntax und Semantik verwenden können, wenn der Präsentationsdienst eine Abbildung zwischen ihnen bietet. Wenn ein Mapping verfügbar ist, werden Präsentationsprotokolldateneinheiten in Session-Protokolldateneinheiten eingekapselt und den Protokollstapel übergeben.</p>
+            <h4>Layer 7 Application Anwendungsschicht</h4>
+            <p>Die Anwendungsschicht ist die OSI-Schicht, die dem Endbenutzer am nächsten ist, dh sowohl die OSI-Anwendungsschicht als auch der Benutzer interagieren direkt mit der Softwareanwendung. Diese Schicht interagiert mit Softwareanwendungen, die eine kommunizierende Komponente implementieren.</p>
+            </div>
+         </div>
+         <footer>
+            <p>Jumi.biz | <a id="footer-link" href="https://github.com/xuser123" target="_blank">github.com/xuser123</a> | portfm8@gmail.com</p>
+         </footer>
+      </div>
+   </body>
+</html>
+
