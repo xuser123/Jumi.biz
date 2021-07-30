@@ -79,7 +79,7 @@
                Dateien die von Protokolle benutzt werden findet man mit <code>lsof -i</code> <Protokoll>.
                Zum Test kann man Ports mit <code>nmap -sT -p- localhost</code> abscannen.
                <strong>Portscans im Internet sind strafbar!</strong> Um einen Port zu schließen benutzt man
-               <code>iptables -A INPUT -p tcp --dport <portnummer> -m state --state NEW,ESTABLISHED j REJECT</code>, als eine Zeile.
+               <code>iptables -A INPUT -p tcp --dport 23 -m state --state NEW,ESTABLISHED j REJECT</code>, als eine Zeile.
                REJECT simuliert unreachable-Pakete und verschleiert die Firewall-Funktion, normalerweise geht auch </code>DROP</code>.
                In Windows 10 gibt es für die PowerShell den Befehl <code>Get-NetTcpConnection</code> um aktive und lauschende Ports anzuzeigen.
                Unter Linux (Debian) findet man im APT Advanced Package Tool ein Programm namens <b>tcpdump</b> <code>apt install tcpdump</code>

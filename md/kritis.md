@@ -1,0 +1,142 @@
+# KRITIS = Kritische Infrastrukur
+## **§ 2 Abs. 10 BSI-Gesetz (BSIG)**
+Kritische Infrastrukturen *sind ***Einrichtungen***, ***Anlagen*** oder ***Teile*** davon, die den Sektoren:*
+- Energie
+- Informationstechnik & Telekommunikation
+- Transport & Verkehr
+- Gesundheit
+- Wasser
+- Ernährung
+- Finanz- & Versicherungswesen
+
+*angehören und von ***hoher Bedeutung*** für das ***Funktionieren des Gemeinwesens*** sind, weil durch ihren ***Ausfall*** oder ihre ***Beeinträchtigung*** erherbliche ***Versorgungsengpässe*** oder ***Gefährdungen*** für die ***öffentliche Sicherheit*** eintreten würden.*
+
+## **§ 8a Abs. 3 BSI-Gesetz (BSIG)**
+###  Pflichten für Kritis-Betreiber
+- IT-Sicherheits**maßnahmen ergreifen**
+- **Vermeidung** *von Versorgungsausfällen /-engpässen*
+- **Nachweis** *der Einhaltung alle 2 Jahre*
+- **Meldung** *von außergewöhnlichen IT-Sicherheitsvorfällen an das BSI*
+- **Berücksichtigung** *der BSI-Warnungen und -Lagebilder*
+## **§§ 2 bis 8 BSI-KRITIS-Verordnung (BSI-KritisV)**
+- **Gemeinwohlschwelle**: ab 500.000 betroffene Personen
+- **Regelschwellenwert**: Durchschnittliche Berührungspunkte, pro Person, pro Jahr
+  - z.B. durchschn. Geldabhebungen / Person / Jahr = Regelschwellenwert
+## Akteure
+- **AG KRITIS** -> *Mitglied des Chaos Computer Club*
+- **UP KRITIS** -> *Zusammenschluss von Kritis-Betreibern*
+- **BSI** = *Bundesamt für Sicherheit in der Informationstechnik*
+  - **MIRT** = *Mobile Incident Response Team*
+- **BMI** = *Bundesamt des Innern für Bau und Heimat*
+  - **IT-Sicherheitsgesetz 2.0 (ITSiG 2.0)**
+    - Sektoren: Entsorgung, Rüstungsindustrie,
+    - **Isböfl** = *Infrastrukturen im besonderen öffentlichen Interesse*
+- **BBK** = *Bundesamt für Bevölkerung und Katastrophenschutz*
+  - Chemie-Branche
+- Staat und Verwaltung (unabhängiger Sektor)
+  - **UP Bund** = *Umsetzungsplan Bund*
+- Bundesländer
+  - Kultur und Medien (unabhängiger Sektor) 
+- [**Netzpolitik.org**](https://www.netzpolitik.org "haben ITSiG 2.0 geleaked")
+  - ITSiG 2.0 öffentlich zugänglich gemacht
+- **DSGVO** = *Datenschutz-Grundverordnung*
+- **CHW** = *Cyber-Hilfswerk*
+- **PMeV** = *Professioneller Mobilfunk e.V.*
+  - Baden-württemberg
+  - Breitbandlösungen für KRITIS
+  - Digitalisierung der Energiewende
+- **APT's** = *Advanced Persistant Threats*
+  - Bedrohungen und Hackergruppen
+- *"und noch viele Mehr"* -HonkHase
+## Standards
+- **BSI-Grundschutz**
+- **ISMS** = *Information Security Management System*
+- ISO/IEC-27000-Reihe
+  - ISO = *International Organization for Standardisation*
+  - IEC = *International Electrotechnical Commission*
+  - **ISO 27001**
+    - Anforderungen
+    - Umsetzung
+    - Aufrechterhaltung
+    - fortlaufende Verbesserung
+    - Dokumentation
+    - Beurteilung und Behandlung von Informationssicherheitsrisiken
+  - Vertraulichkeit
+  - Authentifizierung
+  - Integrität
+  - Verfügbarkeit
+- **IEC 62443**
+  - Industrielle Kommunikationsnetze
+    - Verteidigung
+    - Redundanz
+    - **SL** - *Security Level* Zonen
+    - **PMR** = *Professional Mobile Radio*
+      - 4G/LTE und 5G
+      - 3,7 - 3,8 GHz
+      - Frequenzbereich: 450 MHz
+      - Dedizierte, lokale Netze
+      - Energieversorger und Industrie
+## Anwendung
+- **ICS** = *Industrial Control System*
+  - Industrielle Kontrollsysteme
+- **DCS** = *Distributed Control System*
+  - Verteiltes Steuersystem
+- Automatisierungpyramide:
+  - Lvl. 4 - ERP => **Unternehmen**
+  - Lvl. 3 - MES => **Betrieb**
+  - Lvl. 2 - SCADA => **Prozessleitung**
+  - Lvl. 1 - SPS => **Steuerung**
+  - Ein- / Ausgnagssignale => **Feldebene**
+  - Fertigung / Produktionsprozess => **Prozessebene**
+- **SCADA** = *Supervisory Control and Data Acquisition*
+  - Prozessleitsysteme
+  - **PLC** = *Programmable Logic Controller
+  - **RTU** = *Remote Terminal Unit*
+  - **ICG** = *Industrial Control Gateways*
+    - Verbindet Protokolle mit IP-Netz
+    - Ethernet, Wifi, RF, LoRa, GSM, GPRS,...
+    - Webinterface, SNMP, Telnet, Serial Driver Protocol,...
+  - PV's - Prozessgrößen von entfernten Sensoren
+    - Datenempfang
+  - SP's - Sollwerte
+    - Datenvergleich
+  - FCE's - Stellglieder
+    - Steuerung durch Befehlsfunktionen
+    - Regelventile
+      - elektrisch, pneumatisch, hydraulisch,...
+- Angriffspunkte:
+    - Cross-Site-Scripting
+    - Cross--Site-Request-Forgery
+    - Authentifizierung / Hashing
+    - Default-Passwörter
+    - Command-Injection
+    - Stack-Overflows
+    - Zero-Day-Exploits
+    - Physikalischer Zugang bei geteilten APNs
+    - GPRS / RF auf Feldebene
+    - Satelliten...
+    - Vorbereitung:
+      - Firmware-Verfügbarkeit?
+      - Geräte auf dem Markt verfügbar?
+## Probleme
+- Alte Systeme
+- Alte Komponenten
+- **Vernetzung** von Komponenten
+  - *"IP-ifizierung"* -HonkHase
+- **Zentralisierung**
+  - Monitoring
+- **Globalisierung**
+  - Komplexität
+  - Lobbyismus
+  - Immer größere Vielzahl von Aufsichtsbehörden
+  - Immer mehr Vorschriften und Gesetzgebungen
+- **Pflichtenkollision**
+  - Zertifizierungen ungültig nach Updates
+- Haftung
+  - Risiko beim verändern von Komponenten
+- Safety / Arbeitssicherheit
+  - Polizeiliche Untersuchungen nach Arbeitsunfällen
+- Spionage
+- Hackback / Aktive Cyber-Abwehr
+  - Sicherheitslücken werden absichtlich nicht geschlossen
+- Macht des Sektors: Geldabhängigkeit

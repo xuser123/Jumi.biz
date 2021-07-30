@@ -1,0 +1,50 @@
+# **PMS** = *Project Management Software*
+- **Anwendungen**
+    - Personalplanung
+    - Zeiterfassung
+    - Abrechnung
+    - Termine
+    - Ressourcen
+    - Kosten
+    - Fristen
+- **Bekannte Programme**
+    - monday
+    - Wrike
+    - factro
+    - Teamleader
+    - Awork
+- **Cloudbasierte Tools**
+    - Asana
+    - Zenkit
+    - Trello
+- **Zusätzliche Funktionen**
+    - Projektfortschritte
+        - Datenansichten
+    - Statuskontrolle
+        - Dashboards
+    - Kommunikation
+        - Mailsysteme
+# **WflM** = *Workflow Management*
+- **Anwendung**
+    - Geschäftsprozesse
+        - **ERP** = *Enterprice Resource Planing*
+    - Forschung
+        - **CSCW** = *Computer Supported Cooperative Work*
+    - Modellierung
+    - Spezifikation
+    - Simulation
+    - Steuerung
+    - Strikt getrennte, synchrone Aktivitäten
+    - Geschäftsprozess Qualität
+    - Vereinheitlichung
+    - Bearbeitungszeit- und Kostenreduktion
+    - Informationsverfügbarkeit
+    - Flexibilität
+    - Transparenz
+    - Dokumentation
+    - Vermeidung o. Ersatz von Medienbrüche
+    - Effizienz
+    - Ressourcen
+    - Personal
+    - Betriebsmittel
+- *"Häufig viele Hürden zwischen Leitungsinstanz und Mitarbeitern"*
