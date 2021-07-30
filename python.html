@@ -70,7 +70,7 @@
 <li>&lt; &gt; &lt;= &gt;= == != + - / * % ...</li>
 <li>print append str int float ...</li>
 </ul>
-<h3 id="arrays">Arrays</h3>
+<h2 id="arrays">Arrays</h2>
 <pre><code class="language-python"><div><span class="hljs-comment"># Liste füllen</span>
 v = [A,B,C,D]
 v = v + [e,f,g]
@@ -84,7 +84,7 @@ Liste3 = [Liste2,Liste1]
 print(Liste3)
 <span class="hljs-comment"># dann kommt [[2, 3], [&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;]]</span>
 </div></code></pre>
-<h4 id="append-funktion">append Funktion</h4>
+<h3 id="append-funktion">append Funktion</h3>
 <pre><code class="language-python"><div><span class="hljs-comment"># Werte an Liste fest-anhängen</span>
 Liste1 = [<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>,<span class="hljs-number">6</span>,<span class="hljs-number">7</span>]
 Liste2 = [<span class="hljs-number">8</span>,<span class="hljs-number">9</span>,<span class="hljs-string">&#x27;a&#x27;</span>,<span class="hljs-string">&#x27;b&#x27;</span>,<span class="hljs-string">&#x27;c&#x27;</span>,<span class="hljs-string">&#x27;d&#x27;</span>,<span class="hljs-string">&#x27;e&#x27;</span>,<span class="hljs-string">&#x27;f&#x27;</span>]
@@ -92,7 +92,7 @@ Liste1.append(Liste2)
 print(Liste1)
 <span class="hljs-comment"># dann kommt [0, 1, 2, 3, 4, 5, 6, 7, [8, 9, &#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;, &#x27;d&#x27;, &#x27;e&#x27;, &#x27;f&#x27;]]</span>
 </div></code></pre>
-<h4 id="string-arrays">String-Arrays</h4>
+<h2 id="string-arrays">String-Arrays</h2>
 <pre><code class="language-python"><div><span class="hljs-comment"># Zeichen aus String ausgeben mit Zeichenposition</span>
 Zeichenkette = <span class="hljs-string">&quot;1234 5678&quot;</span>
 
@@ -116,21 +116,21 @@ Zeichen = Zeichenkette[<span class="hljs-number">4</span>:]
 print(Zeichen)
 <span class="hljs-comment"># dann kommt &quot; 5678&quot;</span>
 </div></code></pre>
-<h4 id="strings-verändern">Strings verändern</h4>
+<h3 id="strings-verändern">Strings verändern</h3>
 <pre><code class="language-python"><div><span class="hljs-comment"># String übernehmen</span>
 Zeichenkette = <span class="hljs-string">&quot;1234 5678&quot;</span>
 Zeichenkette = <span class="hljs-string">&quot;990&quot;</span> + Zeichenkette[<span class="hljs-number">3</span>:]
 print(Zeichenkette)
 <span class="hljs-comment"># dann kommt &quot;9904 5678&quot;</span>
 </div></code></pre>
-<h4 id="len-funktion">len Funktion</h4>
+<h3 id="len-funktion">len Funktion</h3>
 <pre><code class="language-python"><div><span class="hljs-comment"># len Funktion</span>
 Zeichenkette = <span class="hljs-string">&quot;1234 5678&quot;</span>
 Zeichen = len(Zeichenkette) <span class="hljs-comment">#length</span>
 print(Zeichen)
 <span class="hljs-comment"># dann kommt 9</span>
 </div></code></pre>
-<h3 id="abfragen-und-schleifen">Abfragen und Schleifen</h3>
+<h2 id="abfragen-und-schleifen">Abfragen und Schleifen</h2>
 <pre><code class="language-python"><div><span class="hljs-comment"># if Abfrage</span>
 x = <span class="hljs-number">42</span>
 <span class="hljs-keyword">if</span> x = &lt; <span class="hljs-number">50</span> :
@@ -138,7 +138,7 @@ x = <span class="hljs-number">42</span>
   x = <span class="hljs-number">0</span>
 <span class="hljs-comment"># x bekommt Wert 0</span>
 </div></code></pre>
-<h4 id="elif-und-else">elif und else</h4>
+<h3 id="elif-und-else">elif und else</h3>
 <pre><code class="language-python"><div>x = <span class="hljs-number">50</span>
 <span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">50</span>:
   print(<span class="hljs-string">&quot;x kleiner als 50&quot;</span>)
@@ -154,7 +154,7 @@ x = true
   print(<span class="hljs-string">&quot;x is true&quot;</span>)
 <span class="hljs-comment"># dann komt: x is true</span>
 </div></code></pre>
-<h4 id="while-schleife">while Schleife</h4>
+<h3 id="while-schleife">while Schleife</h3>
 <pre><code class="language-python"><div><span class="hljs-comment"># while</span>
 x = <span class="hljs-number">0</span>
 <span class="hljs-keyword">while</span> x &lt; <span class="hljs-number">11</span>:
@@ -170,7 +170,7 @@ x = [<span class="hljs-string">&quot;Eins&quot;</span>,<span class="hljs-string"
   print(y)
 <span class="hljs-comment"># dann kommt: Eins Zei Drei, in jeweils einer Zeile</span>
 </div></code></pre>
-<h4 id="for-_-in-_-schleife">for _ in _ Schleife</h4>
+<h3 id="for-_-in-_-schleife">for _ in _ Schleife</h3>
 <pre><code class="language-python"><div><span class="hljs-comment"># for _ in _ mit if</span>
 x = [<span class="hljs-number">42</span>, <span class="hljs-number">5</span>, <span class="hljs-number">10</span>]
 <span class="hljs-keyword">for</span> w <span class="hljs-keyword">in</span> x :
@@ -184,7 +184,7 @@ x = [<span class="hljs-number">42</span>, <span class="hljs-number">5</span>, <s
 <span class="hljs-comment"># 10</span>
 <span class="hljs-comment"># w kleiner oder gleich 10</span>
 </div></code></pre>
-<h4 id="range-for-_-in-_--break-und-continue">range for _ in _ , break und continue</h4>
+<h3 id="range-for-_-in-_--break-und-continue">range for _ in _ , break und continue</h3>
 <pre><code class="language-python"><div><span class="hljs-comment"># range Funktion</span>
 <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, <span class="hljs-number">-10</span>, <span class="hljs-number">-3</span>)
   print(i)
@@ -242,7 +242,7 @@ Funktion123(i, <span class="hljs-number">2</span>)
 Funktion123(<span class="hljs-number">2</span>, <span class="hljs-number">1</span>)
 <span class="hljs-comment"># 0 1 fertig</span>
 </div></code></pre>
-<h3 id="raspberry-pi-gpio-programmieren">Raspberry Pi GPIO programmieren</h3>
+<h2 id="raspberry-pi-gpio-programmieren">Raspberry Pi GPIO programmieren</h2>
 <pre><code class="language-python"><div><span class="hljs-comment"># Raspberry Pi GPIO-Pins Strom AN/AUS</span>
 <span class="hljs-comment"># 0 = kein Strom, 1 = 3,3V</span>
 <span class="hljs-keyword">while</span> <span class="hljs-number">1</span> : <span class="hljs-comment"># Dauerschleife</span>
@@ -273,7 +273,7 @@ echo <span class="hljs-string">&quot;1&quot;</span> &gt; /sys/<span class="hljs-
 <span class="hljs-comment"># gpio export _ out</span>
 <span class="hljs-comment"># gpio -g read _ # lesen (ohne -g gilt die WiringPi GPIO-Tabelle)</span>
 </div></code></pre>
-<h3 id="python-3-passwort-generator">Python 3 Passwort-Generator</h3>
+<h2 id="python-3-passwort-generator">Python 3 Passwort-Generator</h2>
 <pre><code class="language-python"><div><span class="hljs-keyword">import</span> string
 <span class="hljs-keyword">import</span> secrets
 
@@ -281,7 +281,7 @@ chars = string.digits + string.ascii_letters + string.punctuation
 print(len(chars)) <span class="hljs-comment"># Entropie: 6.555, Min: 100 Bit</span>
 print(<span class="hljs-string">&#x27;&#x27;</span>.join(secrets.choice(chars) <span class="hljs-keyword">for</span> _ <span class="hljs-keyword">in</span> range(<span class="hljs-number">21</span>)))
 </div></code></pre>
-<h3 id="pdf-binder">PDF-Binder</h3>
+<h2 id="pdf-binder">PDF-Binder</h2>
 <pre><code class="language-python"><div><span class="hljs-comment"># Mehrere PDF-Dateien zusammenfügen</span>
 <span class="hljs-keyword">from</span> tkinter.constants <span class="hljs-keyword">import</span> PAGES
 <span class="hljs-keyword">from</span> PyPDF2 <span class="hljs-keyword">import</span> PdfFileReader, PdfFileWriter
@@ -305,7 +305,7 @@ print(<span class="hljs-string">&#x27;&#x27;</span>.join(secrets.choice(chars) <
 merge_pdfs(<span class="hljs-string">&#x27;merged.pdf&#x27;</span>)
 <span class="hljs-comment"># GUI (tkinter) erscheint</span>
 </div></code></pre>
-<h3 id="pdf-verschlüsselung">PDF-Verschlüsselung</h3>
+<h2 id="pdf-verschlüsselung">PDF-Verschlüsselung</h2>
 <pre><code class="language-python"><div><span class="hljs-comment"># PDF-Datei verschlüsseln</span>
 <span class="hljs-keyword">import</span> tkinter
 <span class="hljs-keyword">from</span> tkinter <span class="hljs-keyword">import</span> filedialog
@@ -328,6 +328,7 @@ encrypt_pdf()
 <span class="hljs-comment"># GUI (tkinter) erscheint</span>
 </div></code></pre>
 <h1 id="javascript-basics">JavaScript Basics</h1>
+<p>...</p>
 
     </body>
     </html>

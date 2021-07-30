@@ -17,7 +17,7 @@
 ## Operatoren und Schlüsselwörter
 - < > <= >= == != + - / * % ...
 - print append str int float ...
- ### Arrays
+## Arrays
 ````python
 # Liste füllen
 v = [A,B,C,D]
@@ -33,7 +33,7 @@ Liste3 = [Liste2,Liste1]
 print(Liste3)
 # dann kommt [[2, 3], ['a', 'b', 'c']]
 ````
-#### append Funktion
+### append Funktion
 ````python
 # Werte an Liste fest-anhängen
 Liste1 = [0,1,2,3,4,5,6,7]
@@ -42,7 +42,7 @@ Liste1.append(Liste2)
 print(Liste1)
 # dann kommt [0, 1, 2, 3, 4, 5, 6, 7, [8, 9, 'a', 'b', 'c', 'd', 'e', 'f']]
 ````
-#### String-Arrays
+## String-Arrays
 ````python
 # Zeichen aus String ausgeben mit Zeichenposition
 Zeichenkette = "1234 5678"
@@ -68,7 +68,7 @@ Zeichen = Zeichenkette[4:]
 print(Zeichen)
 # dann kommt " 5678"
 ````
-#### Strings verändern
+### Strings verändern
 ````python
 # String übernehmen
 Zeichenkette = "1234 5678"
@@ -76,7 +76,7 @@ Zeichenkette = "990" + Zeichenkette[3:]
 print(Zeichenkette)
 # dann kommt "9904 5678"
 ````
-#### len Funktion
+### len Funktion
 ````python
 # len Funktion
 Zeichenkette = "1234 5678"
@@ -84,7 +84,7 @@ Zeichen = len(Zeichenkette) #length
 print(Zeichen)
 # dann kommt 9
 ````
-### Abfragen und Schleifen
+## Abfragen und Schleifen
 ````python
 # if Abfrage
 x = 42
@@ -93,7 +93,7 @@ if x = < 50 :
   x = 0
 # x bekommt Wert 0
 ````
-#### elif und else
+### elif und else
 ````python
 x = 50
 if x < 50:
@@ -111,7 +111,7 @@ if x:
   print("x is true")
 # dann komt: x is true
 ````
-#### while Schleife
+### while Schleife
 ````python
 # while
 x = 0
@@ -129,7 +129,7 @@ for y in x :
   print(y)
 # dann kommt: Eins Zei Drei, in jeweils einer Zeile
 ````
-#### for _ in _ Schleife
+### for _ in _ Schleife
 ````python
 # for _ in _ mit if
 x = [42, 5, 10]
@@ -144,7 +144,7 @@ for w in x :
 # 10
 # w kleiner oder gleich 10
 ````
-#### range for _ in _ , break und continue
+### range for _ in _ , break und continue
 ````python
 # range Funktion
 for i in range(0, -10, -3)
@@ -299,3 +299,4 @@ encrypt_pdf()
 # GUI (tkinter) erscheint
 ````
 # JavaScript Basics
+...
