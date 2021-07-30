@@ -14,6 +14,7 @@
     - (*collection of key-value pairs*)
 - **boolean** = Boolisches Gesetz
   - True / False
+ 
 ## Operatoren und Schlüsselwörter
 - < > <= >= == != + - / * % ...
 - print append str int float ...
@@ -207,7 +208,7 @@ Funktion123(i, 2)
 Funktion123(2, 1)
 # 0 1 fertig
 ````
-## Raspberry Pi GPIO programmieren
+### Raspberry Pi GPIO programmieren
 ````python
 # Raspberry Pi GPIO-Pins Strom AN/AUS
 # 0 = kein Strom, 1 = 3,3V
@@ -241,7 +242,7 @@ git clone git ://git.dragon.net/wiringpi
 # gpio export _ out
 # gpio -g read _ # lesen (ohne -g gilt die WiringPi GPIO-Tabelle)
 ````
-## Python 3 Passwort-Generator
+### Python 3 Passwort-Generator
 ````python
 import string
 import secrets
@@ -250,7 +251,7 @@ chars = string.digits + string.ascii_letters + string.punctuation
 print(len(chars)) # Entropie: 6.555, Min: 100 Bit
 print(''.join(secrets.choice(chars) for _ in range(21)))
 ````
-## PDF-Binder
+### PDF-Binder
 ````python
 # Mehrere PDF-Dateien zusammenfügen
 from tkinter.constants import PAGES
@@ -275,7 +276,7 @@ def merge_pdfs(result_name):
 merge_pdfs('merged.pdf')
 # GUI (tkinter) erscheint
 ````
-## PDF-Verschlüsselung
+### PDF-Verschlüsselung
 ````python
 # PDF-Datei verschlüsseln
 import tkinter

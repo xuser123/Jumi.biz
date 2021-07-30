@@ -142,4 +142,7 @@
 |0|0|0|0|
 - 0 + 0 + 0 + 0
 - 0000 => 0 => **0**
+
+Im Gegensatz zum Dezimalsystem eignet sich das Hexadezimalsystem mit seiner Basis als vierte Zweierpotenz (16 = 2hoch4) zur einfacheren Notation der Binärzahlen, da stets eine feste Anzahl zur Wiedergabe des Datenwortes benötigt wird. **Nibbles** (2 Bytes) können exakt mit einer hexadezimalen Ziffer und **Bytes** (8 Bits) mit zwei hexadezimalen Ziffern dargestellt werden.
+
 ---
