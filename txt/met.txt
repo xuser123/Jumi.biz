@@ -1,4 +1,4 @@
-<!--CSS Verknüpfung-->
+<!--CSS Verknuepfung-->
 <!--Metadaten-->
 <head>
    <title>Browsertab-Titel</title>

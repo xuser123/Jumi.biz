@@ -179,24 +179,28 @@ h1, h2, h3 { /* Überschriften */
     color: #EBEB99;
     font-family: 'Sarpanch', sans-serif;
     letter-spacing: 3.2px;
-    font-size: larger;
 
 }
 code, #box { /* Code Fenster in html.html */
     display: inline-block;
-    font-size: 0.6em;
+    font-size: 0.65em;
     font-family: 'Source Code Pro', monospace;
     letter-spacing: 0.2em;
-    color: #000;
+    color: black;
     text-align: left;
     border: 2px;
     border-style: inset;
     background-color: rgb(195, 195, 195);
     line-height: 1.3em;
     text-shadow: none;
-    max-width: 480px;
+    max-width: 641px;
+    padding-right: 2em;
 
 }
 dl > dt {
     color: #fff;
+}
+
+.centerNum {
+    text-align: center;
 }

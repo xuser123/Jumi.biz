@@ -1,5 +1,6 @@
 <!--Bild-->
-<body>
-   <img src="png-gif.jpg" alt="picinfo" width="800" height="600">
-</body>
+<img src="google.jpg" alt="picinfo" width="800" height="600">
+
+<!--Link-->
+<a href="https://www.google.com">Linktext</a>
 
