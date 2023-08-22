@@ -1,0 +1,29 @@
+/* Menü-Icon */
+.hamburger,.hamburger::before,.hamburger::after {
+     content: "";
+     display: block;
+     background: #00f0f0;
+     height: 3px;
+     width: 1.8em;
+     border-radius: 2px;
+     transition: all ease-in-out 400ms;
+     box-shadow:
+          rgba(0, 240, 240, 0.4) 0px 2px 4px,
+          rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+          rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+}
+.hamburger::before {
+     transform: translateY(-6px);
+}
+.hamburger::after {
+     transform: translateY(3px);
+}
+[aria-expanded="true"] .hamburger {
+     transform: rotate(45deg);
+}
+[aria-expanded="true"] .hamburger::before {
+     opacity: 0;
+}
+[aria-expanded="true"] .hamburger::after {
+     transform: translateY(-3px) rotate(-90deg);
+}
