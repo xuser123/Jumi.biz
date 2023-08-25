@@ -1,55 +1,60 @@
+/* ### MAIN ### */
 body {
 /* Set core body defaults */
-min-height: 100vh;
-text-rendering: optimizeSpeed;
-line-height: 1.5;
-height: 100%; /* Footer-unten-halten-Lösung */
-position: relative; /* Footer-unten-halten-Lösung */
-letter-spacing: 0.1rem;
-background-color: #000;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    height: 100%; /* Footer-unten-halten-Lösung */
+    position: relative; /* Footer-unten-halten-Lösung */
+    letter-spacing: 0.1rem;
+    background-color: #000;
 }
+
+/* ### HEADER ### */
 header {
-text-shadow: 1.5px 2px black;
-background: #131313;
-color: #00f0f0;
-padding: 2em 4em 1.5em 1.5em;
-position: relative;
-display: flex;
-justify-content: space-between;
-font-family: 'Sarpanch', sans-serif;
-box-shadow:
-rgba(0, 240, 240, 0.4) 0px 2px 4px,
-rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
-rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+    text-shadow: 1.5px 2px black;
+    background: #131313;
+    color: #00f0f0;
+    padding: 2em 4em 1.5em 1.5em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Sarpanch', sans-serif;
+    box-shadow:
+        rgba(0, 240, 240, 0.4) 0px 2px 4px,
+        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
 }
 header::after {
-content: "";
-clear: both;
-display: block;
+    content: "";
+    clear: both;
+    display: block;
 }
 .header-content {
-width: 95%;
-margin: 0 auto;
-display: flex;
-justify-content: space-around;
-align-items: center;
-letter-spacing: 0.2em;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 0.2em;
 }
-.jumi-logo { /* Jumi.biz */
-top: 0.5em;
-left: 1em;
-position: absolute;
-font-size: 1.337rem;
-margin: 0;
+
+/* ### LOGO ### */
+.jumi-logo {
+    top: 0.5em;
+    left: 1em;
+    position: absolute;
+    font-size: 1.337rem;
+    margin: 0;
 }
 .jumi-logo a {
-cursor: pointer;
-animation: neon .08s ease-in-out infinite alternate;
+    cursor: pointer;
+    animation: neon .08s ease-in-out infinite alternate;
 }
 #jumi-path {
-color: #ebebd3;
-font-size: 0.75rem;
-font-weight: 200;
-cursor: default;
-animation: none;
+    color: #ebebd3;
+    font-size: 0.75rem;
+    font-weight: 200;
+    cursor: default;
+    animation: none;
 }
