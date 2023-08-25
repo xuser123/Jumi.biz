@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+	<?php readfile ('templates/basic.htm'); ?>
 <html lang="de">
 <head>
 <title>Jumi</title>
@@ -19,6 +20,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Layout -->
+	<?php readfile ('templates/layout.htm'); ?>
 <link rel="stylesheet" href="assets/css/main.css">
 <link rel="stylesheet" href="assets/css/menu.css">
 <link rel="stylesheet" href="assets/css/content.css">
@@ -26,32 +28,18 @@
 <link rel="stylesheet" href="assets/css/modal.css">
 </head>
 
-<!-- ### NAVIGATION ### -->
 <body>
+
 <header>
-<div class="header-content">
-<h1 class="jumi-logo"><a href="https://www.jumi.biz">jumi.biz</a></h1>
-<nav class="site-nav">
-    <button class="menu-toggle"
-            aria-controls="primary-navigation"
-            aria-expanded="false">
-    <span class="visually-hidden">Menu</span>
-    <div class="hamburger" aria-hidden="true"></div>
-    </button>
-<ul data-state="closed" class="primary-navigation" id="primary-navigation">
-    <li><a href="https://www.jumi.biz/Content"><i class="site-nav--icon"></i>content</a></li>
-    <li><a href="https://www.jumi.biz/Links"><i class="site-nav--icon"></i>links</a></li>
-    <li><a href="https://www.jumi.biz/Notes"><i class="site-nav--icon"></i>notes</a></li>
-    <li><a href="https://www.jumi.biz/Cheats"><i class="site-nav--icon"></i>cheats</a></li>
-    <li><a href="https://www.jumi.biz/index.php"><i class="site-nav--icon"></i><span id="wtf">wtf is jumi?</span></a></li>
-</ul>
-</nav>
-</div>
+<!-- ### NAVIGATION ### -->
+	<?php readfile ('includes/menu.php'); ?>
 </header>
+
 <!-- Menü-Funktion -->
-<script src="assets/js/menu.js"></script>
+	<script src="assets/js/menu.js"></script>
 
 <!-- ### INHALT ### -->
+	<?php readfile ('includes/main.php'); ?>
 <main>
 <div class="grid-container">
 <article class="content flow">
@@ -65,7 +53,7 @@
 	
 <h2>WTF is Jumi.biz ?</h2>
         <p>Hier findest du Zusammenfassungen zu verschiedenen Computerthemen. <br><br>
-        <a href="https://www.jumi.biz/Content.php">Inhalte</a>: Administration, Webentwicklung, Programmierung, und mehr.</p>
+        <a href="https://www.jumi.biz/Content">Inhalte</a>: Administration, Webentwicklung, Programmierung, und mehr.</p>
 
 <!-- Hinweis -->
 <div class="key-navigation">
@@ -80,7 +68,7 @@
 <h4>$ whoami</h4>
     <div class="flex">
 
-    <!-- Fotos -->
+<!-- Fotos -->
     <img id="modal-01" src="assets/img/profile-img-1.png" alt="Picture shows Jumi" width="80px" height="80px">
     <img id="modal-02" src="assets/img/profile-img-2.png" alt="Picture shows shoe" width="80px" height="80px">
     </div>
@@ -125,12 +113,11 @@
 
 <!-- Impressum -->
 <footer>
-	<span class="email-link">contact@jumi.biz</span>
+	<?php readfile ('includes/impressum.htm'); ?>
 </footer>
 
 <!-- Modal-Funktion-->
-<script src="assets/js/modal.js">
-</script>
+	<script src="assets/js/modal.js"></script>
 
 </body>
 </html>
