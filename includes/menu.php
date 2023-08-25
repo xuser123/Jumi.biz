@@ -4,7 +4,7 @@
 <a href="https://www.jumi.biz/Content">/content</a>&#32;<?php echo $Pfad ?></span>
 </h1>
 <nav class="site-nav">
-      <button class="menu-toggle"
+  <button class="menu-toggle"
           aria-controls="primary-navigation"
           aria-expanded="false">
     <span class="visually-hidden">Menu</span>
@@ -19,4 +19,3 @@
   </ul>
 </nav>
 </div>
-<script src="assets/js/menu.js"></script>

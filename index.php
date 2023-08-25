@@ -1,126 +1,45 @@
-<!DOCTYPE html>
-	<?php readfile ('templates/basic.htm'); ?>
-<html lang="de">
-<head>
+<!DOCTYPE html><html lang="de">
+
 <title>Jumi</title>
 
-<!-- Metadaten -->
-<meta name="description" content="IT-Themensammlung und kompaktes Nachschlagewerk">
-<meta name="keywords" content="IT,Technologie,Computer,PC,Systeme,Netzwerke,Linux,Windows,Administration,Programmieren,Code,Shell,Terminal,Syntax,Snippets,Vorlagen,Lernen,verstehen">
-<meta name="author" content="Jumi">
+<head>
 
-<!-- Favicon -->
-<link rel="icon" href="assets/ico/favicon.ico">
+<!-- # Metadaten -->
+<!-- # Favicon -->
+<!-- # Kodierung -->
+<!-- # HTTP-Header -->
+<!-- # Optimierung für Mobilgeräte -->
+	<?php readfile ('templates/basic.htm'); ?>
 
-<!-- Kodierung -->
-<meta charset="utf-8">
-<!-- HTTP-Header -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- Optimierung für Mobilgeräte -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Layout -->
+<!-- # Layout -->
 	<?php readfile ('templates/layout.htm'); ?>
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/menu.css">
-<link rel="stylesheet" href="assets/css/content.css">
-<link rel="stylesheet" href="assets/css/media-queries.css">
-<link rel="stylesheet" href="assets/css/modal.css">
+
 </head>
-
 <body>
-
 <header>
-<!-- ### NAVIGATION ### -->
-	<?php readfile ('includes/menu.php'); ?>
-</header>
 
-<!-- Menü-Funktion -->
+<!-- ### MENU -->
+	<?php readfile ('includes/menu.php'); ?>
+
+<!-- ### NAVIGATION -->
 	<script src="assets/js/menu.js"></script>
 
-<!-- ### INHALT ### -->
-	<?php readfile ('includes/main.php'); ?>
+</header>
 <main>
-<div class="grid-container">
-<article class="content flow">
 
-<!-- Intro -->
-<h2>print("hello world") </h2>
-    <p>Diese Website ist im Aufbau.</p>
-        <ul><li>Update[2022-11]: Neue Snippets</li>
-        <li>Update[2023-03]: Neue index.php</li>
-	<li>Upgrade[2023-08]: Struktur verbessert</li></ul>
-	
-<h2>WTF is Jumi.biz ?</h2>
-        <p>Hier findest du Zusammenfassungen zu verschiedenen Computerthemen. <br><br>
-        <a href="https://www.jumi.biz/Content">Inhalte</a>: Administration, Webentwicklung, Programmierung, und mehr.</p>
+<!-- ### MAIN -->
+	<?php readfile ('includes/main.php'); ?>
 
-<!-- Hinweis -->
-<div class="key-navigation">
-	<h4>Navigation: </h4><!-- invisible for mobile devices -->
-    <ol><li><div class="keyboard-button"><span>TAB</span></div> Elemente selektieren </li>
-    <li><div class="keyboard-button"><span>Enter</span></div> Element öffnen </li></ol>
-	    <ul><li><div class="keyboard-button"><span>Shift</span></div> + <div class="keyboard-button"><span>TAB</span></div> Elemente rückwärts selektieren </li></ul></div>
-</article>
-
-<!-- Abschnitt ### Profil -->
-<article class="content flow">
-<h4>$ whoami</h4>
-    <div class="flex">
-
-<!-- Fotos -->
-    <img id="modal-01" src="assets/img/profile-img-1.png" alt="Picture shows Jumi" width="80px" height="80px">
-    <img id="modal-02" src="assets/img/profile-img-2.png" alt="Picture shows shoe" width="80px" height="80px">
-    </div>
-
-<!-- Beschreibung -->
-    <p>Mir macht es Spass, mich mit IT zu beschäftigen und grundlegendes Wissen für Lernzwecke in
-    visuell-ergonomische Texte zu fragmentieren. Meine Quellen sind öffentliche Personen mit großer Reichweite und private Weiterbildungen.<br><br>
-    <span class="zitat-referenz">"Wer? Wer ist nur die Form als Konsequenz der Funktion des Was. Und was ich bin, das ist ein Mann mit Maske!" <br>-V wie Vendetta (2005)</span></p>
-</article>
-
-<!-- Abschnitt ### Preferenz -->
-<article class="content flow">
-<h3>Dark Mode Only</h3>
-    <p>Ein dunkler Bildschirm spart bis zu 60% Energie und schont die Augen.
-    Wenn du den hellen Modus immer noch bevorzugst dann GTFO!<br><br>
-    <span class="zitat-referenz">"Come to the Dark Side" <br>-Darth Vader</span></p>
-</article>
-
-<!-- Abschnitt ### Motivation -->
-<article class="content flow">
-<h3>IT ~ Kung Fu</h3>
-    <p>Der chinesische Begriff "Kung Fu" bezieht sich auf Fähigkeiten und Techniken,
-    die durch lange, harte Übung und Geduld erlangt werden. Eine Disziplin,
-    die zur Meisterung viel Engagement und Einsatz erfordert.
-    Kung Fu kombiniert Bewegungen und Strategien,
-    während Informations-Technologie Daten verarbeitet und speichert.
-    Kung Fu beherrschen verlangt Reaktionsfähigkeit,
-    bei Informationen entscheidet analytisches und logisches Denken.<br><br>
-    <span class="zitat-referenz">"Der Meister erscheint wenn der Schüler bereit ist" <br>-Karate Tiger (1986)</span></p>
-</article>
-
-<!-- Abschnitt ### Referenzen -->
-<article class="content flow">
-<h3>Shownotes</h3>
-    <p>Kommasetzung mit KI: <a href="https://www.komma.ai/#" target="_blank">komma.ai</a></p><br>
-    <p>Suchmaschine mit KI: <a href="https://you.com" target="_blank">you.com</a></p><br>
-    <p>HTML-Checker: <a href="https://validator.w3.org/" target="_blank">validator.w3.org</a></p><br>
-    <p>CSS-Checker: <a href="https://jigsaw.w3.org/css-validator/" target="_blank">jigsaw.w3.org/css-validator</a></p><br>
-</article>
-</div>
 </main>
-
-<!-- Impressum -->
 <footer>
+
+<!-- # Impressum -->
 	<?php readfile ('includes/impressum.htm'); ?>
+
 </footer>
 
-<!-- Modal-Funktion-->
+<!-- # Modal-Funktion -->
 	<script src="assets/js/modal.js"></script>
 
 </body>
 </html>
-
-
-
