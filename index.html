@@ -9,7 +9,7 @@
 <meta name="author" content="Jumi">
 
 <!-- Favicon -->
-<link rel="icon" href="static/favicon.ico">
+<link rel="icon" href="assets/ico/favicon.ico">
 
 <!-- Kodierung -->
 <meta charset="utf-8">
@@ -19,10 +19,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Layout -->
-<link rel="stylesheet" href="static/style.css">
-<link rel="stylesheet" href="static/hamburger.css">
-<link rel="stylesheet" href="static/media-queries.css">
-<link rel="stylesheet" href="static/neonlight.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/content.css">
+<link rel="stylesheet" href="assets/css/media-queries.css">
+<link rel="stylesheet" href="assets/css/neonlight.css">
+<link rel="stylesheet" href="assets/css/modal.css">
 </head>
 
 <!-- ### NAVIGATION ### -->
@@ -38,17 +40,17 @@
     <div class="hamburger" aria-hidden="true"></div>
     </button>
 <ul data-state="closed" class="primary-navigation" id="primary-navigation">
-    <li><a href="https://www.jumi.biz/Content.php"><i class="site-nav--icon"></i>content</a></li>
-    <li><a href="https://www.jumi.biz/Links.php"><i class="site-nav--icon"></i>links</a></li>
-    <li><a href="https://www.jumi.biz/Notes.php"><i class="site-nav--icon"></i>notes</a></li>
-    <li><a href="https://www.jumi.biz/Cheats.php"><i class="site-nav--icon"></i>cheats</a></li>
+    <li><a href="https://www.jumi.biz/Content"><i class="site-nav--icon"></i>content</a></li>
+    <li><a href="https://www.jumi.biz/Links"><i class="site-nav--icon"></i>links</a></li>
+    <li><a href="https://www.jumi.biz/Notes"><i class="site-nav--icon"></i>notes</a></li>
+    <li><a href="https://www.jumi.biz/Cheats"><i class="site-nav--icon"></i>cheats</a></li>
     <li><a href="https://www.jumi.biz/index.php"><i class="site-nav--icon"></i><span id="wtf">wtf is jumi?</span></a></li>
 </ul>
 </nav>
 </div>
 </header>
 <!-- Menü-Funktion -->
-<script src="static/menu.js"></script>
+<script src="assets/js/menu.js"></script>
 
 <!-- ### INHALT ### -->
 <main>
@@ -59,16 +61,19 @@
 <h2>print("hello world") </h2>
     <p>Diese Website ist im Aufbau.</p>
         <ul><li>Update[2022-11]: Neue Snippets</li>
-        <li>Update[2023-03]: Neue index.php</li></ul>
+        <li>Update[2023-03]: Neue index.php</li>
+	<li>Upgrade[2023-08]: Struktur verbessert</li></ul>
+	
 <h2>WTF is Jumi.biz ?</h2>
         <p>Hier findest du Zusammenfassungen zu verschiedenen Computerthemen. <br><br>
         <a href="https://www.jumi.biz/Content.php">Inhalte</a>: Administration, Webentwicklung, Programmierung, und mehr.</p>
 
 <!-- Hinweis -->
-<h4>Navigation: </h4>
+<div class="key-navigation">
+	<h4>Navigation: </h4><!-- invisible for mobile devices -->
     <ol><li><div class="keyboard-button"><span>TAB</span></div> Elemente selektieren </li>
     <li><div class="keyboard-button"><span>Enter</span></div> Element öffnen </li></ol>
-    <ul><li><div class="keyboard-button"><span>Shift</span></div> + <div class="keyboard-button"><span>TAB</span></div> Elemente rückwärts selektieren </li></ul>
+	    <ul><li><div class="keyboard-button"><span>Shift</span></div> + <div class="keyboard-button"><span>TAB</span></div> Elemente rückwärts selektieren </li></ul></div>
 </article>
 
 <!-- Abschnitt ### Profil -->
@@ -77,8 +82,8 @@
     <div class="flex">
 
     <!-- Fotos -->
-    <img id="img-Modal_01" src="images/jumi-1.png" alt="Picture shows Jumi" width="80px" height="80px">
-    <img id="img-Modal_02" src="images/jumi-2.png" alt="Picture shows shoe" width="80px" height="80px">
+    <img id="modal-01" src="assets/img/profile-img-1.png" alt="Picture shows Jumi" width="80px" height="80px">
+    <img id="modal-02" src="assets/img/profile-img-2.png" alt="Picture shows shoe" width="80px" height="80px">
     </div>
 
 <!-- Beschreibung -->
@@ -125,7 +130,7 @@
 </footer>
 
 <!-- Modal-Funktion-->
-<script src="static/modal.js">
+<script src="assets/js/modal.js">
 </script>
 
 </body>
