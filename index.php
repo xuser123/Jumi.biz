@@ -1,8 +1,7 @@
 <!DOCTYPE html><html lang="de">
 <head>
 
-<!-- # Browser-Tab-Beschriftung -->
-$browserTabName = $jumi;
+<title>jumi.biz</title>
 
 <!-- # Metadaten -->
 <!-- # Favicon -->
