@@ -1,0 +1,14 @@
+Diese Zeile liegt in PHP-Dateien:
+
+<title><?php echo $Seite ?></title>
+
+
+Diese Zeile liegt in HTML-Dateien:
+
+<head><?php $Seite = "Jumi|THEMA"; include ('./includes/header.php'); ?></head>
+
+
+Ruft den String der Variable "Seite",
+der String "Jumi ist geil" wird im title-Tag übernommen.
+Im vom Webbrowser aufgerufenen Dokument wird externer Code angehängt,
+der String für die Variable namens "Seite" wird inkludiert...

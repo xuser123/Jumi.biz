@@ -1,8 +1,8 @@
 <!DOCTYPE html><html lang="de">
-
-<title>Jumi</title>
-
 <head>
+
+<!-- # Browser-Tab-Beschriftung -->
+$browserTabName = $jumi;
 
 <!-- # Metadaten -->
 <!-- # Favicon -->
@@ -33,13 +33,16 @@
 </main>
 <footer>
 
-<!-- # Impressum -->
+<!-- ### IMPRESSUM -->
 	<?php readfile ('includes/impressum.htm'); ?>
 
 </footer>
 
-<!-- # Modal-Funktion -->
+<!-- # Modal-Script -->
 	<script src="assets/js/modal.js"></script>
+<!-- # Syntax-Highlighting -->
+    <script src="includes/extras/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
 </body>
 </html>

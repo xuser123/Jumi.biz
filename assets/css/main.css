@@ -59,7 +59,7 @@ header::after {
     animation: none;
 }
 
-/* ### NEONLIGHT ### */
+/* ### NEONLICHT ### */
 
 /* https://freefrontend.com/css-animated-backgrounds */
 
@@ -108,3 +108,21 @@ header::after {
      100% {transform: translate(5%,0)}
 }
 
+/* ### FONTS ### */
+@font-face {
+    /* sarpanch-regular - latin */
+     font-family: 'Sarpanch';
+     font-style: normal;
+     src: url('./fonts/sarpanch-v11-latin-regular.eot')
+    /* IE9 Compat Modes */
+    , url('./fonts/sarpanch-v11-latin-regular.eot?#iefix') format('embedded-opentype')
+    /* IE6-IE8 */
+    , url('./fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
+    /* Super Modern Browsers */
+    , url('./fonts/sarpanch-v11-latin-regular.woff') format('woff')
+    /* Modern Browsers */
+    , url('./fonts/sarpanch-v11-latin-regular.ttf') format('truetype')
+    /* Safari, Android, iOS */
+    , url('./fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
+    /* Legacy iOS */ ;
+}

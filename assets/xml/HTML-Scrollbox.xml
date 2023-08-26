@@ -1,0 +1,10 @@
+<!--scrollbare Textbox-->
+<body>
+   <object type="text/plain" data="txt.txt" height="230" width="400">
+      <param name="src" value="txt.txt">
+   </object>
+</body>
+<!--Textdatei: txt.txt-->
+
+
+

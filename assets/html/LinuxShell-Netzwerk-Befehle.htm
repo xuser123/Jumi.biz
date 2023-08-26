@@ -1,0 +1,58 @@
+<dl> <!-- LinuxShell-Netzwerbefehle -->
+<dt><i>Netzwerk-Schnittstellen Infos:</i></dt>
+<h4><b>ifconfig</b>, <b>iwconfig</b> &amp; <b>iwlist</b></h4>
+<dd><code>ifconfig -a</code></dd>
+<dt><i>Netzwerk-Adapter ein-/ausschalten</i></dt>
+<dd><code>ifconfig wlan0 up</code> # oder &quot;down&quot;</dd>
+<dt><i>Drahtlose Netzwerk-Schnittstellen</i></dt>
+<dd><code>iwconfig</code></dd>
+<dt><i>WLAN-Zugangspunkte</i></dt>
+<dd><code>iwlist scan</code></dd>
+
+<h4><b>ping</b>, <b>arp -a</b>, <b>arp-scan</b> &amp; <b>netstat</b></h4>
+<dd><code>ping 8.8.8.8</code> <i>Internetverbindung prüfen</i></dd>
+<dd><code>arp -a</code> <i>zeigt verfügbare Netzwerkgeräte</i></dd>
+<dd><code>arp-scan 192.168.0.0/24</code> <i>zeigt verbundene Netzwerkgeräte</i></dd>
+<dd><code>netstat -nano</code> <i>zeigt TCP/IP Netzwerkverbindungen</i></dd>
+<h4><b>route -n</b>, <b>traceroute</b>, <b>mtr</b> &amp; <b>tracepath</b></h4>
+<dd><code>route -n</code> <i>zeigt lokale Routing-Tabelle</i></dd>
+<dd><code>traceroute 8.8.8.8</code> <i>Internet-Packetverfolgung</i></dd>
+<dd><code>mtr</code> <i>traceroute-Altenative:</i></dd>
+<dd><code>tracepath 8.8.8.8</code> <i>Zeigt Gateway-Routen mittles ICMP TIME_EXCEEDED Anfragen. Traceroute-Alternative mittels MTU, UDP. In Debian mit <code>apt-get install iputils-tracepath</code> herunterladen.</i></dd>
+<h4><b>tcpdump</b> <i>Tool für Netzwerk-Monitoring</i></h4>
+<dt>
+(In Debian mit apt-get install tcpdump herunterladen.)
+<dd><code>tcpdump -i eth0 -n net 192.168.0.1</code></dd>
+</dt>
+<h4><b>iptables</b> <i>Port schließen</i></h4>
+<dd><code>iptables -A INPUT -p tcp --dport 23 -m state --state NEW,ESTABLISHED -j DROP</code></dd>
+<dt>
+<i>Filterfunktion verbergen</i>
+<dd><code>iptables -A INPUT -p tcp --dport 23 -m state --state NEW,ESTABLISHED -j REJECT</code></dd>
+</dl>
+<h4><b>service</b> <i>Netzwerk-Reset</i></h4>
+<dl>
+<dd><code>service networking restart</code></dd>
+</dl>
+<h4><b>systemctl</b> <i>Systemstart-Dienste konfigurieren</i></h4>
+<dl>
+<dd><code>systemctl</code></dd>
+</dl>
+<h4><b>ss</b> &quot;Socket Statistics&quot;</h4>
+<dl>
+<dt>
+<i>Zeigt Kommunikations-Punkte</i>
+</dl>
+<dd><code>ss -a</code></dd>
+</dl>
+</dt>
+</dl>
+<h4><b>wpa_supplicant</b> <i>Wlan Debugging</i></h4>
+<dl>
+<dt>
+<i>Wlan reconnecten:</i>
+<dl>
+<dd><code>wpa_supplicant -i wlan0 -D wext -c /etc/wpa_supplicant/wpa_supplicant.conf -dd</code></dd>
+</dl>
+</dt>
+</dl>

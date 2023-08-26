@@ -1,0 +1,26 @@
+<div class="content">
+<dt><b>width </b>Fensterbreite</dt>
+<dt>Breite des virtuellen Ansichtsfensters des Geräts</dt>
+<dd><code>content="width= "</code></dd>
+
+<dt><b>height </b>Fensterhöhe</dt>
+<dt>Höhe des virtuellen Ansichtsfensters des Geräts</dt>
+<dd><code>content="height= "</code></dd>
+
+<dt><b>initial-scale </b>Zoomstufe</dt>
+<dt>Zoomstufe, wenn Seite zum ersten Mal besucht wird</dt>
+<dd><code>content="initial-scale= "</code></dd>
+
+<dt><b>minimum-scale </b>Zoomstufen-Limit</dt>
+<dt>Minimale Zoomstufe, auf die ein Benutzer die Seite zoomen kann</dt>
+<dd><code>content="height= "</code></dd>
+
+<dt><b>maximum-scale </b>Zoomstufen-Limit</dt>
+<dt>Maximale Zoomstufe, bis zu der ein Benutzer die Seite zoomen kann</dt>
+<dd><code>content="maximum-scale= "</code></dd>
+
+<dt><b>user-scalable </b>Zoomoption</dt>
+<dt>Gerät darf Seite vergrößern oder verkleinern (Wert = yes/no)</dt>
+<dd><code>content="user-scalable= "</code></dd>
+<p><code> meta name="viewport" content="width=device-width, initial-scale=1" </code></p>
+</div>

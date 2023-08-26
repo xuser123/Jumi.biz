@@ -1,4 +1,4 @@
-/* ### MENU ### */
+/* ### MENU */
 
 button {
     background: #131313;
@@ -63,7 +63,7 @@ button {
     color: rgba(255, 255, 255, 0.4);
 }
 
-/* ### TOGGLE ### */
+/* ### TOGGLE */
 .menu-toggle {
     padding: 1.3em; /*Button-Position*/
     background: transparent;

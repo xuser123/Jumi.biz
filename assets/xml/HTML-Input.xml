@@ -1,0 +1,9 @@
+<!--Eingaben-->
+<!--Script: action.php)-->
+<body>
+   <form action="/action.php">
+      Name: <input type="text" name="LastName"><br>
+      <input type="submit" value="send">
+   </form>
+</body>
+

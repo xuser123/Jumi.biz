@@ -1,0 +1,17 @@
+<!-- Dokument-Typ-Deklaration für Intepreter-Programm / Browser -->
+<!DOCTYPE html>
+
+<!-- Sprache des Seiteninhalts -->
+<html lang="de">
+
+<!-- HTML5 fördert die Verwendung von UTF-8 -->
+<meta charset="utf-8">
+
+<!-- Otpimierung des Darstellungs-Bereich für Anzeigefenster verschiedener Geräte -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- HTML5 fördert die Verwendung von UTF-8 -->
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Page alle 3 Sekunden aktualisieren, als Debugging-Hilfe -->
+<meta http-equiv="refresh" content="3">
