@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Jumi Favicon (Browser-Tab-Icon) -->
+<link rel="icon" href="content/includes/favicon.ico">
+<!-- Jumi CSS -->
+<link rel="stylesheet" href="content/includes/style.css">
+<link rel="stylesheet" href="content/includes/hamburger.css">
+<link rel="stylesheet" href="content/includes/media-queries.css">
+<link rel="stylesheet" href="content/includes/keyframes.css">
+<!-- Metadata -->
+<meta name="description" content="IT-Themensammlung und kompaktes Nachschlagewerk">
+<meta name="keywords" content="IT,Technologie,Computer,PC,Systeme,Netzwerke,Linux,Windows,
+Administration,Programmieren,Code,Shell,Terminal,Syntax,Snippets,Vorlagen,Lernen,verstehen">
+<meta name="author" content="Jumi">
+<title>Jumi |Links</title>
+</head>
+<body>
+<header>
+<div class="header-content">
+<h1 class="jumi-logo"><a href="https://www.jumi.biz">jumi.biz</a>&nbsp;<span id=jumi-path>/Links</span></h1>
+<nav class="site-nav">
+    <button class="menu-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false">
+    <span class="visually-hidden">Menu</span>
+    <div class="hamburger" aria-hidden="true"></div>
+    </button>
+    <ul data-state="closed" class="primary-navigation" id="primary-navigation">
+    <li><a href="https://www.jumi.biz/Content.php"><i class="site-nav--icon"></i>content</a></li>
+    <li><a href="https://www.jumi.biz/Links.php"><i class="site-nav--icon"></i>links</a></li>
+    <li><a href="https://www.jumi.biz/Notes.php"><i class="site-nav--icon"></i>notes</a></li>
+    <li><a href="https://www.jumi.biz/Cheats.php"><i class="site-nav--icon"></i>cheats</a></li>
+    <li><a href="https://www.jumi.biz/index.php"><i class="site-nav--icon"></i><span id="wtf">wtf is jumi?</span></a></li>
+    </ul>
+</nav>
+</div>
+<script src="./content/includes/navibar.js"></script>
+</header>
+<main>
+<div class="grid-container">
+<article class="content flow">
+<h4>Education</h4>
+<ul>
+<li><a href="https://www.theodinproject.com" target="_blank">TheOdinProject.com</a></li>
+<li><a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp.org</a></li>
+<li><a href="https://www.tryhackme.com" target="_blank">TryHackMe.com</a></li>
+<li><a href="https://media.ccc.de" target="_blank">media.ccc.de</a></li>
+</ul>
+</article>
+<article class="content flow">
+<h4>Et cetera</h4>
+<ul>
+<li><a href="https://www.virustotal.com/" target="_blank">Virus Total</a></li>
+<li><a href="https://codepen.io/pen/" target="_blank">CodePen</a></li>
+<li><a href="https://code.sgo.to/typograms/#related" target="_blank">Typogramme</a></li>
+</ul>
+</article>
+<article class="content flow">
+<h4>Künstliche Intelligenz</h4>
+<ul>
+<li><a href="https://you.com/" target="_blank">You.com</a></li>
+</ul>
+</article>
+<article class="content flow">
+<h4>Musik</h4>
+<ul>
+<li><a href="https://www.youtube.com/c/cryochamberlabel" target="_blank">Cryo Chamber</a></li>
+<li><a href="https://www.youtube.com/@VaporMemory" target="_blank">Vapor Memory</a></li>
+<li><a href="https://the80sguy.org/sub" target="_blank">The '80s Guy</a></li>
+<li><a href="https://8bit.fm/" target="_blank">8bit.fm</a></li>
+<li><a href="https://www.youtube.com/c/LofiGirl" target="_blank">Lofi Girl</a></li>
+</ul>
+</article>
+<article class="content flow">
+<h4>Youtube</h4>
+<ul>
+<li><a href="https://www.youtube.com/c/Algorithmenverstehen" target="_blank">Florian Dalwigk</a></li>
+<li><a href="https://www.youtube.com/user/TheMorpheus407/playlists" target="_blank">The Morpheus Tutorials</a></li>
+<li><a href="https://www.youtube.com/user/SemperVideo/videos" target="_blank">Semper Video</a></li>
+<li><a href="https://www.youtube.com/c/DistroTube" target="_blank">DistroTube</a></li>
+<li><a href="https://www.youtube.com/c/DavidBombal" target="_blank">David Bombal</a></li>
+<li><a href="https://www.youtube.com/user/EugeneKhutoryansky/videos" target="_blank">... 3D animated Education-Videos</a></li>
+<li><a href="https://www.youtube.com/c/BranchEducation/videos" target="_blank">Branch Education</a></li>
+<li><a href="https://www.youtube.com/c/DisruptReality" target="_blank">Disrupt</a></li>
+<li><a href="https://www.youtube.com/c/EFLinuxMadeSimple" target="_blank">EF Linux Made Simple</a></li>
+<li><a href="https://www.youtube.com/c/PowerCertAnimatedVideos" target="_blank">PowerCert Animated Videos</a></li>
+<li><a href="https://www.youtube.com/c/Fireshipx" target="_blank">Fireship</a></li>
+<li><a href="https://www.youtube.com/c/eHaJo" target="_blank">eHaJo</a></li>
+<li><a href="https://www.youtube.com/c/computerclubzwei" target="_blank">Computer Club 2</a></li>
+<li><a href="https://www.youtube.com/c/ChrisTitusTech" target="_blank">Chris Titus</a></li>
+<li><a href="https://www.youtube.com/c/LearnLinuxtv" target="_blank">Learn Linux TV</a></li>
+<li><a href="https://www.youtube.com/c/ct3003" target="_blank">ct3003</a></li>
+<li><a href="https://www.youtube.com/@KevinPowell" target="_blank">Kevin Powell</a></li>
+<li><a href="https://www.youtube.com/c/TheHatedOne" target="_blank">The Hated One</a></li>
+<li><a href="https://www.youtube.com/c/LiveOverflow" target="_blank">Live Overflow</a></li>
+<li><a href="https://www.youtube.com/c/hak5" target="_blank">hak5</a></li>
+<li><a href="https://www.youtube.com/c/ippsec" target="_blank">IppSec</a></li>
+<li><a href="https://www.youtube.com/@MentalOutlaw" target="_blank">Mental Outlaw</a></li>
+<li><a href="https://www.youtube.com/@PenAce" target="_blank">Pen Ace</a></li>
+</ul>
+</article>
+</div>
+</main>
+<footer>
+   <?php readfile ('./content/includes/footer.htm'); ?>
+</footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Jumi Favicon (Browser-Tab-Icon) -->
+<link rel="icon" href="content/includes/favicon.ico">
+<!-- Jumi CSS -->
+<link rel="stylesheet" href="content/includes/style.css">
+<link rel="stylesheet" href="content/includes/hamburger.css">
+<link rel="stylesheet" href="content/includes/media-queries.css">
+<link rel="stylesheet" href="content/includes/keyframes.css">
+<!-- Metadata -->
+<meta name="description" content="IT-Themensammlung und kompaktes Nachschlagewerk">
+<meta name="keywords" content="IT,Technologie,Computer,PC,Systeme,Netzwerke,Linux,Windows,
+Administration,Programmieren,Code,Shell,Terminal,Syntax,Snippets,Vorlagen,Lernen,verstehen">
+<meta name="author" content="Jumi">
+<title>Jumi |Cheats</title>
+</head>
+<body>
+<header>
+<div class="header-content">
+<h1 class="jumi-logo"><a href="https://www.jumi.biz">jumi.biz</a>&nbsp;<span id=jumi-path>/Cheats</span></h1>
+<nav class="site-nav">
+    <button class="menu-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false">
+    <span class="visually-hidden">Menu</span>
+    <div class="hamburger" aria-hidden="true"></div>
+    </button>
+    <ul data-state="closed" class="primary-navigation" id="primary-navigation">
+    <li><a href="https://www.jumi.biz/Content.php"><i class="site-nav--icon"></i>content</a></li>
+    <li><a href="https://www.jumi.biz/Links.php"><i class="site-nav--icon"></i>links</a></li>
+    <li><a href="https://www.jumi.biz/Notes.php"><i class="site-nav--icon"></i>notes</a></li>
+    <li><a href="https://www.jumi.biz/Cheats.php"><i class="site-nav--icon"></i>cheats</a></li>
+    <li><a href="https://www.jumi.biz/index.php"><i class="site-nav--icon"></i><span id="wtf">wtf is jumi?</span></a></li>
+    </ul>
+</nav>
+</div>
+<script src="./content/includes/navibar.js"></script>
+</header>
+<main>
+<div class="grid-container">
+<article class="content flow">
+<h1>GTA San Andreas (PS2)</h1>
+<p><strong>Unsterblichkeit</strong>:</p>
+<pre><code>- rechts, oben, X, Dreieck, links, rechts, unten, Kreis
+</code></pre><p><strong>Unendliche Munition</strong>:</p>
+<pre><code>- unten, X, rechts, links, Kreis, oben, unten, viereck
+</code></pre><p><strong>Sechs-Sterne Fahndungslevel</strong>:</p>
+<pre><code>- oben, oben, unten, unten, links, rechts, links, rechts, viereck, Kreis
+</code></pre><p><strong>Supersprung</strong>:</p>
+<pre><code>- links, links, Dreieck, Dreieck, rechts, rechts, links, rechts, viereck, R1, R2
+</code></pre></article>
+<article class="content flow">
+<h1>Tony Hawks Pro Skater 2 (PS2)</h1>
+<table>
+<thead>
+<tr>
+<th>Cheat</th>
+<th>Effekt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IAMTOOMUSCULAR</td>
+<td>Bessere Grinds</td>
+</tr>
+<tr>
+<td>NEEDSPEED</td>
+<td>Schnellere Geschwindigkeit</td>
+</tr>
+<tr>
+<td>FLYAWAY</td>
+<td>Unbegrenzte Luft</td>
+</tr>
+<tr>
+<td>IMINTERFACING</td>
+<td>Unbegrenzte Special Meter</td>
+</tr>
+<tr>
+<td>BEESUIT</td>
+<td>Moon Physics</td>
+</tr>
+</tbody>
+</table>
+</article>
+<article class="content flow">
+<h4>Leuchtkraft</h4>
+<img src="content/pics/jumi-logo.png" alt="Jumi glowing">
+<p>Die Fähigkeit zu leuchten nennt man "Biolumineszenz" und 
+kommt bei vielen Lebewesen vor. Enzyme erzeugen Energie in 
+Form von Licht. Viele Fragen bleiben offen!</p>
+</article>
+<article class="content flow">
+<h3>Facebook war nicht Erster!</h3>
+<img src="content/pics/kwick.png" alt="Startseite von kwick.de">
+<p>MySpace, Friendster, Xing, LinkedIn und StudiVZ sind bekannt.<br>
+Aber alles unvergleichbar mit dem Hype von Kwick.de !</p>
+</article>
+<article class="content flow">
+    <h3>Entschlossenheit...</h3>
+    <p>...kennt keine Furcht, nur Gewissheit!</p>
+    <br><span class="zitat-referenz">"Ich bin ein Yakuzza der alten Schule, wenn ich sterben muss, dann soll es geschehen" -Brother (2000)</span></p>
+</article>
+</div>
+</main>
+<footer>
+   <?php readfile ('./content/includes/footer.htm'); ?>
+</footer>
+</body>
+</html>
