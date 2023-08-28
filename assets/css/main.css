@@ -1,6 +1,6 @@
-/* ### MAIN ### */
+/* ### MAIN */
 body {
-/* Set core body defaults */
+    /* Set core body defaults */
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
@@ -10,7 +10,7 @@ body {
     background-color: #000;
 }
 
-/* ### HEADER ### */
+/* ### HEADER */
 header {
     text-shadow: 1.5px 2px black;
     background: #131313;
@@ -39,7 +39,7 @@ header::after {
     letter-spacing: 0.2em;
 }
 
-/* ### LOGO ### */
+/* ### LOGO */
 .jumi-logo {
     top: 0.5em;
     left: 1em;
@@ -51,19 +51,11 @@ header::after {
     cursor: pointer;
     animation: neon .08s ease-in-out infinite alternate;
 }
-#jumi-path {
-    color: #ebebd3;
-    font-size: 0.75rem;
-    font-weight: 200;
-    cursor: default;
-    animation: none;
-}
 
-/* ### NEONLICHT ### */
-
+/* ### Neonlicht */
 /* https://freefrontend.com/css-animated-backgrounds */
 
-/* Leuchteffekt */
+/* ### Leuchteffekt */
 @keyframes clipPathCircleOpen {
      0% {clip-path: circle(0% at top right);}
      100% {clip-path: circle(250% at top right);}
@@ -73,7 +65,7 @@ header::after {
      100% {clip-path: circle(0% at top right);}
 }
 
-/* Leuchtschatten */
+/* ### Leuchtschatten */
 @keyframes neon {
      from {text-shadow:
           0 0 6px rgba(202,228,225,0.92),
@@ -93,7 +85,7 @@ header::after {
     }
 }
 
-/* Leuchtanimation */
+/* ### Leuchtanimation */
 @keyframes bg-animation {
      0% {transform: translate(0,0)}
      10% {transform: translate(-5%,-5%)}
@@ -108,21 +100,21 @@ header::after {
      100% {transform: translate(5%,0)}
 }
 
-/* ### FONTS ### */
+/* ### Fonts */
 @font-face {
     /* sarpanch-regular - latin */
      font-family: 'Sarpanch';
      font-style: normal;
-     src: url('./fonts/sarpanch-v11-latin-regular.eot')
+     src: url('assets/fonts/sarpanch-v11-latin-regular.eot')
     /* IE9 Compat Modes */
-    , url('./fonts/sarpanch-v11-latin-regular.eot?#iefix') format('embedded-opentype')
+    , url('assets/fonts/sarpanch-v11-latin-regular.eot?#iefix') format('embedded-opentype')
     /* IE6-IE8 */
-    , url('./fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
+    , url('assets/fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
     /* Super Modern Browsers */
-    , url('./fonts/sarpanch-v11-latin-regular.woff') format('woff')
+    , url('assets/fonts/sarpanch-v11-latin-regular.woff') format('woff')
     /* Modern Browsers */
-    , url('./fonts/sarpanch-v11-latin-regular.ttf') format('truetype')
+    , url('assets/fonts/sarpanch-v11-latin-regular.ttf') format('truetype')
     /* Safari, Android, iOS */
-    , url('./fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
+    , url('assets/fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
     /* Legacy iOS */ ;
 }
