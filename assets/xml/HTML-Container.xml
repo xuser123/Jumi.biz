@@ -1,9 +1,0 @@
-<!--Div-Container-->
-<body>
-   <div id="Container">
-      <div id="Inhalt">
-         Container-Inhalt
-      </div>
-   </div>
-</body>
-
