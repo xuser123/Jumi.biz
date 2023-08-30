@@ -1,16 +1,103 @@
-/* ### MAIN */
+
 body {
-    /* Set core body defaults */
     min-height: 100vh;
-    text-rendering: optimizeSpeed;
+    text-rendering: optimizeSpeed; /* Set core body defaults */
     line-height: 1.5;
     height: 100%; /* Footer-unten-halten-Lösung */
     position: relative; /* Footer-unten-halten-Lösung */
     letter-spacing: 0.1rem;
     background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+     font-family: 'Sarpanch';
+     font-style: normal;
+     src: url('assets/fonts/sarpanch-v11-latin-regular.eot')
+    /* IE9 Compat Modes */
+    , url('assets/fonts/sarpanch-v11-latin-regular.eot?#iefix') format('embedded-opentype')
+    /* IE6-IE8 */
+    , url('assets/fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
+    /* Super Modern Browsers */
+    , url('assets/fonts/sarpanch-v11-latin-regular.woff') format('woff')
+    /* Modern Browsers */
+    , url('assets/fonts/sarpanch-v11-latin-regular.ttf') format('truetype')
+    /* Safari, Android, iOS */
+    , url('assets/fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
+    /* Legacy iOS */ ;
 }
 
-/* ### HEADER */
+/* Links */
+a, a:visited, {
+    text-decoration: none; /* Links nie unterstreichen */
+    color: inherit; /* Linkfarbe immer behalten */
+}
+
+/* Ueberschriften */
+.content > h1, h2, h3, h4 {color: #8dd88e;}
+.content:nth-child(1) {grid-area: one;}
+.content:nth-child(2) {grid-area: two;}
+.content:nth-child(3) {grid-area: three;}
+.content:nth-child(4) {grid-area: four;}
+.content:nth-child(5) {grid-area: five;}
+.window-content { /* Code-Syntax */
+    align-self: flex-start;
+    width: auto;
+    color: #ebebd3;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    flex-direction: row;
+    font-size: 0.65em;
+    font-family: 'Source Code Pro', monospace;
+    line-height: 1.337em;
+    max-width: 640px;
+    text-align: left;
+    text-shadow: none;
+    padding-left: 1em;
+    border: 3px solid #133337;
+}
+
+/* Layout */
+main {
+    color: #ebebd3;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-areas: 'one' 'two' 'three' 'four' 'five';
+    padding-block: 1rem;
+    width: min(97%, 70rem);
+    margin-inline: auto;
+    justify-content: space-between;
+}
+.content {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow:
+        rgba(0, 240, 240, 0.4) 0px 2px 4px,
+        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+    text-shadow: 1.5px 2px black;
+    background-color: #131313;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-spacer, 0.6em);
+}
+.flex {
+    display: flex;
+    gap: var(--gap, 0.6rem);
+}
+
+/* Header */
 header {
     text-shadow: 1.5px 2px black;
     background: #131313;
@@ -38,8 +125,6 @@ header::after {
     align-items: center;
     letter-spacing: 0.2em;
 }
-
-/* ### LOGO */
 .jumi-logo {
     top: 0.5em;
     left: 1em;
@@ -50,12 +135,44 @@ header::after {
 .jumi-logo a {
     cursor: pointer;
     animation: neon .08s ease-in-out infinite alternate;
+    text-decoration: none;
+    color: inherit;
 }
 
-/* ### Neonlicht */
-/* https://freefrontend.com/css-animated-backgrounds */
+/* Impressum */
+footer {
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem 0 2rem 0;
+    background-color: #131313;
+    color: #ffbfea;
+    text-align: center;
+    text-shadow: 1.5px 2px black;
+    font-family: 'Sarpanch', sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        rgba(0, 240, 240, 0.4) 0px 2px 4px,
+        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+}
+.jumi-contact {
+    font-weight: 200;
+    color: #00f0f0;
+    text-decoration: none;
+    text-align: center;
+}
 
-/* ### Leuchteffekt */
+/* Sonstiges */
+ul, ol {list-style: none;} /* Keine Listenpunkte */
+.zitat-referenz {font-size:small;}
+#dl-link {padding: 0.6rem;}
+
 @keyframes clipPathCircleOpen {
      0% {clip-path: circle(0% at top right);}
      100% {clip-path: circle(250% at top right);}
@@ -65,8 +182,7 @@ header::after {
      100% {clip-path: circle(0% at top right);}
 }
 
-/* ### Leuchtschatten */
-@keyframes neon {
+@keyframes neon { /* Neon Effect */
      from {text-shadow:
           0 0 6px rgba(202,228,225,0.92),
           0 0 30px rgba(202,228,225,0.34),
@@ -84,8 +200,6 @@ header::after {
           0 0 60px rgba(30,132,242,1);
     }
 }
-
-/* ### Leuchtanimation */
 @keyframes bg-animation {
      0% {transform: translate(0,0)}
      10% {transform: translate(-5%,-5%)}
@@ -98,23 +212,4 @@ header::after {
      80% {transform: translate(-15%,0)}
      90% {transform: translate(10%,5%)}
      100% {transform: translate(5%,0)}
-}
-
-/* ### Fonts */
-@font-face {
-    /* sarpanch-regular - latin */
-     font-family: 'Sarpanch';
-     font-style: normal;
-     src: url('assets/fonts/sarpanch-v11-latin-regular.eot')
-    /* IE9 Compat Modes */
-    , url('assets/fonts/sarpanch-v11-latin-regular.eot?#iefix') format('embedded-opentype')
-    /* IE6-IE8 */
-    , url('assets/fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
-    /* Super Modern Browsers */
-    , url('assets/fonts/sarpanch-v11-latin-regular.woff') format('woff')
-    /* Modern Browsers */
-    , url('assets/fonts/sarpanch-v11-latin-regular.ttf') format('truetype')
-    /* Safari, Android, iOS */
-    , url('assets/fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
-    /* Legacy iOS */ ;
 }
