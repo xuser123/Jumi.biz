@@ -1,4 +1,3 @@
-
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed; /* Set core body defaults */
@@ -25,12 +24,6 @@ body {
     /* Safari, Android, iOS */
     , url('assets/fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
     /* Legacy iOS */ ;
-}
-
-/* Links */
-a, a:visited, {
-    text-decoration: none; /* Links nie unterstreichen */
-    color: inherit; /* Linkfarbe immer behalten */
 }
 
 /* Ueberschriften */
@@ -95,6 +88,12 @@ main {
 .flex {
     display: flex;
     gap: var(--gap, 0.6rem);
+}
+
+/* Links */
+a, a:visited, {
+    text-decoration: none; /* Links nie unterstreichen */
+    color: inherit; /* Linkfarbe immer behalten */
 }
 
 /* Header */
