@@ -2,8 +2,8 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed; /* Set core body defaults */
     line-height: 1.5;
-    height: 100%; /* Footer-unten-halten-Lösung */
-    position: relative; /* Footer-unten-halten-Lösung */
+    height: 100%; /* Footer-unten-halten-Loesung */
+    position: relative; /* Footer-unten-halten-Loesung */
     letter-spacing: 0.1rem;
     background-color: #000;
     margin: 0;
@@ -25,6 +25,64 @@ body {
     , url('assets/fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
     /* Legacy iOS */ ;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:not([class]) { /* <a> tags ohne class= bekommen Standard-Stil */
+    text-decoration-skip-ink: auto;
+}
+main a {
+    color: #00bfff;
+}
+main a:hover {
+    text-decoration: none;
+    color: #ffbfea;
+    animation: neon .08s ease-in-out infinite alternate;
+    text-shadow: none;
+}
+b {
+    color: #8dd88e;
+}
+p {
+    display: inline-block;
+    line-height: 1.337rem;
+}
+i {
+    font-size: 0.75rem;
+}
+dd {
+    color: #ebebd3;
+    padding-bottom: 0.5rem;
+}
+dt {
+    font-size: 1.3rem;
+ }
+ul > li {
+          -style: none;
+}
+code {
+    display: inline-table;
+    font-family: 'Source Code Pro', monospace;
+    color: #8dd88e;
+    text-align: left;
+    background-color: #000000;
+    text-shadow: none;
+    max-width: 100%;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    font-size: 0.75rem;
+}
+mark {
+    color: #000;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    background-color: #8dd88e;
+    font-size: 0.75rem;
+ }
+
+ul, ol {list-style: none;} /* Keine Listenpunkte */
 
 /* Ueberschriften */
 .content > h1, h2, h3, h4 {color: #8dd88e;}
@@ -88,12 +146,6 @@ main {
 .flex {
     display: flex;
     gap: var(--gap, 0.6rem);
-}
-
-/* Links */
-a, a:visited, {
-    text-decoration: none; /* Links nie unterstreichen */
-    color: inherit; /* Linkfarbe immer behalten */
 }
 
 /* Header */
@@ -165,11 +217,17 @@ footer {
     color: #00f0f0;
     text-decoration: none;
     text-align: center;
+    animation: neon .08s ease-in-out infinite alternate;
 }
 
-/* Sonstiges */
-ul, ol {list-style: none;} /* Keine Listenpunkte */
+/* # Sonstiges */
+
+body::-webkit-scrollbar { * Scrollleiste ausblenden */
+    width: 0.5em;
+}
+
 .zitat-referenz {font-size:small;}
+
 #dl-link {padding: 0.6rem;}
 
 @keyframes clipPathCircleOpen {
