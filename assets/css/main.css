@@ -12,17 +12,13 @@ body {
 @font-face {
      font-family: 'Sarpanch';
      font-style: normal;
-     src: url('assets/fonts/sarpanch-v11-latin-regular.eot')
-    /* IE9 Compat Modes */
-    , url('assets/fonts/sarpanch-v11-latin-regular.eot?#iefix') format('embedded-opentype')
-    /* IE6-IE8 */
-    , url('assets/fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
+     src: url('../fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
     /* Super Modern Browsers */
-    , url('assets/fonts/sarpanch-v11-latin-regular.woff') format('woff')
+    , url('../fonts/sarpanch-v11-latin-regular.woff') format('woff')
     /* Modern Browsers */
-    , url('assets/fonts/sarpanch-v11-latin-regular.ttf') format('truetype')
+    , url('../fonts/sarpanch-v11-latin-regular.ttf') format('truetype')
     /* Safari, Android, iOS */
-    , url('assets/fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
+    , url('../fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
     /* Legacy iOS */ ;
 }
 
@@ -222,8 +218,9 @@ footer {
 
 /* # Sonstiges */
 
-body::-webkit-scrollbar { * Scrollleiste ausblenden */
+body::-webkit-scrollbar { /* Scrollleiste ausblenden */
     width: 0.5em;
+    display: none;
 }
 
 .zitat-referenz {font-size:small;}

@@ -6,6 +6,8 @@ function openModal(imageSrc) {
     var modalContent = document.createElement("img");
     modalContent.className = "modal-content";
     modalContent.src = imageSrc;
+    modalContent.style.animation = "zoom-in 0.5s";
+
 
     var closeModalBtn = document.createElement("span");
     closeModalBtn.className = "close";
@@ -27,10 +29,10 @@ function closeModal() {
 }
 
 // Event Listener für Bildklick
-document.getElementById("img-modal-01").addEventListener("click", function () {
+document.getElementById("modal-01").addEventListener("click", function () {
     openModal(this.src);
 });
 
-document.getElementById("img-modal-02").addEventListener("click", function () {
+document.getElementById("modal-02").addEventListener("click", function () {
     openModal(this.src);
 });
