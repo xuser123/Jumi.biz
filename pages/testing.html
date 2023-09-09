@@ -2,21 +2,57 @@
 <html>
 <head>
 <style>
+#modalTrigger {
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  text-shadow: 1.5px 2px black;
+  background-color: #131313;
+  border: none;
+  box-shadow:
+    rgba(0, 240, 240, 0.4) 0px 2px 4px,
+    rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+    rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#closeModal {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: #00f0f0;
+  height: 1em;
+  width: 1em;
+  font-size: 2.6em;
+  border-radius: 2px;
+  transition: all ease-in-out 200ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 
-  dialog[open] {
-    display: block;
-  }
-  dialog::backdrop {
-    background-color: hsl(2, 0, 0%, 0.9);
-  }
-  #closeModal { /* -Button */
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-  }
-
-
+#closeModal:hover,
+#closeModal:focus {
+  outline: none;
+  animation: neon .08s ease-in-out infinite alternate;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
 </head>
 <body>
@@ -26,40 +62,40 @@
 <dialog id="openModal">
 
 
-  <img src="../assets/img/modal/profile-img-1.png">
+  <img src="../assets/img/modal/profile-img-modal-01.png">
 
   <h2>Das ist endlich ein Modal</h2>
 
-  <button id="closeModal"> &#x2715 </button>
+  <button id="closeModal"> &times; </button>
 
 
 </dialog>
 <script>
 
 
-  const trigger = document.getElementById('modalTrigger');
-  const modal = document.getElementById('openModal');
-  const closeButton = document.getElementById('closeModal');
+const trigger = document.getElementById('modalTrigger');
+const modal = document.getElementById('openModal');
+const closeButton = document.getElementById('closeModal');
 
-  trigger.addEventListener('click', function() {
-    modal.showModal();
-  });
+trigger.addEventListener('click', function() {
+  modal.showModal();
+});
 
-  closeModal.addEventListener('click', function() {
-    modal.close();
-  });
+closeModal.addEventListener('click', function() {
+  modal.close();
+});
 
-  modal.addEventListener("click", e => { // Close On Outside Click
-      const dialogDimensions = modal.getBoundingClientRect()
-      if (
-          e.clientX < dialogDimensions.left ||
-          e.clientX > dialogDimensions.right ||
-          e.clientY < dialogDimensions.top ||
-          e.clientY > dialogDimensions.bottom
-      ) {
-          modal.close()
-      }
-  })
+modal.addEventListener("click", e => { // Close On Outside Click
+    const dialogDimensions = modal.getBoundingClientRect()
+    if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+    ) {
+        modal.close()
+    }
+})
 
 
 </script>

@@ -1,31 +1,52 @@
-.modal-trigger {
+[id*="modalTrigger"] {
   border-radius: 3px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  text-shadow: 1.5px 2px black;
+  background-color: #131313;
+  border: none;
+  box-shadow:
+    rgba(0, 240, 240, 0.4) 0px 2px 4px,
+    rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+    rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
 }
 
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-dialog:not([open]) {
-  display: none;
+[id*="closeModal"] {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: #00f0f0;
+  height: 1em;
+  width: 1em;
+  font-size: 2.6em;
+  border-radius: 2px;
+  transition: all ease-in-out 200ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
+
+[id*="closeModal"]:hover,
+[id*="closeModal"]:focus {
+  outline: none;
+  border: none;
+  animation: neon .08s ease-in-out infinite alternate;
+  text-decoration: none;
+  cursor: pointer;
+}
