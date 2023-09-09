@@ -29,6 +29,9 @@ a {
 a:not([class]) { /* <a> tags ohne class= bekommen Standard-Stil */
     text-decoration-skip-ink: auto;
 }
+img {
+    width: 100%;
+}
 main a {
     color: #00bfff;
 }

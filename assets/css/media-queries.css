@@ -16,19 +16,11 @@
           grid-template-areas:
           "one one" "two three" "five five" "four four";
     }
-     #modal-01,#modal-02,#modal-03 {
-         width: 40;
-         height: 40;
-    }
 }
 @media screen and (min-width: 38em) {
      .grid-container {
           grid-template-areas:
           "one one' 'two five' 'three five' 'four four";
-    }
-     #modal-01,#modal-02,#modal-03 {
-         width: 40;
-         height: 40;
     }
 }
 @media screen and (min-width: 54em) {
@@ -36,18 +28,10 @@
          grid-template-areas:
          "one one two" "five five five" "three four four";
     }
-     #modal-01,#modal-02,#modal-03 {
-         width: 60;
-         height: 60;
-    }
 }
 @media screen and (min-width: 75em) {
      .grid-container {
          grid-template-areas:
          "one one two five" "three four four five";
-    }
-     #modal-01,#modal-02,#modal-03 {
-         width: 60;
-         height: 60;
     }
 }
