@@ -12,7 +12,7 @@
 <meta name="author" content="Jumi">
 
 <!-- Favicon -->
-<link rel="icon" href="assets/img/favicon.ico">
+<link rel="icon" href="assets/ico/jumi.ico">
 <title>jumi</title>
 
 <!-- Debuger (falls nötig)
@@ -64,19 +64,19 @@
 <div class="grid-container">
 <article class="content flow">
 
-<!-- INTRO -->
+<!-- print("hello world")  -->
 <h2>print("hello world") </h2>
     <p>Diese Website ist im Aufbau.</p>
 	<ul><li>Update[2022-11]: Neue Snippets</li>
 	<li>Update[2023-03]: Neue index.php</li>
 	<li>Upgrade[2023-08]: Struktur verbessert</li></ul>
 
-<!-- INFO -->
+<!-- WTF is Jumi.biz ? -->
 <h2>WTF is Jumi.biz ?</h2>
 	<p>Hier findest du Zusammenfassungen zu verschiedenen Computerthemen. <br><br>
 	<imp><a href="https://www.jumi.biz/Content">Inhalte:</a><br></imp>Administration, Webentwicklung, Programmierung, und mehr.</p>
 
-<!-- KEYBOARD-NAVIGATION -->
+<!-- Navigation:  -->
 <div class="flow">
 <link rel="stylesheet" href="assets/css/word-as-button.css">
 <h4>Navigation: </h4>
@@ -88,36 +88,46 @@
 </article>
 <article class="content flow">
 
-<!-- PROFIL -->
-<h2>$ whoami</h2>
+<!-- $ whoami -->
+<h2>&#36; whoami</h2>
 
 <div class="flex">
 
-<div class=""><img id="modal-01" src="assets/img/profile-img-1.png" alt="Picture shows Jumi"></div>
+<div class="modal-trigger"><img id="modalTrigger01" src="assets/img/profile-img-1.png" alt="Picture shows Jumi"></div>
 
-<div class=""><img id="modal-02" src="assets/img/profile-img-2.png" alt="Picture shows shoe"></div>
+<div class="modal-trigger"><img id="modalTrigger02" src="assets/img/profile-img-2.png" alt="Picture shows shoe"></div>
 
-<div class=""><img id="modal-03" src="assets/img/profile-img-3.png" alt="Picture shows computer"></div>
+<div class="modal-trigger"><img id="modalTrigger03" src="assets/img/profile-img-3.png" alt="Picture shows computer"></div>
+
+</div>
+
+<div class="modal">
+
+<dialog id=""><img class="modal-content" src="assets/img/modal/profile-img-1.png" alt="Picture shows Jumi"></dialog>
+
+<dialog id=""><img class="modal-content" src="assets/img/modal/profile-img-2.png" alt="Picture shows shoe"></dialog>
+
+<dialog id=""><img class="modal-content" src="assets/img/modal/profile-img-3.png" alt="Picture shows computer"></dialog>
 
 </div>
 
     <p>Mir macht es Spass, mich mit IT zu beschäftigen und grundlegendes Wissen für Lernzwecke in
     visuell-ergonomische Texte zu fragmentieren. Meine Quellen sind öffentliche Personen mit großer Reichweite und private Weiterbildungen.<br><br>
-    <span class="zitat-referenz">"Wer? Wer ist nur die Form als Konsequenz der Funktion des Was. Und was ich bin, das ist ein Mann mit Maske!" <br>-V wie Vendetta (2005)</span></p>
+    <span class="kleintxt">"Wer? Wer ist nur die Form als Konsequenz der Funktion des Was. Und was ich bin, das ist ein Mann mit Maske!" <br>-V wie Vendetta (2005)</span></p>
 
 </article>
 <article class="content flow">
 
-<!-- PREFERENZ -->
+<!-- Dark Mode Only -->
 <h2>Dark Mode Only</h2>
     <p>Ein dunkler Bildschirm spart bis zu 60% Energie und schont die Augen.
     Wenn du den hellen Modus immer noch bevorzugst dann GTFO!<br><br>
-    <span class="zitat-referenz">"Come to the Dark Side" <br>-Darth Vader</span></p>
+    <span class="kleintxt">"Come to the Dark Side" <br>-Darth Vader</span></p>
 
 </article>
 <article class="content flow">
 
-<!-- FAZIT -->
+<!-- IT ~ Kung Fu -->
 <h2>IT ~ Kung Fu</h2>
     <p>Der chinesische Begriff "Kung Fu" bezieht sich auf Fähigkeiten und Techniken,
     die durch lange, harte Übung und Geduld erlangt werden. Eine Disziplin,
@@ -126,12 +136,12 @@
     während Informations-Technologie Daten verarbeitet und speichert.
     Kung Fu beherrschen verlangt Reaktionsfähigkeit,
     bei Informationen entscheidet analytisches und logisches Denken.<br><br>
-    <span class="zitat-referenz">"Der Meister erscheint wenn der Schüler bereit ist" <br>-Karate Tiger (1986)</span></p>
+    <span class="kleintxt">"Der Meister erscheint wenn der Schüler bereit ist" <br>-Karate Tiger (1986)</span></p>
 
 </article>
 <article class="content flow">
 
-<!-- REFERENZEN -->
+<!-- Shownotes -->
 <h2>Shownotes</h2>
     <p>Kommasetzung mit KI: <a href="https://www.komma.ai/#" target="_blank">komma.ai</a></p><br>
     <p>Suchmaschine mit KI: <a href="https://you.com" target="_blank">you.com</a></p><br>
@@ -144,13 +154,13 @@
 </main>
 <footer>
 <!-- IMPRESSUM -->
-<span class="jumi-contact">contact@jumi.biz</span>
+<span class="jumi-email">contact&#64;jumi.biz</span>
 </footer>
 
 <!-- Skripte -->
     <script src="assets/js/menu.js"></script>
 	<script src="assets/js/modal.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!--<script src="assets/js/main.js"></script> -->
 
 </body>
 </html>

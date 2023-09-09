@@ -94,7 +94,6 @@ main {
 .content:nth-child(3) {grid-area: three;}
 .content:nth-child(4) {grid-area: four;}
 .content:nth-child(5) {grid-area: five;}
-.content img {border-radius: 3px;}
 .content {
     padding: 1rem;
     border-radius: 0.3rem;
@@ -201,14 +200,14 @@ footer {
     font-family: 'Sarpanch', sans-serif;
     font-size: 1.3rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     box-shadow:
         rgba(0, 240, 240, 0.4) 0px 2px 4px,
         rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
         rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
 }
-.jumi-contact {
+.jumi-email {
     font-weight: 200;
     color: #00f0f0;
     text-decoration: none;
@@ -223,7 +222,7 @@ body::-webkit-scrollbar { /* Scrollleiste ausblenden */
     display: none;
 }
 
-.zitat-referenz {font-size:small;}
+.kleintxt {font-size:small;}
 
 #dl-link {padding: 0.6rem;}
 

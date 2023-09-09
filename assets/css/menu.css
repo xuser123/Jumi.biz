@@ -36,7 +36,7 @@ button {
     color: #8dd88e;
     border-radius: 2px;
 }
-    button:hover {
+button:hover {
     text-decoration: none;
     color: #ffbfea;
     animation: neon .08s ease-in-out infinite alternate;

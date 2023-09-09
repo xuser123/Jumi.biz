@@ -1,38 +1,11 @@
-// Modal öffnen
-function openModal(imageSrc) {
-    var modal = document.createElement("div");
-    modal.className = "modal";
 
-    var modalContent = document.createElement("img");
-    modalContent.className = "modal-content";
-    modalContent.src = imageSrc;
-    modalContent.style.animation = "zoom-in 0.5s";
+const modalTrigger01 = document.getElementById("modalTrigger01");
+const modalTrigger02 = document.getElementById("modalTrigger02");
+const modalTrigger03 = document.getElementById("modalTrigger03");
 
+const dialog = document.querySelector("dialog")
 
-    var closeModalBtn = document.createElement("span");
-    closeModalBtn.className = "close";
-    closeModalBtn.innerHTML = "&times;";
-    closeModalBtn.addEventListener("click", closeModal);
-
-    modalContent.appendChild(closeModalBtn);
-    modal.appendChild(modalContent);
-
-    document.body.appendChild(modal);
+modal-trigger.addEventListener("click", e => {
+    dialog.show("") // Opens a non-modal dialog
+    dialog.showModal() // Opens a modal
 }
-
-// Modal schließen
-function closeModal() {
-    var modal = document.querySelector(".modal");
-    if (modal) {
-        document.body.removeChild(modal);
-    }
-}
-
-// Event Listener für Bildklick
-document.getElementById("modal-01").addEventListener("click", function () {
-    openModal(this.src);
-});
-
-document.getElementById("modal-02").addEventListener("click", function () {
-    openModal(this.src);
-});

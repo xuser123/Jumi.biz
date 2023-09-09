@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+  dialog[open] {
+    display: block;
+  }
+  dialog::backdrop {
+    background-color: hsl(2, 0, 0%, 0.9);
+  }
+  #closeModal { /* -Button */
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+  }
+
+
+</style>
+</head>
+<body>
+
+<img id="modalTrigger" src="../assets/img/profile-img-1.png">
+
+<dialog id="openModal">
+
+
+  <img src="../assets/img/modal/profile-img-1.png">
+
+  <h2>Das ist endlich ein Modal</h2>
+
+  <button id="closeModal"> &#x2715 </button>
+
+
+</dialog>
+<script>
+
+
+  const trigger = document.getElementById('modalTrigger');
+  const modal = document.getElementById('openModal');
+  const closeButton = document.getElementById('closeModal');
+
+  trigger.addEventListener('click', function() {
+    modal.showModal();
+  });
+
+  closeModal.addEventListener('click', function() {
+    modal.close();
+  });
+
+  modal.addEventListener("click", e => { // Close On Outside Click
+      const dialogDimensions = modal.getBoundingClientRect()
+      if (
+          e.clientX < dialogDimensions.left ||
+          e.clientX > dialogDimensions.right ||
+          e.clientY < dialogDimensions.top ||
+          e.clientY > dialogDimensions.bottom
+      ) {
+          modal.close()
+      }
+  })
+
+
+</script>
+</body>
+</html>
