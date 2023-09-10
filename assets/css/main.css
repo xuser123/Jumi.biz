@@ -174,7 +174,7 @@ header::after {
     align-items: center;
     letter-spacing: 0.2em;
 }
-.jumi-logo {
+.jumi-logo,.profil-links {
     top: 0.5em;
     left: 1em;
     position: absolute;
