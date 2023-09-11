@@ -1,135 +1,237 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8">
+
+<!-- Optimierung für Mobilgeräte -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Jumi Favicon (Browser-Tab-Icon) -->
-<link rel="icon" href="content/includes/favicon.ico">
-<!-- Jumi CSS -->
-<link rel="stylesheet" href="content/includes/style.css">
-<link rel="stylesheet" href="content/includes/hamburger.css">
-<link rel="stylesheet" href="content/includes/media-queries.css">
-<link rel="stylesheet" href="content/includes/keyframes.css">
-<!-- Metadata -->
+
+<!-- HTTP-Header -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Metadaten -->
 <meta name="description" content="IT-Themensammlung und kompaktes Nachschlagewerk">
-<meta name="keywords" content="IT,Technologie,Computer,PC,Systeme,Netzwerke,Linux,Windows,
-Administration,Programmieren,Code,Shell,Terminal,Syntax,Snippets,Vorlagen,Lernen,verstehen">
+<meta name="keywords" content="IT,Technologie,Computer,PC,Systeme,Netzwerke,Linux,Windows,Administration,Programmieren,Code,Shell,Terminal,Syntax,Snippets,Vorlagen,Lernen,verstehen">
 <meta name="author" content="Jumi">
-<title>Jumi |Content</title>
+
+<!-- Favicon -->
+<link rel="icon" href="assets/img/ico/jumi.ico">
+<title>jumi</title>
+
+<!-- Debuger (falls nötig)
+        <meta http-equiv="refresh"y content="6">
+        <style>* {border: 1px solid red;}</style>-->
+
+<!-- Layout -->
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/modal.css">
+<link rel="stylesheet" href="assets/css/media-queries.css">
+
 </head>
-<body>
+<body id=" ଘ(੭*ˊᵕˋ)੭* ̀ˋ hello ɪɴᴛᴇʀɴᴇᴛ ">
 <header>
 <div class="header-content">
-<h1 class="jumi-logo"><a href="https://www.jumi.biz">jumi.biz</a>&nbsp;<span id=jumi-path>/Content</span></h1>
-<nav class="site-nav">
-    <button class="menu-toggle"
-          aria-controls="primary-navigation"
-          aria-expanded="false">
-    <span class="visually-hidden">Menu</span>
-    <div class="hamburger" aria-hidden="true"></div>
-    </button>
-    <ul data-state="closed" class="primary-navigation" id="primary-navigation">
-    <li><a href="https://www.jumi.biz/Content.php"><i class="site-nav--icon"></i>content</a></li>
-    <li><a href="https://www.jumi.biz/Links.php"><i class="site-nav--icon"></i>links</a></li>
-    <li><a href="https://www.jumi.biz/Notes.php"><i class="site-nav--icon"></i>notes</a></li>
-    <li><a href="https://www.jumi.biz/Cheats.php"><i class="site-nav--icon"></i>cheats</a></li>
-    <li><a href="https://www.jumi.biz/index.php"><i class="site-nav--icon"></i><span id="wtf">wtf is jumi?</span></a></li>
-    </ul>
+
+<!-- LOGO -->
+<h1 class="jumi-logo"><a href="https://www.jumi.biz">jumi.biz</a>&#32;</h1>
+
+<!-- MENU -->
+<nav class="menu">
+<button class="menu-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false">
+  <span class="visually-hidden">Menu</span>
+  <div class="hamburger" aria-hidden="true"></div>
+</button>
+
+<ul data-state="closed" class="primary-navigation" id="primary-navigation">
+<li><a href="https://www.jumi.biz/Content"><i class="menu-icon">
+<img src="assets/img/ico/menu-content.ico" alt="Content"></i>content</a></li>
+<li><a href="https://www.jumi.biz/Links"><i class="menu-icon">
+<img src="assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
+<li><a href="https://www.jumi.biz/Cheats"><i class="menu-icon">
+<img src="assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
+<li><a href="https://www.jumi.biz"><i class="menu-icon">
+<img src="assets/img/ico/jumi.ico" alt="WTF is jumi?"></i><span id="wtf-is-jumi">wtf is jumi?</span></a></li>
+
+</ul>
 </nav>
 </div>
-<script src="./content/includes/navibar.js"></script>
 </header>
 <main>
-</article>
+
+<!-- MAIN -->
 <div class="grid-container">
 <article class="content flow">
   <!--h2>Administration</h2-->
   <!--ul>
-  <li><a href="https://www.jumi.biz/content/Systemtools.php">Systemtools</a></li>
-  <li><a href="https://www.jumi.biz/content/LinuxShell.php">LinuxShell</a></li>
-  <li><a href="https://www.jumi.biz/content/Win10-Installation.php">Windows 10 Tipps (PDF)</a></li>
+  <li><a href="https://www.jumi.biz/pages/Systemtools.php">Systemtools</a></li>
+  <li><a href="https://www.jumi.biz/pages/LinuxShell.php">LinuxShell</a></li>
+  <li><a href="https://www.jumi.biz/pages/Win10-Installation.php">Windows 10 Tipps (PDF)</a></li>
   </ul-->
   <h2>Administration</h2>
   <ul>
     <li><b>LinuxShell und Datenträger</b></li>
-    <li><a href="https://www.jumi.biz/content/LinuxShell-dd.htm.php">dd </a></li>
-    <li><a href="https://www.jumi.biz/content/Systemtools.php">fdisk, cfdisk</a></li>
-    <li><a href="https://www.jumi.biz/content/Systemtools.php">shred</a></li>
-    <li><a href="https://www.jumi.biz/content/Systemtools.php">mkfs</a></li>
+    <li><a href="https://www.jumi.biz/pages/LinuxShell-dd.htm.php">dd </a></li>
+    <li><a href="https://www.jumi.biz/pages/Systemtools.php">fdisk, cfdisk</a></li>
+    <li><a href="https://www.jumi.biz/pages/Systemtools.php">shred</a></li>
+    <li><a href="https://www.jumi.biz/pages/Systemtools.php">mkfs</a></li>
     <li><b>Powershell und Datenträger</b></li>
-    <li><a href="https://www.jumi.biz/content/Systemtools.php">diskpart</a></li>
+    <li><a href="https://www.jumi.biz/pages/Systemtools.php">diskpart</a></li>
   </ul>
 </article>
 <article class="content flow">
   <h2>Webentwicklung</h2>
   <ul>
-  <li><a href="https://www.jumi.biz/content/HTML.php">HTML &amp; CSS</a></li>
+  <li><a href="https://www.jumi.biz/pages/HTML.php">HTML &amp; CSS</a></li>
   </ul>
 </article>
 <article class="content flow">
   <h2>Programmierung</h2>
   <ul>
-  <li><a href="https://www.jumi.biz/content/Python.php">Python</a></li>
-  <li><a href="https://www.jumi.biz/Content.php">Java <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/pages/Python.php">Python</a></li>
+  <li><a href="https://www.jumi.biz/Content">Java <em>nicht vorhanden</em></a></li>
   </ul>
 </article>
 <article class="content flow">
   <h2>Methoden</h2>
   <ul>
-  <li><a href="https://www.jumi.biz/content/Zahlensysteme.php">Zahlensysteme</a></li>
-  <li><a href="https://www.jumi.biz/content/Bits-Bytes.php">Bits &amp; Bytes</a></li>
-  <li><a href="https://www.jumi.biz/Content.php">Subnetting <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/pages/Zahlensysteme.php">Zahlensysteme</a></li>
+  <li><a href="https://www.jumi.biz/pages/Bits-Bytes.php">Bits &amp; Bytes</a></li>
+  <li><a href="https://www.jumi.biz/Content">Subnetting <em>nicht vorhanden</em></a></li>
   </ul>
 </article>
 <article class="content flow">
   <h2>Technologien</h2>
   <ul>
-  <li><a href="https://www.jumi.biz/content/Rechnerarchitektur.php">Rechnerarchitektur</a></li>
-  <li><a href="https://www.jumi.biz/content/Netzwerk-Ports.php">Netzwerk-Ports</a></li>
-  <li><a href="https://www.jumi.biz/content/OSI-Modell.php">OSI-Modell</a></li>
-  <li><a href="https://www.jumi.biz/content/Virtualisierung.php">Virtuelle Maschinen &amp; Container</a></li>
+  <li><a href="https://www.jumi.biz/pages/Rechnerarchitektur.php">Rechnerarchitektur</a></li>
+  <li><a href="https://www.jumi.biz/pages/Netzwerk-Ports.php">Netzwerk-Ports</a></li>
+  <li><a href="https://www.jumi.biz/pages/OSI-Modell.php">OSI-Modell</a></li>
+  <li><a href="https://www.jumi.biz/pages/Virtualisierung.php">Virtuelle Maschinen &amp; Container</a></li>
   </ul>
 </article>
 </div>
-</article>
+
 <div class="grid-container">
 <article class="content flow">
   <h2>Historische Fakten</h2>
   <ul>
-  <li><a href="https://www.jumi.biz/Content.php">Struxnet <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Struxnet <em>nicht vorhanden</em></a></li>
   </ul>
 </article>
 <article class="content flow">
   <h2>Cybersecurity</h2>
   <ul>
-  <li><a href="https://www.jumi.biz/Content.php">UFW (Uncomplicated Firewall) <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">UFW (Uncomplicated Firewall) <em>nicht vorhanden</em></a></li>
   </ul>
 </article>
 <article class="content flow">
   <h2>Hacking</h2>
   <ul>
-  <li><a href="https://www.jumi.biz/Content.php">Airmon-ng <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Airmon-ng <em>nicht vorhanden</em></a></li>
   </ul>
 </article>
 <article class="content flow">
   <h2>Projekte</h2>
   <ul>
-  <li><a href="https://www.jumi.biz/Content.php">Raspberry Pi Proxy <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Raspberry Pi Proxy <em>nicht vorhanden</em></a></li>
   </ul>
 </article>
 <article class="content flow">
   <h2>Et cetera</h2>
   <ul>
-  <li><a href="https://www.jumi.biz/content/Fachinformatik.php">Fachinformatik</a></li>
-  <li><a href="https://www.jumi.biz/content/PMS.php">Projekt-Management</a></li>
-  <li><a href="https://www.jumi.biz/content/BSI-Gesetze.php">BSI- &amp; KRITIS-Gesetze</a></li>
+  <li><a href="https://www.jumi.biz/pages/Fachinformatik.php">Fachinformatik</a></li>
+  <li><a href="https://www.jumi.biz/pages/PMS.php">Projekt-Management</a></li>
+  <li><a href="https://www.jumi.biz/pages/BSI-Gesetze.php">BSI- &amp; KRITIS-Gesetze</a></li>
   </ul>
 </article>
 </div>
+
+<div class="grid-container">
+<article class="content flow">
+  <h2>Themenfeld 1</h2>
+  <ul>
+    <li><b>Kategorie 1</b></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+    <li><b>Kategorie 2</b></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Themenfeld 2</h2>
+  <ul>
+    <li><b>Kategorie 1</b></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+    <li><b>Kategorie 2</b></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Themenfeld 3</h2>
+  <ul>
+    <li><b>Kategorie 1</b></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+    <li><b>Kategorie 2</b></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Themenfeld 4</h2>
+  <ul>
+    <li><b>Kategorie 1</b></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+    <li><b>Kategorie 2</b></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Themenfeld 5</h2>
+  <ul>
+    <li><b>Kategorie 1</b></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+    <li><b>Kategorie 2</b></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+</div>
+
 </main>
 <footer>
-	<?php readfile ('./content/includes/footer.htm'); ?>
+<!-- IMPRESSUM -->
+<span class="flex profil-links"><a id="githubIcon" href="https://github.com/xuser123" target="_blank"><img src="assets/img/ico/github.ico" alt="Github/xuser123"></a>&#32;<a  id="instagramIcon" href="https://instagram.com/jumicontent" target="_blank"><img src="assets/img/ico/instagram.ico" alt="Instagram/jumicontent"></a></span>
+<!-- contact@jumi.biz -->
+<span class="jumi-email">contact&#64;jumi.biz</span>
+<!-- Site Features -->
+<span class="flex siteFeatures"><a id="exportIcon"><img src="assets/img/ico/exportPDF.ico" alt="Export as PDF"></a>&#32;<a id="scrollToTop" href="#"><img src="assets/img/ico/backTop.ico" alt="Back to Top"></a></span>
 </footer>
+
+<!-- Skripte -->
+    <script src="assets/js/menu.js"></script>
+	<script src="assets/js/modal.js"></script>
+    <!-- for Easteregg Project:
+    <script src="assets/js/read.js"></script> -->
+
+    <!-- PDF-Export-Script (jsPDF):
+https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js
+<script src="assets/js/jspdf.umd.min.js"> -->
+
 </body>
 </html>

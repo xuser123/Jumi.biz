@@ -1,46 +1,63 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8">
+
+<!-- Optimierung für Mobilgeräte -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Jumi Favicon (Browser-Tab-Icon) -->
-<link rel="icon" href="content/includes/favicon.ico">
-<!-- Jumi CSS -->
-<link rel="stylesheet" href="content/includes/style.css">
-<link rel="stylesheet" href="content/includes/hamburger.css">
-<link rel="stylesheet" href="content/includes/media-queries.css">
-<link rel="stylesheet" href="content/includes/keyframes.css">
-<!-- Metadata -->
+
+<!-- HTTP-Header -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Metadaten -->
 <meta name="description" content="IT-Themensammlung und kompaktes Nachschlagewerk">
-<meta name="keywords" content="IT,Technologie,Computer,PC,Systeme,Netzwerke,Linux,Windows,
-Administration,Programmieren,Code,Shell,Terminal,Syntax,Snippets,Vorlagen,Lernen,verstehen">
+<meta name="keywords" content="IT,Technologie,Computer,PC,Systeme,Netzwerke,Linux,Windows,Administration,Programmieren,Code,Shell,Terminal,Syntax,Snippets,Vorlagen,Lernen,verstehen">
 <meta name="author" content="Jumi">
-<title>Jumi |Links</title>
+
+<!-- Favicon -->
+<link rel="icon" href="assets/img/ico/jumi.ico">
+<title>jumi</title>
+
+<!-- Debuger (falls nötig)
+        <meta http-equiv="refresh"y content="6">
+        <style>* {border: 1px solid red;}</style>-->
+
+<!-- Layout -->
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+<link rel="stylesheet" href="assets/css/modal.css">
+<link rel="stylesheet" href="assets/css/media-queries.css">
+
 </head>
-<body>
+<body id=" ଘ(੭*ˊᵕˋ)੭* ̀ˋ hello ɪɴᴛᴇʀɴᴇᴛ ">
 <header>
 <div class="header-content">
-<h1 class="jumi-logo"><a href="https://www.jumi.biz">jumi.biz</a>&nbsp;<span id=jumi-path>/Links</span></h1>
-<nav class="site-nav">
-    <button class="menu-toggle"
-          aria-controls="primary-navigation"
-          aria-expanded="false">
-    <span class="visually-hidden">Menu</span>
-    <div class="hamburger" aria-hidden="true"></div>
-    </button>
-    <ul data-state="closed" class="primary-navigation" id="primary-navigation">
-    <li><a href="https://www.jumi.biz/Content.php"><i class="site-nav--icon"></i>content</a></li>
-    <li><a href="https://www.jumi.biz/Links.php"><i class="site-nav--icon"></i>links</a></li>
-    <li><a href="https://www.jumi.biz/Notes.php"><i class="site-nav--icon"></i>notes</a></li>
-    <li><a href="https://www.jumi.biz/Cheats.php"><i class="site-nav--icon"></i>cheats</a></li>
-    <li><a href="https://www.jumi.biz/index.php"><i class="site-nav--icon"></i><span id="wtf">wtf is jumi?</span></a></li>
-    </ul>
+
+<!-- LOGO -->
+<h1 class="jumi-logo"><a href="https://www.jumi.biz">jumi.biz</a>&#32;</h1>
+
+<!-- MENU -->
+<nav class="menu">
+<button class="menu-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false">
+  <span class="visually-hidden">Menu</span>
+  <div class="hamburger" aria-hidden="true"></div>
+</button>
+
+<ul data-state="closed" class="primary-navigation" id="primary-navigation">
+<li><a href="https://www.jumi.biz/Content"><i class="menu-icon">
+<img src="assets/img/ico/menu-content.ico" alt="Content"></i>content</a></li>
+<li><a href="https://www.jumi.biz/Links"><i class="menu-icon">
+<img src="assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
+<li><a href="https://www.jumi.biz/Cheats"><i class="menu-icon">
+<img src="assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
+<li><a href="https://www.jumi.biz"><i class="menu-icon">
+<img src="assets/img/ico/jumi.ico" alt="WTF is jumi?"></i><span id="wtf-is-jumi">wtf is jumi?</span></a></li>
+
+</ul>
 </nav>
 </div>
-<script src="./content/includes/navibar.js"></script>
 </header>
 <main>
+
 <div class="grid-container">
 <article class="content flow">
 <h4>Education</h4>
@@ -105,8 +122,25 @@ Administration,Programmieren,Code,Shell,Terminal,Syntax,Snippets,Vorlagen,Lernen
 </article>
 </div>
 </main>
+
 <footer>
-   <?php readfile ('./content/includes/footer.htm'); ?>
+<!-- IMPRESSUM -->
+<span class="flex profil-links"><a id="githubIcon" href="https://github.com/xuser123" target="_blank"><img src="assets/img/ico/github.ico" alt="Github/xuser123"></a>&#32;<a  id="instagramIcon" href="https://instagram.com/jumicontent" target="_blank"><img src="assets/img/ico/instagram.ico" alt="Instagram/jumicontent"></a></span>
+<!-- contact@jumi.biz -->
+<span class="jumi-email">contact&#64;jumi.biz</span>
+<!-- Site Features -->
+<span class="flex siteFeatures"><a id="exportIcon"><img src="assets/img/ico/exportPDF.ico" alt="Export as PDF"></a>&#32;<a id="scrollToTop" href="#"><img src="assets/img/ico/backTop.ico" alt="Back to Top"></a></span>
 </footer>
+
+<!-- Skripte -->
+    <script src="assets/js/menu.js"></script>
+	<script src="assets/js/modal.js"></script>
+    <!-- for Easteregg Project:
+    <script src="assets/js/read.js"></script> -->
+
+    <!-- PDF-Export-Script (jsPDF):
+https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js
+<script src="assets/js/jspdf.umd.min.js"> -->
+
 </body>
 </html>
