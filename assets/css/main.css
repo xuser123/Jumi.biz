@@ -45,9 +45,9 @@ dd {
 }
 dt {
     font-size: 1.3rem;
- }
+}
 ul > li {
-          -style: none;
+    list-style: none;
 }
 code {
     display: inline-table;
