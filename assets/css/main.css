@@ -29,18 +29,6 @@ a {
 a:not([class]) { /* <a> tags ohne class= bekommen Standard-Stil */
     text-decoration-skip-ink: auto;
 }
-img {
-    width: 100%;
-}
-main a {
-    color: #00bfff;
-}
-main a:hover {
-    text-decoration: none;
-    color: #ffbfea;
-    animation: neon .08s ease-in-out infinite alternate;
-    text-shadow: none;
-}
 b {
     color: #8dd88e;
 }
@@ -90,8 +78,15 @@ main {
     padding-bottom: 6rem;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-
+img {width: 100%;}
 .content > h1, h2, h3, h4 {color: #8dd88e;}
+.content a {color: #00bfff;}
+.content a:hover {
+    text-decoration: none;
+    color: #ffbfea;
+    animation: neon .08s ease-in-out infinite alternate;
+    text-shadow: none;
+}
 .content:nth-child(1) {grid-area: one;}
 .content:nth-child(2) {grid-area: two;}
 .content:nth-child(3) {grid-area: three;}
@@ -217,6 +212,14 @@ footer {
     text-align: center;
     animation: neon .08s ease-in-out infinite alternate;
 }
+.siteFeatures {
+    top: 0.5em;
+    right: 1em;
+    position: absolute;
+    font-size: 1.337rem;
+    margin: 0;
+    cursor: pointer;
+}
 
 /* # Sonstiges */
 
@@ -269,3 +272,4 @@ body::-webkit-scrollbar { /* Scrollleiste ausblenden */
      90% {transform: translate(10%,5%)}
      100% {transform: translate(5%,0)}
 }
+

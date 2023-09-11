@@ -23,4 +23,3 @@ function closeMenu() {
     siteNavigation.setAttribute('data-state', "closed");
   }, {once: true})
 }
-
