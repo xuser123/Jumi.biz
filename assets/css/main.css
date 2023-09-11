@@ -220,6 +220,8 @@ footer {
     margin: 0;
     cursor: pointer;
 }
+#exportIcon {display:none;}
+#instagramIcon {display:none;}
 
 /* # Sonstiges */
 
