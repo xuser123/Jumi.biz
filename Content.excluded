@@ -58,6 +58,93 @@
 </header>
 <main>
 
+<!-- MAIN -->
+<div class="grid-container">
+<article class="content flow">
+  <!--h2>Administration</h2-->
+  <!--ul>
+  <li><a href="https://www.jumi.biz/pages/Systemtools.php">Systemtools</a></li>
+  <li><a href="https://www.jumi.biz/pages/LinuxShell.php">LinuxShell</a></li>
+  <li><a href="https://www.jumi.biz/pages/Win10-Installation.php">Windows 10 Tipps (PDF)</a></li>
+  </ul-->
+  <h2>Administration</h2>
+  <ul>
+    <li><b>LinuxShell und Datenträger</b></li>
+    <li><a href="https://www.jumi.biz/pages/LinuxShell-dd.htm.php">dd </a></li>
+    <li><a href="https://www.jumi.biz/pages/Systemtools.php">fdisk, cfdisk</a></li>
+    <li><a href="https://www.jumi.biz/pages/Systemtools.php">shred</a></li>
+    <li><a href="https://www.jumi.biz/pages/Systemtools.php">mkfs</a></li>
+    <li><b>Powershell und Datenträger</b></li>
+    <li><a href="https://www.jumi.biz/pages/Systemtools.php">diskpart</a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Webentwicklung</h2>
+  <ul>
+  <li><a href="https://www.jumi.biz/pages/HTML.php">HTML &amp; CSS</a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Programmierung</h2>
+  <ul>
+  <li><a href="https://www.jumi.biz/pages/Python.php">Python</a></li>
+  <li><a href="https://www.jumi.biz/Content">Java <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Methoden</h2>
+  <ul>
+  <li><a href="https://www.jumi.biz/pages/Zahlensysteme.php">Zahlensysteme</a></li>
+  <li><a href="https://www.jumi.biz/pages/Bits-Bytes.php">Bits &amp; Bytes</a></li>
+  <li><a href="https://www.jumi.biz/Content">Subnetting <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Technologien</h2>
+  <ul>
+  <li><a href="https://www.jumi.biz/pages/Rechnerarchitektur.php">Rechnerarchitektur</a></li>
+  <li><a href="https://www.jumi.biz/pages/Netzwerk-Ports.php">Netzwerk-Ports</a></li>
+  <li><a href="https://www.jumi.biz/pages/OSI-Modell.php">OSI-Modell</a></li>
+  <li><a href="https://www.jumi.biz/pages/Virtualisierung.php">Virtuelle Maschinen &amp; Container</a></li>
+  </ul>
+</article>
+</div>
+
+<div class="grid-container">
+<article class="content flow">
+  <h2>Historische Fakten</h2>
+  <ul>
+  <li><a href="https://www.jumi.biz/Content">Struxnet <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Cybersecurity</h2>
+  <ul>
+  <li><a href="https://www.jumi.biz/Content">UFW (Uncomplicated Firewall) <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Hacking</h2>
+  <ul>
+  <li><a href="https://www.jumi.biz/Content">Airmon-ng <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Projekte</h2>
+  <ul>
+  <li><a href="https://www.jumi.biz/Content">Raspberry Pi Proxy <em>nicht vorhanden</em></a></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h2>Et cetera</h2>
+  <ul>
+  <li><a href="https://www.jumi.biz/pages/Fachinformatik.php">Fachinformatik</a></li>
+  <li><a href="https://www.jumi.biz/pages/PMS.php">Projekt-Management</a></li>
+  <li><a href="https://www.jumi.biz/pages/BSI-Gesetze.php">BSI- &amp; KRITIS-Gesetze</a></li>
+  </ul>
+</article>
+</div>
+
 <div class="grid-container">
 <article class="content flow">
   <h2>Themenfeld 1</h2>
