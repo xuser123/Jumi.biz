@@ -7,9 +7,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <!-- Metadaten -->
-<meta name="description" content="IT-Themensammlung und kompaktes Nachschlagewerk">
-<meta name="keywords" content="IT,Technologie,Computer,PC,Systeme,Netzwerke,Linux,Windows,Administration,Programmieren,Code,Shell,Terminal,Syntax,Snippets,Vorlagen,Lernen,verstehen">
-<meta name="author" content="Jumi">
+<meta name="description" content="
+Sammlung von Themen über Informatik, kompakt.
+"><meta name="keywords" content="
+linux,windows,sicherheit,hacking,
+administration,code,shell,terminal,syntax,
+tool,programm,it,informatik,information,
+technologie,fachinformatik,computer,pc,
+system,netzwerk,integration,programmierung
+snippets,vorlagen,lernen,verstehen,
+"><meta name="author" content="Jumi">
 
 <!-- Favicon -->
 <link rel="icon" href="assets/img/ico/jumi.ico">
@@ -50,7 +57,7 @@
 <li><a href="https://www.jumi.biz/pages/Cheats"><i class="menu-icon">
 <img src="assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
 <li><a href="https://www.jumi.biz"><i class="menu-icon">
-<img src="assets/img/ico/jumi.ico" alt="WTF is jumi?"></i><span id="wtf-is-jumi">wtf is jumi?</span></a></li>
+<img src="assets/img/ico/jumi.ico" alt="WTF is Jumi?"></i><span id="wtf-is-jumi">wtf is jumi?</span></a></li>
 
 </ul>
 </nav>
@@ -60,73 +67,152 @@
 
 <div class="grid-container">
 <article class="content flow">
-  <h2>Themenfeld 1</h2>
+  <h2>IT-Sicherheit</h2>
   <ul>
     <li><b>Kategorie 1</b></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
     <li><b>Kategorie 2</b></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   </ul>
 </article>
 <article class="content flow">
-  <h2>Themenfeld 2</h2>
+  <h2>IT-Systeme</h2>
   <ul>
     <li><b>Kategorie 1</b></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
     <li><b>Kategorie 2</b></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   </ul>
 </article>
 <article class="content flow">
-  <h2>Themenfeld 3</h2>
+  <h2>Software</h2>
   <ul>
     <li><b>Kategorie 1</b></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
     <li><b>Kategorie 2</b></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   </ul>
 </article>
 <article class="content flow">
-  <h2>Themenfeld 4</h2>
+  <h2>Netzwerk</h2>
   <ul>
     <li><b>Kategorie 1</b></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
     <li><b>Kategorie 2</b></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   </ul>
 </article>
 <article class="content flow">
-  <h2>Themenfeld 5</h2>
+  <h3>Begriffe:</h3>
   <ul>
-    <li><b>Kategorie 1</b></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-    <li><b>Kategorie 2</b></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
-  <li><a href="https://www.jumi.biz/Content">Thema <em>nicht vorhanden</em></a></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   </ul>
 </article>
 </div>
 
+<div class="grid-container">
+<article class="content flow">
+  <h3>Projektmanagement</h3>
+  <ul>
+    <li><b>Wissensfelder:</b></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Integration</a></b><span class="kleintxt"> <span class="kleintxt">Koordination / Zuweisung</span></span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Umfang</a></b><span class="kleintxt"> Vorgaben / Überwachung</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Zeitplanung</a></b><span class="kleintxt"> Termine / Netzplan</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Kosten</a></b><span class="kleintxt"> Budgets / Kontrollmaßnahmen</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Qualität</a></b><span class="kleintxt"> Standards / Dokumentation</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Ressourcen</a></b><span class="kleintxt"> Arbeitsmittel / Personal</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Kommunikation</a></b><span class="kleintxt"> Hierarchie / Grundsätze</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Risikoanalyse</a></b><span class="kleintxt"> Notfallpläne / Flexibiltät</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Beschaffung</a></b><span class="kleintxt"> Kapazitäten / Bestellungen</span></li>
+</article>
+<article class="content flow">
+  <h3>Arbeits- und Geschäftsprozesse</h3>
+  <ul>
+    <li><b>Kategorie 1</b></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+    <li><b>Kategorie 2</b></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h3>Themenfeld</h3>
+  <ul>
+    <li><b>Kategorie 1</b></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+    <li><b>Kategorie 2</b></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h3>Themenfeld</h3>
+  <ul>
+    <li><b>Kategorie 1</b></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+    <li><b>Kategorie 2</b></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
+  </ul>
+</article>
+<article class="content flow">
+  <h3>Begriffe:</h3>
+  <ul>
+  <li><b><a href="https://www.jumi.biz/pages/###"> DIN ISO 21500</a></b><span class="kleintxt"> Projektmanagement</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> DIN ISO 69901</a></b><span class="kleintxt"> Projektmanagement-Systeme</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> PRINCE 2</a></b><span class="kleintxt"> (Projects in Controlled Enviroments)</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Agiles Manifest</a></b><span class="kleintxt"> Grundsatz</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Magisches Dreieck</a></b><span class="kleintxt"> Wichtige Kenngrößen</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> SMART</a></b><span class="kleintxt"> Zieleigenschaften</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Stakeholder</a></b><span class="kleintxt"> Personengruppe</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> 4-Phasen-Modell</a></b><span class="kleintxt"> Projektphasen</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Stakeholder-Analyse</a></b><span class="kleintxt"> Zustimmung</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Machbarkeits-Studie</a></b><span class="kleintxt"> Vorraussetzungen</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Risikoanalyse</a></b><span class="kleintxt"> Flexibilität</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Gantt-Diagramm</a></b><span class="kleintxt"> Zeitfenster</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Netzplan</a></b><span class="kleintxt"> Ablauf</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Kritischer Pfad</a></b><span class="kleintxt"> Pufferzeiten</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Datenschutz</a></b><span class="kleintxt"> Service</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> Qualitätssicherung</a></b><span class="kleintxt"> Produktanforderungen</span></li>
+  <li><b><a href="https://www.jumi.biz/pages/###"> DIN EN ISO 9000</a></b><span class="kleintxt"> Qualitätsnormen</span></li>
+</article>
+</div>
+
 </main>
+
 <footer>
 <!-- IMPRESSUM -->
 <span class="flex profil-links"><a id="githubIcon" href="https://github.com/xuser123" target="_blank"><img src="assets/img/ico/github.ico" alt="Github/xuser123"></a>&#32;<a  id="instagramIcon" href="https://instagram.com/jumicontent" target="_blank"><img src="assets/img/ico/instagram.ico" alt="Instagram/jumicontent"></a></span>
