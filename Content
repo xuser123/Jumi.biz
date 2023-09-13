@@ -67,7 +67,7 @@ snippets,vorlagen,lernen,verstehen,
 
 <div class="grid-container">
 <article class="content flow">
-  <h2>IT-Sicherheit</h2>
+  <h2>IT-Systeme</h2>
   <ul>
     <li><b>Kategorie 1</b></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
@@ -80,7 +80,7 @@ snippets,vorlagen,lernen,verstehen,
   </ul>
 </article>
 <article class="content flow">
-  <h2>IT-Systeme</h2>
+  <h2>IT-Sicherheit</h2>
   <ul>
     <li><b>Kategorie 1</b></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
@@ -106,7 +106,7 @@ snippets,vorlagen,lernen,verstehen,
   </ul>
 </article>
 <article class="content flow">
-  <h2>Netzwerk</h2>
+  <h2>Netzwerktechnik</h2>
   <ul>
     <li><b>Kategorie 1</b></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
@@ -165,7 +165,7 @@ snippets,vorlagen,lernen,verstehen,
   </ul>
 </article>
 <article class="content flow">
-  <h3>Themenfeld</h3>
+  <h3>Rechnungswesen</h3>
   <ul>
     <li><b>Kategorie 1</b></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
@@ -178,7 +178,7 @@ snippets,vorlagen,lernen,verstehen,
   </ul>
 </article>
 <article class="content flow">
-  <h3>Themenfeld</h3>
+  <h3>Qualitätssicherung</h3>
   <ul>
     <li><b>Kategorie 1</b></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>

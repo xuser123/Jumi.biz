@@ -40,3 +40,5 @@
 - individuelle Punkteskala
     - `Gewichtung * Punktzahl`
     - Summenwerte vergleichen
+
+####
