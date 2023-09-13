@@ -1,3 +1,5 @@
+# Fachkompetenzen im Projektmanagement
+
 ### "Magisches Dreieck"
 Darstellung von **Zusammenhang** wichtiger **Kenngrößen**
 - Qualität
@@ -18,8 +20,7 @@ Definition allgemeiner Eigenschaften eines Projekts
 ### "Stakeholder"
 - Projektleiter
 - Projektmitarbeiter
-- Kunden
-- Benutzer
+- Kunden / Benutzer
 - Auftraggeber
 - Sponsoren
 ...
@@ -28,7 +29,7 @@ Definition allgemeiner Eigenschaften eines Projekts
 1. Definition
 2. Planung
 3. Durchführung und Controlling
-4. Projektabschluss
+4. Abschluss
 
 ### Stakeholderanalyse
 Ziele und Motivationen ermitteln.
@@ -92,10 +93,28 @@ Vorgehensweise vom Detailierten zum Ganzen
 - Überwachung und Berichtung
 
 ### Lastenheft und Pflichtenheft
-- Lastenheft
-    - Anforderungen vom Auftraggeber
-- Pflichtenheft
-    - Umsetzung vom Auftragnehmer
+Lastenheft:
+- Anforderungen vom Auftraggeber
+- Rahmenbedingungen
+    - Ziel
+    - Anwendungsbereiche
+    - Zielgruppe
+    - Funktionen
+    - Zeit
+    - Umfang
+    - Qualität
+
+Pflichtenheft:
+- Umsetzung vom Auftragnehmer
+- detailierte Beschreibung
+    - Auftragsziel
+    - Funktionsumfang
+    - benötigte Darstellung- Qualität
+    - Muss- / Wunschkriterien
+    - Leistungen
+    - Testszenarien
+    - Risikoanalyse
+    - Lizenzen
 
 ### Qualität einer Präsentation
 - Strukturierung
