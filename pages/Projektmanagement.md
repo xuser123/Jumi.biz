@@ -17,10 +17,10 @@ Darstellung der **Zusammenhänge** wichtiger **Kenngrößen**
 
 Definition allgemeiner Eigenschaften eines Projekts
 
-### "PRINCE2-Methode"
+#### "PRINCE2-Methode"
 "Eine für einen befristeten Zeitraum geschaffene Organisation, die den Auftrag hat, mindestens ein Produkt entsprechend einem vereinbarten Geschäftsszenario zu liefern." (PRINCE = PRojects IN Controlled Environments).
 
-### "Stakeholder"
+#### "Stakeholder"
 - Projektleiter
 - Projektmitarbeiter
 - Kunden / Benutzer
@@ -28,24 +28,24 @@ Definition allgemeiner Eigenschaften eines Projekts
 - Sponsoren
 ...
 
-### "4-Phasen-Modell"
+#### "4-Phasen-Modell"
 1. Definition
 2. Planung
 3. Durchführung und Controlling
 4. Abschluss
 
-### Stakeholderanalyse
+#### Stakeholderanalyse
 - Gemeinsame Ziele,
 - Motivationen,
 - Zustimmung / Ablehnung
 
-### Machbarkeitsanalyse
+#### Machbarkeitsanalyse
 - Stakeholderanalyse
 - Risikoanalyse
 
 Technische und wirtschaftliche Perspektiven studieren
 
-### Risikoanalyse
+#### Risikoanalyse
 1. Identifizieren
 2. Analysieren
 3. Priorisieren
@@ -54,7 +54,7 @@ Technische und wirtschaftliche Perspektiven studieren
 
 Potentielle Probleme vor und nach dem Projekt in den Prozessen identifieren
 
-### Netzplan
+#### Netzplan
 Tabellarisch oder grafisch. Muster und Elemente:
 
 1. Reihenfolge
@@ -71,11 +71,11 @@ Tabellarisch oder grafisch. Muster und Elemente:
 
 Wenn Zeitpuffer von Phase = 0 ist, dann ist Phase ein "Kritischer Pfad" und bestimmt die Projektdauer.
 
-### Gant-Diagramm
+#### Gant-Diagramm
 Darstellung von zeitlichen Größen durch eine Zeitachse und horizontale Balken als Phasen in vertikaler Anreihung.
 Pufferzeiten können markiert werden. Für "kurze" Projektdauer geeignet.
 
-### "Wasserfallmodell"
+#### "Wasserfallmodell"
 - Vorteile:
     - klare Struktur
     - Weniger Management
@@ -87,20 +87,20 @@ Pufferzeiten können markiert werden. Für "kurze" Projektdauer geeignet.
 
 Nacheinander abschließende Phasen
 
-### "Top-Down-Methode"
+#### "Top-Down-Methode"
 Vorgehensweise vom Ganzen zum Detailierten
 
-### "Buttom-Up-Ansatz"
+#### "Buttom-Up-Ansatz"
 Vorgehensweise vom Detailierten zum Ganzen
 
-### "Meilenstein"
+#### "Meilenstein"
 - Definiertes Ziel aller Beteiligten
 - Bedeutende Etappe im Projektverlauf
 - Messbarer Fortschritt
 - Rechtzeitiger Termin festgelegt
 - Überwachung und Berichtung
 
-### Lastenheft
+#### Lastenheft
 - Anforderungen vom Auftraggeber
 - Rahmenbedingungen
     - Ziel
@@ -111,7 +111,7 @@ Vorgehensweise vom Detailierten zum Ganzen
     - Umfang
     - Qualität
 
-### Pflichtenheft
+#### Pflichtenheft
 - Umsetzung vom Auftragnehmer
 - detailierte Beschreibung
     - Auftragsziel
@@ -123,14 +123,14 @@ Vorgehensweise vom Detailierten zum Ganzen
     - Risikoanalyse
     - Lizenzen
 
-### Qualität einer Präsentation
+#### Qualität einer Präsentation
 - Strukturierung
 - Adressatengerecht
 - fachliche Korrektheit
 - souveräner Vortrag
 - zeitliche Vorgaben
 
-### "Agile Modelle"
+#### "Agile Modelle"
 - Methoden richten sich nach Prinzipien statt Formalitäten
 - Prozessse sind kürzer und abgestimmter
 - Leitsätze:
@@ -140,7 +140,7 @@ Vorgehensweise vom Detailierten zum Ganzen
     - Zusammenarbeit statt Verhandlung
     - Reaktion statt Planung
 
-### SCRUM
+#### SCRUM
 - agiles Framework
 - Effizienz
 - Flexibilität

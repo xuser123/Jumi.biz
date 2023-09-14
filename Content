@@ -219,7 +219,7 @@ snippets,vorlagen,lernen,verstehen,
 <!-- contact@jumi.biz -->
 <span class="jumi-email">contact&#64;jumi.biz</span>
 <!-- Site Features -->
-<span class="flex siteFeatures"><a id="exportIcon"><img src="assets/img/ico/exportPDF.ico" alt="Export as PDF"></a>&#32;<a id="scrollToTop" href="#"><img src="assets/img/ico/backTop.ico" alt="Back to Top"></a></span>
+<span class="flex siteFeatures"><a id="exportIcon"><img src="assets/img/ico/exportPDF.ico" alt="Export as PDF"></a>&#32;<a id="scrollToTop" href="#"><img src="assets/img/ico/backTop.ico" alt="Zum Seitenanfang"></a></span>
 </footer>
 
 <!-- Skripte -->
