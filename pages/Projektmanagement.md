@@ -1,18 +1,21 @@
-# Fachkompetenzen im Projektmanagement
+# Projektmanagement
 
-### "Magisches Dreieck"
-Darstellung von **Zusammenhang** wichtiger **Kenngrößen**
+#### "Magisches Dreieck"
 - Qualität
 - Kosten
 - Zeit
 
-### "SMART-Regel"
-Definition allgemeiner Eigenschaften eines Projekts
+Darstellung der **Zusammenhänge** wichtiger **Kenngrößen**
+
+#### "SMART-Regel"
+
 - spezifisch
 - messbar
 - akzeptiert
 - realistisch
 - terminiert
+
+Definition allgemeiner Eigenschaften eines Projekts
 
 ### "PRINCE2-Methode"
 "Eine für einen befristeten Zeitraum geschaffene Organisation, die den Auftrag hat, mindestens ein Produkt entsprechend einem vereinbarten Geschäftsszenario zu liefern." (PRINCE = PRojects IN Controlled Environments).
@@ -32,23 +35,28 @@ Definition allgemeiner Eigenschaften eines Projekts
 4. Abschluss
 
 ### Stakeholderanalyse
-Ziele und Motivationen ermitteln.
+- Gemeinsame Ziele,
+- Motivationen,
+- Zustimmung / Ablehnung
 
 ### Machbarkeitsanalyse
-Technische und wirtschaftliche Perspektiven studieren.
 - Stakeholderanalyse
 - Risikoanalyse
 
+Technische und wirtschaftliche Perspektiven studieren
+
 ### Risikoanalyse
-Potentielle Probleme vor und nach dem Projekt in den Prozessen identifieren.
 1. Identifizieren
 2. Analysieren
 3. Priorisieren
 4. Behandlung
 5. Monitarisierung
 
+Potentielle Probleme vor und nach dem Projekt in den Prozessen identifieren
+
 ### Netzplan
 Tabellarisch oder grafisch. Muster und Elemente:
+
 1. Reihenfolge
     - durch alphabetische Anordnung
 2. Phase oder Vorgang
@@ -65,11 +73,9 @@ Wenn Zeitpuffer von Phase = 0 ist, dann ist Phase ein "Kritischer Pfad" und best
 
 ### Gant-Diagramm
 Darstellung von zeitlichen Größen durch eine Zeitachse und horizontale Balken als Phasen in vertikaler Anreihung.
-Pufferzeiten können markiert werden.
-- Für "kurze" Projektdauer geeignet
+Pufferzeiten können markiert werden. Für "kurze" Projektdauer geeignet.
 
 ### "Wasserfallmodell"
-Nacheinander abschließende Phasen
 - Vorteile:
     - klare Struktur
     - Weniger Management
@@ -78,6 +84,8 @@ Nacheinander abschließende Phasen
     - unflexibel
     - unkorrigierbar
     - längere Projektdauer
+
+Nacheinander abschließende Phasen
 
 ### "Top-Down-Methode"
 Vorgehensweise vom Ganzen zum Detailierten
@@ -92,8 +100,7 @@ Vorgehensweise vom Detailierten zum Ganzen
 - Rechtzeitiger Termin festgelegt
 - Überwachung und Berichtung
 
-### Lastenheft und Pflichtenheft
-Lastenheft:
+### Lastenheft
 - Anforderungen vom Auftraggeber
 - Rahmenbedingungen
     - Ziel
@@ -104,7 +111,7 @@ Lastenheft:
     - Umfang
     - Qualität
 
-Pflichtenheft:
+### Pflichtenheft
 - Umsetzung vom Auftragnehmer
 - detailierte Beschreibung
     - Auftragsziel
@@ -160,5 +167,6 @@ Pflichtenheft:
         - Anforderungen
     - "Daily Standup"
         - Tägliche Besprechung
+
 
 

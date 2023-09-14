@@ -1,8 +1,8 @@
 # Rechnungswesen
 
-### Angebotserstellung
+## Angebotserstellung
 
-##### Kosten
+#### Kosten
 - Material
 - Fertigung
 - Verwaltung
@@ -10,12 +10,12 @@
 - Arbeits-
 - Personalkosten
 
-##### Verfügbarkeit von Ressourcen
+#### Verfügbarkeit von Ressourcen
 - Beschaffung
 - Lieferanten
 - Wer? Wann? Wieviel?
 
-##### Kalkulationverfahren
+#### Kalkulationverfahren
 - Zuschlags-
 - Handelskalkulation
     - Lieferantenauswahl
@@ -30,7 +30,7 @@
 `Bareinkaufspreis + Bezugskosten`
 = **Bezugspreis** (Netto)
 
-##### Nutzwertanalyse
+#### Nutzwertanalyse
 - Vergleichskriterien:
     - Preis
     - Qualität
