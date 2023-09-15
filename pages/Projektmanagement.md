@@ -1,24 +1,58 @@
 # Projektmanagement
+- Initieren
+- Planen
+- Steuern
+- Kontrollieren
+- Abschließen
+- nach Projektmanagementstandards
+- Rahmenbedingungen abklären
+- Datensicherheit berücksichtigen
+- Datenschutz berücksichtigen
+    - wirtschaftlich
+    - technisch
+    - rechtlich
+    - terminlich
+- *Eigenschaften:*
+    - zeitlich befristet
+    - relativ innovativ
+    - risikobehaftet
+    - erhebliche Komplexität
+    - erfordert Management
+    - nach **DIN 69901**
+        - Vorhaben
+        - *"wesentlich durch Einmaligkeit der Bedigungen in ihrer Gesamtheit gekennzeichnet"*
 
-#### "Magisches Dreieck"
-- Qualität
-- Kosten
-- Zeit
+#### PRINCE2-Methode
 
-Darstellung der **Zusammenhänge** wichtiger **Kenngrößen**
+*"Eine zeitlich begrenzte Organisation, die zu dem Zweck geschaffen wird, Geschäftsprodukte gemäß einem vereinbarten Geschäftsszenario zu liefern."*
 
-#### "SMART-Regel"
+(PRojects IN Controlled Environments)
 
+#### Magisches Dreieck
+- Zusammenhängende Kenngrößen:
+    - Qualität
+    - Kosten
+    - Zeit
+
+#### SMART-Regel
 - spezifisch
 - messbar
-- akzeptiert
+- attraktiv/akzeptiert
 - realistisch
 - terminiert
 
-Definition allgemeiner Eigenschaften eines Projekts
+#### 4-Phasen-Modell
+1. Definition
+2. Planung
+3. Durchführung und Controlling
+4. Abschluss
 
-#### "PRINCE2-Methode"
-"Eine für einen befristeten Zeitraum geschaffene Organisation, die den Auftrag hat, mindestens ein Produkt entsprechend einem vereinbarten Geschäftsszenario zu liefern." (PRINCE = PRojects IN Controlled Environments).
+#### Kickoff-Off-Meeting
+- Nach erfolgter Planung
+- Vor Start der Durchführung
+- Projektteam-Mitglieder
+- Stakeholder
+- Projektstrukturplan
 
 #### "Stakeholder"
 - Projektleiter
@@ -26,13 +60,14 @@ Definition allgemeiner Eigenschaften eines Projekts
 - Kunden / Benutzer
 - Auftraggeber
 - Sponsoren
-...
+- Jeder mit Interesse/Betroffenheit
 
-#### "4-Phasen-Modell"
-1. Definition
-2. Planung
-3. Durchführung und Controlling
-4. Abschluss
+#### "Meilenstein"
+- Definiertes Ziel aller Beteiligten
+- Bedeutende Etappe im Projektverlauf
+- Messbarer Fortschritt
+- Rechtzeitiger Termin festgelegt
+- Überwachung und Berichtung
 
 #### Stakeholderanalyse
 - Gemeinsame Ziele,
@@ -42,8 +77,13 @@ Definition allgemeiner Eigenschaften eines Projekts
 #### Machbarkeitsanalyse
 - Stakeholderanalyse
 - Risikoanalyse
-
-Technische und wirtschaftliche Perspektiven studieren
+- Perspektiven studieren:
+    - technisch
+    - organisatorisch
+    - wirtschaftlich
+    - zeitlich
+    - rechtlich
+    - realisierbar?
 
 #### Risikoanalyse
 1. Identifizieren
@@ -52,30 +92,127 @@ Technische und wirtschaftliche Perspektiven studieren
 4. Behandlung
 5. Monitarisierung
 
-Potentielle Probleme vor und nach dem Projekt in den Prozessen identifieren
+*Potentielle Probleme vor und nach dem Projekt in den Prozessen identifieren*
+
+#### Projektleiter-Aufgaben
+- Mitwirkung auf Zieldefinition
+- Teamkoordination
+- Teamaufgaben verteilen
+- Fortschritte überwachen
+- Kommunikation
+- Controlling
+- Dokumentation
+- Aufwand schätzen
+- Ergebnisse vorlegen
+- Konflikte verhindern
+- analysieren und einordnen
+- Abschlussbericht
+- Problemlösungen entwickeln
+    - Situationsanalyse
+    - Problem eingrenzen
+    - Alternativen
+    - Lösung wählen
+    - Beurteilungskriterien definieren
+    - Ursachenanalyse
+        - RCA-Techniken
+            - 5-Whys-Methode
+- Kundenkommunikation
+- Störungsmanagement
+- Supportanfragen,
+- Bearbeitungsstatus,
+    - zB. Ticketsystem
+
+#### Methoden und Modelle
+- Unterscheidung:
+    - Projektphasen
+    - *klassisch*
+        - Wasserfall-,
+        - Spiral-,
+        - V-Modell,
+    - *agil*
+        - Scrum
+        - Kanban
+        - Extreme Programming
+- Anwendungen:
+    - Projektplan
+    - Meilensteine
+    - Risikoanalyse
+    - Standards / Normen
+    - Managementsysteme
+- Planung:
+    - Projektstrukturplan
+    - Netzplan
+    - Gantt-Diagramm
+- Faktoren:
+    - Kritischer Pfad
+    - Pufferzeiten
+    - Terminfristen
+    - Problemlösungs-Möglichkeiten
+    - Meilensteine
+    - Arbeitspaket-Definitionen
+    - Abhängigkeiten
+    - Fortschritte
+    - Etappen / Zwischenziele
+    - Messungen / Kriterien
+    - Endtermin-Prognose
+    - erfasste Tätigkeiten
+        - Top-down
+        - Buttom-up
+        - Yo-Yo-Ansatz
+
+#### Visualisierung
+- Netzplantechnik
+- Scrum Board
+- Kanban Board
+- Gantt-Diagramme
+
+#### Projektstrukturplan
+- Gliederung
+- Kontrollelemente
+- statische Sicht
+- Zerlegung in Teilschritte
+- Verfahren/Vorgehensweise:
+    - **Top-down** (deduktiv)
+        - vom Ganzen zum Detail
+    - **Bottum-up** (induktiv)
+        - vom Detail zum Ganzen
+    - **Yo-Yo** (Gegenstrom)
 
 #### Netzplan
-Tabellarisch oder grafisch. Muster und Elemente:
+- Dauer der Aktivitäten
+- zeitliche und logische Abhängigkeiten
+- Pufferzeiten und kritischer Pfad
+- tabellarisch oder grafisch
+- Muster und Spalten/Elemente:
+    1. Reihenfolge
+        - alphabetische Kennziffer-Anordnung
+    2. Phase oder Vorgang
+    3. Dauer (D)
+    4. Vorgängige Phasenabhängigkeit
+        - nach Kennziffer-Ordnung
+    5. Frühester Anfangszeitpunkt (FAZ)
+    6. Spätester Anfangszeitpunkt (SAZ)
+    7. Frühester Endzeitpunkt (FEZ)
+    8. Spätester Endzeitpunkt (SEZ)
+    9. Zeitpuffer (P)
 
-1. Reihenfolge
-    - durch alphabetische Anordnung
-2. Phase oder Vorgang
-3. Dauer (D)
-4. Vorgängige Phasenabhängigkeit
-    - durch alphabetische Kennziffern
-5. Frühester Anfangszeitpunkt (FAZ)
-6. Spätester Anfangszeitpunkt (SAZ)
-7. Frühester Endzeitpunkt (FEZ)
-8. Spätester Endzeitpunkt (SEZ)
-9. Zeitpuffer (P)
+*Wenn Phase-Zeitpuffer = 0 ist, dann ist Phase ein "Kritischer Pfad" und bestimmt Projektdauer.*
 
-Wenn Zeitpuffer von Phase = 0 ist, dann ist Phase ein "Kritischer Pfad" und bestimmt die Projektdauer.
+`FEZ - Aktivitätsdauer = FAZ`
 
-#### Gant-Diagramm
+*"frühester Anfangszeitpunkt (FAZ) wird aus FEZ minus Dauer der Aktivität berechnet"*
+
+
+#### Gantt-Diagramm
 Darstellung von zeitlichen Größen durch eine Zeitachse und horizontale Balken als Phasen in vertikaler Anreihung.
 Pufferzeiten können markiert werden. Für "kurze" Projektdauer geeignet.
 
-#### "Wasserfallmodell"
+#### Kanban Board
+- WIP-Limit (work in progress)
+- Pull statt Push
+- Spalten entsprechen Prozessschritten
+
+#### Wasserfall-Modell
 - Vorteile:
     - klare Struktur
     - Weniger Management
@@ -87,22 +224,9 @@ Pufferzeiten können markiert werden. Für "kurze" Projektdauer geeignet.
 
 Nacheinander abschließende Phasen
 
-#### "Top-Down-Methode"
-Vorgehensweise vom Ganzen zum Detailierten
-
-#### "Buttom-Up-Ansatz"
-Vorgehensweise vom Detailierten zum Ganzen
-
-#### "Meilenstein"
-- Definiertes Ziel aller Beteiligten
-- Bedeutende Etappe im Projektverlauf
-- Messbarer Fortschritt
-- Rechtzeitiger Termin festgelegt
-- Überwachung und Berichtung
-
 #### Lastenheft
 - Anforderungen vom Auftraggeber
-- Rahmenbedingungen
+- was/wofür?
     - Ziel
     - Anwendungsbereiche
     - Zielgruppe
@@ -113,7 +237,7 @@ Vorgehensweise vom Detailierten zum Ganzen
 
 #### Pflichtenheft
 - Umsetzung vom Auftragnehmer
-- detailierte Beschreibung
+- wie/womit?
     - Auftragsziel
     - Funktionsumfang
     - benötigte Darstellung- Qualität
@@ -167,6 +291,4 @@ Vorgehensweise vom Detailierten zum Ganzen
         - Anforderungen
     - "Daily Standup"
         - Tägliche Besprechung
-
-
 

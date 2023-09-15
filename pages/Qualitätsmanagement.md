@@ -3,9 +3,9 @@
 ## Aspekte
 
 #### Begriffe
-- "Qualität" = *Erfüllungsgrad von Anforderungen durch inhärenter Objektmerkmale*
+- "Qualität" = *Übereinstimmung mit Anforderungen*
 - "Produktqualität" = *inheräntes Merkmal* eines Objekts
-- "Prozessqualität" = Ablauf- *Wirksamkeit, Effizienz, Zuverlässigkeit*
+- "Prozessqualität" = *Wirksamkeit, Effizienz, Zuverlässigkeit* eines Ablaufs
 
 **IEC** = *International Electrotechnical Commission*
 
