@@ -179,33 +179,32 @@
     - **Yo-Yo** (Gegenstrom)
 
 #### Netzplan
-- Dauer der Aktivitäten
 - zeitliche und logische Abhängigkeiten
-- Pufferzeiten und kritischer Pfad
+- Zeitpuffer
+- kritischer Pfad
 - tabellarisch oder grafisch
 - Muster und Spalten/Elemente:
-    1. Reihenfolge
-        - alphabetische Kennziffer-Anordnung
-    2. Phase oder Vorgang
-    3. Dauer (D)
-    4. Vorgängige Phasenabhängigkeit
-        - nach Kennziffer-Ordnung
-    5. Frühester Anfangszeitpunkt (FAZ)
-    6. Spätester Anfangszeitpunkt (SAZ)
-    7. Frühester Endzeitpunkt (FEZ)
-    8. Spätester Endzeitpunkt (SEZ)
-    9. Zeitpuffer (P)
+    1. Aktivitäten-Reihenfolge
+        - alphabetische Anordnung
+        - A-Z Kennziffern
+    2. Aktivität
+    3. Aktivitätendauer (D)
+    4. Abhängigkeit
+    5. Frühester Anfang (FA)
+        - `FE - D = FA`
+    6. Spätester Anfang (SA)
+    7. Frühestes Ende (FE)
+    8. Spätestes Ende (SE)
 
 *Wenn Phase-Zeitpuffer = 0 ist, dann ist Phase ein "Kritischer Pfad" und bestimmt Projektdauer.*
 
-`FEZ - Aktivitätsdauer = FAZ`
-
-*"frühester Anfangszeitpunkt (FAZ) wird aus FEZ minus Dauer der Aktivität berechnet"*
-
-
 #### Gantt-Diagramm
-Darstellung von zeitlichen Größen durch eine Zeitachse und horizontale Balken als Phasen in vertikaler Anreihung.
-Pufferzeiten können markiert werden. Für "kurze" Projektdauer geeignet.
+- Zeitliche Aktivitäten-Reihenfolge
+- Zeitachse (zB. Kalenderwochen)
+- Parallelitäten
+- Aktivitätendauer visualisieren
+- Pufferzeiten markieren
+- Für "kurze" Projektdauer geeignet.
 
 #### Kanban Board
 - WIP-Limit (work in progress)
