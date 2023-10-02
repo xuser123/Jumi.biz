@@ -1,50 +1,103 @@
-# Projektmanagement
-- Initieren
-- Planen
-- Steuern
-- Kontrollieren
-- Abschließen
-- nach Projektmanagementstandards
+# Projektmanagement und Standards
+
+## 4-Phasen-Modell
+1. initieren
+2. planen
+3. steuern, kontrollieren
+4. abschließen
 
 ## Rahmenbedingungen abklären
-- **Datensicherheit** & **Datenschutz**
+- **Datensicherheit**
+- **Datenschutz**
 - wirtschaftlich
 - technisch
 - rechtlich
 - terminlich
 
 ## Projekte sind...
-- zeitlich befristet
-- relativ innovativ
-- risikobehaftet
-- erhebliche Komplexität
-- erfordert Management
-- nach **DIN 69901**
-    - *"Vorhaben, wesentlich durch Einmaligkeit der Bedigungen in ihrer Gesamtheit gekennzeichnet"*
-- nach **PRINCE2**
-    - *"Eine zeitlich begrenzte Organisation, die zu dem Zweck geschaffen wird, Geschäftsprodukte gemäß einem vereinbarten Geschäftsszenario zu liefern."* -PRojects IN Controlled Environments
+- befristet
+- innovativ
+- risikohaft
+- komplex
+- Management erforderlich
+- nach **DIN 69901** Vorhaben, wesentlich durch einmalige Bedigungen ihrer Gesamtheit gekennzeichnet.
+- nach **PRINCE2** zeitlich begrenzt für Geschäftsprodukte gemäß vereinbartem Geschäftsszenario.
 
-### Magisches Dreieck (Kenngrößen)
-- Qualität = Übereinstimmung mit Anforderungen
+## Magisches Dreieck (Kenngrößen)
+- Qualität
 - Kosten
 - Zeit
 
-### SMART-Regel
+## SMART-Regel
 - spezifisch
 - messbar
-- attraktiv/akzeptiert
+- attraktiv
 - realistisch
 - terminiert
 
-## 4-Phasen-Modell
-1. Definition
-2. Planung
-3. Durchführung und Controlling
-4. Abschluss
+### Machbarkeitsanalyse
+- **Risikoanalyse**
+- **Stakeholderanalyse**
 
-## Verbindliche Aufgabeninhalte
+#### Perspektiven:
+- technisch
+- organisatorisch
+- wirtschaftlich
+- zeitlich
+- rechtlich
+- realisierbar?
 
-#### Lastenheft
+### Risikoanalyse
+Potentielle Probleme vor und nach Projekt, in Prozessen identifieren und Lösungen entwickeln.
+
+1. Risiken identifizieren,
+2. analysieren, beurteilen,
+3. priorisieren, kommunizieren,
+4. behandeln, reduzieren,
+5. monitarisieren und verhindern.
+
+## Kickoff-Off-Meeting
+- Nach Planung
+- Vor Durchführung
+- Projektteam-Mitglieder
+- **Stakeholder**
+- **Projektstrukturplan** erstellen
+- **Milestones** festlegen
+
+### Stakeholder sind...
+- Projektleiter
+- Projektteam-Mitglieder
+- Mitarbeitende (extern)
+- Kunden / Benutzer
+- Auftraggeber
+- Sponsoren / Investoren
+- Projekt-betreffendes Interesse
+
+### Stakeholderanalyse
+- gemeinsame Ziele,
+- Motivationen,
+- Zustimmung / Ablehnung
+
+### Milestones
+- Zeiträume terminieren
+- definiertes Ziel aller Beteiligten
+- bedeutende Etappe im Projektverlauf
+- messbarer Fortschritt
+- überwachung und berichten
+
+## Projektstrukturplan
+- Gliederung
+- Kontrollelemente
+- statische Sicht
+- Zerlegung in Teilschritte
+- Verfahren/Vorgehensweise:
+    - **Top-down** (deduktiv)
+        - vom Ganzen zum Detail
+    - **Bottum-up** (induktiv)
+        - vom Detail zum Ganzen
+    - **Yo-Yo** (Gegenstrom)
+
+### Lastenheft-Aufgaben
 - **Anforderungen** vom Auftrag**geber**
 - **was/wofür?**
     - Ziel
@@ -55,7 +108,7 @@
     - Umfang
     - Qualität
 
-#### Pflichtenheft
+### Pflichtenheft-Aufgaben
 - **Umsetzung** vom Auftrag**nehmer**
 - **wie/womit?**
     - Auftragsziel
@@ -67,68 +120,19 @@
     - Risikoanalyse
     - Lizenzen
 
-## Kickoff-Off-Meeting
-- Nach *erfolgter* Planung
-- Vor *Start* der Durchführung
-- alle Projektteam-Mitglieder
-- alle Stakeholder
-- Projektstrukturplan erstellen
-
-#### Stakeholder sind ...
-- Projektleiter
-- Projektteam-Mitglieder
-- Mitarbeitende (extern)
-- Kunden / Benutzer
-- Auftraggeber
-- Sponsoren / Investoren
-- Projekt-betreffendes Interesse
-
-#### Meilensteine festlegen
-- Zeiträume terminieren
-- definiertes Ziel aller Beteiligten
-- bedeutende Etappe im Projektverlauf
-- messbarer Fortschritt
-- überwachung und berichten
-
-### Stakeholderanalyse
-- gemeinsame Ziele,
-- Motivationen,
-- Zustimmung / Ablehnung
-
-### Machbarkeitsanalyse
-- Stakeholderanalyse
-- Risikoanalyse
-- Perspektiven studieren:
-    - technisch
-    - organisatorisch
-    - wirtschaftlich
-    - zeitlich
-    - rechtlich
-    - realisierbar?
-
-### Risikoanalyse
-1. Risiken identifizieren,
-2. analysieren, beurteilen,
-3. priorisieren, kommunizieren,
-4. behandeln, reduzieren,
-5. monitarisieren und verhindern.
-
-- Potentielle Probleme,
-- vor und nach dem Projekt,
-- in den Prozessen identifieren,
-- Problemlösungen entwickeln.
-
-## Projektleiter-Aufgaben
-- Mitwirkung auf Zieldefinition
-- Teamkoordination
-- Teamaufgaben verteilen
-- Fortschritte überwachen
-- Kommunikation
-- Controlling
-- Dokumentation
+### Projektleiter-Aufgaben
+- Auf Zieldefinition mitwirken
+- Teams koordinieren
+- Aufgaben verteilen
+- Fortschritte,
+- Kommunikation,
+- Tätigkeiten,
+- ...prüfen, steuern, überwachen
+- **Controlling**
+- dokumentieren
 - Aufwand schätzen
 - Ergebnisse vorlegen
-- Konflikte verhindern
+- Konflikte verhindern,
 - analysieren und einordnen
 - Abschlussbericht
 - Problemlösungen entwickeln
@@ -146,61 +150,54 @@
 - Bearbeitungsstatus,
     - zB. Ticketsystem
 
-## Methoden und Modelle
-### Unterscheidungen:
-- Projektphasen
-- *klassisch*
-    - Wasserfall-,
-    - Spiral-,
-    - V-Modell,
-- *agil*
-    - Scrum
-    - Kanban
-    - Extreme Programming
-### Anwendungen:
-- Projektplan
-- Meilensteine
-- Risikoanalyse
-- Standards / Normen
-- Managementsysteme
-### Planung:
-- Projektstrukturplan
-- Netzplan
-- Gantt-Diagramm
-### Faktoren:
-- Kritischer Pfad
-- Pufferzeiten
-- Terminfristen
-- Problemlösungs-Möglichkeiten
-- Meilensteine
-- Arbeitspaket-Definitionen
-- Abhängigkeiten
-- Fortschritte
-- Etappen / Zwischenziele
-- Messungen / Kriterien
-- Endtermin-Prognose
+### Projektphasen Methoden und Modelle
+
+#### *klassisch*
+- **Wasserfall**-,
+- Spiral-,
+- V-Modell
+
+#### *agil*
+- **Scrum** (visuell),
+- **Kanban** (visuell),
+- Extreme Programming
+- Prinzipien statt Formalitäten
+- kürzere Prozesse, abgestimmt
+- Leitsätze:
+    - Individuen statt Prozesse
+    - Interaktion statt Werkzeuge
+    - Funktion statt Dokumentation
+    - Zusammenarbeit statt Verhandlung
+    - Reaktion statt Planung
+
+#### Anwendung
+    - Projektplan,
+    - Meilensteine,
+    - Risikoanalyse,
+    - mit Standards / Normen,
+    - Managementsysteme
+
+#### Planung
+- Projektstrukturplan,
+- **Netzplan** (visuell),
+- **Gantt-Diagramm** (visuell)
+
+#### Faktoren
+- Kritischer Pfad,
+- Pufferzeiten,
+- Terminfristen,
+- Problemlösungs-Möglichkeiten,
+- Meilensteine,
+- Arbeitspaket-Definitionen,
+- Abhängigkeiten,
+- Fortschritte,
+- Etappen / Zwischenziele,
+- Messungen / Kriterien,
+- Endtermin-Prognose,
 - erfasste Tätigkeiten
     - Top-down
     - Buttom-up
     - Yo-Yo-Ansatz
-
-## Visualisierung
-- Netzplantechnik
-- Scrum Board
-- Kanban Board
-- Gantt-Diagramme
-
-### Projektstrukturplan
-- Gliederung
-- Kontrollelemente
-- statische Sicht
-- Zerlegung in Teilschritte
-- Verfahren/Vorgehensweise:
-    - **Top-down** (deduktiv)
-        - vom Ganzen zum Detail
-    - **Bottum-up** (induktiv)
-        - vom Detail zum Ganzen
-    - **Yo-Yo** (Gegenstrom)
 
 ### Netzplan
 - zeitliche und logische Abhängigkeiten
@@ -244,8 +241,7 @@
     - unflexibel
     - unkorrigierbar
     - längere Projektdauer
-
-Nacheinander abschließende Phasen
+- Nacheinander abschließende Phasen
 
 ### Qualität einer Präsentation
 - Strukturierung
@@ -253,16 +249,6 @@ Nacheinander abschließende Phasen
 - fachliche Korrektheit
 - souveräner Vortrag
 - zeitliche Vorgaben
-
-### "Agile Modelle"
-- Methoden richten sich nach Prinzipien statt Formalitäten
-- Prozessse sind kürzer und abgestimmter
-- Leitsätze:
-    - Individuen statt Prozesse
-    - Interaktion statt Werkzeuge
-    - Funktion statt Dokumentation
-    - Zusammenarbeit statt Verhandlung
-    - Reaktion statt Planung
 
 ### SCRUM
 - agiles Framework
@@ -292,177 +278,256 @@ Nacheinander abschließende Phasen
     - "Daily Standup"
         - Tägliche Besprechung
 
-## Teamarbeit
-### Teambildung und -entwicklung
-        Prozess der Teambildung nach Bruce Tuckman: Forming, Storming, Norming, Performing, (Adjourning)
-        Team als soziales Gefüge verstehen („social awareness“)
-        Phasen der Teamentwicklung kennen und anwenden (Konflikt, Kontrakt, Kooperation)
-### Reflexion
-        gemeinsame kritische Analyse der bisherigen Zusammenarbeit und der Ergebnisse („lessons learnt“)
-        offenes Ansprechen von Erfolgen und Problemen
-        gemeinsame Entwicklung von Maßnahmen zur Verbesserung, z.B. SCRUM-Retrospektive
-        konstruktive Kritik
-        Retrospektive: Wie kann der Prozess und die Zusammenarbeit im Team verbessert werden?
-        konstruktive Kritik: konkrete Wahrnehmung schildern (nicht interpretieren, nicht verallgemeinern), Auswirkungen aufzeigen, Ich-Botschaft senden, Wunsch äußern
-        Reflexionsmethoden, z.B. Feedback-Kultur, Lessons Learned
-### adressatengerechte Kommunikation
-### Methoden des sachbezogenen Verhandelns kennen und anwenden, Verhandlungen führen
-        Win-win-Strategie: Konfliktlösung ohne Verlierer
-        Harvard-Konzept
-            Menschen und Interessen trennen
-            Fokus auf Interessen und nicht auf Positionen
-            Entscheidungsoptionen entwickeln
-            objektive Beurteilungskriterien anwenden
-        BATNA: Best Alternative To a Negotiated Agreement
-        Communication is what the listener does (Peter Drucker)
-### Berücksichtigung der Formen von Arbeitsorganisation, z.B.:
-        Gruppenarbeit
-        Pair Programming
-### Betriebsrat
-        Rechte und Pflichten
-        rechtliche Voraussetzungen
-### Kündigung
-        gesetzliche/vertragliche Fristen
-        notwendige Unterlagen
-### Diversity, Interkulturalität, Fehlerkultur
+### Teambildung (Bruce Tuckman)
+1. Forming
+2. Storming
+3. Norming
+4. Performing
 
-## Wirtschaftlichkeit
-- Machbarkeitsanalyse: technisch, organisatorisch, wirtschaftlich, zeitlich, rechtlich
-- Make-or-buy-Entscheidung
+### Reflexion
+- Ergebnisse kritisch analysieren
+- Probleme offen ansprechen
+- Maßnahmen gemeinsam entwickeln
+- konstruktive Kritik
+    - nicht interpretieren
+    - nicht verallgemeinern
+    1. Wahrnehmung konkretisieren
+    2. Auswirkung aufzeigen
+    3. Ich-Botschaft
+    4. Wunsch äußern
+    5. sachliche Verhandlung
+    6. Win-Win-Lösung
+        - Fokus auf Interessen
+- Retrospektive
+
+# Wirtschaftlichkeit
+- Machbarkeitsanalyse
+- Make-or-buy
 - Risikoanalyse
-- Budgetplanung als Teil der Unternehmensplanung
-    - Budget: die für einen bestimmten Zweck zur Verfügung stehenden Geldmittel
-- effektiver und effizienter Einsatz von Arbeits- und Organisationsmitteln
-    - Effektivität: Die richtigen Dinge tun.
-    - Effizienz: Die Dinge richtig tun.
+- Budgetplanung
+    - Budget: für Zweck verfügbare Geldmittel
+- Organisationsmitteln
+    - Effektivität
+    - Effizienz
 - Prüfung des Ressourceneinsatzes auf:
-    - rechtliche Zulässigkeit
-    - technische und organisatorische Machbarkeit
-    - ökologische Nachhaltigkeit und Wirtschaftlichkeit
-- Prüfung der Wirtschaftlichkeit mittels betriebswirtschaftlicher Methoden, z.B.:
-    - Rentabilitätsrechnung
-    - Amortisationsrechnung
-- Betriebswirtschaftliche Kennzahlen, z.B. Umsatz, Gewinn, Deckungsbeitrag
+    - rechtlich zulässig?
+    - technisch und organisatorisch möglich?
+    - ökologisch nachhaltig und wirtschaftlich
+        - Rentabilitätsrechnung
+        - Amortisationsrechnung
+- Betriebswirtschaftliche Kennzahlen:
     - Umsatz: Absatzmenge * Verkaufspreis
     - Gewinn: Erlöse – Kosten
     - Deckungsbeitrag: Stückpreis – variable Stückkosten
     - Rentabilität: Gewinn / Kapital
     - Amortisation: Investition / Ertrag pro Jahr
-- Ermittlung und Bedeutung von Umsatz/Provision/Deckungsbeitrag/Kosten/Gewinn
-- Zahlungsverzug
+- Zahlungsverzug definieren
+    - mögliche Gründe
+    - Konsequenzen
     - Definition, Gründe, Konsequenzen
-    - Rechtsgrundlage/Definition für Zahlungsverzug
-- Möglichkeiten zum Umgang mit Liquiditätsengpässen
+    - Rechtsgrundlage
+- Liquiditätsengpässe umgehen
 - Gemeinkosten auf Kostenstellen verteilen
-- Kosten für eine Produkteinführung berechnen
-- Break-Even-Point ermitteln
-- Gewinn ermitteln
-- Vor-/Nachteile Kauf/Leasing/Miete
-- Eigen- und Fremdfinanzierung
-- Umrechnungen in Zahlensystemen (Dual, Dezimal, Oktal, Hexadezimal)
-- Profit-Center-Organisation
+- Produkteinführungs-Kosten berechnen
+- Break-Even-Point
+- Gewinn ?
+- Kauf/Leasing/Miete ?
+- Eigen- und Fremdfinanzierung ?
 - Handelskalkulation
-- Betriebsabrechnungsbogen, Nachkalkulation, Zuschlagskalkulation
-- Fehler in Lieferschein/Rechnung finden
-- gesetzliche Gewährleistungsfrist ermitteln
-- Umgang mit Mängeln, Mängelrüge
-- Umgang mit Vertragsstörungen
-- zweiseitiger Handelskauf und Rechte/Pflichten
+- Betriebsabrechnungsbogen
+- Nachkalkulation
+- Zuschlagskalkulation
+- Lieferschein/Rechnung prüfen
+- gesetzl. Gewährleistungsfrist ?
+- Mängel ?
+- Vertragsstörungen ?
+- Handelskaufrechte und -Pflichten
 - TCO erläutern
 - Rabatt und Skonto berechnen
+
 # Märkte und Bedarfe
-- Volkswirtschaftliche Sektoren: primär, sekundär, tertiär
-- Betriebliche Grundfunktionen: Beschaffung, Produktion, Vertrieb, Finanzierung
-- Marktformen, z.B. Monopol, Oligopol, Polypol, Käufer-/Verkäufermarkt, Marktgleichgewicht
-- Feststellung des Bedarfs an Waren, Dienstleistungen oder Personal in einer bestimmten Region, einer bestimmten Personengruppe oder in einem bestimmten Zeitraum, z.B.:
-    - Bedürfnis vs. Bedarf vs. Nachfrage, siehe Bedürfnisse, Bedarf & Nachfrage einfach erklärt
-    - Zielgruppendefinitionen und -abgrenzung
-    - Kundentypologien
-    - Konsumverhalten
-- Angebotsbewertung
-- Fragetechnik, aktives Zuhören, bedarfs- und adressatengerechte Präsentation
-- Eigene Datenerhebung (z.B. Kundenbefragung)
-- Auswertung vorhandener Daten (z.B. Anforderung an Büroarbeitsplätze)
-- Primär- und Sekundärforschung
-- Unterscheiden und Nutzen von Erhebungsmethoden, z.B.:
+- Volkswirtschaftliche Sektoren
+- Betriebliche Grundfunktionen
+- Marktformen
+
+## Volkswirtschaftliche Sektoren:
+- primär
+- sekundär
+- tertiär
+
+## Betriebliche Grundfunktionen:
+- Beschaffung
+- Produktion
+- Vertrieb
+- Finanzierung
+
+## Marktformen
+- Monopol
+- Oligopol
+- Polypol
+
+## Bedarf
+Waren, Dienstleistungen o. Personal einer Region, bestimmten Personengruppe o. bestimmten Zeitraum.
+
+- Bedürfnis vs. Bedarf vs. Nachfrage
+    - Bedürfnis + Kaufwille = Bedarf
+    - Bedarf + Kaufkraft = Nachfrage
+- Zielgruppe / Abgrenzung
+- Kundentypologie
+- Konsumverhalten
+- Angebot bewerten
+- Fragetechnik
+- aktiv zuhören
+- präsentieren
+- Daten / Kundenbefragung
+- Auswertung / Anforderung
+- Primär- und Sekundär
+- Erhebungsmethoden:
     - Benchmarking
     - Befragungen
     - Data Mining
-- Marktbeobachtung und Marktanalyse mit Marktdaten als Grundlage, z.B.:
-    - Preisentwicklungen
-    - Struktur der Anbieter
-    - Produktqualitäten
-- Unternehmens-/Gesellschaftsformen, z.B. AG, GmbH, SE, UG, GbR, OHG, KG, Ltd.
-    - Kriterien: Personen-/Kapitalgesellschaft, juristisch/natürlich, Organe/Gesellschafter, Haftung, Stammkapital, Firma
-# Kundenberatung/Präsentieren
-- Argumentations- und Präsentationstechniken
-    - zielgruppengerechte und lösungsorientierte Vorstellung von Produkten und Ergebnissen
-    - Medien zur Kundenpräsentation und -information, z.B. Kundengespräch via Webinar
-- Online-Schulungen
-- Website/Homepage
-- Kommunikationsmodelle, z.B.
-    - Sender-/Empfängermodell
+- Markt beobachten, analyse
+    - Daten sammeln:
+        - Preisentwicklung
+        - Anbieterstruktur
+        - Produktqualität
+
+## Unternehmenskriterien
+- Personen-/Kapitalgesellschaft
+- juristisch/natürlich
+- Organe/Gesellschafter
+- Haftung
+- Stammkapital
+- Firma
+
+## Gesellschaftsformen
+- AG (Aktiengesellschaft)
+- GmbH (Gesellschaft mit beschränkter Haftung)
+- SE ()
+- UG (Unternehmensgesellschaft)
+- GbR ()
+- OHG (Offene Handelsgesellschaft)
+- KG ()
+- Ltd. ()
+
+# Kundenberatung
+## Argumentation und Präsentation
+- zielgruppengerecht
+- lösungsorientiert
+- Medien nutzen
+    - Online
+    - Webinar
+    - Website
+- Modelle
     - Eisbergmodell
-    - 4-Ohren-Modell: Sachebene, Appell, Selbstoffenbarung, Beziehung
-- Technische und nicht-technische Texte
-- Digitale Suchabfragen unter Verwendung von Suchoperatoren
-- Auswertung von englischen Texten
-- Qualitätsmerkmale von Präsentationen
+    - 4-Ohren-Modell:
+        - Sachebene
+        - Appell
+        - Selbstoffenbarung
+        - Beziehung
+- Texte: technisch und nicht-technisch
+- digitale Suchabfragen mit Suchoperatoren
+- englische Texte auswerten
+- Präsentationsqualität
 - Medienkompetenz
-- unterschiedliche Quellen nutzen und bewerten, z.B.:
+- unterschiedliche Quellen:
     - Internet und Intranet
     - Fachliteratur
     - technische Dokumentationen
-- Berücksichtigung der geltenden Compliance-Regelungen, Ethik
+- Compliance-Regelungen, Ethik berücksichtigen
+
 # Marketing
 - Stärken-Schwächen-Analyse (SWOT etc.)
-- ABC-Analyse
-- Begleiten von IT-Vertriebsprozessen
-- Motive und Werte der Kunden
+- **ABC-Analyse**
+    - Klassifizierung
+- IT-Vertriebsprozesse begleiten
+- Kundenmotive und -Werte
 - Kundenzufriedenheit
-- Nutzwertanalyse
-- Vertriebsformen: direkter Vertrieb, indirekter Vertrieb
-- Cross-Selling, Upselling
-- Kundenbefragungen
-    - offene/geschlossene Fragen
-- Pre-Sales
-- Fachbegriffe kennen
-    - Marktvolumen, Absatz, Marktanalyse etc.
-    - B2B, B2C, B2G
-    - Umfrage, Beobachtung, Experiment, Testmarkt, Marktprognose, Panelerhebung
-    - Marktdurchdringung, Marktentwicklung, Markterschließung, Produktinnovation, Produktentwicklung, Diversifikation
-- AIDA (Attention, Interest, Desire, Action)
-- Phasen des Produktlebenszyklus
-    - Einführung, Wachstum, Reife, Sättigung, Rückgang, End-of-Life
-- Phasen der Technologieadaption
-    - Innovators, Early Adopters, Early Majority, Late Majority, Laggards
+- **Nutzwertanalyse**
 - Outsourcing (organisatorisch) vs. Offshoring (geografisch)
-- Geschäftsmodelle im Internet
-    - Freemium, In-Game-Payment
+- Geschäftsmodelle im Internet:
+    - Freemium
+    - In-Game-Payment
+
+## Vertriebsformen
+- direkter Vertrieb
+- indirekter Vertrieb
+- **Cross-Selling** / **Upselling**
+- **Pre-Sales**
+
+## Kundenbefragung
+- offene Fragen
+    - Was, Wie, Warum
+- geschlossene Fragen
+    - Ja / Nein
+
+## Fachbegriffe
+- Marktvolumen
+- Absatz
+- B2B, B2C, B2G
+- Marktprognose
+- Panelerhebung
+- Marktdurchdringung
+- Marktentwicklung
+- Markterschließung
+- Produktinnovation
+- Produktentwicklung
+- Diversifikation
+- AIDA (Attention, Interest, Desire, Action)
+
+## Produktlebenszyklus-Phasen
+- Einführung
+- Wachstum
+- Reife
+- Sättigung
+- Rückgang
+- End-of-Life
+
+### Technologieadaption-Phasen
+- Innovators
+- Early Adopters
+- Early Majority
+- Late Majority
+- Laggards
+
 ## Angebotsvergleich
-### Nötige Kenntnisse
-- Potenziale von IT-Systemen bzw. einem Verbund verschiedener Arten erkennen
-- IT-Systeme anhand ihres wirtschaftlichen Nutzens zum Unternehmenserfolg bewerten
-### Angebotsvergleiche
-- Gegenüberstellung Eigenfertigung oder Fremdbezug (Make or buy)
-- partieller/gewichteter Preisvergleich
-- qualitativer und quantitativer Angebotsvergleich
-- Auslastung und Anpassungsfähigkeit/Erweiterbarkeit, Zukunftssicherheit
-- aus den Angeboten verschiedener Lieferanten das am besten geeignete Angebot identifizieren, z.B. mithilfe der Nutzwertanalyse
-- technische Leistungskriterien verschiedener IT-Systeme vergleichen und bewerten
-### Ausschreibung von Leistungen
-### Beschreibung von Leistungen, z.B.:
-- Lasten- und Pflichtenheft
-- Leistungsverzeichnis
-### Kosten
-- Anschaffungskosten
-- Betriebskosten
-- Variable und fixe Kosten
-- Lizenzkosten
-- Finanzierungskosten
-- Kostenvergleich: Leasing, Kauf, Miete, Pay-per-use
-- Preis-Leistungs-Verhältnis
-- Gegenüberstellen von Kosten/Nutzen
-### Kalkulation
-- Handelskalkulation: Listen-, Ziel-, Bareinkaufspreis, Bezugspreis, Selbstkosten, Bar-, Ziel-, Listenverkaufspreis
-- Zuschlagskalkulation: Materialeinzel-, Materialgemein-, Lohneinzel-, Lohngemeinkosten, Herstellkosten, Verwaltungs-, Vertriebsgemeinkosten
+- Potenzial erkennen
+- wirtschaftlicher Nutzen
+- Angebots- und Preisvergleich
+    - qualitativ / quantitativ
+- Auslastung
+- Anpassungsfähigkeit
+- Erweiterbarkeit
+- Zukunftssicherheit
+- Nutzwertanalyse verschiedener Lieferanten
+- technische Leistungskriterien vergleichen
+
+## Kosten
+- Anschaffung
+- Betrieb
+- Variable- und Fixkosten
+- Lizenz
+- Finanzierung:
+    - Leasing, Kauf, Miete, Pay-per-use vergleichen
+- Preis-Leistung
+- Kosten/Nutzen gegenüberstellen
+
+### Handelskalkulation
+- Listenpreis
+- Zielpreis
+- Bareinkaufs-Preis
+- Bezugspreis
+- Selbstkosten
+- Barverkaufs-Preis
+- Zielverkaufs-Preis
+- Listenverkaufs-Preis
+
+### Zuschlagskalkulation
+- Materialeinzel-Kosten
+- Materialgemein-Kosten
+- Lohneinzel-Kosten
+- Lohngemein-Kosten
+- Herstell-Kosten
+- Verwaltungs-Kosten
+- Vertriebsgemein-Kosten
+
