@@ -1,18 +1,10 @@
-# Projektmanagement und Standards
+# Projektmanagement
+Nach Standards orientiertes Phasenmodell
 
-## 4-Phasen-Modell
 1. initieren
 2. planen
 3. steuern, kontrollieren
 4. abschließen
-
-## Rahmenbedingungen abklären
-- **Datensicherheit**
-- **Datenschutz**
-- wirtschaftlich
-- technisch
-- rechtlich
-- terminlich
 
 ## Projekte sind...
 - befristet
@@ -28,6 +20,14 @@
 - Kosten
 - Zeit
 
+## Rahmenbedingungen
+- **Datensicherheit**
+- **Datenschutz**
+- wirtschaftlich
+- technisch
+- rechtlich
+- terminlich
+
 ## SMART-Regel
 - spezifisch
 - messbar
@@ -39,7 +39,7 @@
 - **Risikoanalyse**
 - **Stakeholderanalyse**
 
-#### Perspektiven:
+#### Perspektiven
 - technisch
 - organisatorisch
 - wirtschaftlich
@@ -171,11 +171,11 @@ Potentielle Probleme vor und nach Projekt, in Prozessen identifieren und Lösung
     - Reaktion statt Planung
 
 #### Anwendung
-    - Projektplan,
-    - Meilensteine,
-    - Risikoanalyse,
-    - mit Standards / Normen,
-    - Managementsysteme
+- Projektplan,
+- Meilensteine,
+- Risikoanalyse,
+- mit Standards / Normen,
+- Managementsysteme
 
 #### Planung
 - Projektstrukturplan,

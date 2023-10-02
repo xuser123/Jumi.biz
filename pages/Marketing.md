@@ -3,11 +3,12 @@
 - **ABC-Analyse**
     - Klassifizierung
 - IT-Vertriebsprozesse begleiten
-- Kundenmotive und -Werte
+- Kundenmotive und -werte
 - Kundenzufriedenheit
 - **Nutzwertanalyse**
-- Outsourcing (organisatorisch) vs. Offshoring (geografisch)
-- Geschäftsmodelle im Internet:
+- **Outsourcing** (organisatorisch)
+- **Offshoring** (geografisch)
+- Internet-Geschäftsmodelle
     - Freemium
     - In-Game-Payment
 
@@ -17,21 +18,20 @@
 - **Cross-Selling** / **Upselling**
 - **Pre-Sales**
 
-# Kundenberatung
-## Argumentation und Präsentation
-- zielgruppengerecht
+## Kundenberatung
+- zielgruppengerecht,
 - lösungsorientiert
+- argumentieren und präsentieren
 - Medien nutzen
     - Online
     - Webinar
     - Website
-- Modelle
-    - Eisbergmodell
-    - 4-Ohren-Modell:
-        - Sachebene
-        - Appell
-        - Selbstoffenbarung
-        - Beziehung
+- **Eisbergmodell**
+- **4-Ohren-Modell**
+    - Sachebene
+    - Appell
+    - Selbstoffenbarung
+    - Beziehung
 - Texte: technisch und nicht-technisch
 - digitale Suchabfragen mit Suchoperatoren
 - englische Texte auswerten
@@ -40,7 +40,7 @@
 - unterschiedliche Quellen:
     - Internet und Intranet
     - Fachliteratur
-    - technische Dokumentationen
+    - techn. Dokumentation
 - Compliance-Regelungen, Ethik berücksichtigen
 
 ## Kundenbefragung

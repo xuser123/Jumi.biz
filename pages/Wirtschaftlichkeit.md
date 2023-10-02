@@ -1,6 +1,6 @@
 # Wirtschaftlichkeit
 - Machbarkeitsanalyse
-- Make-or-buy
+- **Make-or-buy**
 - Risikoanalyse
 - Budgetplanung
     - Budget: für Zweck verfügbare Geldmittel
@@ -14,34 +14,34 @@
         - Rentabilitätsrechnung
         - Amortisationsrechnung
 - Betriebswirtschaftliche Kennzahlen:
-    - Umsatz: Absatzmenge * Verkaufspreis
-    - Gewinn: Erlöse – Kosten
-    - Deckungsbeitrag: Stückpreis – variable Stückkosten
-    - Rentabilität: Gewinn / Kapital
-    - Amortisation: Investition / Ertrag pro Jahr
-- Zahlungsverzug definieren
-    - mögliche Gründe
-    - Konsequenzen
-    - Definition, Gründe, Konsequenzen
+    - **Umsatz** = Absatzmenge * Verkaufspreis
+    - **Gewinn** = Erlöse – Kosten
+    - **Deckungsbeitrag**: Stückpreis – variable Stückkosten
+    - **Rentabilität** = Gewinn / Kapital
+    - **Amortisation** = Investition / Ertrag pro Jahr
+- Zahlungsverzug
+    - mögliche Gründe,
+    - Konsequenzen definieren
     - Rechtsgrundlage
 - Liquiditätsengpässe umgehen
-- Gemeinkosten auf Kostenstellen verteilen
-- Produkteinführungs-Kosten berechnen
-- Break-Even-Point
-- Gewinn ?
+- **Gemeinkosten** auf Kostenstellen verteilen
+- Produkteinführungs-Kosten,
+- **Break-Even-Point**,
+- Gewinn berechnen
 - Kauf/Leasing/Miete ?
 - Eigen- und Fremdfinanzierung ?
-- Handelskalkulation
-- Betriebsabrechnungsbogen
-- Nachkalkulation
-- Zuschlagskalkulation
-- Lieferschein/Rechnung prüfen
-- gesetzl. Gewährleistungsfrist ?
-- Mängel ?
-- Vertragsstörungen ?
-- Handelskaufrechte und -Pflichten
-- TCO erläutern
-- Rabatt und Skonto berechnen## Angebotsvergleich
+- **Handelskalkulation**
+- **Betriebsabrechnungsbogen**
+- **Nachkalkulation**
+- **Zuschlagskalkulation**
+- Lieferschein/Rechnung,
+- gesetzl. Gewährleistungsfrist,
+- Mängel,
+- Vertragsstörungen,
+- Handelskaufrechte und -Pflichten prüfen
+- Rabatt und Skonto berechnen
+
+# Angebotsvergleich
 - Potenzial erkennen
 - wirtschaftlicher Nutzen
 - Angebots- und Preisvergleich
@@ -87,12 +87,12 @@
 - Betriebliche Grundfunktionen
 - Marktformen
 
-## Volkswirtschaftliche Sektoren:
+## Volkswirtschaftliche Sektoren
 - primär
 - sekundär
 - tertiär
 
-## Betriebliche Grundfunktionen:
+## Betriebliche Grundfunktionen
 - Beschaffung
 - Produktion
 - Vertrieb
@@ -104,26 +104,26 @@
 - Polypol
 
 ## Bedarf
-Waren, Dienstleistungen o. Personal einer Region, bestimmten Personengruppe o. bestimmten Zeitraum.
+Waren, Dienstleistungen o. Personal einer Region, bestimmter Personengruppe o. Zeiträume.
 
 - Bedürfnis vs. Bedarf vs. Nachfrage
-    - Bedürfnis + Kaufwille = Bedarf
-    - Bedarf + Kaufkraft = Nachfrage
+    - **Bedürfnis** + Kaufwille = Bedarf
+    - **Bedarf** + Kaufkraft = Nachfrage
 - Zielgruppe / Abgrenzung
-- Kundentypologie
-- Konsumverhalten
+- Kundentypologie,
+- Konsumverhalten,
 - Angebot bewerten
 - Fragetechnik
 - aktiv zuhören
 - präsentieren
 - Daten / Kundenbefragung
 - Auswertung / Anforderung
-- Primär- und Sekundär
+- Primär- / Sekundär
 - Erhebungsmethoden:
     - Benchmarking
     - Befragungen
     - Data Mining
-- Markt beobachten, analyse
+- Markt beobachten, analysieren,
     - Daten sammeln:
         - Preisentwicklung
         - Anbieterstruktur
