@@ -12,6 +12,15 @@
     - Freemium
     - In-Game-Payment
 
+# Betriebliche Grundfunktionen
+- Beschaffung, Einkauf
+- Produktion, Herstellung
+- Absatz/Vertrieb, Verkauf
+- Finanzierung, Versorgung
+    - Steuerung und Kontrolle
+    - Kapitalbeschaffung
+    - Kapitalverwendung
+
 ## Vertriebsformen
 - direkter Vertrieb
 - indirekter Vertrieb
@@ -71,9 +80,25 @@
 - Rückgang
 - End-of-Life
 
-### Technologieadaption-Phasen
+## Technologieadaption-Phasen
 - Innovators
 - Early Adopters
 - Early Majority
 - Late Majority
 - Laggards
+
+## CMS Content Management System
+- Verwaltung,
+- Konfiguration,
+- redaktionelle Bearbeitung von Inhalten
+    - z.B. Website
+
+## ERP Enterprise Ressource Planning System
+- Werkzeug zur Unterstützung der Ressourcenplanung
+- Bei Unternehmensprozesse
+    - z.B. Produktion, Materialwirtschaft, Vertrieb
+
+## CRM Customer Relationship Management System
+- Vollständige Planung, Steuerung, Durchführung
+- Bei interaktive Prozesse mit Kunden
+- Kundenkommunikation unterstützen

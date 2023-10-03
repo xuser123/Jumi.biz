@@ -158,8 +158,9 @@ Potentielle Probleme vor und nach Projekt, in Prozessen identifieren und Lösung
 - V-Modell
 
 #### *agil*
-- **Scrum** (visuell),
-- **Kanban** (visuell),
+- **Scrum**,
+- **Kanban**,
+- Inkrementelle Vorgehensweise,
 - Extreme Programming
 - Prinzipien statt Formalitäten
 - kürzere Prozesse, abgestimmt
@@ -279,10 +280,10 @@ Potentielle Probleme vor und nach Projekt, in Prozessen identifieren und Lösung
         - Tägliche Besprechung
 
 ### Teambildung (Bruce Tuckman)
-1. Forming
-2. Storming
-3. Norming
-4. Performing
+1. Forming, Orientierungsphase, definieren
+2. Storming, Nahkampfphase, Rollen verteilen
+3. Norming, Organisationsphase, Struktur und Regeln
+4. Performing, Hochleistungsphase, eigenständig und selbstorganisiert
 
 ### Reflexion
 - Ergebnisse kritisch analysieren

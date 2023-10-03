@@ -81,3 +81,27 @@
 Kundenbedürfnisse und -erwartungen besser erfüllen
 
 ##
+
+## Softwareanforderungen
+- Geschäftsanforderungen
+- Benutzeranforderungen
+- Funktionale Anforderungen
+- Projektanforderungen
+
+### Geschäftsanforderungen
+- Aus Geschäftstätigkeit von Kunden und Markt
+- Durch Management und Marketing
+
+### Benutzeranforderungen
+- Geschäftsanforderung der Benutzer erfüllen
+- Defniert durch Geschäftsanalysten, Benutzer und Vertreter, Produktmanager
+
+### Funktionale Anforderungen
+- Benutzeranforderungen gewährleisten
+- Defniert durch Geschäftsanalysten, Produktmanager
+- Absprache mit Softwareentwicklung und Testabteilung
+
+### Projektanforderungen
+- Projekterfolg sichern
+- ALM (Application Lifecycle Managements) Produktbetreuung
+
