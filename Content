@@ -31,6 +31,7 @@ snippets,vorlagen,lernen,verstehen,
 <link rel="stylesheet" href="assets/css/menu.css">
 <link rel="stylesheet" href="assets/css/modal.css">
 <link rel="stylesheet" href="assets/css/media-queries.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
 </head>
 <body id=" ଘ(੭*ˊᵕˋ)੭* ̀ˋ hello ɪɴᴛᴇʀɴᴇᴛ ">
@@ -225,6 +226,7 @@ snippets,vorlagen,lernen,verstehen,
 <!-- Skripte -->
     <script src="assets/js/menu.js"></script>
 	<script src="assets/js/modal.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- for Easteregg Project:
     <script src="assets/js/read.js"></script> -->
 
