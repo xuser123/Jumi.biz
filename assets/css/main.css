@@ -30,7 +30,8 @@ a:not([class]) { /* <a> tags ohne class= bekommen Standard-Stil */
     text-decoration-skip-ink: auto;
 }
 b {
-    color: #8dd88e;
+    color: #ffbfea;
+    animation: neon .08s ease-in-out infinite alternate;
 }
 p {
     display: inline-block;

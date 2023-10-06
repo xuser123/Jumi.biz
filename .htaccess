@@ -1,0 +1,60 @@
+## Directory-Listening verhindern:
+Options -Indexes
+
+## URL-Neuschreibung aktivieren:
+RewriteEngine On
+
+## Umleitung auf https:
+RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
+RewriteCond %{HTTP:X-Forwarded-Proto} =""
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+## www in URL entfernen:
+RewriteCond %{HTTP_HOST} ^www\.jumi\.biz [NC]
+RewriteRule ^(.*)$ https://jumi.biz/$1 [L,R=301]
+
+## Cache-Dauer für Dateitypen:
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 month"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+
+## Dateitypen blockieren:
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+## Hotlinking verhindern:
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^(http|https)://(www\.)?jumi\.biz/ [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
+
+## Eigene Seitenfehler-Meldung:
+ErrorDocument 404 /error/404.html
+ErrorDocument 500 /error/500.html
+
+## IP blockieren:
+#Deny from 137.137.137.137
+
+## Verzeichniszugriff einschränken:
+#AuthType Basic
+#AuthName "Restricted Area"
+#AuthUserFile /path/to/.htpasswd
+#Require valid-user
+
+## Allowing Cross-Origin Resource Sharing (CORS) erlauben:
+#<IfModule mod_headers.c>
+#    Header set Access-Control-Allow-Origin "*"
+#</IfModule>
+
+## MIME-Typ mit Dateityp assoziieren:
+#AddType application/x-httpd-php .html

@@ -150,14 +150,14 @@ Potentielle Probleme vor und nach Projekt, in Prozessen identifieren und Lösung
 - Bearbeitungsstatus,
     - zB. Ticketsystem
 
-### Projektphasen Methoden und Modelle
+### Projektphasen-Methoden
 
-#### *klassisch*
+#### *klassische* Modelle
 - **Wasserfall**-,
 - Spiral-,
 - V-Modell
 
-#### *agil*
+#### *agile* Modelle
 - **Scrum**,
 - **Kanban**,
 - Inkrementelle Vorgehensweise,
@@ -280,7 +280,7 @@ Potentielle Probleme vor und nach Projekt, in Prozessen identifieren und Lösung
         - Tägliche Besprechung
 
 ### Teambildung (Bruce Tuckman)
-1. Forming, Orientierungsphase, definieren
+1. Forming, Orientierungsphase, Teams definieren
 2. Storming, Nahkampfphase, Rollen verteilen
 3. Norming, Organisationsphase, Struktur und Regeln
 4. Performing, Hochleistungsphase, eigenständig und selbstorganisiert

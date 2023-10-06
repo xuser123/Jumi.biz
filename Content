@@ -69,11 +69,11 @@ snippets,vorlagen,lernen,verstehen,
 <article class="content flow">
   <h2>IT-Systeme</h2>
   <ul>
-    <li><b>Hardware</b></li>
+    <h3>Hardware</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
-    <li><b>Netzwerktechnik</b></li>
+    <h3>Netzwerktechnik</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
@@ -82,11 +82,11 @@ snippets,vorlagen,lernen,verstehen,
 <article class="content flow">
   <h2>Internet</h2>
   <ul>
-    <li><b>Multimedia</b></li>
+    <h3>Multimedia</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
-    <li><b>Software</b></li>
+    <h3>Software</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
@@ -95,11 +95,11 @@ snippets,vorlagen,lernen,verstehen,
 <article class="content flow">
   <h2>IT-Sicherheit</h2>
   <ul>
-    <li><b>Betriebssysteme</b></li>
+    <h3>Betriebssysteme</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
-    <li><b>Datenschutz</b></li>
+    <h3>Datenschutz</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
@@ -108,11 +108,11 @@ snippets,vorlagen,lernen,verstehen,
 <article class="content flow">
   <h2>Softwareentwicklung</h2>
   <ul>
-    <li><b>Qualitätssicherung</b></li>
+    <h3>Qualitätssicherung</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
-    <li><b>Programmierung</b></li>
+    <h3>Programmierung</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
@@ -141,7 +141,7 @@ snippets,vorlagen,lernen,verstehen,
 <article class="content flow">
   <h3>Projektmanagement</h3>
   <ul>
-    <li><b>Wissensfelder:</b></li>
+    <h3>Wissensfelder:</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Integration</a></b><span class="kleintxt"> <span class="kleintxt">Koordination / Zuweisung</span></span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Umfang</a></b><span class="kleintxt"> Vorgaben / Überwachung</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Zeitplanung</a></b><span class="kleintxt"> Termine / Netzplan</span></li>
@@ -155,10 +155,10 @@ snippets,vorlagen,lernen,verstehen,
 <article class="content flow">
   <h3>Marketing</h3>
   <ul>
-    <li><b>Kundenberatung</b></li>
+    <h3>Kundenberatung</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
-    <li><b>Kategorie 2</b></li>
+    <h3>Kategorie 2</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
@@ -167,11 +167,11 @@ snippets,vorlagen,lernen,verstehen,
 <article class="content flow">
   <h3>Wirtschaftlichkeit</h3>
   <ul>
-    <li><b>Märkte und Bedarfe</b></li>
+    <h3>Märkte und Bedarfe</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
-    <li><b>Rechnungswesen</b></li>
+    <h3>Rechnungswesen</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
@@ -180,9 +180,9 @@ snippets,vorlagen,lernen,verstehen,
 <article class="content flow">
   <h3>Qualitätssicherung</h3>
   <ul>
-    <li><b>Kategorie 1</b></li>
+    <h3>Kategorie 1</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
-    <li><b>Kategorie 2</b></li>
+    <h3>Kategorie 2</h3>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
   <li><b><a href="https://www.jumi.biz/pages/###"> Thema</a></b><span class="kleintxt"> nicht vorhanden</span></li>
