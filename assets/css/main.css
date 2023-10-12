@@ -33,6 +33,10 @@ b {
     color: #ffbfea;
     animation: neon .08s ease-in-out infinite alternate;
 }
+#boltNoGlowing > b {
+    color: #ffbfea;
+    animation: none;
+}
 p {
     display: inline-block;
     line-height: 1.337rem;
