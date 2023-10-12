@@ -33,7 +33,7 @@ b {
     color: #ffbfea;
     animation: neon .08s ease-in-out infinite alternate;
 }
-#boltNoGlowing > b {
+#boltNoGlowing {
     color: #ffbfea;
     animation: none;
 }
