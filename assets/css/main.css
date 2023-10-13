@@ -74,7 +74,8 @@ main {
 img {width: 100%;}
 .content > h1, h2, h3, h4 {color: #8dd88e;}
 .content a {color: #00f0f0;}
-.content a:hover {
+.content a:hover,
+.content a:focus {
     text-decoration: none;
     color: #ffbfea;
     animation: neon .08s ease-in-out infinite alternate;
