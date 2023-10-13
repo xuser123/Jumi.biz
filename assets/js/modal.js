@@ -1,66 +1,39 @@
+const getElement = id => document.getElementById(id);
+const showModal = modal => modal.showModal();
+const closeModal = modal => modal.close();
 
-const trigger01 = document.getElementById('modalTrigger01');
-const trigger02 = document.getElementById('modalTrigger02');
-const trigger03 = document.getElementById('modalTrigger03');
-const modal01 = document.getElementById('openModal01');
-const modal02 = document.getElementById('openModal02');
-const modal03 = document.getElementById('openModal03');
-const closeButton01 = document.getElementById('closeModal01');
-const closeButton02 = document.getElementById('closeModal02');
-const closeButton03 = document.getElementById('closeModal03');
+const trigger01 = getElement('modalTrigger01');
+const trigger02 = getElement('modalTrigger02');
+const trigger03 = getElement('modalTrigger03');
+const modal01 = getElement('openModal01');
+const modal02 = getElement('openModal02');
+const modal03 = getElement('openModal03');
+const closeButton01 = getElement('closeModal01');
+const closeButton02 = getElement('closeModal02');
+const closeButton03 = getElement('closeModal03');
 
-trigger01.addEventListener('click', function() {
-  modal01.showModal();
-});
-trigger02.addEventListener('click', function() {
-  modal02.showModal();
-});
-trigger03.addEventListener('click', function() {
-  modal03.showModal();
-});
+trigger01.addEventListener('click', () => showModal(modal01));
+trigger02.addEventListener('click', () => showModal(modal02));
+trigger03.addEventListener('click', () => showModal(modal03));
 
-closeModal01.addEventListener('click', function() {
-  modal01.close();
-});
-closeModal02.addEventListener('click', function() {
-  modal02.close();
-});
-closeModal03.addEventListener('click', function() {
-  modal03.close();
-});
+closeButton01.addEventListener('click', () => closeModal(modal01));
+closeButton02.addEventListener('click', () => closeModal(modal02));
+closeButton03.addEventListener('click', () => closeModal(modal03));
 
-modal01.addEventListener("click", e => { // Close On Outside Click
-    const dialogDimensions01 = modal01.getBoundingClientRect()
+const addOutsideClickListener = (modal, index) => {
+  modal.addEventListener('click', e => {
+    const dialogDimensions = modal.getBoundingClientRect();
     if (
-        e.clientX < dialogDimensions01.left ||
-        e.clientX > dialogDimensions01.right ||
-        e.clientY < dialogDimensions01.top ||
-        e.clientY > dialogDimensions01.bottom
+      e.clientX < dialogDimensions.left ||
+      e.clientX > dialogDimensions.right ||
+      e.clientY < dialogDimensions.top ||
+      e.clientY > dialogDimensions.bottom
     ) {
-        modal01.close()
+      modal.close();
     }
-})
-
-modal02.addEventListener("click", e => { // Close On Outside Click
-    const dialogDimensions02 = modal02.getBoundingClientRect()
-    if (
-        e.clientX < dialogDimensions02.left ||
-        e.clientX > dialogDimensions02.right ||
-        e.clientY < dialogDimensions02.top ||
-        e.clientY > dialogDimensions02.bottom
-    ) {
-        modal02.close()
-    }
-})
-
-modal03.addEventListener("click", e => { // Close On Outside Click
-    const dialogDimensions03 = modal03.getBoundingClientRect()
-    if (
-        e.clientX < dialogDimensions03.left ||
-        e.clientX > dialogDimensions03.right ||
-        e.clientY < dialogDimensions03.top ||
-        e.clientY > dialogDimensions03.bottom
-    ) {
-        modal03.close()
-    }
-})
+  });
+};
+// addOutsideClickListener reduces redundancy in listeners for modal clicks
+addOutsideClickListener(modal01, 1);
+addOutsideClickListener(modal02, 2);
+addOutsideClickListener(modal03, 3);
