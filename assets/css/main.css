@@ -6,12 +6,13 @@ main {
     padding-bottom: 6rem;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-.content > h1 {color: #ffbfea;}
-.content > h2, h3, h4 {
+.content > h1 {color: #ffbfea;} /* pink */
+.content > h2, h3, h4 { /* grün */
     color: #8dd88e;
     text-shadow: none;
 }
-.content a {color: #00f0f0;}
+.content a, /* blau */
+.content b {color: #00f0f0;}
 .content a:hover,
 .content a:focus {
     text-decoration: none;
