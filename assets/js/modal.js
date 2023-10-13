@@ -37,3 +37,28 @@ const addOutsideClickListener = (modal, index) => {
 addOutsideClickListener(modal01, 1);
 addOutsideClickListener(modal02, 2);
 addOutsideClickListener(modal03, 3);
+
+// making images focus-able with tab and open modal by enter
+const makeImageFocusable = img => img.setAttribute('tabindex', '0');
+
+const openModalOnEnter = (img, modal) => {
+  img.addEventListener('keydown', e => {
+    if (e.key === 'Enter') modal.showModal();
+  });
+};
+
+const img1 = document.getElementById('modalTrigger01');
+const img2 = document.getElementById('modalTrigger02');
+const img3 = document.getElementById('modalTrigger03');
+
+const modal1 = document.getElementById('modal1');
+const modal2 = document.getElementById('modal2');
+const modal3 = document.getElementById('modal3');
+
+makeImageFocusable(img1);
+makeImageFocusable(img2);
+makeImageFocusable(img3);
+
+openModalOnEnter(img1, modal1);
+openModalOnEnter(img2, modal2);
+openModalOnEnter(img3, modal3);
