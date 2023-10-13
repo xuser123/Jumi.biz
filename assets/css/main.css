@@ -6,8 +6,8 @@ main {
     padding-bottom: 6rem;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-.content > h1, h2 {color: #ffbfea;}
-.content > h3, h4 {
+.content > h1 {color: #ffbfea;}
+.content > h2, h3, h4 {
     color: #8dd88e;
     text-shadow: none;
 }
