@@ -29,10 +29,6 @@ a {
 a:not([class]) { /* <a> tags ohne class= bekommen Standard-Stil */
     text-decoration-skip-ink: auto;
 }
-b {
-    color: #ffbfea;
-    animation: neon .08s ease-in-out infinite alternate;
-}
 p {
     display: inline-block;
     line-height: 1.337rem;
@@ -84,6 +80,7 @@ img {width: 100%;}
     animation: neon .08s ease-in-out infinite alternate;
     text-shadow: none;
 }
+.content b {color: #00f0f0;}
 .content:nth-child(1) {grid-area: one;}
 .content:nth-child(2) {grid-area: two;}
 .content:nth-child(3) {grid-area: three;}
