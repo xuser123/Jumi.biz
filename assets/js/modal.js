@@ -51,9 +51,9 @@ const img1 = document.getElementById('modalTrigger01');
 const img2 = document.getElementById('modalTrigger02');
 const img3 = document.getElementById('modalTrigger03');
 
-const modal1 = document.getElementById('imgModal01');
-const modal2 = document.getElementById('imgModal02');
-const modal3 = document.getElementById('imgModal03');
+const modal1 = getElement('openModal01');
+const modal2 = getElement('openModal02');
+const modal3 = getElement('openModal03');
 
 makeImageFocusable(img1);
 makeImageFocusable(img2);
