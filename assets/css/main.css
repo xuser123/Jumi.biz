@@ -70,25 +70,3 @@ main {
     padding-left: 1em;
     border: 3px solid #133337;
 }
-.header-content {
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    letter-spacing: 0.2em;
-}
-.jumi-logo,.profil-links {
-    top: 0.5em;
-    left: 1em;
-    position: absolute;
-    font-size: 1.337rem;
-    margin: 0;
-}
-.jumi-logo a {
-    cursor: pointer;
-    animation: neon .08s ease-in-out infinite alternate;
-    text-decoration: none;
-    color: inherit;
-}
-
