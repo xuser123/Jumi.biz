@@ -6,21 +6,24 @@ main {
     padding-bottom: 6rem;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-.content > h1 {color: #ffbfea;} /* pink */
-.content > h2, h3, h4 { /* grün */
-    color: #8dd88e;
+.content > h1 {
+    color: #ffbfea; /* pink */
+    animation: neon .08s ease-in-out infinite alternate;
+    text-shadow: none;}
+.content > h2, h3, h4 {
+    color: #8dd88e; /* grün */
     text-shadow: none;
 }
-.content a, /* blau */
-.content b {color: #00f0f0;}
+.content a,
+.content b {color: #00f0f0;} /* blau */
 .content a:hover,
 .content a:focus {
     text-decoration: none;
-    color: #ffbfea;
+    color: #ffbfea; /* pink */
     animation: neon .08s ease-in-out infinite alternate;
     text-shadow: none;
 }
-.content b {color: #00f0f0;}
+.content b {color: #00f0f0;} /* blau */
 .content:nth-child(1) {grid-area: one;}
 .content:nth-child(2) {grid-area: two;}
 .content:nth-child(3) {grid-area: three;}
