@@ -4,6 +4,10 @@ Options -Indexes
 ## URL-Neuschreibung aktivieren:
 RewriteEngine On
 
+## always use HTTPS
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+
 ## Umleitung auf https:
 #RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
 #RewriteCond %{HTTP:X-Forwarded-Proto} =""
