@@ -6,7 +6,8 @@ main {
     padding-bottom: 6rem;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
-.content > h1, h2, h3, h4 {color: #8dd88e;}
+.content > h1, h2 {color: #8dd88e;}
+.content > h3, h4 {color: #ffbfea;}
 .content a {color: #00f0f0;}
 .content a:hover,
 .content a:focus {
