@@ -54,11 +54,21 @@ main {
     justify-content: space-between;
 }
 .flow > *:where(:not(:first-child)) {
-    margin-top: var(--flow-spacer, 0.6em);
+    margin-top: var(--flow-spacer, 0.6rem);
 }
 .flex {
     display: flex;
     gap: var(--gap, 0.6rem);
+}
+.inside-content {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.in-inside {
+    height:100%;
+    margin-top: 0;
 }
 
 .window-content { /* Code-Syntax */

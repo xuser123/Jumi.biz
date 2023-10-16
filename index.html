@@ -24,7 +24,7 @@ snippets,vorlagen,lernen,verstehen,
 
 <!-- Debuger (falls nötig)
         <meta http-equiv="refresh"y content="6">
-        <style>* {border: 1px solid red;}</style>-->
+        <style>* {border: 1px solid red;}</style> -->
 
 <!-- Layout -->
 <link rel="stylesheet" href="assets/css/style.css">
@@ -73,26 +73,38 @@ snippets,vorlagen,lernen,verstehen,
 <!-- print("hello world")  -->
 <h2>print("hello world") </h2>
     <p>Diese Website ist im Aufbau.</p>
-	<ul class="kleintxt"><li>Update[2022-11]: Neue Snippets</li>
-	<li>Update[2023-03]: Neue index.php</li>
-	<li>Upgrade[2023-08]: Struktur verbessert</li>
-	<li>Upgrade[2023-10]: Neue Content Struktur</li></ul>
+	<ul class="kleintxt">
+	<li>[2019-06]: Domain gemietet</li>
+	<li>[2020/21]: Konzeptentwicklung</li>
+	<li>[2022-11]: Ausarbeitung</li>
+	<li>[2023-03]: Designentwicklung</li>
+	<li>[2023-08]: Github-Anbindung</li>
+	<li>[2023-10]: Quelltext-Umsetzung</li></ul>
 
 <!-- WTF is Jumi.biz ? -->
 <h2>WTF is Jumi.biz ?</h2>
 	<p>Hier findest du Zusammenfassungen zu verschiedenen Computerthemen. </p>
-	<a href="https://jumi.biz/Content.htm"><h2>Inhalte:</h2></a>
-	<p class="kleintxt">Datensicherheit, Netzwerke, Monitoring, LinuxShell, Dateisysteme, und mehr.</p>
 
-<!-- Navigation:  -->
-<div class="flow">
-<link rel="stylesheet" href="assets/css/word-as-button.css">
-
-<h4>Navigation: </h4>
+<div class="inside-content">
+<div class="in-inside">
+<h3><a href="https://jumi.biz/Content.htm">
+Inhalte:</a></h3>
+<ul>
+<li>Sicherheit</li>
+<li>Netzwerke</li>
+<li>Dateisysteme</li>
+<li>Zahlensysteme</li>
+<li>LinuxShell</li>
+<li></li>
+</ul>
+</div>
+<div class="in-inside">
+<h3>Navigation: </h3>
+    <link rel="stylesheet" href="assets/css/word-as-button.css">
     <ol><li><div class="keyboard-styled-word"><span>TAB</span></div> Selektieren </li>
     <li><div class="keyboard-styled-word"><span>Enter</span></div> Öffnen </li></ol>
     <ul><li>Rückwärts selektieren<br><div class="keyboard-styled-word"><span>Shift</span></div> + <div class="keyboard-styled-word"><span>TAB</span></div></li></ul>
-
+</div>
 </div>
 </article>
 <article class="content flow">
@@ -156,7 +168,7 @@ alt="Picture shows computer">
 <article class="content flow">
 
 <!-- Shownotes -->
-<h2>Shownotes</h2>
+<h3>Shownotes</h3>
 	<ul><li>Kommasetzung mit KI: <a href="https://komma.ai/#" target="_blank">komma.ai</a></li>
 	<li>Suchmaschine mit KI: <a href="https://you.com" target="_blank">you.com</a></li>
 	<li>HTML-Checker: <a href="https://validator.w3.org/" target="_blank">validator.w3.org</a></li>
@@ -184,6 +196,19 @@ alt="Picture shows computer">
     <!-- PDF-Export-Script (jsPDF):
 https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js
 <script src="assets/js/jspdf.umd.min.js"> -->
+
+<!-- HTML-Analyzer Debugging --
+<h1>HTML-Analyzer</h1>
+<div class="flex">
+<h3>Tags:</h3>
+<ul id="tagList"></ul>
+<h3>Classes:</h3>
+<ul id="classList"></ul>
+<h3>IDs:</h3>
+<ul id="idList"></ul>
+</div>
+<script src="assets/js/html-analyzer.js"></script>
+<!-- HTML-Analyzer Debugging -->
 
 </body>
 </html>
