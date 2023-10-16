@@ -12,6 +12,7 @@ main {
     text-shadow: none;}
 .content > h2, h3, h4 {
     color: #8dd88e; /* grün */
+    margin-top: 1.3em;
     text-shadow: none;
 }
 .content a,
@@ -53,7 +54,7 @@ main {
     justify-content: space-between;
 }
 .flow > *:where(:not(:first-child)) {
-    margin-top: var(--flow-spacer, 0.6rem);
+    margin-top: var(--flow-spacer, 0.4rem);
 }
 .flex {
     display: flex;
