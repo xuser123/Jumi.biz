@@ -10,11 +10,6 @@
 <link rel="icon" href="../assets/img/ico/jumi.ico">
 <title>jumi|404</title>
 
-<!-- Page-autorefresh Debugger -->
-        <meta http-equiv="refresh" content="6">
-        <style>* {border: 1px solid red;}</style>
-<!-- Page-autorefresh Debugger -->
-
 <!-- Layout -->
 <link rel="stylesheet" href="../assets/css/main.css">
 <style>
@@ -124,7 +119,7 @@ body::-webkit-scrollbar {
     width: 0.5em;
     display: none;
 }
-.kleintxt {font-size:small;bottom: 1.3rem;}
+.kleintxt {font-size:small;}
 @keyframes clipPathCircleOpen {
      0% {clip-path: circle(0% at top right);}
      100% {clip-path: circle(250% at top right);}
@@ -177,7 +172,7 @@ main {
     text-shadow: none;
     font-size: 2.3rem;
 }
-.content > h2, h3, h4 {
+h2, h3, h4 {
     text-shadow: 1.5px 2px black;
     color: #8dd88e; /* grün */
 }
@@ -198,10 +193,6 @@ main {
     text-shadow: 1.5px 2px black;
     align-items: center;
     justify-content: space-around;
-}
-.flex {
-    display: flex;
-    gap: var(--gap, 0.6rem);
 }
 .search-container {
     width: 800px;
@@ -230,12 +221,10 @@ main {
     <form accept-charset="UTF-8" id="search" action="/search" method="get">
     <label for="search">Find Keywords:</label>
     <input type="text" name="q">
-
     <input class="btn" type="submit" value="Search">
     </form>
 </div>
-<p class="kleintxt">Unterstützung per Email: </p>
-<h2>webmaster&#64;jumi.biz</h2>
+<h2 class="email">webmaster&#64;jumi.biz</h2>
 </div>
 <footer>
 </footer>
