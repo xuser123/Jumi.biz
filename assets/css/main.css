@@ -48,7 +48,6 @@ main {
     grid-auto-columns: 1fr;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-areas: 'one' 'two' 'three' 'four' 'five';
-    padding-block: 1rem;
     width: min(97%, 70rem);
     margin-inline: auto;
     justify-content: space-between;
