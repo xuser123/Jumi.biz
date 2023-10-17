@@ -11,8 +11,29 @@
 Daten technisch und organisatorisch vor unbefugtem Zugriff, Verlust, Diebstahl oder Beschädigung schützen.
 - Verschlüsselung
 - Firewalls
+	- paketorientiert (klassisch)
+	- zustandsorientierte Paketüberprüfung
+		- **Stateful Packet Inspection** (SPI)
+		- Zuordnung aktiver Sitzungen
+			- auf Vermittlungsschicht (OSI-Schicht 3)
+		- Zwischenspeicher für Verbindungsstatus
+			- in dynamischen Zustandstabellen
+		- Auswertung durch TCP SYN-/ACK-/FIN-Bits
+			- auch (zustandslose) UDP-Datenpakete
+	- Mehrstufige Konzepte
+	- Regeln für Endpoints und Clients
 - Zugriffskontrollen
 - Sicherheitsaudits.
+
+
+### Netzwerksegmentierung durch VLAN
+- Netze logisch trennen
+- Datenverkehr priorisieren
+- Last verteilen
+- Broadcast in Domänen unterteilen
+- Kollisionsbereiche minimieren
+- Gruppenzugehörigkeiten flexibel anpassen
+- Datenverkehr spezifisch trennen
 
 ## Datenschutz
 ### Gesetze und Regelungen
@@ -37,6 +58,21 @@ Daten technisch und organisatorisch vor unbefugtem Zugriff, Verlust, Diebstahl o
 - ISO 27001
 - ISO 27002
 - BSI IT-Grundschutz
+
+## ISO/IEC 27001 -Zertifizierung
+- international anerkannter Standard
+- Vertrauensgewinn
+	- bei Partner
+	- bei Kunden
+	- in der Öffentlichkeit
+- Wettbewerbsvorteil
+- Informationssicherheits-Managementsystem (ISMS)
+	- Compliance-Anforderungen sicherstellen
+	- IT-Risiken minimieren
+	- IT-Sicherheitsverfahren etablieren
+	- Qualität von IT-Systemen nachhaltig optimieren
+	- Sicherheitslücken systematisch aufdecken
+	- Abschätzung möglicher Schäden und Folgekosten
 
 ## Vorschriften
 - Basel I und II
@@ -254,6 +290,24 @@ Sicherheitsmanagement (ISMS)
 - NET.3.1 Router und Switches
 - NET.3.2 Firewall
 - NET.3.3 VPN
+	- logisches Netzwerk
+	- getunnelte Verbindung
+		- Sicherheit im unsicheren Netzwerk
+	- verschlüsselte Protokolle
+		- L2TP over IPsec
+		- SSL-VPN
+		- OpenVPN
+		- Layer-2-VPN
+	- **End-to-Site**
+		- Host-to-LAN
+		- Host-to-Gateway
+		- Remote-Access-VPN
+	- **Site-to-Site**
+		- LAN-to-LAN
+		- Gateway-to-Gateway
+	- **End-to-End**
+		- Host-to-Host
+		- Remote-Desktop-VPN
 - NET.3.4 Network Access Control
 
 #### NET.4: Telekommunikation
@@ -300,10 +354,47 @@ Sicherheitsmanagement (ISMS)
 	- Hot/Cold Backup
 	- Sicherungswürdige Daten
 	- Risikoanalyse
-		- Datenverlust
-		- Auswirkung
-		- Vermeidungsstrategien
+		- Risiken identifizieren
+		- Auswirkungen analysieren bei...
+			- Datenverlust
+			- Verstoß gegen Gesetze, Vorschriften oder Verträge
+			- Missbrauch von personenbezogener Daten
+			- finanziellem Schaden
+		- Auswirkung durch kategorische Kriterien priorisieren
+			- Normal:
+				- geringfügige juristische Konsequenzen
+				- minimale Auswirkungen auf Betroffene
+				- nachhaltig-erschüttertes Ansehen bei Kunden und Partnern
+				- unter 50.000 Euro verlust
+			- Hoch:
+				- schwerwiegende juristische Konsequenzen
+				- massive Auswirkungen auf Betroffene
+				- erschüttertes Ansehen bei Kunden und Partnern
+				- 50.000 bis 500.000 Euro verlust
+			- Sehr hoch:
+				- existenzbedrohende juristische Konsequenzen
+				- existenzbedrohende Auswirkungen auf Betroffene
+				- nachhaltig-erschüttertes Ansehen bei Kunden und Partnern
+				- über 500.000 Euro verlust
+		- Angriffsrisiko
+		- Objekte mit besonderem Sicherheitsrisiko
+		- konkrete Bedrohungsszenarien
+		- mögliche Schäden durch Angriffe
+		- aktuelles Gefährdungspotenzial
+		- geeignete Maßnahmen
+		- Kosten-Nutzen / Risikoberechnung
+	- Vermeidungsstrategien
 	- Verschrottung
+		- sichere Löschung vor der Verschrottung
+			- durch technische Verfahren nach **DIN 66399**
+				- mechanisch
+				- magnetisch
+				- thermische
+		- umwelt- und fachgerechte Entsorgung
+			- durch zertifiziertes Entsorgungsunternehmen
+
+
+
 
 ### Schadprogramme
 - Virus
@@ -362,14 +453,26 @@ Sicherheitsmanagement (ISMS)
 	- HTTPS over TLS
 	- SSH vs. Telnet
 	- Wireless Personal-Key-Authentication (WPA/PSK)
-		- SSID
-		- MAC-Filter
+		- **SSID** Service Set Identifier
+			- IEEE-Norm 802.11
+			- Netzwerkname
+			- bis 32 Byte ASCII Zeichenlänge
+			- Broadcastdomain
+		- Multi-SSID
+			- mehrere Broadcastdomänen verwalten
+		- MAC-Filter (-Whitelist)
 		- WPS
 		- Wi-Fi Easy Connect
 		- WEP
 		- Enterprise
-		- RADIUS
-		- Standards: AES, TKIP, SAE
+		- RADIUS (-Server)
+		- Verschlüsselungsstandards:
+			- **AES** Advanced Encryption Standard
+			- **TKIP** Temporal Key Integrity Protocol
+			- **SAE** Simultaneous Authentication of Equals
+		- Optional: Zusätzlicher Schutz durch VPN-Verbindung
+	- WPA2-Personal/Enterprise
+	- WPA3-Personal/Enterprise
 	- Endpoint-Security
 	- Application Controlled
 	- Datenverschlüsselung
@@ -385,3 +488,58 @@ Sicherheitsmanagement (ISMS)
 - Autorisierung
 - MFA
 - Password-Policy
+
+
+## Phasen eines Sicherheitsprozess
+- nach BSI-Standard 100-2
+1. Initiierung
+	- Verantwortung übernehmen
+		- durch Leitungsebene
+	- Prozess konzepieren und planen
+	- Leitlinien erstellen
+	- Organisationsstruktur aufbauen
+		- Informationssicherheits-Management
+	- Ressourcen bereitstellen
+		- finanziel
+		- personel
+		- zeitlich
+	- Mitarbeitende in Prozess einbinden
+2. Konzept erstellen
+3. Konzept umsetzen
+4. Prozess im laufenden Betrieb aufrechterhalten
+	- kontinuierlich verbessern
+
+## Unterbrechungsfreie Stromversorgung (USV)
+- Klassifizierung nach **IEC 62040-3**
+- 3 Klassen:
+	- **Klasse 1 VFI** Voltage and Frequency Independent
+		- Online-USV, schützt vor Folgen bei...
+			- Stromausfall
+			- Unterspannung
+			- Überspannung
+			- Frequenzschwankung
+		- permanente Sinusspannung am Ausgang
+		- dauerhafte Versorgung
+			- ohne Einschränkungen
+		- gleichzeitige Akku-aufladung
+		- Eingangsspannung kann schwanken
+			- zwischen 160 und 290 Volt
+		- Ausgangsspannung entspricht Sinuskurve
+			- keine Störspannungen
+			- keine elektromagnetischen Einflüsse
+			- keine Frequenzstörungen
+			- keine Spannungsverzerungen
+		- unterbrechungsfreier Übergang auf Akkubetrieb
+	- **Klasse 2 VI** Voltage Independent
+		- Netzinteraktive USV, schützt vor Folgen bei...
+			- Stromausfall
+			- Unterspannung
+			- Überspannung
+		- 2-4 ms Umschaltzeit
+			-  von Akku- zum Netzbetrieb
+	- **Klasse 3 VFD** Voltage and Frequency Dependent
+		- Offline- / Standby-USV, schützt vor Folgen bei...
+			- Stromausfall...
+		- 4-10 ms Umschaltzeit
+
+
