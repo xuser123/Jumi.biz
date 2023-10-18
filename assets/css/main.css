@@ -54,7 +54,7 @@ main {
     justify-content: space-between;
 }
 .flow > *:where(:not(:first-child)) {
-    margin-top: var(--flow-spacer, 0.4rem);
+    margin-top: var(--flow-spacer, 0.2rem);
 }
 .flex {
     display: flex;
@@ -87,4 +87,10 @@ main {
     text-shadow: none;
     padding-left: 1em;
     border: 3px solid #133337;
+}
+#bigHL {
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
