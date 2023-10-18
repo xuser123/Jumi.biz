@@ -34,11 +34,23 @@ Daten technisch und organisatorisch vor unbefugtem Zugriff, Verlust, Diebstahl o
 - Kollisionsbereiche minimieren
 - Gruppenzugehörigkeiten flexibel anpassen
 - Datenverkehr spezifisch trennen
+	- VLANs über mehrere VLAN-fähige Switche
+		- z.B. Trunk Ports
+		- etikettierte Ethernet-Frames
+			- Kennzeichnung der VLAN-Zugehörigkeit
 
 ## Datenschutz
 ### Gesetze und Regelungen
-- sensible Informationen
-- Privatsphäre und Rechte
+- Vorschriften aus **Kapitel 3 der DSGVO**
+- **personenbezogene Daten** schützen
+- sensible Informationen sichern
+- Privatsphäre und Rechte einhalten
+- Informationspflichten erfüllen
+- Rechte der Personen im Datensatz
+- **Datenminimierung**
+	- Nur zweckgebundene Daten sammeln
+		- für unbedingt notwendige Verarbeitungszwecke
+	- Schutz vor übermäßiger Speicherung
 
 ### Rechtliche und ethische Verantwortung von Organisationen und Einzelpersonen über das angemessene
 - sammeln,
@@ -52,12 +64,24 @@ Daten technisch und organisatorisch vor unbefugtem Zugriff, Verlust, Diebstahl o
 - personell
 
 ## IT-Sicherheitsmanagement
-- ISMS
+- **ISMS** Informationssicherheits-Managementsystem
 
 ## Standards
-- ISO 27001
-- ISO 27002
+- ISO/IEC 27000
+	- Überblick über Zusammenhänge in ISO/IEC 2700x-Familie
+	- grundlegende Begriffe und Definitionen für ISMS
+- ISO/IEC 27001
+	- inter. Norm für ISMS
+	- erfüllt Anforderung für Zertifizierungsmöglichkeit
+- ISO 27002 (Code of practice for information security controls)
+	- unterstützt bei Auswahl und Umsetzung von ISO/IEC 27001 Maßnahmen
+	- Sicherheitsmanagement aufbauen und verankern
 - BSI IT-Grundschutz
+- BSI-Standard 200-1
+	- allgemeine Anforderungen an ISMS
+- BSI-Standard 200-2
+	- Basis der BSI-Methodik
+	- Aufbau des ISMS
 
 ## ISO/IEC 27001 -Zertifizierung
 - international anerkannter Standard
@@ -337,14 +361,17 @@ Sicherheitsmanagement (ISMS)
 - Security by Design
 - Security by Default
 - Datensicherung
-	- Backup-Verfahren
+	- Backup auf Speichermedien
 		- inkrementell
 		- differenziell
-		- Vollbackup
-	- Generationenprinzip
-		- Großvater
-		- Vater
-		- Sohn
+		- voll
+		- Rotationsschema
+			- Generationenprinzip
+			- Großvater-Vater-Sohn-Prinzip
+				- 20 Speichermedien bei 5-Tage-Wochen-Zyklus
+					- 4 Sohn-Medien für Tage (inkrementell)
+					- 4 Vater-medien für Wochen (voll)
+					- 12 Großvater-Medien für Monate (voll)
 	- Backupmedien-Kriterien
 		- Lebensdauer
 		- Zugriffsgeschwindigkeit
@@ -383,6 +410,13 @@ Sicherheitsmanagement (ISMS)
 		- aktuelles Gefährdungspotenzial
 		- geeignete Maßnahmen
 		- Kosten-Nutzen / Risikoberechnung
+		- **Nutzwertanalyse**
+			- Kriterien
+				- Preis
+				- Qualität
+			- Punkteskala
+			- Summenwerte vergleichen
+				- Gewichtung * Punktzahl
 	- Vermeidungsstrategien
 	- Verschrottung
 		- sichere Löschung vor der Verschrottung
@@ -451,6 +485,11 @@ Sicherheitsmanagement (ISMS)
 - PKI
 - Techniken
 	- HTTPS over TLS
+	- zentral-verschlüsselte E-Mails
+		- digital-signiert durch TLS/SSL-Zertifikate
+			- **POP3** Post-Office Protocol (Port 995)
+			- **IMAP** Internet Message Access Protocol (Port 993)
+			- **SMTP** Simple Mail Transfer Protocol (Port 465/587)
 	- SSH vs. Telnet
 	- Wireless Personal-Key-Authentication (WPA/PSK)
 		- **SSID** Service Set Identifier
@@ -474,6 +513,11 @@ Sicherheitsmanagement (ISMS)
 	- WPA2-Personal/Enterprise
 	- WPA3-Personal/Enterprise
 	- Endpoint-Security
+		- Zugriffskontrolle
+		- Isolation
+		- Überwachung
+		- Verwaltung
+		- Whitelists oder Blacklists
 	- Application Controlled
 	- Datenverschlüsselung
 	- Virenscanner
@@ -487,7 +531,32 @@ Sicherheitsmanagement (ISMS)
 - Authentifizierung
 - Autorisierung
 - MFA
-- Password-Policy
+- Passwortrichtlinien (Password-Policy)
+	- Entropie durch Zeichenlänge und -kombination
+		- Mindestlänge (8,12 oder 22 Zeichen)
+		- Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen
+				- entspricht **94 mögliche Zeichen**
+					- 26 Großbuchstaben
+					- 26 Kleinbuchstaben
+					- 10 Zahlen
+					- 32 Sonderzeichen
+				- 2(hoch)n=94(hoch)L
+					- n=(Bitstärke), L=(Passwortlänge)
+						- 8 Zeichen = 2(hoch)n=94(hoch)8
+							- N =~ 52,8
+							- entspricht 53-bit
+						- 64-bit = 2(hoch)64=94(hoch)L
+							- L =~ 11,3
+							- entspricht 12 Zeichen
+						- 128-bit = 2(hoch)128=94(hoch)L
+							- L =~ 21,5
+							- entspricht 22 Zeichen
+	- Keine Logindatenbestandteile im Passwort selbst
+	- Ablaufdatum für Passwörter (z.B. 30-90 Tage)
+	- Begrenzte Loginversuche
+	- Kontosperre bei Login-Fehlversuchen
+	- Optional: Einpräsame Passwortsätze
+	- Optional: Multi-Factor-Authentication (MFA)
 
 
 ## Phasen eines Sicherheitsprozess
@@ -542,4 +611,9 @@ Sicherheitsmanagement (ISMS)
 			- Stromausfall...
 		- 4-10 ms Umschaltzeit
 
+- zentral-verschlüsselte E-Mails
+	- digital-signiert durch TLS/SSL-Zertifikate
+		- **POP3** Post-Office Protocol (Port 995)
+		- **IMAP** Internet Message Access Protocol (Port 993)
+		- **SMTP** Simple Mail Transfer Protocol (Port 465/587)
 
