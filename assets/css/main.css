@@ -1,4 +1,3 @@
-
 /* Layout */
 main {
     color: #ebebd3;
@@ -13,7 +12,6 @@ main {
 .content > h2, h3, h4 {
     color: #8dd88e; /* grün */
     margin-top: 1.3em;
-    text-shadow: none;
 }
 .content a,
 .content b {color: #00f0f0;} /* blau */
@@ -70,7 +68,6 @@ main {
     height:100%;
     margin-top: 0;
 }
-
 .window-content { /* Code-Syntax */
     align-self: flex-start;
     width: auto;
@@ -88,9 +85,7 @@ main {
     padding-left: 1em;
     border: 3px solid #133337;
 }
-//#bigHL {
-    height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+#bigHL {
+    width: 100%;
+    text-align: center;
 }
