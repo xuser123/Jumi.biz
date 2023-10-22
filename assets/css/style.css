@@ -99,7 +99,7 @@ code {
     text-align: left;
     background-color: #000000;
     text-shadow: none;
-    max-width: 100%;
+    max-width: 80%;
     padding-left: 0.6em;
     padding-right: 0.6em;
     font-size: 0.75rem;
@@ -195,7 +195,10 @@ footer {
     cursor: pointer;
 }
 .kleintxt {font-size:small;}
-
+.glowtxt {
+    animation: neon .08s ease-in-out infinite alternate;
+    text-decoration: none;
+}
 #dl-link {padding: 0.6rem;}
 #exportIcon {display:none;}
 #instagramIcon {display:none;}
