@@ -32,8 +32,7 @@ main {
 .content > h2, h3, h4 {color: #8dd88e;margin-top: 1.3em;} /* green */
 .content a, .content b {color: #00f0f0;} /* blue */
 .content > a:hover, a:focus {
-    color: #ffbfea; /* pink */
-    text-shadow: none;text-decoration: none;
+    color: #ffbfea/* pink */;text-shadow:none;text-decoration:none;
     animation: neon .08s ease-in-out infinite alternate;
 }
 .content > ul, ol {list-style: none;}
