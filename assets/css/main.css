@@ -68,7 +68,14 @@ main {
     height:100%;
     margin-top: 0;
 }
-.window-content { /* Code-Syntax */
+}
+#bigHL {
+    width: 100%;
+    text-align: center;
+}
+
+
+//.window-content { /* Code-Syntax */
     align-self: flex-start;
     width: auto;
     color: #ebebd3;
@@ -84,8 +91,3 @@ main {
     text-shadow: none;
     padding-left: 1em;
     border: 3px solid #133337;
-}
-#bigHL {
-    width: 100%;
-    text-align: center;
-}

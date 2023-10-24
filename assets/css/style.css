@@ -10,6 +10,8 @@
     , url('../fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
     /* Legacy iOS */ ;
 }
+
+/* Menu Animation */
 @keyframes clipPathCircleOpen {
      0% {clip-path: circle(0% at top right);}
      100% {clip-path: circle(250% at top right);}
@@ -19,7 +21,8 @@
      100% {clip-path: circle(0% at top right);}
 }
 
-@keyframes neon { /* Neon Effect */
+/* Neon Effect */
+@keyframes neon {
      from {text-shadow:
           0 0 6px rgba(202,228,225,0.92),
           0 0 30px rgba(202,228,225,0.34),
@@ -50,6 +53,8 @@
      90% {transform: translate(10%,5%)}
      100% {transform: translate(5%,0)}
 }
+
+
 body {
     min-height: 100vh;
 
@@ -61,7 +66,7 @@ body {
 /* Footer-unten-halten-Loesung */
     position: relative;
 
-    line-height: 1.5;
+    line-height: 1.5em;
     letter-spacing: 0.1rem;
     background-color: #000;
     margin: 0;
