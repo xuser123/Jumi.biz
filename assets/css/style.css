@@ -1,6 +1,5 @@
 @font-face {
-     font-family: 'Sarpanch';
-     font-style: normal;
+     font-family: 'Sarpanch';font-style: normal;
      src: url('../fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
     /* Super Modern Browsers */
     , url('../fonts/sarpanch-v11-latin-regular.woff') format('woff')
@@ -10,35 +9,27 @@
     , url('../fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
     /* Legacy iOS */ ;
 }
-
 /* Menu Animation */
-@keyframes clipPathCircleOpen {
-     0% {clip-path: circle(0% at top right);}
-     100% {clip-path: circle(250% at top right);}
+@keyframes clipPathCircleOpen {0% {clip-path: circle(0% at top right);
+    } 100% {clip-path: circle(250% at top right);}}
+@keyframes clipPathCircleClose {0% {clip-path: circle(250% at top right);
+    } 100% {clip-path: circle(0% at top right);}
 }
-@keyframes clipPathCircleClose {
-     0% {clip-path: circle(250% at top right);}
-     100% {clip-path: circle(0% at top right);}
-}
-
 /* Neon Effect */
-@keyframes neon {
-     from {text-shadow:
+@keyframes neon {from {text-shadow:
           0 0 6px rgba(202,228,225,0.92),
           0 0 30px rgba(202,228,225,0.34),
           0 0 12px rgba(30,132,242,0.52),
           0 0 21px rgba(30,132,242,0.92),
           0 0 34px rgba(30,132,242,0.78),
           0 0 54px rgba(30,132,242,0.92);
-    }
-     to {text-shadow:
+    } to {text-shadow:
           0 0 6px rgba(202,228,225,0.98),
           0 0 30px rgba(202,228,225,0.42),
           0 0 12px rgba(30,132,242,0.58),
           0 0 22px rgba(30,132,242,0.84),
           0 0 38px rgba(30,132,242,0.88),
-          0 0 60px rgba(30,132,242,1);
-    }
+          0 0 60px rgba(30,132,242,1);}
 }
 @keyframes bg-animation {
      0% {transform: translate(0,0)}
@@ -53,82 +44,23 @@
      90% {transform: translate(10%,5%)}
      100% {transform: translate(5%,0)}
 }
-
-
 body {
     min-height: 100vh;
-
-/* Set core body defaults */
-    text-rendering: optimizeSpeed;
-
-/* Footer-unten-halten-Loesung */
-    height: 100%;
-/* Footer-unten-halten-Loesung */
-    position: relative;
-
+    text-rendering: optimizeSpeed; /* core defaults */
+    height: 100%;/* Footer-Einfluss */
+    position: relative;/* Footer-Einfluss */
     line-height: 1.5em;
     letter-spacing: 0.1rem;
-    background-color: #000;
-    margin: 0;
-    padding: 0;
+    margin: 0;padding: 0;
 }
-body::-webkit-scrollbar { /* Scrollleiste ausblenden */
-    width: 0.5em;
-    display: none;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-a:not([class]) {
-/* <a> tags ohne class= bekommen Standard-Stil */
-    text-decoration-skip-ink: auto;
-}
-p {
-    display: inline-block;
-    line-height: 1.337rem;
-}
-i {
-    font-size: 0.75rem;
-}
-dt {
-    font-size: 1.3rem;
-}
-ul > li {
-    list-style: none;
-}
-code {
-    display: inline-table;
-    font-family: 'Source Code Pro', monospace;
-    color: #8dd88e;
-    text-align: left;
-    background-color: #000000;
-    text-shadow: none;
-    max-width: 80%;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
-    font-size: 0.75rem;
-}
-mark {
-    color: #000;
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-    background-color: #8dd88e;
-    font-size: 0.75rem;
-}
-/* Keine Listenpunkte */
-ul, ol {list-style: none;}
-
-img {width: 100%;}
-
-/* Header */
+/* Scrollleiste ausblenden */
+body::-webkit-scrollbar {width: 0.5em;display: none;}
 header {
-    text-shadow: 1.5px 2px black;
-    background: #131313;
-    color: #00f0f0;
+    background: #131313;color: #00f0f0;
+    text-shadow: 1.5px 2px #000;
+    list-style: none;
     padding: 2em 4em 1.5em 1.5em;
-    position: relative;
-    display: flex;
+    position: relative;display: flex;
     justify-content: space-between;
     font-family: 'Sarpanch', sans-serif;
     box-shadow:
@@ -136,23 +68,37 @@ header {
         rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
         rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
 }
-header::after {
-    content: "";
-    clear: both;
-    display: block;
+header::after {content: "";clear: both;display: block;}
+
+/* <a> tags ohne class= bekommen Standard-Stil */
+a:not([class]) {text-decoration-skip-ink: auto;}
+p {display: inline-block;line-height: 1.337rem;}
+code {
+    background: #000;color: #8dd88e;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.37rem;text-shadow: none;
+    text-align: left;max-width: 80%;
+    padding-left: 0.4em;padding-right: 0.6em;
+    display: inline-table;
 }
-/* Impressum */
+.header-content {
+    width: 95%;margin: 0 auto;display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 0.2em;
+}
+.jumi-logo,.profil-links {
+    position: absolute;margin: 0;
+    top: 0.5em;left: 1em;
+    font-size: 1.337rem;
+}
 footer {
-    position: absolute;
-    display: block;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    background-color: #131313;color: #ffbfea;
+    position: absolute;display: block;
+    left: 0;bottom: 0;width: 100%;
     padding: 1rem 0 4rem 0;
-    background-color: #131313;
-    color: #ffbfea;
     text-align: center;
-    text-shadow: 1.5px 2px black;
+    text-shadow: 1.5px 2px #000;
     font-family: 'Sarpanch', sans-serif;
     font-size: 1.3rem;
     display: flex;
@@ -163,50 +109,24 @@ footer {
         rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
         rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
 }
-.header-content {
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    letter-spacing: 0.2em;
-}
-.jumi-logo,.profil-links {
-    top: 0.5em;
-    left: 1em;
-    position: absolute;
-    font-size: 1.337rem;
-    margin: 0;
-}
-.jumi-logo a {
-    cursor: pointer;
-    animation: neon .08s ease-in-out infinite alternate;
-    text-decoration: none;
-    color: inherit;
-}
+.jumi-logo a {cursor: pointer;color: inherit;}
 .jumi-email {
-    font-weight: 200;
     color: #00f0f0;
+    font-weight: 200;
     text-decoration: none;
     text-align: center;
-    animation: neon .08s ease-in-out infinite alternate;
 }
 .siteFeatures {
-    top: 0.5em;
-    right: 1em;
-    position: absolute;
+    position: absolute;margin: 0;
+    top: 0.5em;right: 1em;
     font-size: 1.337rem;
-    margin: 0;
     cursor: pointer;
 }
-.kleintxt {font-size:small;}
-.glowtxt {
+.klein {font-size:small;}
+.glow {
     animation: neon .08s ease-in-out infinite alternate;
-    text-decoration: none;
+    text-decoration: none;text-shadow: none;
 }
-#dl-link {padding: 0.6rem;}
-#exportIcon {display:none;}
-#instagramIcon {display:none;}
-
-
-
+#bigHL {width: 100%;text-align: center;}
+#dl-btn {padding: 0.6rem;}
+#exportIcon, #instagramIcon {display:none;}
