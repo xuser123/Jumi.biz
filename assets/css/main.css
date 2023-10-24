@@ -30,7 +30,7 @@ main {
 .content:nth-child(5) {grid-area: five;}
 .content h1 {color: #ffbfea; /* pink */}
 .content > h2, h3, h4 {color: #8dd88e;margin-top: 1.3em;} /* green */
-.content > a, b {color: #00f0f0;} /* blue */
+.content a, .content b {color: #00f0f0;} /* blue */
 .content > a:hover, a:focus {
     color: #ffbfea; /* pink */
     text-shadow: none;text-decoration: none;
