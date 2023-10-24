@@ -61,34 +61,39 @@ snippets,vorlagen,lernen,verstehen,
 <div class="grid-container">
 <article class="content flow">
 
-<table>
-<tr>
-<td style="border: none;">
-<h1><a name="Informationssicherheit"></a><b>Informationssicherheit</b> </h1>
+<h1>Informationssicherheit</h1>
 
-<h2><a name="Schutzziele-der-Informationssicherheit"></a><b>Schutzziele der Informationssicherheit</b> </h2>
-<ol><li><b>Vertraulichkeit</b> Nur autorisierte Zugriffe</li>
-<li><b>Integrität</b> Schutz vor Manipulation</li>
-<li><b>Verfügbarkeit</b> Ausfallsicherheit</li>
-<li><b>Authentizität</b> Verifizierte Quellen</li>
-<li><b>Zurechenbarkeit</b> Nachverfolgbarkeit von Aktivitäten</li>
-<li><b>Unbestreitbarkeit</b> Sicherstellung durchgeführter Handlungen </li></ol>
+<div class="in-inside"><dl>
+<h2>Schutzziele
+</h2><dt><b>Vertraulichkeit
+</b></dt><dd>Nur autorisierte Zugriffe
+</dd><dt><b>Integrität
+</b></dt><dd>Schutz vor Manipulation
+</dd><dt><b>Verfügbarkeit
+</b><dt><dd>Ausfallsicherheit
+</dd><dt>Authentizität
+</dt><dd>Verifizierte Quellen
+</dd><dt>Zurechenbarkeit;"
+</dt><dd>Nachverfolgbarkeit von Aktivitäten
+</dd><dt>Unbestreitbarkeit
+</dt><dd>Sicherstellung durchgeführter Handlungen
 
-<h2><a name="Datensicherheit"></a><b>Datensicherheit</b> </h2>
-<p>Daten technisch und organisatorisch vor</p>
-<ul><li>unbefugtem Zugriff
+</dd></dl></div><div class="in-inside">
+
+<h2>Datensicherheit
+</h2><p>Daten technisch und organisatorisch vor
+</p><ul><li>unbefugtem Zugriff
 </li><li>Verlust
 </li><li>Diebstahl
 </li><li>Beschädigung
-</li><p>schützen, beispielsweise mittels</p>
-<ul><li>Verschlüsselung
+</li><p>schützen, beispielsweise mittels
+</p><ul><li>Verschlüsselung
 </li><ul><li>zentral-verschlüsselte E-Mails
 <ul><li>digital-signiert durch TLS/SSL-Zertifikate
-<ul><li><b>POP3</b> Post-Office Protocol (Port 995)</li>
-<li><b>IMAP</b> Internet Message Access Protocol (Port 993)</li>
-<li><b>SMTP</b> Simple Mail Transfer Protocol (Port 465/587) </li>
-</ul></li></ul></ul>
-<li>Firewalls
+<ul><li><b>POP3</b> Post-Office Protocol (Port 995)
+</li><li><b>IMAP</b> Internet Message Access Protocol (Port 993)
+</li><li><b>SMTP</b> Simple Mail Transfer Protocol (Port 465/587)
+</li></ul></li></ul></ul><li>Firewalls
 </li><ul><li>paketorientiert (klassisch)
 </li><li>zustandsorientierte Paketüberprüfung
 </li><ul><li><b>Stateful Packet Inspection</b> (SPI)
@@ -99,22 +104,24 @@ snippets,vorlagen,lernen,verstehen,
 </li><li>Auswertung durch TCP SYN-/ACK-/FIN-Bits
 </li><li>auch (zustandslose) UDP-Datenpakete
 </li><li>Mehrstufige Konzepte
-</li><li>Regeln für Endpoints und Clients</li></ul></ul>
-<li>Zugriffskontrollen
-</li><li>Sicherheitsaudits</li></ul>
+</li><li>Regeln für Endpoints und Clients
+</li></ul></ul><li>Zugriffskontrollen
+</li><li>Sicherheitsaudits
 
-<h3><a name="Netzwerksegmentierung-durch-VLAN"></a><b>Netzwerksegmentierung durch VLAN</b> </h3>
-<ul><li>Netze logisch trennen</li>
-<li>Datenverkehr priorisieren</li>
-<li>Last verteilen</li>
-<li>Broadcast in Domänen unterteilen</li>
-<li>Kollisionsbereiche minimieren</li>
-<li>Gruppenzugehörigkeiten flexibel anpassen</li>
-<li>Datenverkehr spezifisch trennen
+</li></ul></div>
+<div class="in-inside"><h2>Netzwerksegmentierung durch VLAN
+</h2><ul><li>Netze logisch trennen
+</li><li>Datenverkehr priorisieren
+</li><li>Last verteilen
+</li><li>Broadcast in Domänen unterteilen
+</li><li>Kollisionsbereiche minimieren
+</li><li>Gruppenzugehörigkeiten flexibel anpassen
+</li><li>Datenverkehr spezifisch trennen
 <ul><li>VLANs über mehrere VLAN-fähige Switche
-<ul><li>z.B. Trunk Ports</li>
-<li>etikettierte Ethernet-Frames
-<ul><li>Kennzeichnung der VLAN-Zugehörigkeit </li></ul></li></ul></li></ul></li></ul>
+<ul><li>z.B. Trunk Ports
+</li><li>etikettierte Ethernet-Frames
+<ul><li>Kennzeichnung der VLAN-Zugehörigkeit
+</li></ul></li></ul></li></ul></li></ul>
 
 <h2><a name="Datenschutz"></a><b>Datenschutz</b> </h2>
 
