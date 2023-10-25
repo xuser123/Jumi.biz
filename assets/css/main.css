@@ -1,8 +1,8 @@
 /* Layout */
 main {
     color: #ebebd3;
-    padding-top: 1rem;
-    padding-bottom: 8rem;
+    padding-top: 1.37rem;
+    padding-bottom: 1.87rem;
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 .content > h1 {
@@ -43,12 +43,13 @@ main {
 }
 .grid-container {
     display: grid;
-    gap: 1rem;
+    gap: 0.96rem;
     grid-auto-columns: 1fr;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-areas: 'one' 'two' 'three' 'four' 'five';
     width: min(97%, 70rem);
     margin-inline: auto;
+    margin-bottom: 6rem;
     justify-content: space-between;
 }
 .flow > *:where(:not(:first-child)) {
@@ -84,8 +85,4 @@ main {
     text-shadow: none;
     padding-left: 1em;
     border: 3px solid #133337;
-}
-#bigHL {
-    width: 100%;
-    text-align: center;
 }
