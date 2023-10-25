@@ -1,6 +1,5 @@
 @font-face {
-     font-family: 'Sarpanch';
-     font-style: normal;
+     font-family: 'Sarpanch';font-style: normal;
      src: url('../fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
     /* Super Modern Browsers */
     , url('../fonts/sarpanch-v11-latin-regular.woff') format('woff')
@@ -10,64 +9,40 @@
     , url('../fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
     /* Legacy iOS */ ;
 }
-@keyframes clipPathCircleOpen {
-     0% {clip-path: circle(0% at top right);}
-     100% {clip-path: circle(250% at top right);}
+/* Menu Animation */
+@keyframes clipPathCircleOpen {0% {clip-path: circle(0% at top right);
+    } 100% {clip-path: circle(250% at top right);}}
+@keyframes clipPathCircleClose {0% {clip-path: circle(250% at top right);
+    } 100% {clip-path: circle(0% at top right);}
 }
-@keyframes clipPathCircleClose {
-     0% {clip-path: circle(250% at top right);}
-     100% {clip-path: circle(0% at top right);}
-}
-
-@keyframes neon { /* Neon Effect */
-     from {text-shadow:
+/* Neon Effect */
+@keyframes neon {from {text-shadow:
           0 0 6px rgba(202,228,225,0.92),
           0 0 30px rgba(202,228,225,0.34),
           0 0 12px rgba(30,132,242,0.52),
           0 0 21px rgba(30,132,242,0.92),
           0 0 34px rgba(30,132,242,0.78),
           0 0 54px rgba(30,132,242,0.92);
-    }
-     to {text-shadow:
+    } to {text-shadow:
           0 0 6px rgba(202,228,225,0.98),
           0 0 30px rgba(202,228,225,0.42),
           0 0 12px rgba(30,132,242,0.58),
           0 0 22px rgba(30,132,242,0.84),
           0 0 38px rgba(30,132,242,0.88),
-          0 0 60px rgba(30,132,242,1);
-    }
-}
-@keyframes bg-animation {
-     0% {transform: translate(0,0)}
-     10% {transform: translate(-5%,-5%)}
-     20% {transform: translate(-10%,5%)}
-     30% {transform: translate(5%,-10%)}
-     40% {transform: translate(-5%,15%)}
-     50% {transform: translate(-10%,5%)}
-     60% {transform: translate(15%,0)}
-     70% {transform: translate(0,10%)}
-     80% {transform: translate(-15%,0)}
-     90% {transform: translate(10%,5%)}
-     100% {transform: translate(5%,0)}
+          0 0 60px rgba(30,132,242,1);}
 }
 body {
-    min-height: 100vh;
-
-/* Set core body defaults */
-    text-rendering: optimizeSpeed;
-
-/* Footer-unten-halten-Loesung */
-    height: 100%;
-/* Footer-unten-halten-Loesung */
-    position: relative;
-
-    line-height: 1.5;
-    letter-spacing: 0.1rem;
     background-color: #000;
-    margin: 0;
-    padding: 0;
+    position: relative;/* Footer-Einfluss */
+    height: 100%;/* Footer-Einfluss */
+    min-width:100%;
+    margin: 0;padding: 0;
+    text-rendering: optimizeSpeed;
+    line-height: 1.45em;
+    letter-spacing: 0.18rem;
 }
-body::-webkit-scrollbar { /* Scrollleiste ausblenden */
+/* Scrollleiste ausblenden */
+body::-webkit-scrollbar {
     width: 0.5em;
     display: none;
 }
@@ -105,11 +80,9 @@ code {
     font-size: 0.75rem;
 }
 mark {
-    color: #000;
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-    background-color: #8dd88e;
-    font-size: 0.75rem;
+    padding-left: 0.2rem;padding-right: 0.2rem;
+    background-color: revert;color: revert;
+    font-size: 0.85rem;
 }
 /* Keine Listenpunkte */
 ul, ol {list-style: none;}
