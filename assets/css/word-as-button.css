@@ -12,10 +12,11 @@
     padding-left: 0.6em;
     padding-right: 0.6em;
     outline: none;
-    font-size: 0.45rem;
+    font-size: 0.65rem;
 }
 .keyboard-styled-word span {
     font-family: Helvetica, Arial, sans-serif;
     text-shadow: none;
     font-weight: 700;
+    height: 50%;
 }
