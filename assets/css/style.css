@@ -32,7 +32,7 @@
           0 0 60px rgba(30,132,242,1);}
 }
 body {
-    background-color: #000;
+    background-color: #000000;
     position: relative;/* Footer-Einfluss */
     height: 100%;/* Footer-Einfluss */
     min-width:100%;
@@ -45,10 +45,12 @@ body {
 body::-webkit-scrollbar {
     width: 0.5em;
     display: none;
+    background-color: #000000;
 }
 a {
     text-decoration: none;
-    color: inherit;
+    background-color: #131313;
+    color: #00f0f0;
 }
 a:not([class]) {
 /* <a> tags ohne class= bekommen Standard-Stil */
@@ -112,7 +114,6 @@ header::after {
 /* Impressum */
 footer {
     position: absolute;
-    display: block;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -150,10 +151,12 @@ footer {
     cursor: pointer;
     animation: neon .08s ease-in-out infinite alternate;
     text-decoration: none;
-    color: inherit;
+    background-color: #131313;
+    color: #00f0f0;
 }
 .jumi-email {
     font-weight: 200;
+    background-color: #131313;
     color: #00f0f0;
     text-decoration: none;
     text-align: center;
