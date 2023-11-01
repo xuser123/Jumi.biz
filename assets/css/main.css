@@ -86,3 +86,7 @@ main {
     border: 3px solid #133337;
 }
 #bigHL {width: 100%;text-align: center;}
+#dl-link {padding: 0.6rem;}
+#exportIcon {display:none;}
+#instagramIcon {display:none;}
+#disabled {display:none;}
