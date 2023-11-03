@@ -40,7 +40,7 @@ main {
 .content {
     border-radius: 0.35rem;
     box-shadow:
-        rgba(0, 240, 240, 0.4) 0px 2px 4px,
+        rgba(0, 240, 240, 0.4) 0px 1px 3px,
         rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
         rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
     text-shadow: 1.5px 2px black;
