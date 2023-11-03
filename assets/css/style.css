@@ -1,74 +1,55 @@
 @font-face {
      font-family: 'Sarpanch';font-style: normal;
-     src: url('../fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
+     src: url('https://jumi.biz/assets/fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
     /* Super Modern Browsers */
-    , url('../fonts/sarpanch-v11-latin-regular.woff') format('woff')
+    , url('https://jumi.biz/assets/fonts/sarpanch-v11-latin-regular.woff') format('woff')
     /* Modern Browsers */
-    , url('../fonts/sarpanch-v11-latin-regular.ttf') format('truetype')
+    , url('https://jumi.biz/assets/fonts/sarpanch-v11-latin-regular.ttf') format('truetype')
     /* Safari, Android, iOS */
-    , url('../fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
+    , url('https://jumi.biz/assets/fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
     /* Legacy iOS */ ;
 }
-/* Menu Animation */
-@keyframes clipPathCircleOpen {0% {clip-path: circle(0% at top right);
-    } 100% {clip-path: circle(250% at top right);}}
-@keyframes clipPathCircleClose {0% {clip-path: circle(250% at top right);
-    } 100% {clip-path: circle(0% at top right);}
-}
-/* Neon Effect */
-@keyframes neon {from {text-shadow:
-          0 0 6px rgba(202,228,225,0.92),
-          0 0 30px rgba(202,228,225,0.34),
-          0 0 12px rgba(30,132,242,0.52),
-          0 0 21px rgba(30,132,242,0.92),
-          0 0 34px rgba(30,132,242,0.78),
-          0 0 54px rgba(30,132,242,0.92);
-    } to {text-shadow:
-          0 0 6px rgba(202,228,225,0.98),
-          0 0 30px rgba(202,228,225,0.42),
-          0 0 12px rgba(30,132,242,0.58),
-          0 0 22px rgba(30,132,242,0.84),
-          0 0 38px rgba(30,132,242,0.88),
-          0 0 60px rgba(30,132,242,1);}
+html {
+    background-color: #131313;
 }
 body {
-    background-color: #000000;
     position: relative;/* Footer-Einfluss */
     height: 100%;/* Footer-Einfluss */
     min-width:100%;
     margin: 0;padding: 0;
     text-rendering: optimizeSpeed;
-    line-height: 1.45em;
     letter-spacing: 0.18rem;
 }
+
 /* Scrollleiste ausblenden */
 body::-webkit-scrollbar {
     width: 0.5em;
     display: none;
     background-color: #000000;
 }
+
 a {
     text-decoration: none;
-    background-color: #131313;
     color: #00f0f0;
 }
-a:not([class]) {
-/* <a> tags ohne class= bekommen Standard-Stil */
-    text-decoration-skip-ink: auto;
-}
+
 p {
     display: inline-block;
     line-height: 1.337rem;
 }
+
 i {
     font-size: 0.75rem;
 }
+
 dt {
     font-size: 1.3rem;
 }
+
 ul > li {
     list-style: none;
 }
+
 code {
     display: inline-table;
     font-family: 'Source Code Pro', monospace;
@@ -81,6 +62,7 @@ code {
     padding-right: 0.6em;
     font-size: 0.75rem;
 }
+
 mark {
     padding-left: 0.2rem;padding-right: 0.2rem;
     background-color: revert;color: revert;
@@ -93,11 +75,11 @@ img {width: 100%;}
 
 /* Header */
 header {
-    text-shadow: 1.5px 2px black;
+    position: relative;
+    text-shadow: 1.5px 2px #000000;
     background: #131313;
     color: #00f0f0;
-    padding: 2em 4em 1.5em 1.5em;
-    position: relative;
+    padding: 2rem 4rem 1.5rem 1.5rem;
     display: flex;
     justify-content: space-between;
     font-family: 'Sarpanch', sans-serif;
@@ -106,78 +88,106 @@ header {
         rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
         rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
 }
+
 header::after {
     content: "";
     clear: both;
     display: block;
 }
-/* Impressum */
-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem 0 4rem 0;
-    background-color: #131313;
-    color: #ffbfea;
-    text-align: center;
-    text-shadow: 1.5px 2px black;
-    font-family: 'Sarpanch', sans-serif;
-    font-size: 1.3rem;
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-spacer, 0.2rem);
+}
+.flex {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow:
-        rgba(0, 240, 240, 0.4) 0px 2px 4px,
-        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
-        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
-}
-.header-content {
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    letter-spacing: 0.2em;
-}
-.jumi-logo,.profil-links {
-    top: 0.5em;
-    left: 1em;
-    position: absolute;
-    font-size: 1.337rem;
-    margin: 0;
-}
-.jumi-logo a {
-    cursor: pointer;
-    animation: neon .08s ease-in-out infinite alternate;
-    text-decoration: none;
-    background-color: #131313;
-    color: #00f0f0;
-}
-.jumi-email {
-    font-weight: 200;
-    background-color: #131313;
-    color: #00f0f0;
-    text-decoration: none;
-    text-align: center;
-    animation: neon .08s ease-in-out infinite alternate;
-}
-.siteFeatures {
-    top: 0.5em;
-    right: 1em;
-    position: absolute;
-    font-size: 1.337rem;
-    margin: 0;
-    cursor: pointer;
+    gap: var(--gap, 0.6rem);
 }
 .kleintxt {font-size:small;}
 .glowtxt {
     animation: neon .08s ease-in-out infinite alternate;
     text-decoration: none;
 }
+
+header #jumi-logo {
+    position: absolute;
+    margin: 0.3rem;
+    top: 0.3rem;
+    left: 0.7rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    animation: neon .08s ease-in-out infinite alternate;
+    text-decoration: none;
+    background-color: transparent;
+    color: #00f0f0;
+}
+
+#analyzer {display:flex;justify-content:center;}
+
+/* Impressum */
+footer {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    background-color: #131313;
+    color: #ffbfea;
+    text-align: center;
+    text-shadow: 1.5px 2px #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 1rem 1rem 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.leftside-profil-icons {
+    display: flex;
+    left: 1.3rem;
+}
+
+.rightside-site-features {
+    display: flex;
+    right: 1.6rem;
+}
+
+#github-link {
+    width: 2rem;
+    cursor: pointer;
+    padding-right: 0.5rem;
+}
+
+#instagram-link {
+    width: 2rem;
+    cursor: pointer;
+}
+
+#contact-email {
+    background-color: #131313;
+    color: #00f0f0;
+    font-family: 'Sarpanch', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+    font-size: 1.6rem;
+    text-decoration: none;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+#goto-top {
+    width: 2.3rem;
+    cursor: pointer;
+}
+
+#wtf-is-jumi {
+    text-transform: lowercase;
+    font-size: smaller;
+    text-align: left;
+}
+#bigHL {width: 100%;text-align: center;}
 #dl-link {padding: 0.6rem;}
-#exportIcon {display:none;}
-#instagramIcon {display:none;}
 #disabled {display:none;}
 
 

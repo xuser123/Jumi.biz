@@ -2,7 +2,7 @@
 .hamburger,.hamburger::before,.hamburger::after {
      content: "";
      display: block;
-     background: #00f0f0;
+     background-color: #00f0f0;
      height: 3px;
      width: 1.8em;
      border-radius: 2px;
@@ -30,7 +30,7 @@
 
 /* MENU */
 button {
-    background: #131313;
+    background-color: #131313;
     border: 1px solid #8dd88e;
     cursor: pointer;
     color: #8dd88e;
@@ -44,22 +44,23 @@ button:hover {
 }
 .primary-navigation {
     position: absolute;
-    top: 100%;/*3.35em;*/
+    top: 3.35em;
     right: 0%;
-    background: #131313;
     transition: clip-path ease-in-out 300ms;
     margin: 0;
     padding: 0;
     list-style: none;
-    border-bottom-left-radius: 0.35rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: #131313;
     box-shadow:
-        rgba(0, 240, 240, 0.4) 0px 2px 4px,
+        rgba(0, 240, 240, 0.4) -1px 2px 4px,
         rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
         rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
 }
 .primary-navigation[data-state="opened"] {
     animation: clipPathCircleOpen 300ms ease-in-out forwards;
     display: block;
+    z-index: 6;
 }
 .primary-navigation[data-state="closing"] {
     animation: clipPathCircleClose 300ms ease-in-out forwards;
@@ -69,7 +70,7 @@ button:hover {
 }
 .menu {z-index: 1;}
 .menu li {
-    border-bottom: 1px solid #575766;
+    border-bottom: 1px solid #000000;
     /*top: 3.3em;*/
 }
 .menu li:last-child {border-bottom: none;}
@@ -77,30 +78,30 @@ button:hover {
     font-size: 1.3rem;
     color: #8dd88e;
     display: block;
-    padding: 1.3em 1.1em 1.3em 1.5em;
+    padding: 1.3rem 1.1rem 1.3rem 1.5rem;
     text-transform: uppercase;
     text-decoration: none;
+    border-bottom-left-radius: 0.35rem;
 }
 .menu a:hover,.menu a:focus {
     animation: neon .08s ease-in-out infinite alternate;
 }
 .menu-icon {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 0.5rem;
     width: 1.1em;
-    font-size: 0.75rem;
-    text-align: right;
+    text-align: left;
     color: rgba(255, 255, 255, 0.4);
 }
 
 /* TOGGLE */
 .menu-toggle {
-    padding: 1.3em; /*Button-Position*/
-    background: transparent;
-    border: 0;
     position: absolute;
-    top: 0.5em;
-    right: 0.5em;
+    padding: 1.3em; /*Button-Position*/
+    background-color: transparent;
+    border: 0;
+    top: 0.5rem;
+    right: 0.5rem;
     cursor: pointer;
 }
 .visually-hidden {
@@ -115,8 +116,4 @@ button:hover {
         rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
     white-space: nowrap;
     width: 1px;
-}
-#wtf-is-jumi {
-    text-transform: lowercase;
-    font-size: smaller;
 }
