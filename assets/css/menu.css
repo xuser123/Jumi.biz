@@ -60,7 +60,6 @@ button:hover {
 .primary-navigation[data-state="opened"] {
     animation: clipPathCircleOpen 300ms ease-in-out forwards;
     display: block;
-    z-index: 6;
 }
 .primary-navigation[data-state="closing"] {
     animation: clipPathCircleClose 300ms ease-in-out forwards;
