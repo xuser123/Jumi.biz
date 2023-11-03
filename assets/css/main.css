@@ -46,9 +46,11 @@ main {
     text-shadow: 1.5px 2px black;
     background-color: #131313;
     position: relative;
-    padding: 0 0.8rem 1em;
+    padding: 0 1rem 1em;
     align-items: center;
     justify-content: space-around;
+    line-height: 1.2rem;
+
 }
 .inside-content {
     position: relative;
