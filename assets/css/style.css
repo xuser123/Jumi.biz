@@ -1,75 +1,3 @@
-html {
-    background-color: #131313;
-}
-body {
-    position: relative;/* Footer-Einfluss */
-    height: 100%;/* Footer-Einfluss */
-    min-width:100%;
-    margin: 0;padding: 0;
-    text-rendering: optimizeSpeed;
-    letter-spacing: 0.18rem;
-}
-/* Scrollleiste ausblenden */
-body::-webkit-scrollbar {
-    width: 0.5em;
-    display: none;
-    background-color: #000000;
-}
-@font-face {
-     font-family: 'Sarpanch';font-style: normal;
-     src: url('https://jumi.biz/assets/fonts/sarpanch-v11-latin-regular.woff2') format('woff2')
-    /* Super Modern Browsers */
-    , url('https://jumi.biz/assets/fonts/sarpanch-v11-latin-regular.woff') format('woff')
-    /* Modern Browsers */
-    , url('https://jumi.biz/assets/fonts/sarpanch-v11-latin-regular.ttf') format('truetype')
-    /* Safari, Android, iOS */
-    , url('https://jumi.biz/assets/fonts/sarpanch-v11-latin-regular.svg#Sarpanch') format('svg')
-    /* Legacy iOS */ ;
-}
-@media (prefers-reduced-motion: reduce) {
-    /* Remove all animations, transitions and smooth scroll
-     for people that prefer not to see them */
-     html:focus-within {
-         scroll-behavior: auto;
-    }
-     *, *::before, *::after {
-         animation-duration: 0.01ms !important;
-         animation-iteration-count: 1 !important;
-         transition-duration: 0.01ms !important;
-         scroll-behavior: auto !important;
-    }
-}
-header {
-    position: relative;
-    text-shadow: 1.5px 2px #000000;
-    background-color: #131313;
-    color: #00f0f0;
-    padding: 2rem 4rem 1.5rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    font-family: 'Sarpanch', sans-serif;
-    box-shadow:
-        rgba(0, 240, 240, 0.4) 1px 3px 5px,
-        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
-        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
-}
-header::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-header #jumi-logo {
-    position: absolute;
-    margin: 0.3rem;
-    top: 0.3rem;
-    left: 0.7rem;
-    font-size: 1.6rem;
-    cursor: pointer;
-    animation: neon .08s ease-in-out infinite alternate;
-    text-decoration: none;
-    background-color: transparent;
-    color: #00f0f0;
-}
 main {
     background-color: #000000;
     color: #ebebd3;
@@ -93,8 +21,6 @@ dt {
 ul > li {
     list-style: none;
 }
-article h1,
-article h2 {width: 100%;text-align: center;}
 code {
     display: inline-table;
     font-family: 'Source Code Pro', monospace;
@@ -114,54 +40,129 @@ mark {
 }
 ul, ol {list-style: none;}
 img {width: 100%;}
-footer {
-    position: absolute;
-    margin: 0;
-    width: 100%;
-    background-color: #131313;
-    color: #ffbfea;
-    text-align: center;
-    text-shadow: 1.5px 2px #000000;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.footer-container {
-    width: 100%;
-    padding: 1rem 1rem 12vh;
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-}
-.leftside-profil-icons {
-    display: flex;
-    left: 1.3rem;
-}
-.rightside-site-features {
-    display: flex;
-    right: 1.6rem;
-}
-#github-link {
-    width: 1.8rem;
-    cursor: pointer;
-    padding-right: 0.5rem;
-}
-#instagram-link {
-    width: 1.8rem;
-    cursor: pointer;
-}
-#contact-email {
-    background-color: #131313;
-    color: #00f0f0;
-    font-family: 'Sarpanch', sans-serif;
-    font-weight: 200;
-    letter-spacing: 0.1em;
-    font-size: 1.3rem;
-    text-decoration: none;
-    animation: neon .08s ease-in-out infinite alternate;
-}
-#goto-top {
-    width: 2rem;
-    cursor: pointer;
-}
+
 #analyzer {display:flex;justify-content:center;}
+
+/* ### MENU CSS ### MENU CSS ### MENU CSS ### */
+.navigation button {
+    background-color: #131313;
+    border: 1px solid #8dd88e;
+    cursor: pointer;
+    color: #8dd88e;
+    border-radius: 2px;
+}
+.navigation button:hover {
+    text-decoration: none;
+    color: #ffbfea;
+    animation: neon .08s ease-in-out infinite alternate;
+    text-shadow: none;
+}
+.menu-button {
+    position: absolute;
+    padding: 1.3em; /*Button-Position*/
+    background-color: transparent;
+    border: 0;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+.hidden-menu {
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow:
+        rgba(0, 240, 240, 0.4) 0px 2px 4px,
+        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+    white-space: nowrap;
+    width: 1px;
+}
+.menu-icon,.menu-icon::before,.menu-icon::after {
+     content: "";
+     display: block;
+     background-color: #00f0f0;
+     height: 3px;
+     width: 1.8em;
+     border-radius: 2px;
+     transition: all ease-in-out 400ms;
+     box-shadow:
+          rgba(0, 240, 240, 0.4) 0px 2px 4px,
+          rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+          rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+}
+.menu-icon::before {
+     transform: translateY(-6px);
+}
+.menu-icon::after {
+     transform: translateY(3px);
+}
+.menu-list {
+    z-index: 1;
+    position: absolute;
+    top: 3.35em;
+    right: 0%;
+    transition: clip-path ease-in-out 300ms;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-bottom-left-radius: 0.5rem;
+    background-color: #131313;
+    color: #ffbfea; /* pink */
+    box-shadow:
+        rgba(0, 240, 240, 0.4) -1px 2px 4px,
+        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+}
+.menu-list[data-state="opened"] {
+    animation: clipPathCircleOpen 300ms ease-in-out forwards;
+    display: block;
+}
+.menu-list[data-state="closing"] {
+    animation: clipPathCircleClose 300ms ease-in-out forwards;
+}
+.menu-list[data-state="closed"] {
+    display: none;
+}
+.navigation {z-index: 1;}
+.navigation li {
+    border-bottom: 1px solid #000000;
+    color: #00f0f0;
+    /*top: 3.3em;*/
+}
+.navigation li:last-child {border-bottom: none;}
+.navigation a {
+    font-size: 1.3em;
+    color: #8dd88e;
+    display: block;
+    padding: 1.3rem 1.1rem 1.3rem 1.5rem;
+    vertical-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom-left-radius: 0.35rem;
+}
+.navigation a:hover,.navigation a:focus {
+    animation: neon .08s ease-in-out infinite alternate;
+    text-shadow: none;
+}
+[aria-expanded="true"] .menu-icon {
+     transform: rotate(45deg);
+}
+[aria-expanded="true"] .menu-icon::before {
+     opacity: 0;
+}
+[aria-expanded="true"] .menu-icon::after {
+     transform: translateY(-3px) rotate(-90deg);
+}
+.list-icon {
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1.1em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.4);
+}
+.list-icon + span {
+    text-transform: none;
+    font-size: 0.7em;
+}
