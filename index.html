@@ -14,39 +14,55 @@ system,netzwerk,integration,programmierung
 snippets,vorlagen,lernen,verstehen,
 "><meta name="author" content="Jumi">
 <!-- Favicon --><link rel="icon" href="assets/img/ico/jumi.ico">
-<!-- Sheets -->
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/media-queries.css">
-<link rel="stylesheet" href="assets/css/menu.css">
-<link rel="stylesheet" href="assets/css/animations.css">
-<link rel="stylesheet" href="assets/css/modal.css">
-
 <title>j|index</title>
+<!-- Styling -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+<!-- New Styling
+<link rel="stylesheet" type="text/css" href="assets/css/basic.css">
+<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="assets/css/page.css">
+<link rel="stylesheet" type="text/css" href="assets/css/imported.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+<link rel="stylesheet" type="text/css" href="assets/css/modal.css">
+<link rel="alternate stylesheet" type="text/css" href="inverted-theme.css" title="inverted theme">
+<link rel="alternate stylesheet" type="text/css" href="gamemode-theme.css" title="gamemode theme">
+<link rel="alternate stylesheet" type="text/css" href="sweet-theme.css" title="sweet theme">
+<link rel="alternate stylesheet" type="text/css" href="hacker-theme.css" title="hacker theme">
+<link rel="alternate stylesheet" type="text/css" href="xmas-theme.css" title="xmas theme">
+<link rel="alternate stylesheet" type="text/css" href="halloween-theme.css" title="halloween theme">
+<link rel="alternate stylesheet" type="text/css" href="party-theme.css" title="party theme">
+<link rel="stylesheet" type="text/css" href="print-horizontal.css" media="print and (orientation: portrait)">
+<link rel="stylesheet" type="text/css" href="print-vertical.css" media="print and (orientation: landscape)">
+<link rel="stylesheet" type="text/css" href="speech-optimized.css" media="speech">
+<link rel="stylesheet" href="termynal.css">-->
+
+
+
 </head><body id=" ଘ(੭*ˊᵕˋ)੭* ̀ˋ hello ɪɴᴛᴇʀɴᴇᴛ ">
 
 <header><div class="header-content">
 <!-- LOGO -->
 <h1 id="jumi-logo"><a href="https://www.jumi.biz">jumi.biz</a></h1>
 <!-- MENU -->
-<nav class="menu">
-<button class="menu-toggle"
-        aria-controls="primary-navigation"
+<nav class="navigation">
+<button class="menu-button"
+        aria-controls="menu-list"
         aria-expanded="false">
-  <span class="visually-hidden">Menu</span>
-  <div class="hamburger" aria-hidden="true"></div>
+  <span class="hidden-menu">Menu</span>
+  <div class="menu-icon" aria-hidden="true"></div>
 </button>
 
-<ul data-state="closed" class="primary-navigation" id="primary-navigation">
-<li><a href="https://www.jumi.biz/Content.htm"><i class="menu-icon">
+<ul data-state="closed" class="menu-list" id="menu-list">
+<li><a href="https://www.jumi.biz/Content.htm"><i class="list-icon">
 <img src="https://www.jumi.biz/assets/img/ico/menu-content.ico" alt="Content"></i>content</a></li>
-<li><a href="https://www.jumi.biz/Links.htm"><i class="menu-icon">
+<li><a href="https://www.jumi.biz/Links.htm"><i class="list-icon">
 <img src="https://www.jumi.biz/assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
-<li><a href="https://www.jumi.biz/Cheats.htm"><i class="menu-icon">
+<li><a href="https://www.jumi.biz/Cheats.htm"><i class="list-icon">
 <img src="https://www.jumi.biz/assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
-<li><a href="https://www.jumi.biz"><i class="menu-icon">
-<img src="https://www.jumi.biz/assets/img/ico/jumi.ico" alt="WTF is Jumi?"></i>
-<span id="wtf-is-jumi">wtf is jumi?</span></a></li>
+<li><a href="https://www.jumi.biz"><i class="list-icon">
+<img src="https://www.jumi.biz/assets/img/ico/jumi.ico" alt="WTF is Jumi?"></i><span>wtf is jumi?</span></a></li>
 </ul></nav></div></header><main>
 
 <!-- MAIN -->
@@ -56,7 +72,7 @@ snippets,vorlagen,lernen,verstehen,
 <!-- print("hello world")  -->
 <h2>print("hello world") </h2>
     <p>Diese Website ist im Aufbau</p>
-	<ul class="kleintxt">
+	<ul style="font-size:small;">
 	<li>[2019-06]: Domain gemietet</li>
 	<li>[2020/21]: Konzeptentwicklung</li>
 	<li>[2022-11]: Ausarbeitung</li>
@@ -65,7 +81,7 @@ snippets,vorlagen,lernen,verstehen,
 	<li>[2023-10]: Integration</li></ul>
 
 <!-- WTF is Jumi.biz ? -->
-<h2>WTF is Jumi.biz ?</h2>
+<h3>WTF is Jumi.biz ?</h3>
 	<p>Hier findest du Zusammenfassungen zu verschiedenen Computerthemen. </p>
 
 <div class="inside-content flex">
@@ -82,38 +98,37 @@ Themen</a></h3>
 </div>
 <div class="in-inside">
 <h3>Tasten-Navigation </h3>
-    <link rel="stylesheet" href="https://www.jumi.biz/assets/css/word-as-button.css">
-    <ol><li><div class="keyboard-styled-word"><span>TAB</span></div> Selektieren </li><br>
-    <li><div class="keyboard-styled-word"><span>Enter</span></div> Öffnen </li></ol>
-    <ul><li>Rückwärts selektieren<br><div class="keyboard-styled-word"><span>Shift</span></div> + <div class="keyboard-styled-word"><span>TAB</span></div></li></ul>
+    <ol><li> Selektieren: <div class="button-styled-word"><span>TAB</span></div></li><br>
+    <li> Öffnen: <div class="button-styled-word"><span>Enter</span></div></li></ol>
+    <ul><li> Zurück: <div class="button-styled-word"><span>Shift</span></div> + <div class="button-styled-word"><span>TAB</span></div></li></ul>
 </div>
 </div>
 </article>
 <article id="Grid-Area-2" class="content flow">
 
 <!-- $ whoami -->
-<h2 id="bigHL">&#36; whoami</h2>
+<h2>&#36; whoami</h2>
 
 <div class="flex">
 
-<img id="modalTrigger02" src="https://www.jumi.biz/assets/img/profile-img-2.png"
+<img id="modalTrigger02" src="assets/img/profile-img-2.png"
 alt="Picture shows shoe">
 <dialog id="openModal02">
-<img src="https://www.jumi.biz/assets/img/modal/profile-img-modal-02.png" alt="Image-Modal" id="imgModal02">
+<img src="assets/img/modal/profile-img-modal-02.png" alt="Image-Modal" id="imgModal02">
 <h2>Local Area</h2>
 <button id="closeModal02"> &times; </button></dialog>
 
-<img id="modalTrigger01" src="https://www.jumi.biz/assets/img/profile-img-1.png"
+<img id="modalTrigger01" src="assets/img/profile-img-1.png"
 alt="Picture shows Jumi">
 <dialog id="openModal01">
-<img src="https://www.jumi.biz/assets/img/modal/profile-img-modal-01.png" alt="Image-Modal" id="imgModal01">
+<img src="assets/img/modal/profile-img-modal-01.png" alt="Image-Modal" id="imgModal01">
 <h2>Human Interface</h2>
 <button id="closeModal01"> &times; </button></dialog>
 
-<img id="modalTrigger03" src="https://www.jumi.biz/assets/img/profile-img-3.png"
+<img id="modalTrigger03" src="assets/img/profile-img-3.png"
 alt="Picture shows computer">
 <dialog id="openModal03">
-<img src="https://www.jumi.biz/assets/img/modal/profile-img-modal-03.png" alt="Image-Modal" id="imgModal03">
+<img src="assets/img/modal/profile-img-modal-03.png" alt="Image-Modal" id="imgModal03">
 <h2>Central Processing</h2>
 <button id="closeModal03"> &times; </button></dialog>
 
@@ -121,22 +136,22 @@ alt="Picture shows computer">
 <!--fix this br there
 --> <br><p>Mir macht es&nbsp;Spass, mich&nbsp;mit IT zu beschäftigen und
     Texte für lernzwecke zu minimalisieren. Die&nbsp;Quellen meiner Textinhalte sind öffentliche Personen mit großer Reichweite oder private Weiterbildungen.<br><br>
-    <span class="kleintxt">"<i>Wer? Wer ist nur die Form als Konsequenz der Funktion des Was. Und was ich bin, das ist ein Mann mit Maske</i>" <br><br>-V wie Vendetta (2005)</span></p>
+    <span class="zitat">"<i>Wer? Wer ist nur die Form als Konsequenz der Funktion des Was. Und was ich bin, das ist ein Mann mit Maske</i>" <br><br>-V wie Vendetta (2005)</span></p>
 
 </article>
 <article id="Grid-Area-3" class="content flow">
 
 <!-- Dark Mode Only -->
-<h2 id="bigHL">Dark Mode Only</h2>
+<h2>Dark Mode Only</h2>
     <p>Ein dunkler Bildschirm spart bis zu 60% Energie und schont die&nbsp;Augen.
     Wenn&nbsp;du den hellen Modus immer noch bevorzugst dann&nbsp;GTFO!<br><br>
-    <span class="kleintxt">"<i>Come to the Dark Side</i>" <br>-Darth Vader</span></p>
+    <span class="zitat">"<i>Come to the Dark Side</i>" <br>-Darth Vader</span></p>
 
 </article>
 <article id="Grid-Area-4" class="content flow">
 
 <!-- IT ~ Kung Fu -->
-<h2 id="bigHL">IT &#126; Kung Fu</h2>
+<h2>IT &#126; Kung Fu</h2>
     <p>Der chinesische Begriff "Kung Fu" bezieht sich auf Fähigkeiten und&nbsp;Techniken,
     die&nbsp;durch lange, harte Übung und Geduld erlangt&nbsp;werden.
     Eine&nbsp;Disziplin, die zur Meisterung viel Engagement und Einsatz&nbsp;erfordert.
@@ -144,13 +159,13 @@ alt="Picture shows computer">
     während&nbsp;Informations-Technologie Daten verarbeitet und&nbsp;speichert.
     Kung&nbsp;Fu beherrschen verlangt Reaktionsfähigkeit,&nbsp;
     bei&nbsp;Informationen entscheidet analytisches und logisches&nbsp;Denken.<br><br>
-    <span class="kleintxt">"<i>Der Meister erscheint wenn der Schüler bereit ist</i>" <br>-Karate Tiger (1986)</span></p>
+    <span class="zitat">"<i>Der Meister erscheint wenn der Schüler bereit ist</i>" <br>-Karate Tiger (1986)</span></p>
 
 </article>
 <article id="Grid-Area-5" class="content flow">
 
 <!-- Shownotes -->
-<h3 id="bigHL">Shownotes</h3>
+<h3>Shownotes</h3>
 <ul><li>Kommasetzungs-KI: <a href="https://komma.ai/#" target="_blank">komma.ai</a></li>
 <li>Suchmaschinen-KI: <a href="https://you.com" target="_blank">you.com</a></li>
 <li>HTML-Checker: <a href="https://validator.w3.org/" target="_blank">validator.w3.org</a></li>

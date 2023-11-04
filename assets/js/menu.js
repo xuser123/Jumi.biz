@@ -1,6 +1,6 @@
 // Navigationsmenü
-const menuToggle = document.querySelector('.menu-toggle');
-const siteNavigation = document.querySelector('.primary-navigation');
+const menuToggle = document.querySelector('.menu-button');
+const siteNavigation = document.querySelector('.menu-list');
 
 // bei Klick auf Menü-Symbol
 menuToggle.addEventListener('click', () => {
