@@ -8,10 +8,6 @@ a {
     text-decoration: none;
     color: #00f0f0;
 }
-p {
-    display: inline-block;
-    line-height: 1.337rem;
-}
 i {
     font-size: 0.75rem;
 }
