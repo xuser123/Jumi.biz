@@ -1,10 +1,12 @@
 # [jumi.biz](https://www.jumi.biz)
 computer topics:
-- Linux
-- Windows
-- Cybersecurity
-- Hacking
-- Coding
-- Shell
-- Tools
-- Network basics
+- linux
+- windows
+- cybersecurity
+- hacking
+- coding
+- shell
+- tools
+- network basics
+- darth vader
+  - not really
