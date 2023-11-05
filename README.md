@@ -1,5 +1,5 @@
 # [jumi.biz](https://www.jumi.biz)
-computer topics:
+topics:
 - linux
 - windows
 - cybersecurity
