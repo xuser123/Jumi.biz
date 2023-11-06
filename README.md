@@ -8,5 +8,3 @@ topics:
 - shell
 - tools
 - network basics
-- darth vader
-  - not really
