@@ -1,0 +1,161 @@
+@keyframes clipPathCircleOpen {
+    0% {clip-path: circle(0% at top right);}
+    100% {clip-path: circle(250% at top right);}
+}
+@keyframes clipPathCircleClose {
+    0% {clip-path: circle(250% at top right);}
+    100% {clip-path: circle(0% at top right);}
+}
+@keyframes neon {
+    from {text-shadow:0 0 6px rgba(202,228,225,0.92),0 0 30px rgba(202,228,225,0.34),0 0 12px rgba(30,132,242,0.52),0 0 21px rgba(30,132,242,0.92),0 0 34px rgba(30,132,242,0.78),0 0 54px rgba(30,132,242,0.92);
+    }
+    to {text-shadow:0 0 6px rgba(202,228,225,0.98),0 0 30px rgba(202,228,225,0.42),0 0 12px rgba(30,132,242,0.58),0 0 22px rgba(30,132,242,0.84),0 0 38px rgba(30,132,242,0.88),0 0 60px rgba(30,132,242,1);
+    }
+}
+@keyframes neon-box {
+    from {box-shadow:0 0 6px rgba(202,228,225,0.92),0 0 30px rgba(202,228,225,0.34),0 0 12px rgba(30,132,242,0.52),0 0 21px rgba(30,132,242,0.92),0 0 34px rgba(30,132,242,0.78),0 0 54px rgba(30,132,242,0.92);
+    }
+    to {box-shadow:0 0 6px rgba(202,228,225,0.98),0 0 30px rgba(202,228,225,0.42),0 0 12px rgba(30,132,242,0.58),0 0 22px rgba(30,132,242,0.84),0 0 38px rgba(30,132,242,0.88),0 0 60px rgba(30,132,242,1);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    /* Remove all animations, transitions and smooth scroll
+    for people that prefer not to see them */
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+@media screen and (min-width: 35em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two three"
+        "five five"
+        "four four";
+    }
+}
+@media screen and (min-width: 38em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two five"
+        "three five"
+        "four four";
+    }
+}
+@media screen and (min-width: 54em) {
+    .grid-container {grid-template-areas:
+        "one one two"
+        "five five five"
+        "three four four";
+    }
+}
+@media screen and (min-width: 75em) {
+    .grid-container {grid-template-areas:
+        "one one two five"
+        "three four four five";
+    }
+}
+.header-content > #jumi-logo {
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.header-content > #jumi-biz {
+    text-align: center;
+    cursor: pointer;
+    animation: neon .08s ease-in-out infinite alternate;
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--neon-blue);
+    line-height: 1.337em;
+}
+body::-webkit-scrollbar {
+/* Scrollleiste ausblenden */
+    background-color: #000;
+    width: 3px;
+    display: none;
+}
+header::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+header a {color: var(--neon-blue);text-decoration: none;}
+.navigation {z-index: 1;}
+.menu-list li:last-child > a{
+    font-size:small;
+    text-transform: lowercase;
+}
+.menu-list li:last-child i{
+    padding: 1.2em;
+}
+.menu-list a {
+    color: var(--matrix-green);
+    display: block;
+    font-family: 'Sarpanch', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom-left-radius: 0.35rem;
+    text-align: left;
+    padding-right: 0.6em;
+}
+.menu-list a:hover,.menu-list a:focus {
+    color: var(--neon-pink);
+    animation: neon .08s ease-in-out infinite alternate;
+    text-shadow: none;
+}
+.menu-list[data-state="opened"] {
+    animation: clipPathCircleOpen 300ms ease-in-out forwards;
+    display: block;
+}
+.menu-list[data-state="closing"] {
+    animation: clipPathCircleClose 300ms ease-in-out forwards;
+}
+.menu-list[data-state="closed"] {
+    display: none;
+}
+.menu-button:hover {
+    color: var(--neon-pink);
+    animation: neon .08s ease-in-out infinite alternate;
+    text-shadow: none;
+}
+.menu-icon,.menu-icon::before,.menu-icon::after {
+     content: "";
+     display: block;
+     background-color: var(--neon-blue);
+     height: 3px;
+     width: 1.8rem;
+     border-radius: 2px;
+     transition: all ease-in-out 400ms;
+     box-shadow:
+          rgba(0, 240, 240, 0.4) 0px 2px 4px,
+          rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+          rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+}
+.menu-icon::before {
+     transform: translateY(-6px);
+}
+.menu-icon::after {
+     transform: translateY(3px);
+}
+[aria-expanded="true"] .menu-icon {
+     transform: rotate(45deg);
+}
+[aria-expanded="true"] .menu-icon::before {
+     opacity: 0;
+}
+[aria-expanded="true"] .menu-icon::after {
+     transform: translateY(-3px) rotate(-90deg);
+}
+.header-text span{
+    padding:0.3em;
+    display: inline-block;
+    vertical-align: middle;
+    font-size:small;
+}
+

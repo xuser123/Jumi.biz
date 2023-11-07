@@ -4,19 +4,39 @@
 <!-- SUPPORT --><meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!-- INFO -->
 <meta name="description" content="Sammlung von Themen über Informatik, kompakt.">
-<meta name="keywords" content="Linux,Windows,Cybersecurity,Hacking,Coding,Shell,Tools,Network-Basics"
-"><meta name="author" content="Jumi">
+<meta name="keywords" content="linux,windows,cybersecurity,hacking,coding,shell,tools,network,basics">
+<meta name="author" content="Jumi">
 <!-- FAVICON --><link rel="icon" href="assets/img/ico/jumi.ico">
 <!-- TITLE --><title>jumi.biz</title>
 <!-- CSS -->
+<link rel="stylesheet" type="text/css" href="assets/css/basic.css">
+<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<style>
+:root { /* Farben */
+	--vader-black: #131313;
+	--pipi-white: #ebebd3;
+	--matrix-green: #8dd88e;
+	--neon-blue: #00f0f0;
+	--neon-pink: #ffbfea;
+}
+html {background-color: var(--vader-black);}
+body {
+    position: relative;/* Footer-Einfluss */
+    height: 100%;/* Footer-Einfluss */
+    min-width:100%;
+    margin: 0;padding: 0;
+    text-rendering: optimizeSpeed;
+}
+*,*::before,*::after {box-sizing: border-box;}
+</style>
 </head>
 <!-- BODY -->
 <body id=" ଘ(੭*ˊᵕˋ)੭* ̀ˋ hello ɪɴᴛᴇʀɴᴇᴛ ">
 <header><div class="header-content">
 <!-- LOGO -->
-<h1 id="jumi-logo"><a href="https://www.jumi.biz">jumi.biz</a></h1>
+<span id="jumi-logo"><img src="assets/img/ico/jumi.ico"></span>
+<span id="jumi-biz"><a href="https://www.jumi.biz">jumi.biz</a></span>
 <!-- BUTTON -->
 <nav class="navigation">
 <button class="menu-button"
@@ -24,9 +44,9 @@
         aria-expanded="false">
   <span class="hidden-menu">Menu</span>
   <div class="menu-icon" aria-hidden="true"></div>
-</button>
+</button></div><div class="header-text"><span><!-- .header-text --></span>
 <!-- MENU -->
-<ul data-state="closed" class="menu-list" id="menu-list">
+<ul data-state="closed" class="menu-list">
 <li><a href="Content.htm"><i class="list-icon">
 <img src="assets/img/ico/menu-content.ico" alt="Content"></i>content</a></li>
 <li><a href="Links.htm"><i class="list-icon">
@@ -34,7 +54,7 @@
 <li><a href="Cheats.htm"><i class="list-icon">
 <img src="assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
 <li><a href="https://www.jumi.biz"><i class="list-icon">
-<img src="assets/img/ico/jumi.ico" alt="WTF is Jumi?"></i><span>wtf is jumi?</span></a></li>
+<img src="assets/img/ico/jumi.ico" alt="WTF is jumi?"></i>wtf is jumi?</a></li>
 </ul></nav></div></header><main>
 <!-- MAIN -->
 <div class="grid-container">
@@ -64,19 +84,19 @@ Themen</a></h3>
 <h2>&#36; whoami</h2>
 <div class="flex">
 <!-- PICTURE -->
-<img id="modalTrigger02" src="assets/img/profile-img-2.png"
-alt="Picture shows shoe">
-<dialog id="openModal02">
-<img src="assets/img/modal/profile-img-modal-02.png" alt="Image-Modal" id="imgModal02">
-<h2>Local Area</h2>
-<button id="closeModal02"> &times; </button></dialog>
-<!-- PICTURE -->
 <img id="modalTrigger01" src="assets/img/profile-img-1.png"
 alt="Picture shows Jumi">
 <dialog id="openModal01">
 <img src="assets/img/modal/profile-img-modal-01.png" alt="Image-Modal" id="imgModal01">
 <h2>Human Interface</h2>
 <button id="closeModal01"> &times; </button></dialog>
+<!-- PICTURE -->
+<img id="modalTrigger02" src="assets/img/profile-img-2.png"
+alt="Picture shows shoe">
+<dialog id="openModal02">
+<img src="assets/img/modal/profile-img-modal-02.png" alt="Image-Modal" id="imgModal02">
+<h2>Local Area</h2>
+<button id="closeModal02"> &times; </button></dialog>
 <!-- PICTURE -->
 <img id="modalTrigger03" src="assets/img/profile-img-3.png"
 alt="Picture shows computer">
@@ -110,22 +130,18 @@ alt="Picture shows computer">
 </article>
 <article id="area-5" class="content flow">
 <h2>Nikola Tesla</h2>
-<p><span class="zitat">"<i>Die Wissenschaft ist&nbsp;bestrebt, die&nbsp;Welt um uns herum zu&nbsp;verstehen. Die&nbsp;Technologie hingegen strebt danach, sie zu&nbsp;beherrschen.</i>" <br>- Nikola Tesla</span></p>
+<p><span class="zitat">"<i>Die Wissenschaft ist&nbsp;bestrebt, die&nbsp;Welt um uns herum zu&nbsp;verstehen. Die&nbsp;Technologie hingegen strebt danach, sie zu&nbsp;beherrschen.</i>" <br><br>- Nikola Tesla</span></p>
 </article></div></main>
-ŝ
-<!-- ### Debugger (-option)
-    <meta http-equiv="refresh" content="6">
-    <style>* {border: 1px dotted #00B140;}</style>-->
 
-<!-- ### Analyzer (-option)
-    <h1>HTML-Analyzer</h1>
-    <div id="analyzer" class="flex">
-    <h3>Tags:</h3>
-    <ul id="tagList"></ul>
-    <h3>Classes:</h3>
-    <ul id="classList"></ul>
-    <h3>IDs:</h3>
-    <ul id="idList"></ul></div>
+<!-- ### Debugger: Auto-Refresh Page (-option)
+    <meta http-equiv="refresh" content="5">-->
+<!-- ### Debugger: Show Borders (-option)
+    <style>* {border: 1px dotted #00B140;}</style>-->
+<!-- ### Debugger: HTML-Analyzer JavaScript (-option)
+    <div id="analyzer" class="flex" style="background-color:#000000;color:#8dd88e"><h2>HTML-Analyzer</h2>
+    <h3>Tags:</h3><ul id="tagList"></ul>
+    <h3>Classes:</h3><ul id="classList"></ul>
+    <h3>IDs:</h3><ul id="idList"></ul></div>
     <script src="assets/js/html-analyzer.js"></script>-->
 
 <footer><div class="footer-container">
@@ -139,9 +155,12 @@ alt="Picture shows computer">
 <!-- EMAIL -->
 <span id="contact-email">contact&#64;jumi.biz</span>
 <div class="rightside-site-features">
+<!-- EXPORT PDF -->
+<a id="export-icon" href="#">
+<img src="assets/img/ico/export-pdf.ico" alt="Download as PDF"></a>
 <!-- GO TOP -->
-<a id="goto-top" href="#"><img src="assets/img/ico/go-top.ico" alt="Zum Seitenanfang"></a>
-</div></div></footer>
+<a id="goto-top" href="#">
+<img src="assets/img/ico/go-top.ico" alt="Zum Seitenanfang"></a></div></div></footer>
 <!-- SCRIPTS -->
 <script src="assets/js/menu.js"></script>
 <script src="assets/js/modal.js"></script>
