@@ -2,10 +2,10 @@
 Options -Indexes
 
 ## URL-Neuschreibung aktivieren:
-RewriteEngine On
+#   231108      RewriteEngine On
 
 ## always use HTTPS
-Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+#   231108      Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 
 ## Umleitung auf https:
 #RewriteCond %{HTTP:X-Forwarded-Proto} =http [OR]
@@ -17,8 +17,8 @@ Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains
 #RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 ## www in URL entfernen:
-RewriteCond %{HTTP_HOST} ^www\.jumi\.biz [NC]
-RewriteRule ^(.*)$ https://jumi.biz/$1 [L,R=301]
+#   231108      RewriteCond %{HTTP_HOST} ^www\.jumi\.biz [NC]
+#   231108      RewriteRule ^(.*)$ https://jumi.biz/$1 [L,R=301]
 
 ## Dateiendungen entfernen
 #RewriteCond %{REQUEST_FILENAME} !-d
