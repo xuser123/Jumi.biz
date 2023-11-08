@@ -1,1 +1,15 @@
 .directory
+_backup_
+.bash_history
+.cache
+.config
+.gnupg
+.lesshst
+logfiles
+.ssh
+.viminfo
+1blu-git*
+.md
+.htaccess
+CNAME
+templates
