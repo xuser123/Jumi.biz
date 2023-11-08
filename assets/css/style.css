@@ -1,22 +1,51 @@
-.flow > *:where(:not(:first-child)) {
-    margin-top: 0.2rem;
-}
-.button-styled span {
-    display: inline-block;
-    background-color: #333;
-    border: 1px solid #000;
-    border-radius: 3px;
-    color: #fff;
-    outline: none;
-    font-family: Helvetica, Arial, sans-serif;
-    height: 1rem;
-    line-height: 1.6em;
-    font-size: 0.65em;
-    padding: 0.1em 0.6em 0.1em;
-    margin: 0.2em;
+ul, ol {list-style: none;}
+code {
+    background-color: #000;
+    color: var(--matrix-green);
+    display: inline-table;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.6em;
+    max-width: 80%;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    text-align: left;
     text-shadow: none;
-    text-align: center;
+}
+mark {
+    background-color: revert;color: revert;
+    font-size: 0.85rem;
+    padding-left: 0.2rem;padding-right: 0.2rem;
+}
+table#tasten-steuerung {
+	justify-content: space-around;
+	text-align: center;
+	width: 100%;margin: 0;padding: 0 1em 1em;
+}
+th {
+    color:var(--pipi-white);
+	font-weight: 50;
+}
+thead th:nth-child(1) {width: 20%;}
+thead th:nth-child(2) {width: 40%;}
+thead th:nth-child(3) {width: 20%;}
+thead th:nth-child(4) {width: 20%;}
+
+.flow > *:where(:not(:first-child)) {margin-top: 0.2rem;}
+.button-styled span {
+    background-color: #333;
+    border-radius: 3px;
+    border: 1px solid #000;
+    color: #fff;
+    display: inline-block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.65em;
     font-weight: 700;
+    height: 18px;
+    line-height: 1.6em;
+    outline: none;
+    padding: 0.1em 0.6em 0.1em;
+    text-align: center;
+    text-shadow: none;
     box-shadow:
         0 3px 0 rgba(0,0,0,0.25),
         inset 0 2px 0 rgba(170,170,170,0.8);
@@ -28,86 +57,54 @@
 .content:nth-child(4) {grid-area: four;}
 .content:nth-child(5) {grid-area: five;}
 .content h1 {
+    animation: neon .08s ease-in-out infinite alternate;
+    color: var(--neon-blue);
+    font-family: 'Sarpanch', sans-serif;
     width: 100%; text-align: center;
-    color: var(--neon-pink);}
-.content h2, h3, h4 {color: var(--matrix-green);}
 }
+.content h2 {
+    color: var(--matrix-green);
+    width: 100%; text-align: center;
+}
+.content h3 {color: var(--matrix-green);}
+.content h4 {width: 100%; text-align: center;color: var(--matrix-green);}
 .content p {
-    display: inline-block;
+    color:var(--pipi-white);
 }
 .content a,
 .content b {
     color: var(--neon-blue);
     text-decoration: none;
+    font-family: 'Sarpanch', sans-serif;
 }
-.content a:hover,
-.content a:focus, {
-    text-decoration: none;
-    color: var(--neon-pink);
+.content a:hover,.content a:focus {
     animation: neon .08s ease-in-out infinite alternate;
+    color: var(--neon-pink);
     text-shadow: none;
-}
-[id*="modalTrigger"] {
-    border-radius: 3px;
-    cursor: pointer;
-}
-[id*="modalTrigger"]:hover {
-    opacity: 0.75;
-    outline: 1px solid var(--neon-pink);
-    animation: neon-box .08s ease-in-out infinite alternate;
-}
-dialog[open] {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    border-radius: 0.3rem;
-    text-shadow: 1.5px 2px #000;
-    background-color: var(--vader-black);
-    color: #8dd88e; /* grün */
-    border: none;
-    box-shadow:
-        rgba(0, 240, 240, 0.4) 0px 2px 4px,
-        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
-        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
 }
 dialog::backdrop {background-color: rgba(0, 0, 0, 0.5);
 }
-dialog > img {border-radius: 0.3rem;}
-dialog [id*="closeModal"] {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    background-color: transparent;
-    color: var(--neon-blue);
-    height: 1em;
-    width: 1em;
-    font-size: 2.6em;
-    transition: all ease-in-out 200ms;
-    display: flex;
-    justify-content: center;
+dialog > figure {margin:0;color: var(--matrix-green);}
+figure figcaption {
     align-items: center;
-    text-align: center;
-    border-radius: 2px;
-    border: none;
+    color: var(--matrix-green);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sarpanch', sans-serif;
+    justify-content: center;
+    text-shadow: 1.5px 2px #000;
 }
-dialog [id*="closeModal"]:hover,
-dialog [id*="closeModal"]:focus {
-    outline: none;
-    border: none;
-    animation: neon .08s ease-in-out infinite alternate;
-    text-decoration: none;
-    cursor: pointer;
+figure > img {border-radius: 0.3rem;}
+caption {
+  padding: 10px;
+  caption-side: top;
 }
 footer .footer-container {
-    width: 100%;
-    padding: 1em 1rem 12vh;
     display: flex;
     justify-content: space-between;
+    padding: 1em 1rem 12vh;
     vertical-align: middle;
+    width: 100%;
 }
 footer .leftside-profil-icons {
     display: flex;
@@ -117,6 +114,20 @@ footer .rightside-site-features {
     display: flex;
     right: 15px;
 }
+.header-content > span#jumi-logo {
+    text-align: center;
+    vertical-align: middle;
+	padding: 0 4px 0 15px;
+}
+.header-content > #jumi-biz {
+    animation: neon .08s ease-in-out infinite alternate;
+    background-color: transparent;
+    color: var(--neon-blue);
+    cursor: pointer;
+    line-height: 1.337em;
+    text-align: center;
+    text-decoration: none;
+}
 footer #github-link {
     cursor: pointer;
 }
@@ -125,22 +136,67 @@ footer #instagram-link {
     margin-left: 0.5rem;
 }
 footer #contact-email {
+    animation: neon .08s ease-in-out infinite alternate;
     background-color: var(--vader-black);
     color: var(--neon-blue);
     font-family: 'Sarpanch', sans-serif;
+    font-size: 1.3rem;
     font-weight: 200;
     letter-spacing: 0.12em;
-    font-size: 1.3rem;
     text-decoration: none;
-    animation: neon .08s ease-in-out infinite alternate;
 }
 footer #export-icon {
     cursor: pointer;
     padding-right: 0.5rem;
 }
 footer #goto-top {
+    cursor: pointer;
     width: 2rem;
+}
+#analyzer {display:flex;justify-content:center;}
+[id*="modalTrigger"] {
+    border-radius: 3px;
     cursor: pointer;
 }
-ul, ol {list-style: none;}
-#analyzer {display:flex;justify-content:center;}
+[id*="modalTrigger"]:hover {
+    animation: neon-box .08s ease-in-out infinite alternate;
+    opacity: 0.75;
+    outline: 1px solid var(--neon-pink);
+}
+dialog[open] {
+    background-color: var(--vader-black);
+    border-radius: 0.3rem;
+    border: none;
+    padding: 1rem;
+    box-shadow:
+        rgba(0, 240, 240, 0.4) 0px 2px 4px,
+        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+}
+dialog [id*="closeModal"] {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 2px;
+    border: none;
+    bottom: 1rem;
+    color: var(--neon-blue);
+    display: flex;
+    font-size: 2.6em;
+    height: 1em;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 1rem;
+    text-align: center;
+    transition: all ease-in-out 200ms;
+    width: 1em;
+}
+dialog [id*="closeModal"]:hover,
+dialog [id*="closeModal"]:focus {
+    animation: neon .08s ease-in-out infinite alternate;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}

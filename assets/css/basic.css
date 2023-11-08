@@ -9,65 +9,65 @@ url('../fonts/sarpanch-v11-latin-regular.ttf')
 url('../fonts/sarpanch-v11-latin-regular.svg#Sarpanch') /* Legacy iOS */ format('svg');
 }
 header {
-    position: relative;
-    text-shadow: 1.5px 2px #000;
+    align-items: center;
     background-color: var(--vader-black);
     color: var(--neon-blue);
-    height: 50px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 25px;
     font-family: 'Sarpanch', sans-serif;
+    font-size: 25px;
+    height: 50px;
+    justify-content: space-between;
     letter-spacing: 0.23rem;
+    position: relative;
+    text-shadow: 1.5px 2px #000;
     box-shadow:
-        rgba(0, 240, 240, 0.4) 1px 3px 5px,
+        rgba(0, 240, 240, 0.4) 0px 2px 4px,
         rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
         rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
 }
 main {
     background-color: #000;
-    padding: 3vw 0 9vw;
     font-family: Arial, Verdana, Helvetica, sans-serif;
     letter-spacing: 0.18em;
+    padding: 3vw 0 9vw;
 }
 .header-content {
-    padding:15px;
-    display: inline-block;
     align-items: center;
+    display: inline-block;
+    padding: 5px;
     vertical-align: middle;
+    animation: neon .08s ease-in-out infinite alternate;
 }
 .menu-list {
-    z-index: 1;
-    position: absolute;
-    top: 49px;
-    right: 0;
+    background-color: var(--vader-black);
+    border-bottom-left-radius: 0.5rem;
+    list-style: none;
     margin: 0;
     padding: 0;
+    position: absolute;
+    right: 0;
+    top: 49px;
     transition: clip-path ease-in-out 300ms;
-    list-style: none;
-    border-bottom-left-radius: 0.5rem;
-    background-color: var(--vader-black);
+    z-index: 1;
     box-shadow:
-        rgba(0, 240, 240, 0.4) -1px 2px 4px,
+        rgba(0, 240, 240, 0.4) 0px 2px 4px,
         rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
         rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
 }
-.navigation .menu-button {
-    position: absolute;
-    padding: 0.6em;
-    margin: 15px;
+.menu-button {
     background-color: transparent;
-    top: 0;
-    right: 0;
+    border-radius: 2px;
     border: 0;
     cursor: pointer;
-    color: var(--matrix-green);
-    border-radius: 2px;
+    margin: 8px;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .hidden-menu {
-    clip: rect(0, 0, 0, 0);
     clip-path: inset(50%);
+    clip: rect(0, 0, 0, 0);
     height: 1px;
     overflow: hidden;
     position: absolute;
@@ -79,11 +79,11 @@ main {
     width: 1px;
 }
 .list-icon {
-    padding:0.6em;
-    display: inline-block;
     align-items: center;
-    vertical-align: middle;
+    display: inline-block;
+    padding:1em;
     text-align: left;
+    vertical-align: middle;
 }
 .flex {
     display: flex;
@@ -93,41 +93,53 @@ main {
     display: grid;
     gap: 1rem;
     grid-auto-columns: 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-areas:
     'one' 'two' 'three' 'four' 'five';
-    width: min(97%, 90rem);
-    margin-inline: auto;
+    grid-template-columns:
+    repeat(auto-fit, minmax(200px, 1fr));
     justify-content: space-around;
+    margin-inline: auto;
+    width: min(97%, 90rem);
 }
 .content {
+    align-items: center;
+    width: 100%;
+    background-color: var(--vader-black);
     border-radius: 0.35rem;
+    color:var(--pipi-white);
+    justify-content: space-around;
+    line-height: 1.337em;
+    padding: 0 1em 1em;
+    position: relative;
+    text-shadow: 1.5px 2px #000;
     box-shadow:
         rgba(0, 240, 240, 0.4) 0px 2px 4px,
         rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
         rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
-    text-shadow: 1.5px 2px #000;
-    background-color: var(--vader-black);
-    color:var(--pipi-white);
-    position: relative;
-    padding: 0 1rem 1em;
-    align-items: center;
-    justify-content: space-around;
-    line-height: 1.337em;
 }
-.zitat {
+q, cite, figcaption {
     font-size:small;
-    inline-size: 0.2em;
+}
+summary {cursor: pointer;}
+details {
+    background-color:#000;
+    border-radius: 0.5rem;
+    color: var(--matrix-green);
+    font-size: large;
+    font-weight: 50;
+    justify-content: center;
+    margin: 2em; padding: 1em;
+}
+details[open] {
+    animation: neon-box .08s ease-in-out infinite alternate;
 }
 footer {
-    position: absolute;
-    margin: 0;
-    width: 100%;
+    align-items: center;
     background-color: var(--vader-black);
-    color: var(--neon-pink);
-    text-align: center;
-    text-shadow: 1.5px 2px #000;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
