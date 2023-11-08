@@ -132,4 +132,3 @@ header a:hover, header a:focus {
 [aria-expanded="true"] .menu-icon::after {
      transform: translateY(-3px) rotate(-90deg);
 }
-
