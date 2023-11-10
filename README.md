@@ -1,4 +1,4 @@
-# [jumi.biz](https://www.jumi.biz)
+# [jumi.biz](https://xuser123.github.io/jumi.biz)
 topics:
 - linux
 - windows
