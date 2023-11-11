@@ -6,29 +6,31 @@ code {
     font-family: 'Source Code Pro', monospace;
     font-size: 1.6em;
     max-width: 80%;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
+    padding:0.6em 0;
     text-align: left;
     text-shadow: none;
 }
 mark {
     background-color: revert;color: revert;
     font-size: 0.85rem;
-    padding-left: 0.2rem;padding-right: 0.2rem;
+    padding: 0 0.2rem;
 }
-table#tasten-steuerung {
-	justify-content: space-around;
+table {
 	text-align: center;
-	width: 100%;margin: 0;padding: 0 1em 1em;
-}
+	width: min(max-content, max(min-content, stretch));
+    margin: 1em;
+    padding:1em 0;
+    border: 1px solid #000;
+    border-radius:0.5em;
+    background-color:var(--high-ground);
+    table-layout: fixed;
+    outline: none;
+    box-shadow:var(--ants-cry);}
 th {
     color:var(--pipi-white);
 	font-weight: 50;
+    padding:0 1.6em;
 }
-thead th:nth-child(1) {width: 20%;}
-thead th:nth-child(2) {width: 40%;}
-thead th:nth-child(3) {width: 20%;}
-thead th:nth-child(4) {width: 20%;}
 
 .flow > *:where(:not(:first-child)) {margin-top: 0.2rem;}
 .button-styled span {
@@ -50,7 +52,8 @@ thead th:nth-child(4) {width: 20%;}
         0 3px 0 rgba(0,0,0,0.25),
         inset 0 2px 0 rgba(170,170,170,0.8);
 }
-.content img {width: 100%;}
+.content img {
+    width: 100%;}
 .content:nth-child(1) {grid-area: one;}
 .content:nth-child(2) {grid-area: two;}
 .content:nth-child(3) {grid-area: three;}
@@ -58,29 +61,35 @@ thead th:nth-child(4) {width: 20%;}
 .content:nth-child(5) {grid-area: five;}
 .content h1 {
     animation: neon .08s ease-in-out infinite alternate;
-    color: var(--neon-blue);
+    color: var(--laser-blue);
     font-family: 'Sarpanch', sans-serif;
     width: 100%; text-align: center;
+    letter-spacing: 0.23rem;
 }
 .content h2 {
     color: var(--matrix-green);
     width: 100%; text-align: center;
 }
-.content h3 {color: var(--matrix-green);}
+.content h3 {
+    color: var(--matrix-green);
+    width: 100%; text-align: center;}
 .content h4 {width: 100%; text-align: center;color: var(--matrix-green);}
 .content p {
     color:var(--pipi-white);
 }
-.content a,
-.content b {
-    color: var(--neon-blue);
+.content a {
+    color: var(--laser-blue);
     text-decoration: none;
-    font-family: 'Sarpanch', sans-serif;
+    font-weight: bold;
 }
-.content a:hover,.content a:focus {
+.content b {color: var(--matrix-green);}
+.content a:hover,
+.content a:focus {
     animation: neon .08s ease-in-out infinite alternate;
     color: var(--neon-pink);
     text-shadow: none;
+    border: none;
+    outline: none;
 }
 dialog::backdrop {background-color: rgba(0, 0, 0, 0.5);
 }
@@ -91,13 +100,16 @@ figure figcaption {
     display: flex;
     flex-direction: column;
     font-family: 'Sarpanch', sans-serif;
+    font-size: large;
     justify-content: center;
     text-shadow: 1.5px 2px #000;
 }
 figure > img {border-radius: 0.3rem;}
 caption {
-  padding: 10px;
-  caption-side: top;
+    caption-side: top;
+    margin: 0.3em;
+    font-weight: bold;
+    color: var(--matrix-green);}
 }
 footer .footer-container {
     display: flex;
@@ -122,7 +134,7 @@ footer .rightside-site-features {
 .header-content > #jumi-biz {
     animation: neon .08s ease-in-out infinite alternate;
     background-color: transparent;
-    color: var(--neon-blue);
+    color: var(--laser-blue);
     cursor: pointer;
     line-height: 1.337em;
     text-align: center;
@@ -137,8 +149,8 @@ footer #instagram-link {
 }
 footer #contact-email {
     animation: neon .08s ease-in-out infinite alternate;
-    background-color: var(--vader-black);
-    color: var(--neon-blue);
+    background-color: var(--shadow-grey);
+    color: var(--laser-blue);
     font-family: 'Sarpanch', sans-serif;
     font-size: 1.3rem;
     font-weight: 200;
@@ -158,20 +170,18 @@ footer #goto-top {
     border-radius: 3px;
     cursor: pointer;
 }
-[id*="modalTrigger"]:hover {
+[id*="modalTrigger"]:hover,
+[id*="modalTrigger"]:focus {
     animation: neon-box .08s ease-in-out infinite alternate;
     opacity: 0.75;
-    outline: 1px solid var(--neon-pink);
+    outline: none;
 }
 dialog[open] {
-    background-color: var(--vader-black);
+    background-color: var(--shadow-grey);
     border-radius: 0.3rem;
     border: none;
     padding: 1rem;
-    box-shadow:
-        rgba(0, 240, 240, 0.4) 0px 2px 4px,
-        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
-        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+    box-shadow:var(--space-motion);
 }
 dialog [id*="closeModal"] {
     align-items: center;
@@ -179,7 +189,7 @@ dialog [id*="closeModal"] {
     border-radius: 2px;
     border: none;
     bottom: 1rem;
-    color: var(--neon-blue);
+    color: var(--laser-blue);
     display: flex;
     font-size: 2.6em;
     height: 1em;
@@ -191,12 +201,16 @@ dialog [id*="closeModal"] {
     text-align: center;
     transition: all ease-in-out 200ms;
     width: 1em;
+    cursor: pointer;
 }
 dialog [id*="closeModal"]:hover,
 dialog [id*="closeModal"]:focus {
     animation: neon .08s ease-in-out infinite alternate;
     border: none;
-    cursor: pointer;
     outline: none;
     text-decoration: none;
+}
+.jumi-font {
+    font-family: 'Sarpanch', sans-serif;
+    letter-spacing: 0.23rem;
 }
