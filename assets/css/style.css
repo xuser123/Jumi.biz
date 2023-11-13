@@ -1,171 +1,4 @@
-ul, ol {list-style: none;}
-code {
-    background-color: #000;
-    color: var(--matrix-green);
-    display: inline-table;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1.6em;
-    max-width: 80%;
-    padding:0.6em 0;
-    text-align: left;
-    text-shadow: none;
-}
-mark {
-    background-color: revert;color: revert;
-    font-size: 0.85rem;
-    padding: 0 0.2rem;
-}
-table {
-	text-align: center;
-	width: min(max-content, max(min-content, stretch));
-    margin: 1em;
-    padding:1em 0;
-    border: 1px solid #000;
-    border-radius:0.5em;
-    background-color:var(--high-ground);
-    table-layout: fixed;
-    outline: none;
-    box-shadow:var(--ants-cry);}
-th {
-    color:var(--pipi-white);
-	font-weight: 50;
-    padding:0 1.6em;
-}
 
-.flow > *:where(:not(:first-child)) {margin-top: 0.2rem;}
-.button-styled span {
-    background-color: #333;
-    border-radius: 3px;
-    border: 1px solid #000;
-    color: #fff;
-    display: inline-block;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 0.65em;
-    font-weight: 700;
-    height: 18px;
-    line-height: 1.6em;
-    outline: none;
-    padding: 0.1em 0.6em 0.1em;
-    text-align: center;
-    text-shadow: none;
-    box-shadow:
-        0 3px 0 rgba(0,0,0,0.25),
-        inset 0 2px 0 rgba(170,170,170,0.8);
-}
-.content img {
-    width: 100%;}
-.content:nth-child(1) {grid-area: one;}
-.content:nth-child(2) {grid-area: two;}
-.content:nth-child(3) {grid-area: three;}
-.content:nth-child(4) {grid-area: four;}
-.content:nth-child(5) {grid-area: five;}
-.content h1 {
-    animation: neon .08s ease-in-out infinite alternate;
-    color: var(--laser-blue);
-    font-family: 'Sarpanch', sans-serif;
-    width: 100%; text-align: center;
-    letter-spacing: 0.23rem;
-}
-.content h2 {
-    color: var(--matrix-green);
-    width: 100%; text-align: center;
-}
-.content h3 {
-    color: var(--matrix-green);
-    width: 100%; text-align: center;}
-.content h4 {width: 100%; text-align: center;color: var(--matrix-green);}
-.content p {
-    color:var(--pipi-white);
-}
-.content a {
-    color: var(--laser-blue);
-    text-decoration: none;
-    font-weight: bold;
-}
-.content b {color: var(--matrix-green);}
-.content a:hover,
-.content a:focus {
-    animation: neon .08s ease-in-out infinite alternate;
-    color: var(--neon-pink);
-    text-shadow: none;
-    border: none;
-    outline: none;
-}
-dialog::backdrop {background-color: rgba(0, 0, 0, 0.5);
-}
-dialog > figure {margin:0;color: var(--matrix-green);}
-figure figcaption {
-    align-items: center;
-    color: var(--matrix-green);
-    display: flex;
-    flex-direction: column;
-    font-family: 'Sarpanch', sans-serif;
-    font-size: large;
-    justify-content: center;
-    text-shadow: 1.5px 2px #000;
-}
-figure > img {border-radius: 0.3rem;}
-caption {
-    caption-side: top;
-    margin: 0.3em;
-    font-weight: bold;
-    color: var(--matrix-green);}
-}
-footer .footer-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em 1rem 12vh;
-    vertical-align: middle;
-    width: 100%;
-}
-footer .leftside-profil-icons {
-    display: flex;
-    left: 15px;
-}
-footer .rightside-site-features {
-    display: flex;
-    right: 15px;
-}
-.header-content > span#jumi-logo {
-    text-align: center;
-    vertical-align: middle;
-	padding: 0 4px 0 15px;
-}
-.header-content > #jumi-biz {
-    animation: neon .08s ease-in-out infinite alternate;
-    background-color: transparent;
-    color: var(--laser-blue);
-    cursor: pointer;
-    line-height: 1.337em;
-    text-align: center;
-    text-decoration: none;
-}
-footer #github-link {
-    cursor: pointer;
-}
-footer #instagram-link {
-    cursor: pointer;
-    margin-left: 0.5rem;
-}
-footer #contact-email {
-    animation: neon .08s ease-in-out infinite alternate;
-    background-color: var(--shadow-grey);
-    color: var(--laser-blue);
-    font-family: 'Sarpanch', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 200;
-    letter-spacing: 0.12em;
-    text-decoration: none;
-}
-footer #export-icon {
-    cursor: pointer;
-    padding-right: 0.5rem;
-}
-footer #goto-top {
-    cursor: pointer;
-    width: 2rem;
-}
-#analyzer {display:flex;justify-content:center;}
 [id*="modalTrigger"] {
     border-radius: 3px;
     cursor: pointer;
@@ -210,7 +43,115 @@ dialog [id*="closeModal"]:focus {
     outline: none;
     text-decoration: none;
 }
+dialog::backdrop {background-color: rgba(0, 0, 0, 0.5);
+}
+dialog > figure {margin:0;color: var(--matrix-green);}
 .jumi-font {
     font-family: 'Sarpanch', sans-serif;
     letter-spacing: 0.23rem;
 }
+.header-content > span#jumi-logo {
+    text-align: center;
+    vertical-align: middle;
+	padding: 0 4px 0 15px;
+}
+.header-content > #jumi-biz {
+    animation: neon .08s ease-in-out infinite alternate;
+    background-color: transparent;
+    color: var(--laser-blue);
+    cursor: pointer;
+    line-height: 1.337em;
+    text-align: center;
+    text-decoration: none;
+}
+.quiz-answers {
+    animation: neon .08s ease-in-out infinite alternate;
+    color: var(--neon-pink);
+    width: 100%;
+    text-align:match-parent;
+    font-family:'c64-Pro';
+    display:inline-block;
+    font-size: large;
+}
+details {
+    justify-content: space-around;
+    text-align:center;
+    padding: 0 0 2em;
+}
+details[open] > summary {
+    color: var(--laser-blue);
+    animation: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+summary {
+    color:var(--laser-blue);
+    border-radius: 0.5em;
+    border:1px solid #000;
+    line-height: 1.6em;
+    cursor: pointer;
+    display:inline-block;
+    margin: 1em 0 2em;
+    font-family:'c64-Pro';
+    font-size: small;
+    padding: 0.5em;
+    box-shadow:var(--ants-cry);
+}
+summary:hover,
+summary:focus {
+    animation: neon-box .08s ease-in-out infinite alternate;
+    color: var(--neon-pink);
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.list-icon {
+    align-items: center;
+    display: inline-block;
+    padding:1em;
+    text-align: left;
+    vertical-align: middle;
+}
+.flex {
+    display: flex;
+    gap: 0.6rem;
+}
+.flow > *:where(:not(:first-child)) {margin-top: 0.2rem;}
+.button-styled span {
+    background-color: #333;
+    border-radius: 3px;
+    border: 1px solid #000;
+    color: #fff;
+    display: inline-block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.65em;
+    font-weight: 700;
+    height: 18px;
+    line-height: 1.6em;
+    outline: none;
+    padding: 0.1em 0.6em 0.1em;
+    text-align: center;
+    text-shadow: none;
+    box-shadow:
+        0 3px 0 rgba(0,0,0,0.25),
+        inset 0 2px 0 rgba(170,170,170,0.8);
+}
+figure figcaption {
+    align-items: center;
+    color: var(--matrix-green);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sarpanch', sans-serif;
+    font-size: large;
+    justify-content: center;
+    text-shadow: 1.5px 2px #000;
+}
+figure > img {border-radius: 0.3rem;}
+caption {
+    caption-side: top;
+    margin: 0.3em;
+    font-weight: bold;
+    color: var(--matrix-green);}
+}
+#analyzer {display:flex;justify-content:center;}

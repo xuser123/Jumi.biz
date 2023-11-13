@@ -1,3 +1,4 @@
+
 @keyframes clipPathCircleOpen {
     0% {clip-path: circle(0% at top right);}
     100% {clip-path: circle(250% at top right);}
@@ -18,7 +19,6 @@
     to {box-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 24px rgba(202, 228, 225, 0.42), 0 0 9.6px rgba(30, 132, 242, 0.58), 0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);
     }
 }
-
 @media (prefers-reduced-motion: reduce) {
     /* Remove all animations, transitions and smooth scroll
     for people that prefer not to see them */
@@ -66,78 +66,3 @@
     display:none;
     }
 }
-body::-webkit-scrollbar {
-/* Scrollleiste ausblenden */
-    background-color: #000;
-    display: none;
-    width: 3px;
-}
-header::after {
-    clear: both;
-    content: "";
-    display: block;
-}
-header a {color: var(--laser-blue);text-decoration: none;}
-header a:hover, header a:focus {
-    animation: neon .08s ease-in-out infinite alternate;
-    color: var(--neon-pink);
-    text-shadow: none;
-}
-.menu-list li:last-child > a{
-    font-size:1em;
-    text-transform: lowercase;
-}
-.menu-list li:last-child i{
-    padding: 1em;
-}
-.menu-list a {
-    border-bottom-left-radius: 0.35rem;
-    transform: scaleY(1.2);
-    color: var(--matrix-green);
-    display: block;
-    font-family: 'Sarpanch', sans-serif;
-    padding-right: 0.6em;
-    text-align: left;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-.menu-list[data-state="opened"] {
-    animation: clipPathCircleOpen 300ms ease-in-out forwards;
-    display: block;
-}
-.menu-list[data-state="closing"] {
-    animation: clipPathCircleClose 300ms ease-in-out forwards;
-}
-.menu-list[data-state="closed"] {
-    display: none;
-}
-.menu-icon,
-.menu-icon::before,
-.menu-icon::after {
-     background-color: var(--laser-blue);
-     border-radius: 2px;
-     content: "";
-     display: block;
-     height: 3px;
-     transition: all ease-in-out 400ms;
-     width: 20px;
-}
-.menu-icon::before {
-     transform: translateY(-6px);
-}
-.menu-icon::after {
-     transform: translateY(3px);
-}
-[aria-expanded="true"] .menu-icon {
-     transform: rotate(45deg);
-    animation: neon-box .08s ease-in-out infinite alternate;
-}
-[aria-expanded="true"] .menu-icon::before {
-     opacity: 0;
-    animation: neon-box .08s ease-in-out infinite alternate;
-}
-[aria-expanded="true"] .menu-icon::after {
-    transform: translateY(-3px) rotate(-90deg);
-    animation: neon-box .08s ease-in-out infinite alternate;
-},
-
