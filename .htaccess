@@ -7,14 +7,6 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 
-# ChatGPT Anweisung
-## Direkten .git Zugriff blockieren
-
-<DirectoryMatch "^\.git">
-    Require all denied
-</DirectoryMatch>
-
-
 # Directory-Listening verhindern:
 ## war aktiviert am 231108
 ### ChatGPT Anweisung "Disable Directory Listing"
@@ -25,8 +17,8 @@ Options -Indexes
 # (4.) ChatGPT Anweisung
 # www in URL entfernen:
 ## war aktiviert am 231108
-### RewriteCond %{HTTP_HOST} ^www\.jumi\.biz [NC]
-### RewriteRule ^(.*)$ https://jumi.biz/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.jumi\.biz [NC]
+RewriteRule ^(.*)$ https://jumi.biz/$1 [L,R=301]
 
 
 # (5.) ChatGPT Anweisung
@@ -41,14 +33,14 @@ Options -Indexes
 # Set Strict Transport Security:
 ## Immer HTTPS benutzen / erzwingen
 
-Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+#Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 
 
 # (7.) ChatGPT Anweisung
 # Hotlinking verhindern:
-## RewriteCond %{HTTP_REFERER} !^$
-## RewriteCond %{HTTP_REFERER} !^(http|https)://(www\.)?jumi\.biz/ [NC]
-## RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^(http|https)://(www\.)?jumi\.biz/ [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
 
 
 # (8.) ChatGPT Anweisung
@@ -61,10 +53,10 @@ ErrorDocument 500 /500.html
 # (9.) ChatGPT Anweisung
 # Verzeichniszugriff einschränken:
 
-AuthType Basic
-AuthName "Restricted Area"
-AuthUserFile /path/to/.htpasswd
-Require valid-user
+#AuthType Basic
+#AuthName "Restricted Area"
+#AuthUserFile /path/to/.htpasswd
+#Require valid-user
 
 
 # IP blockieren:
@@ -79,9 +71,9 @@ Deny from 18.188.203.0
 # (10.) ChatGPT Anweisung
 # Allowing Cross-Origin Resource Sharing (CORS) erlauben:
 
-<IfModule mod_headers.c>
+#<IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
-</IfModule>
+#</IfModule>
 
 
 # ChatGPT Anweisung
@@ -110,3 +102,11 @@ Deny from 18.188.203.0
 
 # MIME-Typ mit Dateityp assoziieren:
 ## AddType application/x-httpd-php .html
+
+
+# ChatGPT Anweisung
+## Direkten .git Zugriff blockieren
+
+#<DirectoryMatch "^\.git">
+#    Require all denied
+#</DirectoryMatch>

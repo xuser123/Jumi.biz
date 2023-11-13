@@ -24,7 +24,7 @@ dialog [id*="closeModal"] {
     bottom: 1rem;
     color: var(--laser-blue);
     display: flex;
-    font-size: 2.6em;
+    font-size: 3rem;
     height: 1em;
     justify-content: center;
     margin: 0;
@@ -53,7 +53,7 @@ dialog > figure {margin:0;color: var(--matrix-green);}
 .header-content > span#jumi-logo {
     text-align: center;
     vertical-align: middle;
-	padding: 0 4px 0 15px;
+    margin-left: 2vw;
 }
 .header-content > #jumi-biz {
     animation: neon .08s ease-in-out infinite alternate;
@@ -97,6 +97,7 @@ summary {
     font-size: small;
     padding: 0.5em;
     box-shadow:var(--ants-cry);
+    background-color:var(--high-ground);
 }
 summary:hover,
 summary:focus {
@@ -109,7 +110,7 @@ summary:focus {
 .list-icon {
     align-items: center;
     display: inline-block;
-    padding:1em;
+    padding:8px;
     text-align: left;
     vertical-align: middle;
 }
@@ -154,4 +155,7 @@ caption {
     font-weight: bold;
     color: var(--matrix-green);}
 }
-#analyzer {display:flex;justify-content:center;}
+#analyzer {
+    display:flex;
+    justify-content:center;
+}
