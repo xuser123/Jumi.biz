@@ -19,6 +19,12 @@
     to {box-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 24px rgba(202, 228, 225, 0.42), 0 0 9.6px rgba(30, 132, 242, 0.58), 0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);
     }
 }
+@keyframes creepshow {
+    0% {color:#131313;text-shadow:none;}
+    80% {color:#131313;text-shadow:none;}
+    90% {color:#00f0f0;}
+    100% {color:#131313;animation: neon .08s ease-in-out infinite alternate;}
+}
 @media (prefers-reduced-motion: reduce) {
     /* Remove all animations, transitions and smooth scroll
     for people that prefer not to see them */

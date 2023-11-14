@@ -95,7 +95,7 @@ summary {
     margin: 1em 0 2em;
     font-family:'c64-Pro';
     font-size: small;
-    padding: 0.5em;
+    padding: 1.6em;
     box-shadow:var(--ants-cry);
     background-color:var(--high-ground);
 }
@@ -144,18 +144,27 @@ figure figcaption {
     display: flex;
     flex-direction: column;
     font-family: 'Sarpanch', sans-serif;
-    font-size: large;
+    font-size: 1.2rem;
     justify-content: center;
     text-shadow: 1.5px 2px #000;
 }
-figure > img {border-radius: 0.3rem;}
+figure > img {border-radius: 0.5rem;}
 caption {
     caption-side: top;
-    margin: 0.3em;
+    margin: 0.3rem;
     font-weight: bold;
     color: var(--matrix-green);}
 }
 #analyzer {
     display:flex;
     justify-content:center;
+}
+#banner {
+    align-items: center;
+    animation: creepshow 60s infinite;
+    display: flex;
+    font-size:small;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
 }
