@@ -41,10 +41,13 @@ body::-webkit-scrollbar {
 ul, ol {
     list-style: none;
     font-size:x-small;
+    padding-left:0;
 }
 table {
-	text-align: center;
-	width: max-content;
+    justify-content: space-around;
+    position: relative;
+    width: min(max-content);
+    text-align: center;
     margin: 1rem;
     padding:1rem 0;
     border: 1px solid #000;
@@ -53,6 +56,14 @@ table {
     table-layout: fixed;
     outline: none;
     box-shadow:var(--ants-cry);
+}
+//table > * {}
+
+section {
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    text-align: justify;
 }
 th {
     color:var(--pipi-white);
@@ -64,6 +75,35 @@ q, cite, figcaption {
     width: 100%;
     line-height: 0;
     text-align: justify;
+}
+/* Colors for Words */
+.r{color:#FF0000 !important }
+.g{color:#4B0082 !important }
+.b{color:#0000FF !important }
+.y{color:#FFFF00 !important }
+.c{color:#00FF00 !important }
+.m{color:#FF00FF !important }
+.o{color:#FFA500 !important }
+.p{color:var(--neon-pink) !important }
+
+code {
+    display: inline-table;
+    font-family: 'Source Code Pro', monospace;
+    color: var(--matrix-green);
+    text-align: left;
+    background-color: #000;
+    text-shadow: none;
+    max-width:max-content;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    font-size: small;
+}
+mark {
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    background-color: revert;
+    color: revert;
+    font-size: 0.85em;
 }
 header {
     align-items: center;
