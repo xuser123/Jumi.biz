@@ -10,6 +10,7 @@ const closeModal = modal => {
     }, false);
 };
 
+
 const trigger01 = getElement('modalTrigger01');
 const trigger02 = getElement('modalTrigger02');
 const trigger03 = getElement('modalTrigger03');
@@ -37,10 +38,18 @@ const addOutsideClickListener = (modal, index) => {
       e.clientY < dialogDimensions.top ||
       e.clientY > dialogDimensions.bottom
     ) {
-      modal.close();
+      modal.removeAttribute('id');
+      modal.classList.add('hide');
+      modal.addEventListener('webkitAnimationEnd', function() {
+        modal.classList.remove('hide');
+        modal.close();
+        modal.removeEventListener('webkitAnimationEnd', arguments.callee, false);
+      }, false);
     }
   });
 };
+
+
 // addOutsideClickListener reduces redundancy in listeners for modal clicks
 addOutsideClickListener(modal01, 1);
 addOutsideClickListener(modal02, 2);
@@ -59,10 +68,6 @@ const img1 = document.getElementById('modalTrigger01');
 const img2 = document.getElementById('modalTrigger02');
 const img3 = document.getElementById('modalTrigger03');
 
-const modal1 = getElement('openModal01');
-const modal2 = getElement('openModal02');
-const modal3 = getElement('openModal03');
-
 makeImageFocusable(img1);
 makeImageFocusable(img2);
 makeImageFocusable(img3);
@@ -70,3 +75,4 @@ makeImageFocusable(img3);
 openModalOnEnter(img1, modal01);
 openModalOnEnter(img2, modal02);
 openModalOnEnter(img3, modal03);
+

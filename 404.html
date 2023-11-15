@@ -7,11 +7,11 @@
 <meta name="keywords" content="linux,windows,cybersecurity,hacking,coding,shell,tools,network,basics">
 <meta name="author" content="Jumi">
 <!-- FAVICON --><link rel="icon" href="assets/img/ico/jumi.ico">
-<!-- TITLE --><title>jumi.biz</title>
+<!-- TITLE --><title>404</title>
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="assets/css/basic.css">
-<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
 <style>
 :root { /* Farben */
 	--shadow-grey: #131313;
@@ -28,12 +28,32 @@
         rgba(0, 0, 0, 0.1) 0px 2px 4px,
         rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
 }
+@keyframes neon {
+     from {text-shadow:
+          0 0 6px rgba(202,228,225,0.92),
+          0 0 30px rgba(202,228,225,0.34),
+          0 0 12px rgba(30,132,242,0.52),
+          0 0 21px rgba(30,132,242,0.92),
+          0 0 34px rgba(30,132,242,0.78),
+          0 0 54px rgba(30,132,242,0.92);
+    } to {text-shadow:
+          0 0 6px rgba(202,228,225,0.98),
+          0 0 30px rgba(202,228,225,0.42),
+          0 0 12px rgba(30,132,242,0.58),
+          0 0 22px rgba(30,132,242,0.84),
+          0 0 38px rgba(30,132,242,0.88),
+          0 0 60px rgba(30,132,242,1);}}
+@keyframes neon-box {
+    from {box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),0 0 24px rgba(202, 228, 225, 0.34), 0 0 9.6px rgba(30, 132, 242, 0.52), 0 0 16.8px rgba(30, 132, 242, 0.92), 0 0 27.2px rgba(30, 132, 242, 0.78), 0 0 43.2px rgba(30, 132, 242, 0.92);
+    }
+    to {box-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 24px rgba(202, 228, 225, 0.42), 0 0 9.6px rgba(30, 132, 242, 0.58), 0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);}}
 html {background-color: var(--shadow-grey);}
 body {
-    position: relative;/* Footer-Einfluss */
-    height: 100%;/* Footer-Einfluss */
-    margin:0;padding:0;
-    text-rendering: optimizeSpeed;
+  font-size: var(--base-font-size);
+  height: 100%;/* Footer-Einfluss */
+  margin:0;padding:0;
+  position: relative;/* Footer-Einfluss */
+  text-rendering: optimizeSpeed;
 }
 *,*::before,*::after {box-sizing: border-box;}
 </style>
@@ -45,24 +65,7 @@ body {
 <span id="jumi-logo"><img src="assets/img/ico/jumi.ico" alt="Jumi Logo"></span>
 <a href="https://www.jumi.biz"><span id="jumi-biz">jumi.biz</span></a>
 <!-- BUTTON -->
-</div><nav class="navigation">
-<button class="menu-button"
-        aria-controls="menu-list"
-        aria-expanded="false">
-  <span class="hidden-menu">Menu</span>
-  <div class="menu-icon" aria-hidden="true"></div>
-</button><div class="header-text"><span><!-- Textbanner --></span>
-<!-- MENU -->
-<ul data-state="closed" class="menu-list">
-<li><a href="Content.htm"><i class="list-icon">
-<img src="assets/img/ico/menu-content.ico" alt="Content"></i>content</a></li>
-<li><a href="Links.htm"><i class="list-icon">
-<img src="assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
-<li><a href="Cheats.htm"><i class="list-icon">
-<img src="assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
-<li><a href="https://www.jumi.biz"><i class="list-icon">
-<img src="assets/img/ico/jumi.ico" alt="WTF is jumi?"></i>wtf is jumi?</a></li>
-</ul></nav></div></header><main>
+</div></header><main>
 <!-- MAIN -->
 <div class="grid-container">
 

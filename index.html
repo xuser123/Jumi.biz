@@ -9,11 +9,26 @@
 <!-- FAVICON --><link rel="icon" href="assets/img/ico/jumi.ico">
 <!-- TITLE --><title>jumi.biz</title>
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="assets/css/basic.css">
-<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
 <style>
 :root { /* Font and Colors */
+  --basic-glow-frame-1: rgba(202,228,225,0.92);
+  --basic-glow-frame-2: rgba(202,228,225,0.34);
+  --basic-glowbox-frame-1: rgba(202,228,225,0.98);
+  --basic-glowbox-frame-2: rgba(202,228,225,0.42);
+  --glow-red: #FF0000;
+  --glow-indigo: #4B0082;
+  --glow-blue: #0000FF;
+  --glow-yellow: #FFFF00;
+  --glow-green: #00FF00;
+  --glow-magenta: #FF00FF;
+  --glow-orange: #FFA500;
+  --glow-cyan: #00f0f0;
+  --glow-lightgreen: #8dd88e;
+  --glow-pink: #ffbfea;
+  --glow-lightyellow: #ebebd3;
   --base-font-size: 16px;
   --high-ground: rgba(0,0,0,0.1);
   --laser-blue: #00f0f0;
@@ -22,13 +37,32 @@
   --pipi-white: #ebebd3;
   --shadow-grey: #131313;
   --space-motion:
-      rgba(0, 240, 240, 0.4) 0px 2px 4px,
-      rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
-      rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+    rgba(0, 240, 240, 0.4) 0px 2px 4px,
+    rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+    rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
   --ants-cry:
-      rgba(0, 0, 0, 0.1) 0px 2px 4px,
-      rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
+    rgba(0, 0, 0, 0.1) 0px 2px 4px,
+    rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
 }
+@keyframes neon {
+     from {text-shadow:
+          0 0 6px rgba(202,228,225,0.92),
+          0 0 30px rgba(202,228,225,0.34),
+          0 0 12px rgba(30,132,242,0.52),
+          0 0 21px rgba(30,132,242,0.92),
+          0 0 34px rgba(30,132,242,0.78),
+          0 0 54px rgba(30,132,242,0.92);
+    } to {text-shadow:
+          0 0 6px rgba(202,228,225,0.98),
+          0 0 30px rgba(202,228,225,0.42),
+          0 0 12px rgba(30,132,242,0.58),
+          0 0 22px rgba(30,132,242,0.84),
+          0 0 38px rgba(30,132,242,0.88),
+          0 0 60px rgba(30,132,242,1);}}
+@keyframes neon-box {
+    from {box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),0 0 24px rgba(202, 228, 225, 0.34), 0 0 9.6px rgba(30, 132, 242, 0.52), 0 0 16.8px rgba(30, 132, 242, 0.92), 0 0 27.2px rgba(30, 132, 242, 0.78), 0 0 43.2px rgba(30, 132, 242, 0.92);
+    }
+    to {box-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 24px rgba(202, 228, 225, 0.42), 0 0 9.6px rgba(30, 132, 242, 0.58), 0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);}}
 html {background-color: var(--shadow-grey);}
 body {
   font-size: var(--base-font-size);
@@ -77,18 +111,42 @@ body {
 <b class="y">Coding</b> 
 <b class="c">Shell</b> 
 <b class="m">Tools</b> und
-<b class="o">Exobiologie</b> 
-mit relative hohem&nbsp;Informationsgehalt.
-Normaler Text hat ca.&nbsp;25% relevanten Kerninhalt(x), 
-davon verbleibt nach einem Tag vermutlich&nbsp;50%, 
-nach&nbsp;zwei Tagen&nbsp;30% im Gedächtnis.<br>
-Das ergibt&nbsp;7,5%&nbsp;Nutztext (0,25x*0,3=0,075x).<br><br>
-Mein Text ist minimalisiert, fragmentiert und visuell&nbsp;ergonomisiert.<br>
-<b>Normaler-Text(A):</b><br><q>Zwanzig Zwerge machen Handstand,
-zehn im Wandschrank, zehn am Sandstrand.</q><br>
-<b>Kompakter-Text(B):</b><br><q>Zwergenhandstände: Schrank=10, Strand=10</q><br>
-<b class="p">Ergebnis(A):</b><br>13 Worte aus 10 Zeichenfolgen,<br> davon 6 relevant (=60%)<br>
-<b class="p">Ergebnis(B):</b><br>7 Worte aus 5 Zeichenfolgen,<br> davon 5 relevant (=100%)
+<b class="o">Exobiologie.</b>
+Text&nbsp;minimalisiert, fragmentiert und visuell ergonomisiert.</p></section>
+<Section>Gewöhnlicher Text hat <b>~25%</b> relevanten Kerninhalt,
+davon verbleibt nach einem Tag vermutlich ~50%,
+nach zwei Tagen <b>~30%</b> im Gedächtnis. (0,25*0,3=<b>7,5%</b>)</section>
+<section class="bsp-txt">
+<blockquote><b>Text A</b> Zwanzig Zwerge machen Handstand,
+zehn im Wandschrank, zehn am Sandstrand.</blockquote>
+<blockquote><b>Text B</b> Ort / Zwergenhandstände:<br> Schrank / 10, Strand / 10</blockquote>
+</section>
+<section class="flex">
+<table>
+<caption>Vergleich</caption>
+    <thead>
+        <tr>
+        <th>Text</th>
+        <th>Wörter</th>
+        <th>Zeichenfolgen</th>
+        <th>Relevanz</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><span><b>A</b></span></td>
+        <td><span>13</span></td>
+        <td><span>10</span></td>
+        <td><span>60%</span></td>
+        </tr>
+        <tr>
+        <td><span><b>B</b></span></td>
+        <td><span>8</span></td>
+        <td><span>6</span></td>
+        <td><span id="UAP"><b>83%</b></span></td>
+        </tr>
+    </tbody>
+</table></section>
 
 </p></section>
 <!-- ABOUT -->
@@ -100,7 +158,7 @@ zehn im Wandschrank, zehn am Sandstrand.</q><br>
     <li>[2023-03] Designentwicklung</li>
     <li>[2023-08] Github-Anbindung</li>
     <li>[2023-10] Integration</li></ul></aside>
-<aside><h4>Milestones To-Do:</h4><ul>
+<aside><h4>To-Do:</h4><ul>
     <li>[2023-11] Edits/Content</li>
     <li>[2023-11] Instagram Content</li>
     <li>[2023-12] JavaScript AddOns</li>
@@ -168,13 +226,13 @@ zehn im Wandschrank, zehn am Sandstrand.</q><br>
 </div>
 <br>
 <!-- PERSON -->
-    <p>Mich interessiert das&nbsp;Verborgene. Neugier&nbsp;ist wertvoll, wie das Wasser den Fischen, wie die Luft zum&nbsp;Atmen. Und am Ende sind wir selbst ein Geheimnis, das nur der Rauch des Feuers kennt. Die unfassbare Wahrheit erfasst uns, Erde im Wind.</p>
+    <p>Mich interessiert das&nbsp;Verborgene. Neugier&nbsp;will leben, will&nbsp;<b class="b">Wasser</b> zum Trinken, will&nbsp;<b class="y">Luft</b> zum&nbsp;Atmen. Bitte&nbsp;Ende, flüster das größte Geheimnis, das im&nbsp;Tausch, wieder verborgen zurückkehrt. Dessen Wahrheit im <b class="g">Rauch</b> des <b class="r">Feuers</b> versteckt, unfassbar wie <b class="o">Erde</b> im <b>Wind</b> bewegt.</p>
     <q>Wer? Wer ist nur die Form als Konsequenz der Funktion des&nbsp;Was. Und&nbsp;was ich bin, das ist ein Mann mit Maske.</q><br><cite>- V wie Vendetta (2005)</cite>
 </article>
 <article id="area-3" class="content flow">
 <!-- STUFF -->
 <h4>Dark Mode Only</h4>
-    <p>Ein dunkler Bildschirm spart bis zu 60% Energie und schont die&nbsp;Augen.
+    <p>Ein dunkler Bildschirm spart bis zu <b>60%</b> Energie und schont die&nbsp;Augen.
     Wenn&nbsp;du den hellen Modus immer noch bevorzugst dann&nbsp;GTFO!</p>
     <q>Come with me. It&nbsp;is the&nbsp;only&nbsp;way.</q><br>
     <cite>- Darth Vader (1980)</cite>
@@ -182,9 +240,10 @@ zehn im Wandschrank, zehn am Sandstrand.</q><br>
 <article id="area-4" class="content flow">
 <!-- STUFF -->
 <h3>IT &#126; Kung Fu</h3>
-    <blockquote>Der chinesische Begriff "Kung&nbsp;Fu" bezieht sich auf Fähigkeiten und Techniken, die&nbsp;durch lange, harte&nbsp;Übung und Geduld erlangt&nbsp;werden.
-    Es&nbsp;ist eine Disziplin, die&nbsp;zur Meisterung viel Engagement und Einsatz&nbsp;erfordert.
-    Kung&nbsp;Fu kombiniert Bewegungen und&nbsp;Strategien, IT&nbsp;überträgt Signale und Daten, die&nbsp;durch konstruierte, physikalische&nbsp;Technik und Logik erzeugt&nbsp;werden. Das Beherrschen von Kung&nbsp;Fu erfordert Reaktionsfähigkeit, während&nbsp;bei der Verarbeitung von Informationen analytisches Denken entscheidend&nbsp;ist. In&nbsp;der&nbsp;IT, wie&nbsp;im Kung&nbsp;Fu, liegt&nbsp;der Schlüssel in der Hingabe und dem Streben nach&nbsp;Exzellenz.</blockquote>
+    <blockquote>Der chinesische Begriff "Kung&nbsp;Fu" bezieht sich auf Fähigkeiten und Techniken, die&nbsp;durch lange, harte&nbsp;<b class="r">Übung</b> und <b class="g">Geduld</b> erlangt&nbsp;werden.
+    Es&nbsp;ist eine Disziplin, die&nbsp;zur Meisterung viel <b class="b">Engagement und Einsatz</b>&nbsp;erfordert.
+    Kung&nbsp;Fu kombiniert Bewegungen und&nbsp;Strategien, IT&nbsp;überträgt Signale und Daten, die&nbsp;durch konstruierter, physikalischer&nbsp;Technik und Logik gesteuert&nbsp;werden. Das Beherrschen von Kung&nbsp;Fu verbessert Beweglichkeit, während&nbsp;die Verarbeitung von Informationen <b class="y">analytisches Denken</b> entwickelt. In&nbsp;der&nbsp;IT, wie&nbsp;im Kung&nbsp;Fu, geht es um <b class="c">Hingabe</b>, <b class="m">Ausdauer</b> und
+    <b class="o">Skills</b>.</blockquote>
     <q>Der Meister erscheint wenn der Schüler bereit&nbsp;ist.</q><br>
     <cite>- Karate Tiger (1986)</cite>
 </article>

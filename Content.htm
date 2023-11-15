@@ -7,26 +7,69 @@
 <meta name="keywords" content="linux,windows,cybersecurity,hacking,coding,shell,tools,network,basics">
 <meta name="author" content="Jumi">
 <!-- FAVICON --><link rel="icon" href="assets/img/ico/jumi.ico">
-<!-- TITLE --><title>jumi.biz</title>
+<!-- TITLE --><title>Content</title>
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="assets/css/basic.css">
-<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
 <style>
-:root { /* Farben */
-	--vader-black: #131313;
-	--pipi-white: #ebebd3;
-	--matrix-green: #8dd88e;
-	--neon-blue: #00f0f0;
-	--neon-pink: #ffbfea;
+:root { /* Font and Colors */
+  --basic-glow-frame-1: rgba(202,228,225,0.92);
+  --basic-glow-frame-2: rgba(202,228,225,0.34);
+  --basic-glowbox-frame-1: rgba(202,228,225,0.98);
+  --basic-glowbox-frame-2: rgba(202,228,225,0.42);
+  --glow-red: #FF0000;
+  --glow-indigo: #4B0082;
+  --glow-blue: #0000FF;
+  --glow-yellow: #FFFF00;
+  --glow-green: #00FF00;
+  --glow-magenta: #FF00FF;
+  --glow-orange: #FFA500;
+  --glow-cyan: #00f0f0;
+  --glow-lightgreen: #8dd88e;
+  --glow-pink: #ffbfea;
+  --glow-lightyellow: #ebebd3;
+  --base-font-size: 16px;
+  --high-ground: rgba(0,0,0,0.1);
+  --laser-blue: #00f0f0;
+  --matrix-green: #8dd88e;
+  --neon-pink: #ffbfea;
+  --pipi-white: #ebebd3;
+  --shadow-grey: #131313;
+  --space-motion:
+    rgba(0, 240, 240, 0.4) 0px 2px 4px,
+    rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+    rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+  --ants-cry:
+    rgba(0, 0, 0, 0.1) 0px 2px 4px,
+    rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
 }
-html {background-color: var(--vader-black);}
+@keyframes neon {
+     from {text-shadow:
+          0 0 6px rgba(202,228,225,0.92),
+          0 0 30px rgba(202,228,225,0.34),
+          0 0 12px rgba(30,132,242,0.52),
+          0 0 21px rgba(30,132,242,0.92),
+          0 0 34px rgba(30,132,242,0.78),
+          0 0 54px rgba(30,132,242,0.92);
+    } to {text-shadow:
+          0 0 6px rgba(202,228,225,0.98),
+          0 0 30px rgba(202,228,225,0.42),
+          0 0 12px rgba(30,132,242,0.58),
+          0 0 22px rgba(30,132,242,0.84),
+          0 0 38px rgba(30,132,242,0.88),
+          0 0 60px rgba(30,132,242,1);}}
+@keyframes neon-box {
+    from {box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),0 0 24px rgba(202, 228, 225, 0.34), 0 0 9.6px rgba(30, 132, 242, 0.52), 0 0 16.8px rgba(30, 132, 242, 0.92), 0 0 27.2px rgba(30, 132, 242, 0.78), 0 0 43.2px rgba(30, 132, 242, 0.92);
+    }
+    to {box-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 24px rgba(202, 228, 225, 0.42), 0 0 9.6px rgba(30, 132, 242, 0.58), 0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);}}
+html {background-color: var(--shadow-grey);}
 body {
-    position: relative;/* Footer-Einfluss */
-    height: 100%;/* Footer-Einfluss */
-    min-width:100%;
-    margin: 0;padding: 0;
-    text-rendering: optimizeSpeed;
+  font-size: var(--base-font-size);
+  height: 100%;/* Footer-Einfluss */
+  margin:0;padding:0;
+  position: relative;/* Footer-Einfluss */
+  text-rendering: optimizeSpeed;
 }
 *,*::before,*::after {box-sizing: border-box;}
 </style>
@@ -35,16 +78,16 @@ body {
 <body id="ଘ(੭*ˊᵕˋ)੭*ˋhello_ɪɴᴛᴇʀɴᴇᴛ">
 <header><div class="header-content">
 <!-- LOGO -->
-<span id="jumi-logo"><img src="assets/img/ico/jumi.ico"></span>
+<span id="jumi-logo"><img src="assets/img/ico/jumi.ico" alt="Jumi Logo"></span>
 <a href="https://www.jumi.biz"><span id="jumi-biz">jumi.biz</span></a>
 <!-- BUTTON -->
-<nav class="navigation">
+</div><nav class="navigation">
 <button class="menu-button"
         aria-controls="menu-list"
         aria-expanded="false">
   <span class="hidden-menu">Menu</span>
   <div class="menu-icon" aria-hidden="true"></div>
-</button></div><div class="header-text"><span><!-- .header-text --></span>
+</button><div class="header-text"><span id="banner">(&lt;&gt;..&lt;&gt;)</span>
 <!-- MENU -->
 <ul data-state="closed" class="menu-list">
 <li><a href="Content.htm"><i class="list-icon">
@@ -56,7 +99,7 @@ body {
 <li><a href="https://www.jumi.biz"><i class="list-icon">
 <img src="assets/img/ico/jumi.ico" alt="WTF is jumi?"></i>wtf is jumi?</a></li>
 </ul></nav></div></header><main>
-
+<!-- MAIN -->
 <div class="grid-container">
 <article id="area-1" class="content flow">
 <h1>Informationssicherheit </h1>
@@ -244,6 +287,7 @@ body {
     </div>
   </div>
 </article></div></main>
+
 <!-- ### Debugger: Auto-Refresh Page (-option)
     <meta http-equiv="refresh" content="5">-->
 <!-- ### Debugger: Show Borders (-option)
@@ -273,6 +317,7 @@ body {
 <a id="goto-top" href="#">
 <img src="assets/img/ico/go-top.ico" alt="Zum Seitenanfang"></a></div></div></footer>
 <!-- SCRIPTS -->
-<script src="assets/js/menu.js"></script>
-<script src="assets/js/modal.js"></script>
+<script defer src="assets/js/menu.js"></script>
+<script defer src="assets/js/modal.js"></script>
+
 </body></html>

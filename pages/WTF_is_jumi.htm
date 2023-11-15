@@ -7,33 +7,69 @@
 <meta name="keywords" content="linux,windows,cybersecurity,hacking,coding,shell,tools,network,basics">
 <meta name="author" content="Jumi">
 <!-- FAVICON --><link rel="icon" href="../assets/img/ico/jumi.ico">
-<!-- TITLE --><title>jumi.biz</title>
+<!-- TITLE --><title>WTF</title>
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="../assets/css/basic.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/animations.css">
 <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
 <style>
-:root { /* Farben */
-	--shadow-grey: #131313;
-	--pipi-white: #ebebd3;
-	--matrix-green: #8dd88e;
-	--laser-blue: #00f0f0;
-	--neon-pink: #ffbfea;
-	--high-ground: rgba(0,0,0,0.1);
-	--space-motion:
-        rgba(0, 240, 240, 0.4) 0px 2px 4px,
-        rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
-        rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
-    --ants-cry:
-        rgba(0, 0, 0, 0.1) 0px 2px 4px,
-        rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
+:root { /* Font and Colors */
+  --basic-glow-frame-1: rgba(202,228,225,0.92);
+  --basic-glow-frame-2: rgba(202,228,225,0.34);
+  --basic-glowbox-frame-1: rgba(202,228,225,0.98);
+  --basic-glowbox-frame-2: rgba(202,228,225,0.42);
+  --glow-red: #FF0000;
+  --glow-indigo: #4B0082;
+  --glow-blue: #0000FF;
+  --glow-yellow: #FFFF00;
+  --glow-green: #00FF00;
+  --glow-magenta: #FF00FF;
+  --glow-orange: #FFA500;
+  --glow-cyan: #00f0f0;
+  --glow-lightgreen: #8dd88e;
+  --glow-pink: #ffbfea;
+  --glow-lightyellow: #ebebd3;
+  --base-font-size: 16px;
+  --high-ground: rgba(0,0,0,0.1);
+  --laser-blue: #00f0f0;
+  --matrix-green: #8dd88e;
+  --neon-pink: #ffbfea;
+  --pipi-white: #ebebd3;
+  --shadow-grey: #131313;
+  --space-motion:
+    rgba(0, 240, 240, 0.4) 0px 2px 4px,
+    rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+    rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+  --ants-cry:
+    rgba(0, 0, 0, 0.1) 0px 2px 4px,
+    rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
 }
+@keyframes neon {
+     from {text-shadow:
+          0 0 6px rgba(202,228,225,0.92),
+          0 0 30px rgba(202,228,225,0.34),
+          0 0 12px rgba(30,132,242,0.52),
+          0 0 21px rgba(30,132,242,0.92),
+          0 0 34px rgba(30,132,242,0.78),
+          0 0 54px rgba(30,132,242,0.92);
+    } to {text-shadow:
+          0 0 6px rgba(202,228,225,0.98),
+          0 0 30px rgba(202,228,225,0.42),
+          0 0 12px rgba(30,132,242,0.58),
+          0 0 22px rgba(30,132,242,0.84),
+          0 0 38px rgba(30,132,242,0.88),
+          0 0 60px rgba(30,132,242,1);}}
+@keyframes neon-box {
+    from {box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),0 0 24px rgba(202, 228, 225, 0.34), 0 0 9.6px rgba(30, 132, 242, 0.52), 0 0 16.8px rgba(30, 132, 242, 0.92), 0 0 27.2px rgba(30, 132, 242, 0.78), 0 0 43.2px rgba(30, 132, 242, 0.92);
+    }
+    to {box-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 24px rgba(202, 228, 225, 0.42), 0 0 9.6px rgba(30, 132, 242, 0.58), 0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);}}
 html {background-color: var(--shadow-grey);}
 body {
-    position: relative;/* Footer-Einfluss */
-    height: 100%;/* Footer-Einfluss */
-    margin:0;padding:0;
-    text-rendering: optimizeSpeed;
+  font-size: var(--base-font-size);
+  height: 100%;/* Footer-Einfluss */
+  margin:0;padding:0;
+  position: relative;/* Footer-Einfluss */
+  text-rendering: optimizeSpeed;
 }
 *,*::before,*::after {box-sizing: border-box;}
 </style>
@@ -51,36 +87,62 @@ body {
         aria-expanded="false">
   <span class="hidden-menu">Menu</span>
   <div class="menu-icon" aria-hidden="true"></div>
-</button><div class="header-text"><span><!-- Textbanner --></span>
+</button><div class="header-text"><span id="banner">(&lt;&gt;..&lt;&gt;)</span>
 <!-- MENU -->
 <ul data-state="closed" class="menu-list">
-<li><a href="../Content.htm"><i class="list-icon">
+<li><a href="Content.htm"><i class="list-icon">
 <img src="../assets/img/ico/menu-content.ico" alt="Content"></i>content</a></li>
-<li><a href="../Links.htm"><i class="list-icon">
+<li><a href="Links.htm"><i class="list-icon">
 <img src="../assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
-<li><a href="../Cheats.htm"><i class="list-icon">
+<li><a href="Cheats.htm"><i class="list-icon">
 <img src="../assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
-<li><a href="WTF_is_jumi.htm"><i class="list-icon">
-<img src="../assets/img/ico/jumi.ico" alt="WTF is jumi?"></i>wtf is jumi?</a></li>
+<li><a href="https://www.jumi.biz"><i class="list-icon">
+<img src="../assets/img/ico/jumi.ico" alt="Home"></i>wtf is jumi?</a></li>
 </ul></nav></div></header><main>
 <!-- MAIN -->
 <div class="grid-container">
 <article id="area-1" class="content flow">
 <!-- HELLO WORLD -->
 <hgroup><h1>print("hello world")</h1><p>WTF is <span class="jumi-font">jumi.biz</span> ?</p></hgroup>
-<section><p>Hier findest du Zusammenfassungen zu <a href="https://www.jumi.biz/Content.htm">
-Themen</a> über Linux Windows Cybersecurity Hacking Coding Shell Tools Network-Basics.</p></section>
+<section><p>Kompakte Inhalte über
+<b class="r">Linux</b>
+<b class="g">Windows</b>
+<b class="b">Infosec</b>
+<b class="y">Coding</b>
+<b class="c">Shell</b>
+<b class="m">Tools</b> und
+<b class="o">Exobiologie</b>
+mit relative hohem&nbsp;Informationsgehalt.
+Normaler Text hat ca.&nbsp;25% relevanten Kerninhalt(x),
+davon verbleibt nach einem Tag vermutlich&nbsp;50%,
+nach&nbsp;zwei Tagen&nbsp;30% im Gedächtnis.<br>
+Das ergibt&nbsp;7,5%&nbsp;Nutztext (0,25x*0,3=0,075x).<br><br>
+Mein Text ist minimalisiert, fragmentiert und visuell&nbsp;ergonomisiert.<br>
+<b>Normaler-Text(A):</b><br><q>Zwanzig Zwerge machen Handstand,
+zehn im Wandschrank, zehn am Sandstrand.</q><br>
+<b>Kompakter-Text(B):</b><br><q>Zwergenhandstände: Schrank=10, Strand=10</q><br>
+<b class="p">Ergebnis(A):</b><br>13 Worte aus 10 Zeichenfolgen,<br> davon 6 relevant (=60%)<br>
+<b class="p">Ergebnis(B):</b><br>7 Worte aus 5 Zeichenfolgen,<br> davon 5 relevant (=100%)
+
+</p></section>
 <!-- ABOUT -->
-<aside>
-  <h4>Diese Website ist im Aufbau</h4>
-  <ul style="font-size:small;">
-  <li>[2019-06] Domain gemietet</li>
-  <li>[2020/21] Konzeptentwicklung</li>
-  <li>[2022-11] Ausarbeitung</li>
-  <li>[2023-03] Designentwicklung</li>
-  <li>[2023-08] Github-Anbindung</li>
-  <li>[2023-10] Integration</li></ul></aside>
-<aside>
+<section class="flex">
+<aside><h4>$ history</h4><ul>
+    <li>[2019-06] Domain gemietet</li>
+    <li>[2020/21] Konzeptentwicklung</li>
+    <li>[2022-11] Ausarbeitung</li>
+    <li>[2023-03] Designentwicklung</li>
+    <li>[2023-08] Github-Anbindung</li>
+    <li>[2023-10] Integration</li></ul></aside>
+<aside><h4>Milestones To-Do:</h4><ul>
+    <li>[2023-11] Edits/Content</li>
+    <li>[2023-11] Instagram Content</li>
+    <li>[2023-12] JavaScript AddOns</li>
+    <li>[2024-01] PHP-Implementierung</li>
+    <li>[2024-01] Quiz-Feature(ChatGPT)</li>
+    <li>[2024-01] Themes-Feature</li></ul></aside>
+</section>
+<section class="flex">
 <table id="tasten-steuerung">
 <caption>Tasten-Steuerung</caption>
     <thead>
@@ -99,7 +161,7 @@ Themen</a> über Linux Windows Cybersecurity Hacking Coding Shell Tools Network-
         <td><span>Enter</span></td>
         </tr>
     </tbody>
-</table></aside>
+</table></section>
 </article>
 <article id="area-2" class="content flow">
 <h2>&#36; whoami</h2>
@@ -140,20 +202,34 @@ Themen</a> über Linux Windows Cybersecurity Hacking Coding Shell Tools Network-
 </div>
 <br>
 <!-- PERSON -->
-    <p>Mir macht es Spass, mich mit IT zu beschäftigen und Texte für Lernzwecke zu minimalisieren.</p>
+    <p>Mich interessiert das&nbsp;Verborgene. Neugier&nbsp;ist wertvoll, wie das Wasser den Fischen, wie die Luft zum&nbsp;Atmen. Und am Ende sind wir selbst ein Geheimnis, das nur der Rauch des Feuers kennt. Die unfassbare Wahrheit erfasst uns, Erde im Wind.</p>
     <q>Wer? Wer ist nur die Form als Konsequenz der Funktion des&nbsp;Was. Und&nbsp;was ich bin, das ist ein Mann mit Maske.</q><br><cite>- V wie Vendetta (2005)</cite>
 </article>
 <article id="area-3" class="content flow">
-
-
+<!-- STUFF -->
+<h4>Dark Mode Only</h4>
+    <p>Ein dunkler Bildschirm spart bis zu 60% Energie und schont die&nbsp;Augen.
+    Wenn&nbsp;du den hellen Modus immer noch bevorzugst dann&nbsp;GTFO!</p>
+    <q>Come with me. It&nbsp;is the&nbsp;only&nbsp;way.</q><br>
+    <cite>- Darth Vader (1980)</cite>
 </article>
 <article id="area-4" class="content flow">
-
-
+<!-- STUFF -->
+<h3>IT &#126; Kung Fu</h3>
+    <blockquote>Der chinesische Begriff "Kung&nbsp;Fu" bezieht sich auf Fähigkeiten und Techniken, die&nbsp;durch lange, harte&nbsp;Übung und Geduld erlangt&nbsp;werden.
+    Es&nbsp;ist eine Disziplin, die&nbsp;zur Meisterung viel Engagement und Einsatz&nbsp;erfordert.
+    Kung&nbsp;Fu kombiniert Bewegungen und&nbsp;Strategien, IT&nbsp;überträgt Signale und Daten, die&nbsp;durch konstruierte, physikalische&nbsp;Technik und Logik erzeugt&nbsp;werden. Das Beherrschen von Kung&nbsp;Fu erfordert Reaktionsfähigkeit, während&nbsp;bei der Verarbeitung von Informationen analytisches Denken entscheidend&nbsp;ist. In&nbsp;der&nbsp;IT, wie&nbsp;im Kung&nbsp;Fu, liegt&nbsp;der Schlüssel in der Hingabe und dem Streben nach&nbsp;Exzellenz.</blockquote>
+    <q>Der Meister erscheint wenn der Schüler bereit&nbsp;ist.</q><br>
+    <cite>- Karate Tiger (1986)</cite>
 </article>
 <article id="area-5" class="content flow">
-
-
+<h2>Quiz-Frage 3327</h2>
+<details class="flow">
+<summary>I have keys but no doors. I&nbsp;have space but no room. You&nbsp;can enter but can’t leave. What&nbsp;am&nbsp;I ?</summary>
+<br><span class="quiz-answers">A keyboard</span>
+</details>
+<q>Die Wissenschaft ist bestrebt, die&nbsp;Welt um uns herum zu&nbsp;verstehen. Die&nbsp;Technologie hingegen strebt danach, sie zu&nbsp;beherrschen.</q><br>
+<cite>- Nikola Tesla (1856-1943)</cite>
 </article></div></main>
 
 <!-- ### Debugger: Auto-Refresh Page (-option)
@@ -165,27 +241,27 @@ Themen</a> über Linux Windows Cybersecurity Hacking Coding Shell Tools Network-
     <h3>Tags:</h3><ul id="tagList"></ul>
     <h3>Classes:</h3><ul id="classList"></ul>
     <h3>IDs:</h3><ul id="idList"></ul></div>
-    <script src="../assets/js/html-analyzer.js"></script>-->
+    <script src="../../assets/js/html-analyzer.js"></script>-->
 
 <footer><div class="footer-container">
 <div class="leftside-profil-icons">
 <!-- GITHUB -->
 <a id="github-link" href="https://www.github.com/xuser123" target="_blank">
-<img src="../assets/img/ico/github.ico" alt="Github/xuser123"></a>
+<img src="../../assets/img/ico/github.ico" alt="Github/xuser123"></a>
 <!-- INSTAGRAM -->
 <a id="instagram-link" href="https://www.instagram.com/jumicontent" target="_blank">
-<img src="../assets/img/ico/instagram.ico" alt="Instagram/jumicontent"></a></div>
+<img src="../../assets/img/ico/instagram.ico" alt="Instagram/jumicontent"></a></div>
 <!-- EMAIL -->
 <span id="contact-email">contact&#64;jumi.biz</span>
 <div class="rightside-site-features">
 <!-- EXPORT PDF -->
 <a id="export-icon" href="#">
-<img src="../assets/img/ico/export-pdf.ico" alt="Download as PDF"></a>
+<img src="../../assets/img/ico/export-pdf.ico" alt="Download as PDF"></a>
 <!-- GO TOP -->
 <a id="goto-top" href="#">
-<img src="../assets/img/ico/go-top.ico" alt="Zum Seitenanfang"></a></div></div></footer>
+<img src="../../assets/img/ico/go-top.ico" alt="Zum Seitenanfang"></a></div></div></footer>
 <!-- SCRIPTS -->
-<script defer src="../assets/js/menu.js"></script>
-<script defer src="../assets/js/modal.js"></script>
+<script defer src="../../assets/js/menu.js"></script>
+<script defer src="../../assets/js/modal.js"></script>
 
 </body></html>
