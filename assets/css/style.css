@@ -57,8 +57,8 @@ table {
     position: relative;
     width: min(max-content);
     text-align: center;
-    margin: 1rem;
-    padding:1rem 0;
+    margin: 0 1rem 0;
+    padding:0.6em 0;
     border: 1px solid #000;
     border-radius:0.5rem;
     background-color:var(--high-ground);
@@ -66,18 +66,23 @@ table {
     outline: none;
     box-shadow:var(--ants-cry);
 }
-//table > * {}
-.bsp-txt > * {text-align:left;}
+th {
+    color:var(--pipi-white);
+	font-weight: 50;
+    padding:0 1.6vw 0;
+}
+td {
+	font-weight: 50;
+    color:var(--pipi-white);
+    padding:0 1.6vw 0;
+    text-align: center;
+}
+
 section {
     justify-content: space-around;
     position: relative;
     width: 100%;
     text-align: justify;
-}
-th {
-    color:var(--pipi-white);
-	font-weight: 50;
-    padding:0 1.6vw;
 }
 q, cite, figcaption {
     font-size:x-small;
@@ -252,7 +257,7 @@ main {
 }
 .grid-container {
     display: grid;
-    gap: 1vh;
+    gap: 1vw;
     grid-auto-columns: 1fr;
     grid-template-areas:
     'one' 'two' 'three' 'four' 'five';
@@ -374,6 +379,7 @@ footer #export-icon {
 footer #goto-top {
     cursor: pointer;
 }
+.bsp-txt > * {text-align:left;}
 #UAP > *{
     animation: neon .08s ease-in-out infinite alternate;
     color: var(--neon-pink);
