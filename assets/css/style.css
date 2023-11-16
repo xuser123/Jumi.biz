@@ -59,11 +59,11 @@ ul, ol {
     font-size:x-small;
     padding-left:0;
 }
+
 th {
     color:var(--pipi-white);
 	font-weight: 50;
     font-size:x-small;
-    padding:0 1.6vw 0;
 }
 td {
 	font-weight: 50;
@@ -223,15 +223,6 @@ header a:focus {
     text-decoration: none;
     text-transform: uppercase;
     text-shadow: 1.5px 2px #000;
-}
-.menu-list li:last-child > a{
-    font-size:14px;
-    padding: 10px 0 10px 9px;
-    text-transform: lowercase;
-}
-.menu-list li:last-child i{
-    padding: 8px 10px 8px 0px;
-
 }
 .menu-list[data-state="opened"] {
     animation: clipPathCircleOpen 300ms ease-in-out forwards;
@@ -410,7 +401,7 @@ footer #goto-top {
 }
 #tabelle-1 {
     position: relative;
-    justify-content:center;
+    align-content:center;
 }
 #tabelle-2 {
     position: relative;
