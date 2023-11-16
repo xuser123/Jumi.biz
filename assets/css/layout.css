@@ -1,50 +1,3 @@
-@media (prefers-reduced-motion: reduce) {
-    /* Remove all animations, transitions and smooth scroll
-    for people that prefer not to see them */
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-    *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-@media screen and (min-width: 35em) {
-    .grid-container {grid-template-areas:
-        "one one"
-        "two three"
-        "five five"
-        "four four";
-    }
-}
-@media screen and (min-width: 38em) {
-    .grid-container {grid-template-areas:
-        "one one"
-        "two five"
-        "three five"
-        "four four";
-    }
-}
-@media screen and (min-width: 54em) {
-    .grid-container {grid-template-areas:
-        "one one two"
-        "five five five"
-        "three four four";
-    }
-}
-@media screen and (min-width: 75em) {
-    .grid-container {grid-template-areas:
-        "one one two five"
-        "three four four five";
-    }
-}
-@media screen and (max-width: 35em) {
-    #tasten-steuerung {
-    display:none;
-    }
-}
 [id*="modalTrigger"] {
     border-radius: 3px;
     cursor: pointer;
@@ -66,6 +19,13 @@ dialog[open] {
 }
 dialog.hide {
     -webkit-animation: hide 150ms ease normal;
+}
+dialog::backdrop {background-color: rgba(0, 0, 0, 0.5);
+}
+dialog > figure {margin:0;color: var(--matrix-green);}
+.jumi-font {
+    font-family: 'Sarpanch', sans-serif;
+    letter-spacing: 0.23rem;
 }
 dialog [id*="closeModal"] {
     align-items: center;
@@ -92,27 +52,6 @@ dialog [id*="closeModal"]:focus {
     color: var(--neon-pink);
     border: none;
     outline: none;
-    text-decoration: none;
-}
-dialog::backdrop {background-color: rgba(0, 0, 0, 0.5);
-}
-dialog > figure {margin:0;color: var(--matrix-green);}
-.jumi-font {
-    font-family: 'Sarpanch', sans-serif;
-    letter-spacing: 0.23rem;
-}
-.header-content > span#jumi-logo {
-    text-align: center;
-    vertical-align: middle;
-    margin-left: 2vw;
-}
-.header-content > #jumi-biz {
-    animation: neon .08s ease-in-out infinite alternate;
-    background-color: transparent;
-    color: var(--laser-blue);
-    cursor: pointer;
-    line-height: 1.337em;
-    text-align: center;
     text-decoration: none;
 }
 .quiz-answers {
@@ -192,34 +131,29 @@ summary:focus {
         0 3px 0 rgba(0,0,0,0.25),
         inset 0 2px 0 rgba(170,170,170,0.8);
 }
+.bsp-txt {font-size:small;text-align:left;width: 100%;}
+
 figure figcaption {
     align-items: center;
     color: var(--matrix-green);
     display: flex;
     flex-direction: column;
     font-family: 'Sarpanch', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.6em;
     justify-content: center;
     text-shadow: 1.5px 2px #000;
 }
-figure > img {border-radius: 0.5rem;}
+figure > img {
+    border-radius: 0.5rem;
+}
 caption {
     caption-side: top;
     margin: 0.3rem;
     font-weight: bold;
     color: var(--matrix-green);}
 }
-#analyzer {
-    display:flex;
-    justify-content:center;
-}
-#banner {
-    align-items: center;
-    color: var(--shadow-grey);
-    animation: creepshow 60s infinite;
-    display: flex;
-    font-size:small;
-    height: 100vh;
-    justify-content: center;
-    margin: 0;
+aside {
+    position:relative;
+    display:block;
+    width:75%;
 }
