@@ -146,14 +146,3 @@ figure figcaption {
 figure > img {
     border-radius: 0.5rem;
 }
-caption {
-    caption-side: top;
-    margin: 0.3rem;
-    font-weight: bold;
-    color: var(--matrix-green);}
-}
-aside {
-    position:relative;
-    display:block;
-    width:75%;
-}
