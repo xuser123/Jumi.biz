@@ -270,7 +270,7 @@ main {
     color:var(--pipi-white);
     justify-content: space-evenly;
     line-height: 1.337em;
-    padding: 0 1.37vh 1.6rem;
+    padding: 0 1.37vw 1.6rem;
     position: relative;
     text-shadow: 1.5px 2px #000;
     width: 100%;
