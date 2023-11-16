@@ -11,40 +11,6 @@
         transition-duration: 0.01ms !important;
     }
 }
-@media screen and (min-width: 35em) {
-    .grid-container {grid-template-areas:
-        "one one"
-        "two three"
-        "five five"
-        "four four";
-    }
-}
-@media screen and (min-width: 38em) {
-    .grid-container {grid-template-areas:
-        "one one"
-        "two five"
-        "three five"
-        "four four";
-    }
-}
-@media screen and (min-width: 54em) {
-    .grid-container {grid-template-areas:
-        "one one two"
-        "five five five"
-        "three four four";
-    }
-}
-@media screen and (min-width: 75em) {
-    .grid-container {grid-template-areas:
-        "one one two five"
-        "three four four five";
-    }
-}
-@media screen and (max-width: 35em) {
-    #tasten-steuerung {
-    display:none;
-    }
-}
 @keyframes clipPathCircleOpen {
     0% {clip-path: circle(0% at top right);}
     100% {clip-path: circle(250% at top right);}
@@ -55,8 +21,8 @@
 }
 @keyframes creepshow {
     0% {color:var(--shadow-grey);}
-    80% {color:var(--shadow-grey);}
-    90% {color:var(--laser-blue);animation: glow-blue .08s ease-in-out infinite alternate;}
+    90% {color:var(--shadow-grey);}
+    95% {color:var(--laser-blue);}
     100% {color:var(--shadow-grey;)}
 }
 @-webkit-keyframes show {

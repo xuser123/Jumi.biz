@@ -59,17 +59,6 @@ ul, ol {
     font-size:x-small;
     padding-left:0;
 }
-table {
-    position: relative;
-    text-align: center;
-    padding:0.6em 0;
-    border: 1px solid #000;
-    border-radius:0.5rem;
-    background-color:var(--high-ground);
-    table-layout: fixed;
-    outline: none;
-    box-shadow:var(--ants-cry);
-}
 th {
     color:var(--pipi-white);
 	font-weight: 50;
@@ -181,9 +170,6 @@ header a:focus {
     position: absolute;
     right: 0;
     top: 0;
-}
-.menu-button:hover * {
-    background-color: var(--neon-pink);
 }
 .hidden-menu {
     clip-path: inset(50%);
@@ -423,5 +409,17 @@ footer #goto-top {
     color: var(--neon-pink);
 }
 #tabelle-1 {
+    position: relative;
     justify-content:center;
+}
+#tabelle-2 {
+    position: relative;
+    text-align: center;
+    padding:0.6em 0;
+    border: 1px solid #000;
+    border-radius:0.5rem;
+    background-color:var(--high-ground);
+    table-layout: fixed;
+    outline: none;
+    box-shadow:var(--ants-cry);
 }

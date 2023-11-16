@@ -133,6 +133,8 @@ summary:focus {
 }
 .bsp-txt {font-size:small;text-align:left;width: 100%;}
 
+#beschreibung {font-size:small;width: 100%;}
+
 figure figcaption {
     align-items: center;
     color: var(--matrix-green);
