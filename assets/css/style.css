@@ -359,6 +359,8 @@ footer {
     text-align: center;
     text-decoration: none;
 }
+#beschreibung {font-size:small;width: 100%;}
+
 #instagram-link {
     cursor: pointer;
     width:30px;
@@ -401,7 +403,8 @@ footer #goto-top {
 }
 #tabelle-1 {
     position: relative;
-    align-content:center;
+    text-align: center;
+    table-layout: fixed;
 }
 #tabelle-2 {
     position: relative;
