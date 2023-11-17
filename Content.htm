@@ -44,6 +44,40 @@
     rgba(0, 0, 0, 0.1) 0px 2px 4px,
     rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
 }
+@media screen and (min-width: 35em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two three"
+        "five five"
+        "four four";
+    }
+}
+@media screen and (min-width: 38em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two five"
+        "three five"
+        "four four";
+    }
+}
+@media screen and (min-width: 54em) {
+    .grid-container {grid-template-areas:
+        "one one two"
+        "five five five"
+        "three four four";
+    }
+}
+@media screen and (min-width: 75em) {
+    .grid-container {grid-template-areas:
+        "one one two five"
+        "three four four five";
+    }
+}
+@media screen and (max-width: 35em) {
+    #tasten-steuerung {
+    display:none;
+    }
+}
 @keyframes neon {
      from {text-shadow:
           0 0 6px rgba(202,228,225,0.92),
@@ -90,14 +124,12 @@ body {
 </button><div class="header-text"><span id="banner">(&lt;&gt;..&lt;&gt;)</span>
 <!-- MENU -->
 <ul data-state="closed" class="menu-list">
-<li><a href="Content.htm"><i class="list-icon">
-<img src="assets/img/ico/menu-content.ico" alt="Content"></i>content</a></li>
+<li><a href="https://www.jumi.biz"><i class="list-icon">
+<img src="assets/img/ico/jumi.ico" alt="Home"></i>start</a></li>
 <li><a href="Links.htm"><i class="list-icon">
 <img src="assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
 <li><a href="Cheats.htm"><i class="list-icon">
 <img src="assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
-<li><a href="https://www.jumi.biz"><i class="list-icon">
-<img src="assets/img/ico/jumi.ico" alt="WTF is jumi?"></i>wtf is jumi?</a></li>
 </ul></nav></div></header><main>
 <!-- MAIN -->
 <div class="grid-container">
