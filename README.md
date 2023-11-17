@@ -2,12 +2,11 @@
 topics:
 - linux
 - windows
-- cybersecurity
-- hacking
+- infosec
 - coding
 - shell
 - tools
-- network basics
+- networking
 - Exobiologie (off-topic)
 
 this site is my playground for what ever i want to share, but mainly its about informationsecurity.
