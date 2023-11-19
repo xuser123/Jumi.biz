@@ -58,6 +58,14 @@
         transform: translateY(-110%);
     }
 }
+@keyframes text-banner {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
 /*  */
  //@keyframes bg-animation {
      0% {

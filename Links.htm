@@ -44,6 +44,40 @@
     rgba(0, 0, 0, 0.1) 0px 2px 4px,
     rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
 }
+@media screen and (min-width: 35em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two three"
+        "five five"
+        "four four";
+    }
+}
+@media screen and (min-width: 38em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two five"
+        "three five"
+        "four four";
+    }
+}
+@media screen and (min-width: 54em) {
+    .grid-container {grid-template-areas:
+        "one one two"
+        "five five five"
+        "three four four";
+    }
+}
+@media screen and (min-width: 75em) {
+    .grid-container {grid-template-areas:
+        "one one two five"
+        "three four four five";
+    }
+}
+@media screen and (max-width: 35em) {
+    #tasten-steuerung {
+    display:none;
+    }
+}
 @keyframes neon {
      from {text-shadow:
           0 0 6px rgba(202,228,225,0.92),
@@ -87,22 +121,21 @@ body {
         aria-expanded="false">
   <span class="hidden-menu">Menu</span>
   <div class="menu-icon" aria-hidden="true"></div>
-</button><div class="header-text"><span id="banner">(&lt;&gt;..&lt;&gt;)</span>
+</button><div class="header-text"><span id="spooky">(&lt;&gt;..&lt;&gt;)</span>
 <!-- MENU -->
 <ul data-state="closed" class="menu-list">
-<li><a href="Content.htm"><i class="list-icon">
-<img src="assets/img/ico/menu-content.ico" alt="Content"></i>content</a></li>
+<li><a href="https://www.jumi.biz"><i class="list-icon">
+<img src="assets/img/ico/jumi.ico" alt="Home"></i>start</a></li>
 <li><a href="Links.htm"><i class="list-icon">
 <img src="assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
 <li><a href="Cheats.htm"><i class="list-icon">
 <img src="assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
-<li><a href="https://www.jumi.biz"><i class="list-icon">
-<img src="assets/img/ico/jumi.ico" alt="WTF is jumi?"></i>wtf is jumi?</a></li>
 </ul></nav></div></header><main>
+
 <!-- MAIN -->
 <div class="grid-container">
-<article id="area-1" class="content flow">
 <article class="content flow">
+<section>
 <h4>Education</h4>
 <ul>
 <li><a href="https://www.theodinproject.com" target="_blank">TheOdinProject.com</a></li>
@@ -110,22 +143,28 @@ body {
 <li><a href="https://www.tryhackme.com" target="_blank">TryHackMe.com</a></li>
 <li><a href="https://www.media.ccc.de" target="_blank">media.ccc.de</a></li>
 </ul>
+</section>
 </article>
 <article class="content flow">
+<section>
 <h4>Et cetera</h4>
 <ul>
 <li><a href="https://www.virustotal.com/" target="_blank">Virus Total</a></li>
 <li><a href="https://www.codepen.io/pen/" target="_blank">CodePen</a></li>
 <li><a href="https://www.code.sgo.to/typograms/#related" target="_blank">Typogramme</a></li>
 </ul>
+</section>
 </article>
 <article class="content flow">
+<section>
 <h4>Künstliche Intelligenz</h4>
 <ul>
 <li><a href="https://www.you.com/" target="_blank">You.com</a></li>
 </ul>
+</section>
 </article>
 <article class="content flow">
+<section>
 <h4>Musik</h4>
 <ul>
 <li><a href="https://www.youtube.com/c/cryochamberlabel" target="_blank">Cryo Chamber</a></li>
@@ -134,8 +173,10 @@ body {
 <li><a href="https://www.8bit.fm/" target="_blank">8bit.fm</a></li>
 <li><a href="https://www.youtube.com/c/LofiGirl" target="_blank">Lofi Girl</a></li>
 </ul>
+</section>
 </article>
 <article class="content flow">
+<section>
 <h4>Youtube</h4>
 <ul>
 <li><a href="https://www.youtube.com/c/Algorithmenverstehen" target="_blank">Florian Dalwigk</a></li>
@@ -162,30 +203,347 @@ body {
 <li><a href="https://www.youtube.com/@MentalOutlaw" target="_blank">Mental Outlaw</a></li>
 <li><a href="https://www.youtube.com/@PenAce" target="_blank">Pen Ace</a></li></ul>
 
+</section>
 </article>
+</div><br>
+<div class="grid-container">
+<article id="area-1" class="content flow">
+<!-- HELLO WORLD -->
+<h1>print("hello world")</h1>
+<section>
+<h4>wtf is <span class="jumi-font">jumi.biz</span> ?</h4>
+<p>Kompakte Inhalte über
+<b class="r">Linux</b>
+<b class="g">Windows</b>
+<b class="b">Infosec</b>
+<b class="y">Coding</b>
+<b class="c">Shell</b>
+<b class="m">Tools</b> und
+<b class="o">Exobiologie.</b>
+Text&nbsp;minimalisiert, fragmentiert und visuell ergonomisiert.</p></section>
+<Section id="beschreibung">
+<h3>Kinderleichtes Lesen</h3>
+Gewöhnlicher Text hat <b>~25%</b> relevanten Kerninhalt,
+davon verbleibt nach einem Tag vermutlich ~50%,
+nach zwei Tagen <b>~30%</b> im Gedächtnis. Ergibt <b>~7,5%</b> Text.</section>
+<section class="bsp-txt">
+<h3>Text-Beispiele</h3>
+<b>Beispiel A</b><aside>Zwanzig Zwerge machen Handstand,
+zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
+<b>Beispiel B</b><aside>Zwergenhandstände,Ort: 10,Schrank&nbsp;10,Strand</aside>
+<table id="tabelle-1">
+<caption>23% Mehrwert</caption>
+    <thead>
+        <tr>
+        <th>Text</th>
+        <th>Wörter</th>
+        <th>Zeichenfolgen</th>
+        <th>Kerninhalte</th>
+        <th>Relevanz</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><span><b>A</b></span></td>
+        <td><span>13</span></td>
+        <td><span>10</span></td>
+        <td><span>6</span></td>
+        <td><span>60%</span></td>
+        </tr>
+        <tr>
+        <td><span><b>B</b></span></td>
+        <td><span>8</span></td>
+        <td><span>6</span></td>
+        <td><span>5</span></td>
+        <td><span><b>83%</b></span></td>
+        </tr>
+    </tbody>
+</table></section>
+<!-- INFOS -->
+<section class="flex">
+<aside><h4>$ history</h4><ul>
+    <li>[19-06] Domain gemietet</li>
+    <li>[20/21] Konzeptentwicklung</li>
+    <li>[22-11] Ausarbeitung</li>
+    <li>[23-03] Designentwicklung</li>
+    <li>[23-08] Github-Anbindung</li>
+    <li>[23-10] Integration</li></ul></aside>
+<aside><h4>To-Do</h4><ul>
+    <li>[23-11] Edits/Content</li>
+    <li>[23-11] Instagram Content</li>
+    <li>[23-12] JavaScript AddOns</li>
+    <li>[24-01] PHP-Implement</li>
+    <li>[24-01] Quiz-Feature</li>
+    <li>[24-01] Themes-Feature</li></ul></aside>
+</section>
+<section class="flex">
+<table id="tabelle-2">
+<caption>Tasten-Steuerung</caption>
+    <thead>
+        <tr>
+        <th>Vollbild</th>
+        <th>Zurück</th>
+        <th>Weiter</th>
+        <th>Öffnen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="button-styled">
+        <td><span>F11</span></td>
+        <td><span>Shift</span> &#43; <span>TAB</span></td>
+        <td><span>TAB</span></td>
+        <td><span>Enter</span></td>
+        </tr>
+    </tbody>
+</table></section>
+</article>
+<article id="area-2" class="content flow">
+
+<h2>&#36; whoami</h2>
+<div class="flex">
+  <!-- PICTURE -->
+  <img id="modalTrigger01" src="assets/img/profile-img-1.png" alt="Picture shows Jumi">
+  <dialog id="openModal01">
+    <figure>
+      <img src="assets/img/modal/profile-img-modal-01.png" alt="Image-Modal" id="imgModal01">
+      <figcaption>
+        <h2>Human Interface</h2>
+      </figcaption>
+    </figure>
+    <button id="closeModal01"> &times; </button>
+  </dialog>
+  <!-- PICTURE -->
+  <img id="modalTrigger02" src="assets/img/profile-img-2.png" alt="Picture shows shoe">
+  <dialog id="openModal02">
+    <figure>
+      <img src="assets/img/modal/profile-img-modal-02.png" alt="Image-Modal" id="imgModal02">
+      <figcaption>
+        <h2>Local Area</h2>
+      </figcaption>
+    </figure>
+    <button id="closeModal02"> &times; </button>
+  </dialog>
+  <!-- PICTURE -->
+  <img id="modalTrigger03" src="assets/img/profile-img-3.png" alt="Picture shows computer">
+  <dialog id="openModal03">
+    <figure>
+      <img src="assets/img/modal/profile-img-modal-03.png" alt="Image-Modal" id="imgModal03">
+      <figcaption>
+        <h2>Central Processing</h2>
+      </figcaption>
+    </figure>
+    <button id="closeModal03"> &times; </button>
+  </dialog>
 </div>
-</main>
+<br>
+<!-- PERSON -->
+    <section><p>Mich interessiert das&nbsp;Verborgene. Neugier&nbsp;will leben, will&nbsp;<b class="b">Wasser</b> zum Trinken, will&nbsp;<b class="y">Luft</b> zum&nbsp;Atmen. Bitte&nbsp;Ende, flüster das größte Geheimnis, das im&nbsp;Tausch, wieder verborgen zurückkehrt. Dessen Wahrheit im <b class="g">Rauch</b> des <b class="r">Feuers</b> versteckt, unfassbar wie <b class="o">Erde</b> im <b>Wind</b> lebt.</p></section>
+    <aside><q>Wer? Wer ist nur die Form als Konsequenz der Funktion des&nbsp;Was. Und&nbsp;was ich bin, das ist ein Mann mit Maske.</q><br><cite>- V wie Vendetta (2005)</cite></aside>
+</article>
+<article id="area-3" class="content flow">
+<!-- STUFF -->
+<h4>Dark Mode Only</h4>
+    <p>Ein dunkler Bildschirm spart bis zu <b>60%</b> Energie und schont die&nbsp;Augen.
+    Wenn&nbsp;du den hellen Modus immer noch bevorzugst dann&nbsp;GTFO!</p>
+    <aside><q>Come with me. It&nbsp;is the&nbsp;only&nbsp;way.</q><br>
+    <cite>- Darth Vader (1980)</cite></aside>
+</article>
+<article id="area-4" class="content flow">
+<!-- STUFF -->
+<h3>IT &#126; Kung Fu</h3>
+    <section>Der chinesische Begriff "Kung&nbsp;Fu" bezieht sich auf Fähigkeiten und Techniken, die&nbsp;durch lange, harte&nbsp;<b class="r">Übung</b> und <b class="g">Geduld</b> erlangt&nbsp;werden.
+    Es&nbsp;ist eine Disziplin, die&nbsp;zur Meisterung viel <b class="b">Engagement und Einsatz</b>&nbsp;erfordert.
+    Kung&nbsp;Fu kombiniert Bewegungen und&nbsp;Strategien, IT&nbsp;überträgt Signale und Daten, die&nbsp;durch konstruierter, physikalischer&nbsp;Technik und Logik gesteuert&nbsp;werden. Das&nbsp;Beherrschen von Kung&nbsp;Fu verbessert Beweglichkeit, während&nbsp;die Verarbeitung von Informationen <b class="y">analytisches Denken</b> entwickelt. In&nbsp;der&nbsp;IT, wie&nbsp;im Kung&nbsp;Fu, geht es um <b class="c">Hingabe</b>, <b class="m">Ausdauer</b> und
+    <b class="o">Skills</b>.</section>
+    <aside><q>Der Meister erscheint wenn der Schüler bereit&nbsp;ist.</q><br>
+    <cite>- Karate Tiger (1986)</cite></aside>
+</article>
+<article id="area-5" class="content flow">
+<h3>Click to open</h3>
+<details class="flow">
+<summary>I have keys but no doors. I&nbsp;have space but no room. You&nbsp;can enter but can’t leave. What&nbsp;am&nbsp;I ?</summary>
+<br><span class="quiz-answers">A keyboard</span>
+</details>
+<details class="flow">
+<summary>Wieso nimmt Windows keine Drogen ?</summary>
+<br><span class="quiz-answers">Damit es nicht abstürzt...</span>
+</details>
+<details class="flow">
+<summary>Nikola&nbsp;Tesla's Apartment Number in the New York Hotel ?</summary>
+<br><span class="quiz-answers">3327</span>
+</details>
+<aside><q>Die Wissenschaft ist bestrebt, die&nbsp;Welt um uns herum zu&nbsp;verstehen. Die&nbsp;Technologie hingegen strebt danach, sie zu&nbsp;beherrschen.</q><br>
+<cite>- Nikola Tesla (1856-1943)</cite></aside>
+</article></div><br>
+<div class="grid-container">
+<article id="area-6" class="content flow">
+<!-- HELLO WORLD -->
+<h1>print("hello world")</h1>
+<section>
+<h4>wtf is <span class="jumi-font">jumi.biz</span> ?</h4>
+<p>Kompakte Inhalte über
+<b class="r">Linux</b>
+<b class="g">Windows</b>
+<b class="b">Infosec</b>
+<b class="y">Coding</b>
+<b class="c">Shell</b>
+<b class="m">Tools</b> und
+<b class="o">Exobiologie.</b>
+Text&nbsp;minimalisiert, fragmentiert und visuell ergonomisiert.</p></section>
+<Section id="beschreibung">
+<h3>Kinderleichtes Lesen</h3>
+Gewöhnlicher Text hat <b>~25%</b> relevanten Kerninhalt,
+davon verbleibt nach einem Tag vermutlich ~50%,
+nach zwei Tagen <b>~30%</b> im Gedächtnis. Ergibt <b>~7,5%</b> Text.</section>
+<section class="bsp-txt">
+<h3>Text-Beispiele</h3>
+<b>Beispiel A</b><aside>Zwanzig Zwerge machen Handstand,
+zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
+<b>Beispiel B</b><aside>Zwergenhandstände,Ort: 10,Schrank&nbsp;10,Strand</aside>
+<table id="tabelle-1">
+<caption>23% Mehrwert</caption>
+    <thead>
+        <tr>
+        <th>Text</th>
+        <th>Wörter</th>
+        <th>Zeichenfolgen</th>
+        <th>Kerninhalte</th>
+        <th>Relevanz</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td><span><b>A</b></span></td>
+        <td><span>13</span></td>
+        <td><span>10</span></td>
+        <td><span>6</span></td>
+        <td><span>60%</span></td>
+        </tr>
+        <tr>
+        <td><span><b>B</b></span></td>
+        <td><span>8</span></td>
+        <td><span>6</span></td>
+        <td><span>5</span></td>
+        <td><span><b>83%</b></span></td>
+        </tr>
+    </tbody>
+</table></section>
+<!-- INFOS -->
+<section class="flex">
+<aside><h4>$ history</h4><ul>
+    <li>[19-06] Domain gemietet</li>
+    <li>[20/21] Konzeptentwicklung</li>
+    <li>[22-11] Ausarbeitung</li>
+    <li>[23-03] Designentwicklung</li>
+    <li>[23-08] Github-Anbindung</li>
+    <li>[23-10] Integration</li></ul></aside>
+<aside><h4>To-Do</h4><ul>
+    <li>[23-11] Edits/Content</li>
+    <li>[23-11] Instagram Content</li>
+    <li>[23-12] JavaScript AddOns</li>
+    <li>[24-01] PHP-Implement</li>
+    <li>[24-01] Quiz-Feature</li>
+    <li>[24-01] Themes-Feature</li></ul></aside>
+</section>
+<section class="flex">
+<table id="tabelle-2">
+<caption>Tasten-Steuerung</caption>
+    <thead>
+        <tr>
+        <th>Vollbild</th>
+        <th>Zurück</th>
+        <th>Weiter</th>
+        <th>Öffnen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="button-styled">
+        <td><span>F11</span></td>
+        <td><span>Shift</span> &#43; <span>TAB</span></td>
+        <td><span>TAB</span></td>
+        <td><span>Enter</span></td>
+        </tr>
+    </tbody>
+</table></section>
+</article>
+<article id="area-7" class="content flow">
 
-<!-- IMPRESSUM -->
-<footer><span class="flex profil-links">
-
-<!-- github.com/xuser123 -->
-<a id="githubIcon" href="https://www.github.com/xuser123" target="_blank">
-<img src="assets/img/ico/github.ico" alt="Github/xuser123"></a>&#32;
-
-<!-- instagram.com/jumicontent -->
-<a id="instagramIcon" href="https://www.instagram.com/jumicontent" target="_blank">
-<img src="assets/img/ico/instagram.ico" alt="Instagram/jumicontent"></a></span>
-
-<!-- contact@jumi.biz -->
-<span class="jumi-email">contact&#64;jumi.biz</span>
-
-<span class="flex siteFeatures">
-<a id="exportIcon"><img src="assets/img/ico/exportPDF.ico" alt="Export as PDF"></a>&#32;
-
-<!-- Zum Seitenanfang -->
-<a id="scrollToTop" href="#">
-<img src="assets/img/ico/backTop.ico" alt="Zum Seitenanfang"></a>
+<h2>&#36; whoami</h2>
+<div class="flex">
+  <!-- PICTURE -->
+  <img id="modalTrigger01" src="assets/img/profile-img-1.png" alt="Picture shows Jumi">
+  <dialog id="openModal01">
+    <figure>
+      <img src="assets/img/modal/profile-img-modal-01.png" alt="Image-Modal" id="imgModal01">
+      <figcaption>
+        <h2>Human Interface</h2>
+      </figcaption>
+    </figure>
+    <button id="closeModal01"> &times; </button>
+  </dialog>
+  <!-- PICTURE -->
+  <img id="modalTrigger02" src="assets/img/profile-img-2.png" alt="Picture shows shoe">
+  <dialog id="openModal02">
+    <figure>
+      <img src="assets/img/modal/profile-img-modal-02.png" alt="Image-Modal" id="imgModal02">
+      <figcaption>
+        <h2>Local Area</h2>
+      </figcaption>
+    </figure>
+    <button id="closeModal02"> &times; </button>
+  </dialog>
+  <!-- PICTURE -->
+  <img id="modalTrigger03" src="assets/img/profile-img-3.png" alt="Picture shows computer">
+  <dialog id="openModal03">
+    <figure>
+      <img src="assets/img/modal/profile-img-modal-03.png" alt="Image-Modal" id="imgModal03">
+      <figcaption>
+        <h2>Central Processing</h2>
+      </figcaption>
+    </figure>
+    <button id="closeModal03"> &times; </button>
+  </dialog>
+</div>
+<br>
+<!-- PERSON -->
+    <section><p>Mich interessiert das&nbsp;Verborgene. Neugier&nbsp;will leben, will&nbsp;<b class="b">Wasser</b> zum Trinken, will&nbsp;<b class="y">Luft</b> zum&nbsp;Atmen. Bitte&nbsp;Ende, flüster das größte Geheimnis, das im&nbsp;Tausch, wieder verborgen zurückkehrt. Dessen Wahrheit im <b class="g">Rauch</b> des <b class="r">Feuers</b> versteckt, unfassbar wie <b class="o">Erde</b> im <b>Wind</b> lebt.</p></section>
+    <aside><q>Wer? Wer ist nur die Form als Konsequenz der Funktion des&nbsp;Was. Und&nbsp;was ich bin, das ist ein Mann mit Maske.</q><br><cite>- V wie Vendetta (2005)</cite></aside>
+</article>
+<article id="area-8" class="content flow">
+<!-- STUFF -->
+<h4>Dark Mode Only</h4>
+    <p>Ein dunkler Bildschirm spart bis zu <b>60%</b> Energie und schont die&nbsp;Augen.
+    Wenn&nbsp;du den hellen Modus immer noch bevorzugst dann&nbsp;GTFO!</p>
+    <aside><q>Come with me. It&nbsp;is the&nbsp;only&nbsp;way.</q><br>
+    <cite>- Darth Vader (1980)</cite></aside>
+</article>
+<article id="area-9" class="content flow">
+<!-- STUFF -->
+<h3>IT &#126; Kung Fu</h3>
+    <section>Der chinesische Begriff "Kung&nbsp;Fu" bezieht sich auf Fähigkeiten und Techniken, die&nbsp;durch lange, harte&nbsp;<b class="r">Übung</b> und <b class="g">Geduld</b> erlangt&nbsp;werden.
+    Es&nbsp;ist eine Disziplin, die&nbsp;zur Meisterung viel <b class="b">Engagement und Einsatz</b>&nbsp;erfordert.
+    Kung&nbsp;Fu kombiniert Bewegungen und&nbsp;Strategien, IT&nbsp;überträgt Signale und Daten, die&nbsp;durch konstruierter, physikalischer&nbsp;Technik und Logik gesteuert&nbsp;werden. Das&nbsp;Beherrschen von Kung&nbsp;Fu verbessert Beweglichkeit, während&nbsp;die Verarbeitung von Informationen <b class="y">analytisches Denken</b> entwickelt. In&nbsp;der&nbsp;IT, wie&nbsp;im Kung&nbsp;Fu, geht es um <b class="c">Hingabe</b>, <b class="m">Ausdauer</b> und
+    <b class="o">Skills</b>.</section>
+    <aside><q>Der Meister erscheint wenn der Schüler bereit&nbsp;ist.</q><br>
+    <cite>- Karate Tiger (1986)</cite></aside>
+</article>
+<article id="area-10" class="content flow">
+<h3>Click to open</h3>
+<details class="flow">
+<summary>I have keys but no doors. I&nbsp;have space but no room. You&nbsp;can enter but can’t leave. What&nbsp;am&nbsp;I ?</summary>
+<br><span class="quiz-answers">A keyboard</span>
+</details>
+<details class="flow">
+<summary>Wieso nimmt Windows keine Drogen ?</summary>
+<br><span class="quiz-answers">Damit es nicht abstürzt...</span>
+</details>
+<details class="flow">
+<summary>Nikola&nbsp;Tesla's Apartment Number in the New York Hotel ?</summary>
+<br><span class="quiz-answers">3327</span>
+</details>
+<aside><q>Die Wissenschaft ist bestrebt, die&nbsp;Welt um uns herum zu&nbsp;verstehen. Die&nbsp;Technologie hingegen strebt danach, sie zu&nbsp;beherrschen.</q><br>
+<cite>- Nikola Tesla (1856-1943)</cite></aside>
+</article></div></main>
 
 <!-- ### Debugger: Auto-Refresh Page (-option)
     <meta http-equiv="refresh" content="5">-->

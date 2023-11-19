@@ -243,5 +243,11 @@ header a:focus {
      text-align: left;
      vertical-align: middle;
 }
+.error-page {
+    position:relative;
+    min-width:65vw;
+    justify-content: center;
+    text-align:center;
+}
 
 

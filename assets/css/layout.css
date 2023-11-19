@@ -255,7 +255,7 @@ summary:hover, summary:focus {
     outline: none;
     box-shadow: none;
 }
-button.menu-button:hover {
+button.menu-button:focus {
     outline: none;
     border: none;
 }
@@ -301,16 +301,25 @@ button.menu-button:hover {
     display:flex;
     justify-content:center;
 }
-#banner {
+#spook {
     align-items: center;
-    color: var(--shadow-grey);
     animation: creepshow 60s infinite;
+    color: var(--shadow-grey);
     display: flex;
-    font-size:small;
-    text-shadow:none;
+    font-size:smaller;
     height: 100vh;
     justify-content: center;
     margin: 0;
+    text-shadow:none;
+}
+#banner {
+    transform: translateZ(0);
+    animation: glow-pink .08s ease-in-out infinite alternate;
+    background-color: transparent;
+    color: var(--neon-pink);
+    font-size:smaller;
+    justify-content: center;
+    position: relative;
 }
 #UAP > *{
     animation: neon .08s ease-in-out infinite alternate;
@@ -321,7 +330,7 @@ button.menu-button:hover {
     text-align: center;
     table-layout: fixed;
 }
-#tabelle-2 {
+#tasten-steuerung {
     position: relative;
     text-align: center;
     padding:0.6em 0;

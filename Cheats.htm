@@ -1,64 +1,139 @@
-<!DOCTYPE html><html lang="de"><head><meta charset="utf-8">
-<!-- Optimierung für Mobilgeräte -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- HTTP-Header -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!-- Metadaten -->
-<meta name="description" content="
-Sammlung von Themen über Informatik, kompakt.
-"><meta name="keywords" content="
-linux,windows,sicherheit,hacking,
-administration,code,shell,terminal,syntax,
-tool,programm,it,informatik,information,
-technologie,fachinformatik,computer,pc,
-system,netzwerk,integration,programmierung
-snippets,vorlagen,lernen,verstehen,
-"><meta name="author" content="Jumi">
-<!-- Favicon -->
-<link rel="icon" href="assets/img/ico/jumi.ico">
-<title>jumi</title>
-<!-- Debuger (falls nötig)
-        <meta http-equiv="refresh"y content="6">
-        <style>* {border: 1px solid red;}</style>-->
-
-<!-- Sheets -->
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="stylesheet" href="assets/css/menu.css">
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="assets/css/modal.css">
-<link rel="stylesheet" href="assets/css/media-queries.css">
-
+<!DOCTYPE html><html lang="de"><head>
+<!-- ENCODE --><meta charset="utf-8">
+<!-- OPTIMIZE --><meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SUPPORT --><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- INFO -->
+<meta name="description" content="Sammlung von Themen über Informatik, kompakt.">
+<meta name="keywords" content="linux,windows,cybersecurity,hacking,coding,shell,tools,network,basics">
+<meta name="author" content="Jumi">
+<!-- FAVICON --><link rel="icon" href="assets/img/ico/jumi.ico">
+<!-- TITLE --><title>Cheats</title>
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="assets/css/animations.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+<style>
+:root { /* Font and Colors */
+  --basic-glow-frame-1: rgba(202,228,225,0.92);
+  --basic-glow-frame-2: rgba(202,228,225,0.34);
+  --basic-glowbox-frame-1: rgba(202,228,225,0.98);
+  --basic-glowbox-frame-2: rgba(202,228,225,0.42);
+  --glow-red: #FF0000;
+  --glow-indigo: #4B0082;
+  --glow-blue: #0000FF;
+  --glow-yellow: #FFFF00;
+  --glow-green: #00FF00;
+  --glow-magenta: #FF00FF;
+  --glow-orange: #FFA500;
+  --glow-cyan: #00f0f0;
+  --glow-lightgreen: #8dd88e;
+  --glow-pink: #ffbfea;
+  --glow-lightyellow: #ebebd3;
+  --base-font-size: 16px;
+  --high-ground: rgba(0,0,0,0.1);
+  --laser-blue: #00f0f0;
+  --matrix-green: #8dd88e;
+  --neon-pink: #ffbfea;
+  --pipi-white: #ebebd3;
+  --shadow-grey: #131313;
+  --space-motion:
+    rgba(0, 240, 240, 0.4) 0px 2px 4px,
+    rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+    rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+  --ants-cry:
+    rgba(0, 0, 0, 0.1) 0px 2px 4px,
+    rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
+}
+@media screen and (min-width: 35em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two three"
+        "five five"
+        "four four";
+    }
+}
+@media screen and (min-width: 38em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two five"
+        "three five"
+        "four four";
+    }
+}
+@media screen and (min-width: 54em) {
+    .grid-container {grid-template-areas:
+        "one one two"
+        "five five five"
+        "three four four";
+    }
+}
+@media screen and (min-width: 75em) {
+    .grid-container {grid-template-areas:
+        "one one two five"
+        "three four four five";
+    }
+}
+@media screen and (max-width: 35em) {
+    #tasten-steuerung {
+    display:none;
+    }
+}
+@keyframes neon {
+     from {text-shadow:
+          0 0 6px rgba(202,228,225,0.92),
+          0 0 30px rgba(202,228,225,0.34),
+          0 0 12px rgba(30,132,242,0.52),
+          0 0 21px rgba(30,132,242,0.92),
+          0 0 34px rgba(30,132,242,0.78),
+          0 0 54px rgba(30,132,242,0.92);
+    } to {text-shadow:
+          0 0 6px rgba(202,228,225,0.98),
+          0 0 30px rgba(202,228,225,0.42),
+          0 0 12px rgba(30,132,242,0.58),
+          0 0 22px rgba(30,132,242,0.84),
+          0 0 38px rgba(30,132,242,0.88),
+          0 0 60px rgba(30,132,242,1);}}
+@keyframes neon-box {
+    from {box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),0 0 24px rgba(202, 228, 225, 0.34), 0 0 9.6px rgba(30, 132, 242, 0.52), 0 0 16.8px rgba(30, 132, 242, 0.92), 0 0 27.2px rgba(30, 132, 242, 0.78), 0 0 43.2px rgba(30, 132, 242, 0.92);
+    }
+    to {box-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 24px rgba(202, 228, 225, 0.42), 0 0 9.6px rgba(30, 132, 242, 0.58), 0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);}}
+html {background-color: var(--shadow-grey);}
+body {
+  font-size: var(--base-font-size);
+  height: 100%;/* Footer-Einfluss */
+  margin:0;padding:0;
+  position: relative;/* Footer-Einfluss */
+  text-rendering: optimizeSpeed;
+}
+*,*::before,*::after {box-sizing: border-box;}
+</style>
 </head>
+<!-- BODY -->
 <body id="ଘ(੭*ˊᵕˋ)੭*ˋhello_ɪɴᴛᴇʀɴᴇᴛ">
-<header>
-<div class="header-content">
-
+<header><div class="header-content">
 <!-- LOGO -->
-<h1 class="jumi-logo"><a href="https://www.jumi.biz">jumi.biz</a>&#32;</h1>
-
-<!-- MENU -->
-<nav class="menu">
-<button class="menu-toggle"
-        aria-controls="primary-navigation"
+<span id="jumi-logo"><img src="assets/img/ico/jumi.ico" alt="Jumi Logo"></span>
+<a href="https://www.jumi.biz"><span id="jumi-biz">jumi.biz</span></a><span> /Cheats</span>
+<!-- BUTTON -->
+</div><nav class="navigation">
+<button class="menu-button"
+        aria-controls="menu-list"
         aria-expanded="false">
-  <span class="visually-hidden">Menu</span>
-  <div class="hamburger" aria-hidden="true"></div>
-</button>
-
-<ul data-state="closed" class="primary-navigation" id="primary-navigation">
-<li><a href="https://www.jumi.biz/Content.htm"><i class="menu-icon">
-<img src="https://www.jumi.biz/assets/img/ico/menu-content.ico" alt="Content"></i>content</a></li>
-<li><a href="https://www.jumi.biz/Links.htm"><i class="menu-icon">
-<img src="https://www.jumi.biz/assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
-<li><a href="https://www.jumi.biz/Cheats.htm"><i class="menu-icon">
-<img src="https://www.jumi.biz/assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
-<li><a href="https://www.jumi.biz"><i class="menu-icon">
-<img src="https://www.jumi.biz/assets/img/ico/jumi.ico" alt="WTF is Jumi?"></i>
-<span id="wtf-is-jumi">wtf is jumi?</span></a></li>
+  <span class="hidden-menu">Menu</span>
+  <div class="menu-icon" aria-hidden="true"></div>
+</button><div class="header-text"><span id="spook">ଘ(੭*ˊᵕˋ)੭*ˋhello_ɪɴᴛᴇʀɴᴇᴛ</span>
+<!-- MENU -->
+<ul data-state="closed" class="menu-list">
+<li><a href="https://www.jumi.biz"><i class="list-icon">
+<img src="assets/img/ico/jumi.ico" alt="Home"></i>start</a></li>
+<li><a href="Links.htm"><i class="list-icon">
+<img src="assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
+<li><a href="Cheats.htm"><i class="list-icon">
+<img src="assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
 </ul></nav></div></header><main>
-
-<div class="grid-container"><article class="content flow">
-<h2 class="bigHL">GTA San Andreas (PS2)</h2>
+<div class="grid-container">
+<article id="area-1" class="content flow">
+<h2>GTA San Andreas (PS2)</h2>
 <dl><dt><b>Godmode</b></dt>
 <dd><code>&rarr; &uarr; &times; &triangledown; &larr; &rarr; &darr; &cir;
 </code></dd><br><dt><b>Infinite Ammunition</b></dt>
@@ -66,75 +141,94 @@ snippets,vorlagen,lernen,verstehen,
 </code></dd><br><dt><b>Most Wanted</b></dt>
 <dd><code>&uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; &square; &cir;
 </code></dd></dl>
-</article><article class="content flow">
-<h2 class="bigHL">Tony Hawks Pro Skater 2 (PS2)</h2>
+</article>
+<article id="area-2" class="content flow">
+<section>
+<h2>Tony Hawks Pro Skater 2 (PS2)</h2>
 <dl><dt><b>Perfect Balance</b></dt>
 <dd><code>&rarr; &uarr; &times; &triangledown; &larr; &rarr; &darr; &cir;
 </code></dd><br><dt><b>Zero Gravity</b></dt>
 <dd><code>&darr; &times; &rarr; &larr; &cir; &uarr; &darr; &square;
 </code></dd><br>
 <dt><b>100% Completed</b></dt>
-<dd><code>&uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; &square; &cir;
-</code></dl></article><article class="content flow">
-<h2 class="bigHL">Entschlossenheit </h2>
-...kennt keine Furcht, nur Gewissheit!
-<br><br><span class="klein">"Ich bin ein Yakuzza der alten Schule, wenn ich sterben muss, dann soll es geschehen"
-<br>-Brother (2000)</span></article><article class="content flow">
-<h2 class="bigHL">$ find / -type d -name '.*'</h2>
-<dl><b>h4x r3@1i+y f!nq |-|iqq3n p@+h</b><br><br>
-<span class="klein">"Sometimes, to find the answer, you have to ask the right questions"
-<br>-Elliot Alderson (S2E2)</span>
-</article><article class="content flow">
-<h2 class="glow">Biolumineszenz</h2>
-<p>Dies geschieht mithilfe von Enzymen und dem Molekül <span class="glow">Luciferin</span>, abgeleiet von dem lateinischen Wort für "Lichtträger".&nbsp;Der&nbsp;Begriff wurde von dem französischen Chemiker Raphaël Dubois geprägt&nbsp;(19.&nbsp;Jahrhundert).</p>
-
+<dd><code>&uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; &square; &cir;</code>
+</section>
 </article>
-</div>
-</main>
+<article id="area-3" class="content flow">
+<section>
+<h2>Entschlossenheit </h2>
+...kennt keine Furcht, nur Gewissheit!
+<br><br><span>"Ich bin ein Yakuzza der alten Schule, wenn ich sterben muss, dann soll es geschehen"</span></section>
+</article>
+<article id="area-4" class="content flow">
+<section>
+<h2>$ find / -type d -name '.*'</h2>
+<dl><b>h4x r3@1i+y f!nq |-|iqq3n p@+h</b><br><br>
+<span>"Sometimes, to find the answer, you have to ask the right questions"
+<br>-Elliot Alderson (S2E2)</span></section>
+</article>
+<article id="area-5" class="content flow">
+<section>
+<h2>Biolumineszenz</h2>
+<p>Dies geschieht mithilfe von Enzymen und dem Molekül <span>Luciferin</span>, abgeleiet von dem lateinischen Wort für "Lichtträger".&nbsp;Der&nbsp;Begriff wurde von dem französischen Chemiker Raphaël Dubois geprägt&nbsp;(19.&nbsp;Jahrhundert).</p></section>
+</article></div><br>
+<div class="grid-container">
+<article id="area-6" class="content flow">
+<section>
+<h2>Biolumineszenz</h2>
+<p>Dies geschieht mithilfe von Enzymen und dem Molekül <span>Luciferin</span>, abgeleiet von dem lateinischen Wort für "Lichtträger".&nbsp;Der&nbsp;Begriff wurde von dem französischen Chemiker Raphaël Dubois geprägt&nbsp;(19.&nbsp;Jahrhundert).</p></section>
+</article>
+<article id="area-7" class="content flow">
+<section>
+<h2>Biolumineszenz</h2>
+<p>Dies geschieht mithilfe von Enzymen und dem Molekül <span>Luciferin</span>, abgeleiet von dem lateinischen Wort für "Lichtträger".&nbsp;Der&nbsp;Begriff wurde von dem französischen Chemiker Raphaël Dubois geprägt&nbsp;(19.&nbsp;Jahrhundert).</p></section>
+</article>
+<article id="area-8" class="content flow">
+<section>
+<h2>Biolumineszenz</h2>
+<p>Dies geschieht mithilfe von Enzymen und dem Molekül <span>Luciferin</span>, abgeleiet von dem lateinischen Wort für "Lichtträger".&nbsp;Der&nbsp;Begriff wurde von dem französischen Chemiker Raphaël Dubois geprägt&nbsp;(19.&nbsp;Jahrhundert).</p></section>
+</article>
+<article id="area-9" class="content flow">
+<section>
+<h2>Biolumineszenz</h2>
+<p>Dies geschieht mithilfe von Enzymen und dem Molekül <span>Luciferin</span>, abgeleiet von dem lateinischen Wort für "Lichtträger".&nbsp;Der&nbsp;Begriff wurde von dem französischen Chemiker Raphaël Dubois geprägt&nbsp;(19.&nbsp;Jahrhundert).</p></section>
+</article>
+<article id="area-10" class="content flow">
+<section>
+<h2>Biolumineszenz</h2>
+<p>Dies geschieht mithilfe von Enzymen und dem Molekül <span>Luciferin</span>, abgeleiet von dem lateinischen Wort für "Lichtträger".&nbsp;Der&nbsp;Begriff wurde von dem französischen Chemiker Raphaël Dubois geprägt&nbsp;(19.&nbsp;Jahrhundert).</p></section>
+</article></div></main>
 
-<!-- IMPRESSUM -->
-<footer><span class="flex profil-links">
+<!-- ### Debugger: Auto-Refresh Page (-option)
+    <meta http-equiv="refresh" content="5">-->
+<!-- ### Debugger: Show Borders (-option)
+    <style>* {border: 1px dotted #00B140;}</style>-->
+<!-- ### Debugger: HTML-Analyzer JavaScript (-option)
+    <div id="analyzer" class="flex" style="background-color:#000000;color:#8dd88e"><h2>HTML-Analyzer</h2>
+    <h3>Tags:</h3><ul id="tagList"></ul>
+    <h3>Classes:</h3><ul id="classList"></ul>
+    <h3>IDs:</h3><ul id="idList"></ul></div>
+    <script src="assets/js/html-analyzer.js"></script>-->
 
-<!-- github.com/xuser123 -->
-<a id="githubIcon" href="https://www.github.com/xuser123" target="_blank">
-<img src="assets/img/ico/github.ico" alt="Github/xuser123"></a>&#32;
+<footer><div class="footer-container">
+<div class="leftside-profil-icons">
+<!-- GITHUB -->
+<a id="github-link" href="https://www.github.com/xuser123" target="_blank">
+<img src="assets/img/ico/github.ico" alt="Github/xuser123"></a>
+<!-- INSTAGRAM -->
+<a id="instagram-link" href="https://www.instagram.com/jumicontent" target="_blank">
+<img src="assets/img/ico/instagram.ico" alt="Instagram/jumicontent"></a></div>
+<!-- EMAIL -->
+<span id="contact-email">contact&#64;jumi.biz</span>
+<div class="rightside-site-features">
+<!-- EXPORT PDF -->
+<a id="export-icon" href="#">
+<img src="assets/img/ico/export-pdf.ico" alt="Download as PDF"></a>
+<!-- GO TOP -->
+<a id="goto-top" href="#">
+<img src="assets/img/ico/go-top.ico" alt="Zum Seitenanfang"></a></div></div></footer>
+<!-- SCRIPTS -->
+<script defer src="assets/js/menu.js"></script>
+<script defer src="assets/js/modal.js"></script>
 
-<!-- instagram.com/jumicontent -->
-<a id="instagramIcon" href="https://www.instagram.com/jumicontent" target="_blank">
-<img src="assets/img/ico/instagram.ico" alt="Instagram/jumicontent"></a></span>
-
-<!-- contact@jumi.biz -->
-<span class="jumi-email">contact&#64;jumi.biz</span>
-
-<span class="flex siteFeatures">
-<a id="exportIcon"><img src="assets/img/ico/exportPDF.ico" alt="Export as PDF"></a>&#32;
-
-<!-- Zum Seitenanfang -Feature -->
-<a id="scrollToTop" href="#">
-<img src="assets/img/ico/backTop.ico" alt="Zum Seitenanfang"></a>
-
-</span></footer>
-
-<!-- HTML-Analyzer Debugging ->
-<h1>HTML-Analyzer</h1>
-<div class="flex">
-<h3>Tags:</h3>
-<ul id="tagList"></ul>
-<h3>Classes:</h3>
-<ul id="classList"></ul>
-<h3>IDs:</h3>
-<ul id="idList"></ul>
-</div>
-<script src="assets/js/html-analyzer.js"></script>
-<!- HTML-Analyzer Debugging -->
-
-<!-- JavaScricpt -->
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/modal.js"></script>
-<!--<script src="assets/js/jspdf.umd.min.js"></script>-->
-<!-- https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js-->
-<!-- for Easteregg Project:-->
-<!--><script src="assets/js/read.js"></script>-->
-
-</body>
-</html>
+</body></html>
