@@ -1,17 +1,26 @@
+@keyframes neon {
+from {text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+} to {text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);}
 }
-
-/* motion reduce option */
-@media (prefers-reduced-motion: reduce) {
-    /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-     html:focus-within {
-         scroll-behavior: auto;
-    }
-     *, *::before, *::after {
-         animation-duration: 0.01ms !important;
-         animation-iteration-count: 1 !important;
-         scroll-behavior: auto !important;
-         transition-duration: 0.01ms !important;
-    }
+@keyframes neon-box {
+    from {box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),0 0 24px rgba(202, 228, 225, 0.34), 0 0 9.6px rgba(30, 132, 242, 0.52), 0 0 16.8px rgba(30, 132, 242, 0.92), 0 0 27.2px rgba(30, 132, 242, 0.78), 0 0 43.2px rgba(30, 132, 242, 0.92);}
+    to {box-shadow:
+    0 0 6px rgba(202, 228, 225, 0.98),
+    0 0 24px rgba(202, 228, 225, 0.42),
+    0 0 9.6px rgba(30, 132, 242, 0.58),
+    0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);}
 }
 /* menu-list opening animation */
  @keyframes clipPathCircleOpen {
@@ -292,72 +301,4 @@
     }
 }
 
-figure figcaption {
-    align-items: center;
-    color: var(--matrix-green);
-    display: flex;
-    flex-direction: column;
-    font-family: 'Sarpanch', sans-serif;
-    font-size: 0.6em;
-    justify-content: center;
-    text-shadow: 1.5px 2px #000;
-}
-figure > img {
-    border-radius: 0.5rem;
-}
-[id*="modalTrigger"] {
-    border-radius: 3px;
-    cursor: pointer;
-}
-[id*="modalTrigger"]:hover,
-[id*="modalTrigger"]:focus {
-    animation: neon-box 0.08s ease-in-out infinite alternate;
-    opacity: 0.85;
-    outline: none;
-    box-shadow:none;
-}
 
-dialog[open] {
-    -webkit-animation: show 250ms ease normal;
-    background-color: var(--shadow-grey);
-    border-radius: 0.3rem;
-    border: none;
-    padding: 1rem;
-    box-shadow:var(--space-motion);
-}
-dialog.hide {
-    -webkit-animation: hide 150ms ease normal;
-}
-dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-dialog > figure {
-    margin:0;
-    color: var(--matrix-green);
-}
-dialog [id*="closeModal"] {
-    align-items: center;
-    background-color: transparent;
-    border-radius: 2px;
-    border: none;
-    bottom: 1rem;
-    color: var(--laser-blue);
-    display: flex;
-    font-size: 3rem;
-    height: 1em;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 1rem;
-    text-align: center;
-    width: 1em;
-    cursor: pointer;
-}
-dialog [id*="closeModal"]:hover,
-dialog [id*="closeModal"]:focus {
-    animation: neon .08s ease-in-out infinite alternate;
-    color: var(--neon-pink);
-    border: none;
-    outline: none;
-    text-decoration: none;
