@@ -1,0 +1,794 @@
+<h1>Informationssicherheit</h1>
+<h2>Schutzziele der Informationssicherheit</h2>
+<ol>
+<li><strong>Vertraulichkeit</strong> Nur autorisierte Zugriffe</li>
+<li><strong>Integrität</strong> Schutz vor Manipulation</li>
+<li><strong>Verfügbarkeit</strong> Ausfallsicherheit</li>
+<li><strong>Authentizität</strong> Verifizierte Quellen</li>
+<li><strong>Zurechenbarkeit</strong> Nachverfolgbarkeit von Aktivitäten</li>
+<li><strong>Unbestreitbarkeit</strong> Sicherstellung durchgeführter Handlungen</li>
+</ol>
+<h2>Datensicherheit</h2>
+<p>Daten technisch und organisatorisch vor unbefugtem Zugriff, Verlust, Diebstahl oder Beschädigung schützen.
+- Verschlüsselung
+- Firewalls
+    - paketorientiert (klassisch)
+    - zustandsorientierte Paketüberprüfung
+        - <strong>Stateful Packet Inspection</strong> (SPI)
+        - Zuordnung aktiver Sitzungen
+            - auf Vermittlungsschicht (OSI-Schicht 3)
+        - Zwischenspeicher für Verbindungsstatus
+            - in dynamischen Zustandstabellen
+        - Auswertung durch TCP SYN-/ACK-/FIN-Bits
+            - auch (zustandslose) UDP-Datenpakete
+    - Mehrstufige Konzepte
+    - Regeln für Endpoints und Clients
+- Zugriffskontrollen
+- Sicherheitsaudits.</p>
+<h3>Netzwerksegmentierung durch VLAN</h3>
+<ul>
+<li>Netze logisch trennen</li>
+<li>Datenverkehr priorisieren</li>
+<li>Last verteilen</li>
+<li>Broadcast in Domänen unterteilen</li>
+<li>Kollisionsbereiche minimieren</li>
+<li>Gruppenzugehörigkeiten flexibel anpassen</li>
+<li>Datenverkehr spezifisch trennen<ul>
+<li>VLANs über mehrere VLAN-fähige Switche<ul>
+<li>z.B. Trunk Ports</li>
+<li>etikettierte Ethernet-Frames<ul>
+<li>Kennzeichnung der VLAN-Zugehörigkeit</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Datenschutz</h2>
+<h3>Gesetze und Regelungen</h3>
+<ul>
+<li>Vorschriften aus <strong>Kapitel 3 der DSGVO</strong></li>
+<li><strong>personenbezogene Daten</strong> schützen</li>
+<li>sensible Informationen sichern</li>
+<li>Privatsphäre und Rechte einhalten</li>
+<li>Informationspflichten erfüllen</li>
+<li>Rechte der Personen im Datensatz</li>
+<li><strong>Datenminimierung</strong><ul>
+<li>Nur zweckgebundene Daten sammeln<ul>
+<li>für unbedingt notwendige Verarbeitungszwecke</li>
+</ul>
+</li>
+<li>Schutz vor übermäßiger Speicherung</li>
+</ul>
+</li>
+</ul>
+<h3>Rechtliche und ethische Verantwortung von Organisationen und Einzelpersonen über das angemessene</h3>
+<ul>
+<li>sammeln,</li>
+<li>verarbeiten,</li>
+<li>speichern,</li>
+<li>schützen personenbezogene Daten.</li>
+</ul>
+<h2>Maßnahmen</h2>
+<ul>
+<li>organisatorisch</li>
+<li>technisch</li>
+<li>personell</li>
+</ul>
+<h2>IT-Sicherheitsmanagement</h2>
+<ul>
+<li><strong>ISMS</strong> Informationssicherheits-Managementsystem</li>
+</ul>
+<h2>Standards</h2>
+<ul>
+<li>ISO/IEC 27000<ul>
+<li>Überblick über Zusammenhänge in ISO/IEC 2700x-Familie</li>
+<li>grundlegende Begriffe und Definitionen für ISMS</li>
+</ul>
+</li>
+<li>ISO/IEC 27001<ul>
+<li>inter. Norm für ISMS</li>
+<li>erfüllt Anforderung für Zertifizierungsmöglichkeit</li>
+</ul>
+</li>
+<li>ISO 27002 (Code of practice for information security controls)<ul>
+<li>unterstützt bei Auswahl und Umsetzung von ISO/IEC 27001 Maßnahmen</li>
+<li>Sicherheitsmanagement aufbauen und verankern</li>
+</ul>
+</li>
+<li>BSI IT-Grundschutz</li>
+<li>BSI-Standard 200-1<ul>
+<li>allgemeine Anforderungen an ISMS</li>
+</ul>
+</li>
+<li>BSI-Standard 200-2<ul>
+<li>Basis der BSI-Methodik</li>
+<li>Aufbau des ISMS</li>
+</ul>
+</li>
+</ul>
+<h2>ISO/IEC 27001 -Zertifizierung</h2>
+<ul>
+<li>international anerkannter Standard</li>
+<li>Vertrauensgewinn<ul>
+<li>bei Partner</li>
+<li>bei Kunden</li>
+<li>in der Öffentlichkeit</li>
+</ul>
+</li>
+<li>Wettbewerbsvorteil</li>
+<li>Informationssicherheits-Managementsystem (ISMS)<ul>
+<li>Compliance-Anforderungen sicherstellen</li>
+<li>IT-Risiken minimieren</li>
+<li>IT-Sicherheitsverfahren etablieren</li>
+<li>Qualität von IT-Systemen nachhaltig optimieren</li>
+<li>Sicherheitslücken systematisch aufdecken</li>
+<li>Abschätzung möglicher Schäden und Folgekosten</li>
+</ul>
+</li>
+</ul>
+<h2>Vorschriften</h2>
+<ul>
+<li>Basel I und II</li>
+<li>SOX</li>
+</ul>
+<h1>IT-Grundschutz</h1>
+<ul>
+<li>Elementare Gefährdungen</li>
+<li>Prozess Bausteine</li>
+<li>System Bausteine</li>
+</ul>
+<h2>Elementare Gefährdungen</h2>
+<ul>
+<li>Feuer ,</li>
+<li>Ungünstige klimatische Bedingungen ,</li>
+<li>Wasser ,</li>
+<li>Verschmutzung, Staub, Korrosion ,</li>
+<li>Naturkatastrophen ,</li>
+<li>Katastrophen im Umfeld ,</li>
+<li>Großereignisse im Umfeld ,</li>
+<li>Ausfall oder Störung der Stromversorgung ,</li>
+<li>Ausfall oder Störung von Kommunikationsnetzen ,</li>
+<li>Ausfall oder Störung von Versorgungsnetzen ,</li>
+<li>Ausfall oder Störung von Dienstleistungsunternehmen ,</li>
+<li>Elektromagnetische Störstrahlung ,</li>
+<li>Abfangen kompromittierender Strahlung ,</li>
+<li>Ausspähen von Informationen (Spionage) ,</li>
+<li>Abhören ,</li>
+<li>Diebstahl von Geräten, Datenträgern oder Dokumenten ,</li>
+<li>Verlust von Geräten, Datenträgern oder Dokumenten ,</li>
+<li>Fehlplanung oder fehlende Anpassung ,</li>
+<li>Offenlegung schützenswerter Informationen ,</li>
+<li>Informationen oder Produkte aus unzuverlässiger Quelle ,</li>
+<li>Manipulation von Hard- oder Software  ,</li>
+<li>Manipulation von Informationen ,</li>
+<li>Unbefugtes Eindringen in IT-Systeme ,</li>
+<li>Zerstörung von Geräten oder Datenträgern ,</li>
+<li>Ausfall von Geräten oder Systemen ,</li>
+<li>Fehlfunktion von Geräten oder Systemen ,</li>
+<li>Ressourcenmangel ,</li>
+<li>Software-Schwachstellen oder -Fehler ,</li>
+<li>Verstoß gegen Gesetze oder Regelungen ,</li>
+<li>Unberechtigte Nutzung oder Administration von Geräten und Systemen ,</li>
+<li>Fehlerhafte Nutzung oder Administration von Geräten und Systemen ,</li>
+<li>Missbrauch von Berechtigungen ,</li>
+<li>Personalausfall ,</li>
+<li>Anschlag ,</li>
+<li>Nötigung, Erpressung oder Korruption ,</li>
+<li>Identitätsdiebstahl ,</li>
+<li>Abstreiten von Handlungen ,</li>
+<li>Missbrauch personenbezogener Daten ,</li>
+<li>Schadprogramme ,</li>
+<li>Verhinderung von Diensten (Denial of Service) ,</li>
+<li>Sabotage ,</li>
+<li>Social Engineering ,</li>
+<li>Einspielen von Nachrichten ,</li>
+<li>Unbefugtes Eindringen in Räumlichkeiten ,</li>
+<li>Datenverlust ,</li>
+<li>Integritätsverlust schützenswerter Informationen ,</li>
+<li>Schädliche Seiteneffekte IT-gestützter Angriffe ,</li>
+<li>Social Engineering ,</li>
+<li>Einspielen von Nachrichten ,</li>
+<li>Unbefugtes Eindringen in Räumlichkeiten ,</li>
+<li>Datenverlust ,</li>
+<li>Integritätsverlust schützenswerter Informationen ,</li>
+<li>Schädliche Seiteneffekte IT-gestützter Angriffe .</li>
+</ul>
+<h2>Prozess-Bausteine</h2>
+<p>Sicherheitsmanagement (ISMS)</p>
+<h3>Organisation und Personal (ORP)</h3>
+<ol>
+<li>Organisation</li>
+<li>Personal</li>
+<li>Sensibilisierung und Schulung zur Informationssicherheit</li>
+<li>Identitäts- und Berechtigungsmanagement</li>
+<li>Compliance Management (Anforderungsmanagement)</li>
+</ol>
+<h3>Konzepte und Vorgehensweisen</h3>
+<ul>
+<li>Kryptokonzept ,</li>
+<li>Datenschutz ,</li>
+<li>Datensicherungskonzept ,</li>
+<li>Löschen und Vernichten ,</li>
+<li>Informationssicherheit auf Auslandsreisen ,</li>
+<li>Software-Entwicklung ,</li>
+<li>Informationsaustausch ,</li>
+<li>Entwicklung von Webanwendungen ,</li>
+<li>Geheimschutz VS-NUR FÜR DEN DIENSTGEBRAUCH (VS-NfD) .</li>
+</ul>
+<h3>Betrieb</h3>
+<h4>Eigener Betrieb</h4>
+<h5>Kern-IT-Betrieb</h5>
+<ul>
+<li>Allgemeiner IT-Betrieb</li>
+<li>Ordnungsgemäße IT-Administration</li>
+<li>Patch- und Änderungsmanagement</li>
+<li>Schutz vor Schadprogrammen</li>
+<li>Protokollierung</li>
+<li>Software-Tests und -Freigaben</li>
+<li>Systemmanagement</li>
+</ul>
+<h5>Weiterführende Aufgaben</h5>
+<ul>
+<li>Archivierung</li>
+<li>Telearbeit</li>
+<li>Fernwartung</li>
+<li>NTP-Zeitsynchronisation</li>
+</ul>
+<h4>Betrieb von Dritten</h4>
+<ul>
+<li>Cloud-Nutzung</li>
+<li>Nutzung von Outsourcing</li>
+</ul>
+<h4>Betrieb für Dritte</h4>
+<ul>
+<li>Anbieten von Outsourcing</li>
+</ul>
+<h3>Detektion und Reaktion</h3>
+<ul>
+<li>Detektion von sicherheitsrelevanten Ereignissen</li>
+</ul>
+<h5>Security Incident Management</h5>
+<ul>
+<li>Behandlung von Sicherheitsvorfällen</li>
+<li>Vorsorge für die IT-Forensik</li>
+<li>Bereinigung weitreichender Sicherheitsvorfälle</li>
+</ul>
+<h5>Sicherheitsprüfungen</h5>
+<ul>
+<li>Audits und Revisionen</li>
+<li>Revisionen auf Basis des Leitfadens IS-Revision</li>
+<li>Notfallmanagement</li>
+</ul>
+<h2>System-Bausteine</h2>
+<h3>APP: Anwendungen</h3>
+<h5>APP.1 Client-Anwendungen</h5>
+<ul>
+<li>APP.1.1 Office-Produkte</li>
+<li>APP.1.2 Webbrowser</li>
+<li>APP.1.4 Mobile Anwendungen (Apps)</li>
+</ul>
+<h5>APP.2 Verzeichnisdienst</h5>
+<ul>
+<li>APP.2.1 Allgemeiner Verzeichnisdienst</li>
+<li>APP.2.2 Active Directory Domain Services</li>
+<li>APP.2.3 OpenLDAP</li>
+</ul>
+<h5>APP.3 Netzbasierte Dienste</h5>
+<ul>
+<li>APP.3.1 Webanwendungen und Webservices</li>
+<li>APP.3.2 Webserver</li>
+<li>APP.3.3 Fileserver</li>
+<li>APP.3.4 Samba</li>
+<li>APP.3.6 DNS-Server</li>
+</ul>
+<h5>APP.4 Business-Anwendungen</h5>
+<ul>
+<li>APP.4.2 SAP-ERP-System</li>
+<li>APP.4.3 Relationale Datenbanken</li>
+<li>APP.4.4 Kubernetes</li>
+<li>APP.4.6 SAP ABAP-Programmierung</li>
+</ul>
+<h5>APP.5 E-Mail/Groupware/Kommunikation</h5>
+<ul>
+<li>APP.5.2 Microsoft Exchange und Outlook</li>
+<li>APP.5.3 Allgemeiner E-Mail-Client und -Server</li>
+<li>APP.5.4 Unified Communications und Collaboration (UCC)</li>
+<li>APP.6 Allgemeine Software</li>
+<li>APP.7 Entwicklung von Individualsoftware</li>
+</ul>
+<h3>SYS: IT-Systeme</h3>
+<h5>SYS.1 Server</h5>
+<ul>
+<li>SYS.1.1 Allgemeiner Server</li>
+<li>SYS.1.2 Windows Server</li>
+<li>SYS.1.2.2 Windows Server 2012</li>
+<li>SYS.1.2.3 Windows Server</li>
+<li>SYS.1.3 Server unter Linux und Unix</li>
+<li>SYS.1.5 Virtualisierung</li>
+<li>SYS.1.6 Containerisierung</li>
+<li>SYS.1.7 IBM Z</li>
+<li>SYS.1.8 Speicherlösungen</li>
+<li>SYS.1.9 Terminalserver</li>
+</ul>
+<h5>SYS.2 Desktop-Systeme</h5>
+<ul>
+<li>SYS.2.1 Allgemeiner Client</li>
+<li>SYS.2.2 Windows-Clients</li>
+<li>SYS.2.2.3 Clients unter Windows</li>
+<li>SYS.2.3 Clients unter Linux und Unix</li>
+<li>SYS.2.4 Clients unter macOS</li>
+<li>SYS.2.5 Client-Virtualisierung</li>
+<li>SYS.2.6 Virtual Desktop Infrastructure</li>
+</ul>
+<h5>SYS.3 Mobile Devices</h5>
+<ul>
+<li>SYS.3.1 Laptops</li>
+<li>SYS.3.2 Tablet und Smartphone</li>
+<li>SYS.3.2.1 Allgemeine Smartphones und Tablets</li>
+<li>SYS.3.2.2 Mobile Device Management (MDM)</li>
+<li>SYS.3.2.3 iOS (for Enterprise)</li>
+<li>SYS.3.2.4 Android</li>
+<li>SYS.3.3 Mobiltelefon</li>
+</ul>
+<h5>SYS.4 Sonstige Systeme</h5>
+<ul>
+<li>SYS.4.1 Drucker, Kopierer und Multifunktionsgeräte</li>
+<li>SYS.4.3 Eingebettete Systeme</li>
+<li>SYS.4.4 Allgemeines IoT-Gerät</li>
+<li>SYS.4.5 Wechseldatenträger</li>
+</ul>
+<h3>Industrielle IT</h3>
+<h5>IND.1 Prozessleit- und Automatisierungstechnik</h5>
+<h5>IND.2 ICS-Komponenten</h5>
+<ul>
+<li>IND.2.1 Allgemeine ICS-Komponente</li>
+<li>IND.2.2 Speicherprogrammierbare Steuerung (SPS)</li>
+<li>IND.2.3 Sensoren und Aktoren</li>
+<li>IND.2.4 Maschine</li>
+<li>IND.2.7 Safety Instrumented Systems</li>
+</ul>
+<h5>IND.3 Produktionsnetze</h5>
+<ul>
+<li>IND.3.2 Fernwartung im industriellen Umfeld</li>
+</ul>
+<h3>Netze und Kommunikation</h3>
+<h4>NET.1 Netze</h4>
+<ul>
+<li>NET.1.1 Netzarchitektur und -design</li>
+<li>NET.1.2 Netzmanagement</li>
+</ul>
+<h4>NET.2 Funknetze</h4>
+<ul>
+<li>NET.2.1 WLAN-Betrieb</li>
+<li>NET.2.2 WLAN-Nutzung</li>
+</ul>
+<h4>NET.3 Netzkomponenten</h4>
+<ul>
+<li>NET.3.1 Router und Switches</li>
+<li>NET.3.2 Firewall</li>
+<li>NET.3.3 VPN<ul>
+<li>logisches Netzwerk</li>
+<li>getunnelte Verbindung<ul>
+<li>Sicherheit im unsicheren Netzwerk</li>
+</ul>
+</li>
+<li>verschlüsselte Protokolle<ul>
+<li>L2TP over IPsec</li>
+<li>SSL-VPN</li>
+<li>OpenVPN</li>
+<li>Layer-2-VPN</li>
+</ul>
+</li>
+<li><strong>End-to-Site</strong><ul>
+<li>Host-to-LAN</li>
+<li>Host-to-Gateway</li>
+<li>Remote-Access-VPN</li>
+</ul>
+</li>
+<li><strong>Site-to-Site</strong><ul>
+<li>LAN-to-LAN</li>
+<li>Gateway-to-Gateway</li>
+</ul>
+</li>
+<li><strong>End-to-End</strong><ul>
+<li>Host-to-Host</li>
+<li>Remote-Desktop-VPN</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>NET.3.4 Network Access Control</li>
+</ul>
+<h4>NET.4: Telekommunikation</h4>
+<ul>
+<li>NET.4.1 TK-Anlagen</li>
+<li>NET.4.2 VoIP</li>
+<li>NET.4.3 Faxgeräte und Faxserver</li>
+</ul>
+<h4>INF: Infrastruktur</h4>
+<ul>
+<li>INF.1 Allgemeines Gebäude</li>
+<li>INF.2 Rechenzentrum sowie Serverraum</li>
+<li>INF.5 Raum sowie Schrank für technische Infrastruktur</li>
+<li>INF.6 Datenträgerarchiv</li>
+<li>INF.7 Büroarbeitsplatz</li>
+<li>INF.8 Häuslicher Arbeitsplatz</li>
+<li>INF.9 Mobiler Arbeitsplatz</li>
+<li>INF.10 Besprechungs-, Veranstaltungs- und Schulungsräume</li>
+<li>INF.11 Allgemeines Fahrzeug</li>
+<li>INF.12 Verkabelung</li>
+<li>INF.13 Technisches Gebäudemanagement</li>
+<li>INF.14 Gebäudeautomation</li>
+</ul>
+<h3>Schutzbedarfsanalyse</h3>
+<ul>
+<li>Beauftragte</li>
+<li>Sicherheitsbewusstseins</li>
+<li>Prävention<ul>
+<li>Grundschutz</li>
+</ul>
+</li>
+<li>Security by Design</li>
+<li>Security by Default</li>
+<li>Datensicherung<ul>
+<li>Backup auf Speichermedien<ul>
+<li>inkrementell</li>
+<li>differenziell</li>
+<li>voll</li>
+<li>Rotationsschema<ul>
+<li>Generationenprinzip</li>
+<li>Großvater-Vater-Sohn-Prinzip<ul>
+<li>20 Speichermedien bei 5-Tage-Wochen-Zyklus<ul>
+<li>4 Sohn-Medien für Tage (inkrementell)</li>
+<li>4 Vater-medien für Wochen (voll)</li>
+<li>12 Großvater-Medien für Monate (voll)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Backupmedien-Kriterien<ul>
+<li>Lebensdauer</li>
+<li>Zugriffsgeschwindigkeit</li>
+<li>Kosten</li>
+<li>Störanfälligkeit</li>
+<li>Kapazität</li>
+</ul>
+</li>
+<li>Hot/Cold Backup</li>
+<li>Sicherungswürdige Daten</li>
+<li>Risikoanalyse<ul>
+<li>Risiken identifizieren</li>
+<li>Auswirkungen analysieren bei...<ul>
+<li>Datenverlust</li>
+<li>Verstoß gegen Gesetze, Vorschriften oder Verträge</li>
+<li>Missbrauch von personenbezogener Daten</li>
+<li>finanziellem Schaden</li>
+</ul>
+</li>
+<li>Auswirkung durch kategorische Kriterien priorisieren<ul>
+<li>Normal:<ul>
+<li>geringfügige juristische Konsequenzen</li>
+<li>minimale Auswirkungen auf Betroffene</li>
+<li>nachhaltig-erschüttertes Ansehen bei Kunden und Partnern</li>
+<li>unter 50.000 Euro verlust</li>
+</ul>
+</li>
+<li>Hoch:<ul>
+<li>schwerwiegende juristische Konsequenzen</li>
+<li>massive Auswirkungen auf Betroffene</li>
+<li>erschüttertes Ansehen bei Kunden und Partnern</li>
+<li>50.000 bis 500.000 Euro verlust</li>
+</ul>
+</li>
+<li>Sehr hoch:<ul>
+<li>existenzbedrohende juristische Konsequenzen</li>
+<li>existenzbedrohende Auswirkungen auf Betroffene</li>
+<li>nachhaltig-erschüttertes Ansehen bei Kunden und Partnern</li>
+<li>über 500.000 Euro verlust</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Angriffsrisiko</li>
+<li>Objekte mit besonderem Sicherheitsrisiko</li>
+<li>konkrete Bedrohungsszenarien</li>
+<li>mögliche Schäden durch Angriffe</li>
+<li>aktuelles Gefährdungspotenzial</li>
+<li>geeignete Maßnahmen</li>
+<li>Kosten-Nutzen / Risikoberechnung</li>
+<li><strong>Nutzwertanalyse</strong><ul>
+<li>Kriterien<ul>
+<li>Preis</li>
+<li>Qualität</li>
+</ul>
+</li>
+<li>Punkteskala</li>
+<li>Summenwerte vergleichen<ul>
+<li>Gewichtung * Punktzahl</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Vermeidungsstrategien</li>
+<li>Verschrottung<ul>
+<li>sichere Löschung vor der Verschrottung<ul>
+<li>durch technische Verfahren nach <strong>DIN 66399</strong><ul>
+<li>mechanisch</li>
+<li>magnetisch</li>
+<li>thermische</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>umwelt- und fachgerechte Entsorgung<ul>
+<li>durch zertifiziertes Entsorgungsunternehmen</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3>Schadprogramme</h3>
+<ul>
+<li>Virus</li>
+<li>Worm</li>
+<li>Rootkit</li>
+<li>Botnet</li>
+<li>Trojan</li>
+<li>Malware</li>
+<li>Ransomware</li>
+<li>Spyware</li>
+<li>Adware</li>
+<li>Scareware</li>
+<li>Hoax</li>
+<li>Dialer</li>
+<li>Keylogger</li>
+</ul>
+<h3>Hacker</h3>
+<ul>
+<li>White Hat</li>
+<li>Black Hat</li>
+<li>Grey Hat</li>
+<li>Red Hat</li>
+<li>Blue Hat</li>
+<li>Packet Hat</li>
+<li>Cracker</li>
+<li>Script-Kiddies</li>
+</ul>
+<h3>Methoden</h3>
+<ul>
+<li>Spam</li>
+<li>Phishing</li>
+<li>Sniffing</li>
+<li>Spoofing</li>
+<li>Man-in-the-Middle</li>
+<li>SQL-Injection</li>
+<li>Cross-Site-Scripting</li>
+<li>CSRF</li>
+<li>Session Hijacking</li>
+<li>DoS</li>
+<li>DDos</li>
+<li>Exploit of a Mom</li>
+<li>Social-Engineering</li>
+<li>Backdoor</li>
+<li>Exploit</li>
+<li>0-Day-Exploit</li>
+<li>Rootkit</li>
+</ul>
+<h3>Kryptografie</h3>
+<ul>
+<li>Verschlüsselungstechniken<ul>
+<li>symmetrisch</li>
+<li>asymmetrisch</li>
+</ul>
+</li>
+<li>Hashverfahren</li>
+<li>Zertifikate</li>
+<li>Certificated Authenticators (CAs)</li>
+<li>Digitale Signaturen</li>
+<li>PKI</li>
+<li>Techniken<ul>
+<li>HTTPS over TLS</li>
+<li>zentral-verschlüsselte E-Mails<ul>
+<li>digital-signiert durch TLS/SSL-Zertifikate<ul>
+<li><strong>POP3</strong> Post-Office Protocol (Port 995)</li>
+<li><strong>IMAP</strong> Internet Message Access Protocol (Port 993)</li>
+<li><strong>SMTP</strong> Simple Mail Transfer Protocol (Port 465/587)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SSH vs. Telnet</li>
+<li>Wireless Personal-Key-Authentication (WPA/PSK)<ul>
+<li><strong>SSID</strong> Service Set Identifier<ul>
+<li>IEEE-Norm 802.11</li>
+<li>Netzwerkname</li>
+<li>bis 32 Byte ASCII Zeichenlänge</li>
+<li>Broadcastdomain</li>
+</ul>
+</li>
+<li>Multi-SSID<ul>
+<li>mehrere Broadcastdomänen verwalten</li>
+</ul>
+</li>
+<li>MAC-Filter (-Whitelist)</li>
+<li>WPS</li>
+<li>Wi-Fi Easy Connect</li>
+<li>WEP</li>
+<li>Enterprise</li>
+<li>RADIUS (-Server)</li>
+<li>Verschlüsselungsstandards:<ul>
+<li><strong>AES</strong> Advanced Encryption Standard</li>
+<li><strong>TKIP</strong> Temporal Key Integrity Protocol</li>
+<li><strong>SAE</strong> Simultaneous Authentication of Equals</li>
+</ul>
+</li>
+<li>Optional: Zusätzlicher Schutz durch VPN-Verbindung</li>
+</ul>
+</li>
+<li>WPA2-Personal/Enterprise</li>
+<li>WPA3-Personal/Enterprise</li>
+<li>Endpoint-Security<ul>
+<li>Zugriffskontrolle</li>
+<li>Isolation</li>
+<li>Überwachung</li>
+<li>Verwaltung</li>
+<li>Whitelists oder Blacklists</li>
+</ul>
+</li>
+<li>Application Controlled</li>
+<li>Datenverschlüsselung</li>
+<li>Virenscanner</li>
+<li>Firewall<ul>
+<li>Packet Filter</li>
+<li>Stateful Packet Inspection</li>
+<li>Application Firewall</li>
+<li>WAF</li>
+</ul>
+</li>
+<li>DMZ</li>
+<li>Portforwarding</li>
+</ul>
+</li>
+<li>Authentifizierung</li>
+<li>Autorisierung</li>
+<li>MFA</li>
+<li>Passwortrichtlinien (Password-Policy)<ul>
+<li>Entropie durch Zeichenlänge und -kombination<ul>
+<li>Mindestlänge (8,12 oder 22 Zeichen)</li>
+<li>Groß- und Kleinbuchstaben, Zahlen und Sonderzeichen
+        - entspricht <strong>94 mögliche Zeichen</strong>
+            - 26 Großbuchstaben
+            - 26 Kleinbuchstaben
+            - 10 Zahlen
+            - 32 Sonderzeichen
+        - 2(hoch)n=94(hoch)L
+            - n=(Bitstärke), L=(Passwortlänge)
+                - 8 Zeichen = 2(hoch)n=94(hoch)8
+                    - N =~ 52,8
+                    - entspricht 53-bit
+                - 64-bit = 2(hoch)64=94(hoch)L
+                    - L =~ 11,3
+                    - entspricht 12 Zeichen
+                - 128-bit = 2(hoch)128=94(hoch)L
+                    - L =~ 21,5
+                    - entspricht 22 Zeichen</li>
+</ul>
+</li>
+<li>Keine Logindatenbestandteile im Passwort selbst</li>
+<li>Ablaufdatum für Passwörter (z.B. 30-90 Tage)</li>
+<li>Begrenzte Loginversuche</li>
+<li>Kontosperre bei Login-Fehlversuchen</li>
+<li>Optional: Einpräsame Passwortsätze</li>
+<li>Optional: Multi-Factor-Authentication (MFA)</li>
+</ul>
+</li>
+</ul>
+<h2>Phasen eines Sicherheitsprozess</h2>
+<ul>
+<li>nach BSI-Standard 100-2</li>
+<li>Initiierung<ul>
+<li>Verantwortung übernehmen<ul>
+<li>durch Leitungsebene</li>
+</ul>
+</li>
+<li>Prozess konzepieren und planen</li>
+<li>Leitlinien erstellen</li>
+<li>Organisationsstruktur aufbauen<ul>
+<li>Informationssicherheits-Management</li>
+</ul>
+</li>
+<li>Ressourcen bereitstellen<ul>
+<li>finanziel</li>
+<li>personel</li>
+<li>zeitlich</li>
+</ul>
+</li>
+<li>Mitarbeitende in Prozess einbinden</li>
+</ul>
+</li>
+<li>Konzept erstellen</li>
+<li>Konzept umsetzen</li>
+<li>Prozess im laufenden Betrieb aufrechterhalten<ul>
+<li>kontinuierlich verbessern</li>
+</ul>
+</li>
+</ul>
+<h2>Unterbrechungsfreie Stromversorgung (USV)</h2>
+<ul>
+<li>Klassifizierung nach <strong>IEC 62040-3</strong></li>
+<li>
+<p>3 Klassen:</p>
+<ul>
+<li><strong>Klasse 1 VFI</strong> Voltage and Frequency Independent<ul>
+<li>Online-USV, schützt vor Folgen bei...<ul>
+<li>Stromausfall</li>
+<li>Unterspannung</li>
+<li>Überspannung</li>
+<li>Frequenzschwankung</li>
+</ul>
+</li>
+<li>permanente Sinusspannung am Ausgang</li>
+<li>dauerhafte Versorgung<ul>
+<li>ohne Einschränkungen</li>
+</ul>
+</li>
+<li>gleichzeitige Akku-aufladung</li>
+<li>Eingangsspannung kann schwanken<ul>
+<li>zwischen 160 und 290 Volt</li>
+</ul>
+</li>
+<li>Ausgangsspannung entspricht Sinuskurve<ul>
+<li>keine Störspannungen</li>
+<li>keine elektromagnetischen Einflüsse</li>
+<li>keine Frequenzstörungen</li>
+<li>keine Spannungsverzerungen</li>
+</ul>
+</li>
+<li>unterbrechungsfreier Übergang auf Akkubetrieb</li>
+</ul>
+</li>
+<li><strong>Klasse 2 VI</strong> Voltage Independent<ul>
+<li>Netzinteraktive USV, schützt vor Folgen bei...<ul>
+<li>Stromausfall</li>
+<li>Unterspannung</li>
+<li>Überspannung</li>
+</ul>
+</li>
+<li>2-4 ms Umschaltzeit<ul>
+<li>von Akku- zum Netzbetrieb</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Klasse 3 VFD</strong> Voltage and Frequency Dependent<ul>
+<li>Offline- / Standby-USV, schützt vor Folgen bei...<ul>
+<li>Stromausfall...</li>
+</ul>
+</li>
+<li>4-10 ms Umschaltzeit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>zentral-verschlüsselte E-Mails</p>
+<ul>
+<li>digital-signiert durch TLS/SSL-Zertifikate<ul>
+<li><strong>POP3</strong> Post-Office Protocol (Port 995)</li>
+<li><strong>IMAP</strong> Internet Message Access Protocol (Port 993)</li>
+<li><strong>SMTP</strong> Simple Mail Transfer Protocol (Port 465/587)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
