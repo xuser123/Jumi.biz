@@ -37,7 +37,9 @@
 .c{color:#119988 !important }
 .m{color:#FF00FF !important }
 .o{color:#FFA500 !important }
-.p{color:var(--neon-pink) !important }
+.pink{color:var(--neon-pink) !important }
+.green{color: var(--matrix-green) !important }
+.glow-font {animation: neon 1s ease-in-out infinite alternate;}
 @font-face {
 font-family:'Sarpanch';font-style:normal;src:
 url('../fonts/sarpanch-v11-latin-regular.woff2')
@@ -58,6 +60,7 @@ url('../fonts/C64_Pro-STYLE.ttf')
 /* Safari, Android, iOS */ format('truetype');
 }
 html {background-color: var(--shadow-grey);}
+*,*::before,*::after {box-sizing: border-box;}
 body {
   font-size: var(--base-font-size);
   height: 100%;/* Footer-Einfluss */
@@ -72,54 +75,7 @@ body::-webkit-scrollbar {
     width: 3px;
     min-height: 100vh;
 }
-/* reduced motion option */
-@media (prefers-reduced-motion: reduce) {
-    /* Remove all animations, transitions and smooth scroll if preferd */
-     html:focus-within {
-         scroll-behavior: auto;
-    }
-     *, *::before, *::after {
-         animation-duration: 0.01ms !important;
-         animation-iteration-count: 1 !important;
-         scroll-behavior: auto !important;
-         transition-duration: 0.01ms !important;
-    }
-}
-@media screen and (min-width: 35em) {
-    .grid-container {grid-template-areas:
-        "one one"
-        "two three"
-        "five five"
-        "four four";
-    }
-}
-@media screen and (min-width: 38em) {
-    .grid-container {grid-template-areas:
-        "one one"
-        "two five"
-        "three five"
-        "four four";
-    }
-}
-@media screen and (min-width: 54em) {
-    .grid-container {grid-template-areas:
-        "one one two"
-        "five five five"
-        "three four four";
-    }
-}
-@media screen and (min-width: 75em) {
-    .grid-container {grid-template-areas:
-        "one one two five"
-        "three four four five";
-    }
-}
-@media screen and (max-width: 35em) {
-    #tasten-steuerung {
-    display:none;
-    }
-}
-*,*::before,*::after {box-sizing: border-box;}
+*:visited {text-decoration: none;}
 main {
     background-color: #000;
     font-family: Arial, Verdana, Helvetica, sans-serif;
@@ -146,25 +102,71 @@ header::after {
     content: "";
     display: block;
 }
-header a {
-    color: var(--laser-blue);
-    text-decoration: none;
-}
 header a:hover,
 header a:focus {
-    animation: neon .08s ease-in-out infinite alternate;
+    animation: neon 0.08s ease-in-out infinite alternate;
+    transition: all ease-in-out 200ms;
     outline: none;
     color: var(--neon-pink);
     text-shadow: none;
 }
-.header-content {
+
+footer {
+    align-items: center;
+    background-color: var(--shadow-grey);
+    display: flex;
+    justify-content: space-around;
+    margin-top: auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+.top-left {
     transform: translateZ(0);
     align-items: center;
-    display: inline-block;
+    cursor: pointer;
     vertical-align: middle;
-    transform: translateZ(0);
+}
+.top-left a {
+    display: inline-flex;
+    text-decoration:none;
+    color:inherit;
+}
+.top-left a:focus {
+    #this-domain {
+        color: var(--neon-pink);
+        animation: neon 0.08s ease-in-out infinite alternate;
+    }
+}
+.top-left .jumi-logo{
+    max-width:20px;
+    display:flex;
+}
+#alien-head{
+    width: 20px;
+    height: 20px;
+    margin: 10px 1.2vw 0;
+    padding: 0 26px 0;
+    background-image: url('../img/ico/jumi.ico');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#this-domain,
+#this-domain:visited{
+    color: var(--laser-blue);
+    cursor: pointer;
+    font-size:1em;
+    text-decoration:none;
+    line-height: 1.337em;
+    text-align: center;
     text-shadow: 1.5px 2px #000;
-    animation: neon .08s ease-in-out infinite alternate;
+}
+#this-domain:hover,
+#this-domain:focus{
+    animation: neon 0.08s ease-in-out infinite alternate;
+    color: var(--neon-pink);
+    text-decoration:none;
 }
 .menu-button {
     background-color: transparent;
@@ -176,6 +178,10 @@ header a:focus {
     position: absolute;
     right: 0;
     top: 0;
+}
+.menu-button:focus {
+    outline: none;
+    border:none;
 }
 .hidden-menu {
     clip-path: inset(50%);
@@ -190,28 +196,30 @@ header a:focus {
 .menu-icon,
 .menu-icon::before,
 .menu-icon::after {
-     background-color: var(--laser-blue);
-     border-radius: 2px;
-     content: "";
-     display: block;
-     height: 3px;
-     transition: all ease-in-out 400ms;
-     width: 25px;
+    background-color: var(--laser-blue);
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 3px;
+    transition: all ease-in-out 300ms;
+    width: 25px;
 }
 .menu-icon::before {
-     transform: translateY(-6px);
+    transform: translateY(-6px);
 }
 .menu-icon::after {
-     transform: translateY(3px);
+    transform: translateY(3px);
 }
 [aria-expanded="true"] .menu-icon {
-     transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: var(--neon-pink);
 }
 [aria-expanded="true"] .menu-icon::before {
-     opacity: 0;
+    opacity: 0;
 }
 [aria-expanded="true"] .menu-icon::after {
     transform: translateY(-3px) rotate(-90deg);
+    background-color: var(--neon-pink);
 }
 .menu-button:hover .menu-icon,
 .menu-button:focus .menu-icon,
@@ -219,11 +227,10 @@ header a:focus {
 .menu-button:focus .menu-icon::before,
 .menu-button:hover .menu-icon::after,
 .menu-button:focus .menu-icon::after {
-    animation: neon-box .08s ease-in-out infinite alternate;
     background-color: var(--neon-pink);
+    animation: neon-box 0.08s ease-in-out infinite alternate;
     border: none;
     color: var(--neon-pink);
-    outline: none;
     text-shadow: none;
 }
 .menu-list {
@@ -237,7 +244,6 @@ header a:focus {
     right: 0;
     top: 54px;
     transform: translateZ(0);
-    transition: clip-path ease-in-out 350ms;
     z-index: 1;
 }
 .menu-list a {
@@ -265,13 +271,13 @@ header a:focus {
     display: none;
 }
 .list-icon {
-     align-items: center;
-     display: inline-block;
-     width: 30px;
-     padding: 0 4px;
-     margin: 0 18px;
-     text-align: left;
-     vertical-align: middle;
+    align-items: center;
+    display: inline-block;
+    width: 30px;
+    padding: 0 4px;
+    margin: 0 18px;
+    text-align: left;
+    vertical-align: middle;
 }
 .flex {
     display: flex;
@@ -312,7 +318,6 @@ header a:focus {
 .content:nth-child(5) {grid-area: five;}
 .content h1 {
     transform: translateZ(0);
-    animation: neon .08s ease-in-out infinite alternate;
     color: var(--matrix-green);
     font-family: 'Sarpanch', sans-serif;
     width: 100%; text-align: center;
@@ -340,8 +345,9 @@ header a:focus {
     text-decoration: none;
 }
 .content a:hover,
-.content a:focus {
-    animation: neon .08s ease-in-out infinite alternate;
+.content a:focus, {
+    animation: neon 0.08s ease-in-out infinite alternate;
+    transition: all ease-in-out 200ms;
     color: var(--neon-pink);
     text-shadow: none;
     border: none;
@@ -359,7 +365,8 @@ header a:focus {
 div [id*="modalTrigger"]:hover,
 div [id*="modalTrigger"]:focus {
     animation: neon-box 0.08s ease-in-out infinite alternate;
-    opacity: 0.85;
+    transition: all ease-in-out 100ms;
+    opacity: 0.80;
     outline: 1px solid var(--neon-pink);
     cursor: pointer;
 }
@@ -397,7 +404,8 @@ dialog [id*="closeModal"] {
 }
 dialog button:hover,
 dialog button:focus {
-    animation: neon .08s ease-in-out infinite alternate;
+    animation: neon 0.08s ease-in-out infinite alternate;
+    transition: all ease-in-out 300ms;
     border: none;
     color: var(--neon-pink);
     outline: none;
@@ -413,69 +421,6 @@ figure > img {
 figcaption > h2 {
     font-size:4vw;
     margin:0;
-}
-.quiz-answers {
-    animation: neon .08s ease-in-out infinite alternate;
-    color: var(--neon-pink);
-    width: 100%;
-    text-align:match-parent;
-    font-family:'c64-Pro';
-    display:inline-block;
-    font-size: large;
-}
-.jumi-font {
-    font-family: 'Sarpanch', sans-serif;
-    letter-spacing: 0.23rem;
-}
-.button-styled span {
-    background-color: #333;
-    border-radius: 3px;
-    border: 1px solid #000;
-    color: #fff;
-    display: inline-block;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 0.65em;
-    font-weight: 700;
-    height: 18px;
-    line-height: 1.6em;
-    outline: none;
-    padding: 0.1em 0.6em 0.1em;
-    text-align: center;
-    text-shadow: none;
-    box-shadow: 0 3px 0 rgba(0,0,0,0.25),
-    inset 0 2px 0 rgba(170,170,170,0.8);
-}
-footer {
-    align-items: center;
-    background-color: var(--shadow-grey);
-    display: flex;
-    justify-content: space-around;
-    margin-top: auto;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 5vw 12vh 3vw;
-    vertical-align: middle;
-    width: 100%;
-    height:100%;
-}
-.leftside-profil-icons,
-.rightside-site-features {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
-.leftside-profil-icons > * {
-    left: 0;
-    margin-right: 3vw;
-}
-.rightside-site-features > * {
-    right: 0;
-    margin-left: 3vw;
 }
 details {
     justify-content: space-around;
@@ -505,101 +450,12 @@ summary {
     background-color:var(--high-ground);
 }
 summary:hover, summary:focus {
-    animation: neon-box .08s ease-in-out infinite alternate;
+    animation: neon-box 0.08s ease-in-out infinite alternate;
+    transition: all ease-in-out 200ms;
     color: var(--neon-pink);
     border: none;
     outline: none;
     box-shadow: none;
 }
-div.menu-icon:hover,
-div.menu-icon:focus {
-    outline: none;
-    border: none;
-    animation: neon .08s ease-in-out infinite alternate;
-    outline: 1px var(--neon-pink);
-    color: var(--neon-pink);
-    text-shadow: none;
-}
-#jumi-logo {
-    text-align: center;
-    vertical-align: middle;
-    margin-left: 2vw;
-}
-.header-content#jumi-biz {
-    animation: neon .08s ease-in-out infinite alternate;
-    background-color: transparent;
-    color: var(--laser-blue);
-    cursor: pointer;
-    line-height: 1.337em;
-    text-align: center;
-    text-decoration: none;
-}
 
-#beschreibung {font-size:small;width: 100%;}
-
-#instagram-link {
-    cursor: pointer;
-    width:30px;
-    height:30px;
-}
-#contact-email {
-    animation: neon .08s ease-in-out infinite alternate;
-    background-color: var(--shadow-grey);
-    color: var(--laser-blue);
-    font-family: 'Sarpanch', sans-serif;
-    font-size: 1.337rem;
-    font-weight: 200;
-    letter-spacing: 0.12em;
-    text-decoration: none;
-}
-#export-icon {
-    cursor: pointer;
-}
-#goto-top {
-    cursor: pointer;
-}
-#analyzer {
-    display:flex;
-    justify-content:center;
-}
-#spook {
-    align-items: center;
-    animation: creepshow 60s infinite;
-    color: var(--shadow-grey);
-    display: flex;
-    font-size:x-small;
-    height: 100vh;
-    justify-content: center;
-    margin: 0;
-    text-shadow:none;
-}
-#banner {
-    transform: translateZ(0);
-    animation: glow-pink .08s ease-in-out infinite alternate;
-    background-color: transparent;
-    color: var(--neon-pink);
-    font-size:smaller;
-    justify-content: center;
-    position: relative;
-}
-#UAP > *{
-    animation: neon .08s ease-in-out infinite alternate;
-    color: var(--neon-pink);
-}
-#tabelle-1 {
-    position: relative;
-    text-align: center;
-    table-layout: fixed;
-}
-#tasten-steuerung {
-    position: relative;
-    text-align: center;
-    padding:0.6em 0;
-    border: 1px solid #000;
-    border-radius:0.5rem;
-    background-color:var(--high-ground);
-    table-layout: fixed;
-    outline: none;
-    box-shadow:var(--ants-cry);
-}
 
