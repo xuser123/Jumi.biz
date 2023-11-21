@@ -10,119 +10,35 @@
 <!-- TITLE --><title>jumi.biz</title>
 <!-- CSS -->
 <link rel="stylesheet" type="text/css" href="assets/css/animations.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <style>
-:root { /* Font and Colors */
-  --basic-glow-frame-1: rgba(202,228,225,0.92);
-  --basic-glow-frame-2: rgba(202,228,225,0.34);
-  --basic-glowbox-frame-1: rgba(202,228,225,0.98);
-  --basic-glowbox-frame-2: rgba(202,228,225,0.42);
-  --glow-red: #FF0000;
-  --glow-indigo: #4B0082;
-  --glow-blue: #0000FF;
-  --glow-yellow: #FFFF00;
-  --glow-green: #00FF00;
-  --glow-magenta: #FF00FF;
-  --glow-orange: #FFA500;
-  --glow-cyan: #00f0f0;
-  --glow-lightgreen: #8dd88e;
-  --glow-pink: #ffbfea;
-  --glow-lightyellow: #ebebd3;
-  --base-font-size: 16px;
-  --high-ground: rgba(0,0,0,0.1);
-  --laser-blue: #00f0f0;
-  --matrix-green: #8dd88e;
-  --neon-pink: #ffbfea;
-  --pipi-white: #ebebd3;
-  --shadow-grey: #131313;
-  --space-motion:
-    rgba(0, 240, 240, 0.4) 0px 2px 4px,
-    rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
-    rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
-  --ants-cry:
-    rgba(0, 0, 0, 0.1) 0px 2px 4px,
-    rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
-}
-@media screen and (min-width: 35em) {
-    .grid-container {grid-template-areas:
-        "one one"
-        "two three"
-        "five five"
-        "four four";
-    }
-}
-@media screen and (min-width: 38em) {
-    .grid-container {grid-template-areas:
-        "one one"
-        "two five"
-        "three five"
-        "four four";
-    }
-}
-@media screen and (min-width: 54em) {
-    .grid-container {grid-template-areas:
-        "one one two"
-        "five five five"
-        "three four four";
-    }
-}
-@media screen and (min-width: 75em) {
-    .grid-container {grid-template-areas:
-        "one one two five"
-        "three four four five";
-    }
-}
-@media screen and (max-width: 35em) {
-    #tasten-steuerung {
-    display:none;
-    }
-}
-@keyframes neon {
-     from {text-shadow:
-          0 0 6px rgba(202,228,225,0.92),
-          0 0 30px rgba(202,228,225,0.34),
-          0 0 12px rgba(30,132,242,0.52),
-          0 0 21px rgba(30,132,242,0.92),
-          0 0 34px rgba(30,132,242,0.78),
-          0 0 54px rgba(30,132,242,0.92);
-    } to {text-shadow:
-          0 0 6px rgba(202,228,225,0.98),
-          0 0 30px rgba(202,228,225,0.42),
-          0 0 12px rgba(30,132,242,0.58),
-          0 0 22px rgba(30,132,242,0.84),
-          0 0 38px rgba(30,132,242,0.88),
-          0 0 60px rgba(30,132,242,1);}}
-@keyframes neon-box {
-    from {box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),0 0 24px rgba(202, 228, 225, 0.34), 0 0 9.6px rgba(30, 132, 242, 0.52), 0 0 16.8px rgba(30, 132, 242, 0.92), 0 0 27.2px rgba(30, 132, 242, 0.78), 0 0 43.2px rgba(30, 132, 242, 0.92);
-    }
-    to {box-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 24px rgba(202, 228, 225, 0.42), 0 0 9.6px rgba(30, 132, 242, 0.58), 0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);}}
-html {background-color: var(--shadow-grey);}
-body {
-  font-size: var(--base-font-size);
-  height: 100%;/* Footer-Einfluss */
-  margin:0;padding:0;
-  position: relative;/* Footer-Einfluss */
-  text-rendering: optimizeSpeed;
-}
-*,*::before,*::after {box-sizing: border-box;}
 </style>
 </head>
-<!-- BODY -->
+<!-- BODY,HEADER -->
 <body id="ଘ(੭*ˊᵕˋ)੭*ˋhello_ɪɴᴛᴇʀɴᴇᴛ">
-<header><div class="header-content">
+<header>
 <!-- LOGO -->
-<span id="jumi-logo"><img src="assets/img/ico/jumi.ico" alt="Jumi Logo"></span>
-<a href="https://www.jumi.biz"><span id="jumi-biz">jumi.biz</span></a>
-<!-- BUTTON -->
-</div><nav class="navigation">
+<div class="top-left">
+<a href="https://www.jumi.biz" tabindex="0">
+<div class="jumi-logo" id="alien-head"></div>
+<span id="this-domain">jumi.biz</span></a>
+<!-- SLOGAN -->
+<span id="site-slogan"></span>
+<span id="page-slogan"></span></div>
+<!-- BANNER -->
+<div class="top-right">
+<div class="animated-banner">
+<span class="ascii-mascot" id="smiles-friendly">ଘ(੭*ˊᵕˋ)੭*</span>
+<span class="ascii-mascot" id="spooks-creepy">(&lt;&gt;..&lt;&gt;)</span>
+</div></div><nav>
+<!-- BUTTON,MENU -->
 <button class="menu-button"
         aria-controls="menu-list"
         aria-expanded="false">
   <span class="hidden-menu">Menu</span>
   <div class="menu-icon" aria-hidden="true"></div>
-</button><div class="header-text"><span id="spook">ଘ(੭*ˊᵕˋ)੭*ˋmenu-></span>
-<!-- MENU -->
+</button>
 <ul data-state="closed" class="menu-list">
 <li><a href="Content.htm"><i class="list-icon">
 <img src="assets/img/ico/menu-content.ico" alt="Content"></i>options</a></li>
@@ -130,14 +46,14 @@ body {
 <img src="assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
 <li><a href="Cheats.htm"><i class="list-icon">
 <img src="assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
-</ul></nav></div></header><main>
-<!-- MAIN -->
+</ul></nav></header><main>
+<!-- MAIN,CONTAINER,GRID -->
 <div class="grid-container">
-<article id="area-1" class="content flow">
 <!-- HELLO WORLD -->
-<h1>print("hello world")</h1>
-<section>
-<h4>wtf is <span class="jumi-font">jumi.biz</span> ?</h4>
+<article class="content flow" id="this_hello_world">
+<h1>print("<b class="pink glow-font">hello world</b>")</h1>
+<div class="catchem this_page-intro">
+<h4>wtf is <span class="domain-font">jumi.biz</span> ?</h4>
 <p>Kompakte Inhalte über
 <b class="r">Linux</b> 
 <b class="g">Windows</b> 
@@ -145,20 +61,18 @@ body {
 <b class="y">Coding</b> 
 <b class="c">Shell</b> 
 <b class="m">Tools</b> und
-<b class="o">Exobiologie.</b>
-Text&nbsp;minimalisiert, fragmentiert und visuell ergonomisiert.</p></section>
-<Section id="beschreibung">
-<h3>Kinderleichtes Lesen</h3>
-Gewöhnlicher Text hat <b>~25%</b> relevanten Kerninhalt,
+<b class="o">Off-Topics.</b>
+Text&nbsp;minimalisiert, fragmentiert und visuell ergonomisiert.
+<span class="more-text">...btw sry i love glowing lights &#9786;</span></p>
+<h3>...so what?</h3>
+<p>Gewöhnlicher Text hat <b>~25%</b> relevanten Kerninhalt,
 davon verbleibt nach einem Tag vermutlich ~50%,
-nach zwei Tagen <b>~30%</b> im Gedächtnis. Ergibt <b>~7,5%</b> Text.</section>
-<section class="bsp-txt">
-<h3>Text-Beispiele</h3>
-<b>Beispiel A</b><aside>Zwanzig Zwerge machen Handstand,
+nach zwei Tagen <b>~30%</b> im Gedächtnis. Ergibt <b>~7,5%</b> Text.</p>
+<b>Beispiel A</b><aside class="more-text">Zwanzig Zwerge machen Handstand,
 zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
-<b>Beispiel B</b><aside>Zwergenhandstände,Ort: 10,Schrank&nbsp;10,Strand</aside>
-<table id="tabelle-1">
-<caption>23% Mehrwert</caption>
+<b>Beispiel B</b><aside class="more-text">Zwergenhandstände,Ort: 10,Schrank&nbsp;10,Strand</aside>
+<table id="table_01">
+<caption>minimaler Text(B) = 23% merkbarer</caption>
     <thead>
         <tr>
         <th>Text</th>
@@ -184,9 +98,10 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
         <td><span><b>83%</b></span></td>
         </tr>
     </tbody>
-</table></section>
-<!-- INFOS -->
-<section class="flex">
+</table></div>
+<!-- HISTORY,TO-DO,BUTTONS -->
+<div class="catchem flex" id="this_milestones">
+<h3>Milestones</h3>
 <aside><h4>$ history</h4><ul>
     <li>[19-06] Domain gemietet</li>
     <li>[20/21] Konzeptentwicklung</li>
@@ -201,9 +116,10 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
     <li>[24-01] PHP-Implement</li>
     <li>[24-01] Quiz-Feature</li>
     <li>[24-01] Themes-Feature</li></ul></aside>
-</section>
-<section class="flex">
-<table id="tasten-steuerung">
+</div>
+<div class="catchem flex">
+<h3>Navigation ohne Maus möglich</h3>
+<table id="table_02">
 <caption>Tasten-Steuerung</caption>
     <thead>
         <tr>
@@ -214,17 +130,16 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
         </tr>
     </thead>
     <tbody>
-        <tr class="button-styled">
+        <tr class="keyboard-styled">
         <td><span>F11</span></td>
         <td><span>Shift</span> &#43; <span>TAB</span></td>
         <td><span>TAB</span></td>
         <td><span>Enter</span></td>
         </tr>
     </tbody>
-</table></section>
+</table></div>
 </article>
-<article id="area-2" class="content flow">
-
+<article class="content flow" id="this_whoami">
 <h2>&#36; whoami</h2>
 <div class="flex">
   <!-- PICTURE -->
@@ -262,212 +177,66 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
   </dialog>
 </div>
 <br>
-<!-- PERSON -->
-    <section><p>Mich interessiert das&nbsp;Verborgene. Neugier&nbsp;will leben, will&nbsp;<b class="b">Wasser</b> zum Trinken, will&nbsp;<b class="y">Luft</b> zum&nbsp;Atmen. Bitte&nbsp;Ende, flüster das größte Geheimnis, das im&nbsp;Tausch, wieder verborgen zurückkehrt. Dessen Wahrheit im <b class="g">Rauch</b> des <b class="r">Feuers</b> versteckt, unfassbar wie <b class="o">Erde</b> im <b>Wind</b> lebt.</p></section>
-    <aside><q>Wer? Wer ist nur die Form als Konsequenz der Funktion des&nbsp;Was. Und&nbsp;was ich bin, das ist ein Mann mit Maske.</q><br><cite>- V wie Vendetta (2005)</cite></aside>
+<!-- ABOUT_ME -->
+    <div class="catchem this_too_deep"><h3>Admin, User, Gamer, Distro-Hopper, Human-Designer</h3><p>Mich interessiert das&nbsp;Verborgene. Bin&nbsp;ich Licht, Frequenz oder Vibration? Ist alles eine Simulation? Neugier&nbsp;will leben, will&nbsp;<b class="b">Wasser</b> zum Trinken, will&nbsp;<b class="y">Luft</b> zum&nbsp;Atmen. Bitter&nbsp;endet, das letzte Geheimnis, das im&nbsp;Tausch, wieder verborgen zurückkehrt. Dessen Wahrheit im <b class="g">Rauch</b> des <b class="r">Feuers</b> versteckt, unfassbar wie <b class="o">feinste Erde</b> im <b>Wind</b>.</p>
+    <aside class="more-text zitiert">Wer? Wer ist nur die Form als Konsequenz der Funktion des&nbsp;Was. Und&nbsp;was ich bin, das ist ein Mann mit Maske.<br><cite>- V wie Vendetta (2005)</cite></aside></div>
 </article>
-<article id="area-3" class="content flow">
-<!-- STUFF -->
+<article class="content flow">
+<!-- INFO,STATEMENT -->
 <h4>Dark Mode Only</h4>
-    <p>Ein dunkler Bildschirm spart bis zu <b>60%</b> Energie und schont die&nbsp;Augen.
+    <div class="catchem this_personal_statement"><p>Ein dunkler Bildschirm spart bis zu <b>60%</b> Energie und schont die&nbsp;Augen.
     Wenn&nbsp;du den hellen Modus immer noch bevorzugst dann&nbsp;GTFO!</p>
-    <aside><q>Come with me. It&nbsp;is the&nbsp;only&nbsp;way.</q><br>
-    <cite>- Darth Vader (1980)</cite></aside>
+    <aside class="more-text zitiert"><q>Come with me. It&nbsp;is the&nbsp;only&nbsp;way.</q><br>
+    <cite>- Darth Vader (1980)</cite></aside></div>
 </article>
-<article id="area-4" class="content flow">
-<!-- STUFF -->
-<h3>IT &#126; Kung Fu</h3>
-    <section>Der chinesische Begriff "Kung&nbsp;Fu" bezieht sich auf Fähigkeiten und Techniken, die&nbsp;durch lange, harte&nbsp;<b class="r">Übung</b> und <b class="g">Geduld</b> erlangt&nbsp;werden.
+<article class="content flow">
+<!-- CREATIVE,DEEP -->
+    <div class="catchem this_too_deep"><h3>IT &#126; Kung Fu</h3>Der chinesische Begriff "Kung&nbsp;Fu" bezieht sich auf Fähigkeiten und Techniken, die&nbsp;durch lange, harte&nbsp;<b class="r">Übung</b> und <b class="g">Geduld</b> erlangt&nbsp;werden.
     Es&nbsp;ist eine Disziplin, die&nbsp;zur Meisterung viel <b class="b">Engagement und Einsatz</b>&nbsp;erfordert.
     Kung&nbsp;Fu kombiniert Bewegungen und&nbsp;Strategien, IT&nbsp;überträgt Signale und Daten, die&nbsp;durch konstruierter, physikalischer&nbsp;Technik und Logik gesteuert&nbsp;werden. Das&nbsp;Beherrschen von Kung&nbsp;Fu verbessert Beweglichkeit, während&nbsp;die Verarbeitung von Informationen <b class="y">analytisches Denken</b> entwickelt. In&nbsp;der&nbsp;IT, wie&nbsp;im Kung&nbsp;Fu, geht es um <b class="c">Hingabe</b>, <b class="m">Ausdauer</b> und
-    <b class="o">Skills</b>.</section>
-    <aside><q>Der Meister erscheint wenn der Schüler bereit&nbsp;ist.</q><br>
-    <cite>- Karate Tiger (1986)</cite></aside>
+    <b class="o">Skills</b>.
+    <aside class="more-text zitiert"><q>Der Meister erscheint wenn der Schüler bereit&nbsp;ist.</q><br>
+    <cite>- Karate Tiger (1986)</cite></aside></div>
 </article>
-<article id="area-5" class="content flow">
-<h3>Click to open</h3>
-<details class="flow">
-<summary>I have keys but no doors. I&nbsp;have space but no room. You&nbsp;can enter but can’t leave. What&nbsp;am&nbsp;I ?</summary>
-<br><span class="quiz-answers">A keyboard</span>
-</details>
-<details class="flow">
-<summary>Longest Website Domain Name ?</summary>
-<br><span class="quiz-answers">smiles.com has a "mile" between the s's</span>
-</details>
-<details class="flow">
-<summary>Nikola&nbsp;Tesla's Apartment Number in the New York Hotel ?</summary>
-<br><span class="quiz-answers">3327</span>
-</details>
-<aside><q>Die Wissenschaft ist bestrebt, die&nbsp;Welt um uns herum zu&nbsp;verstehen. Die&nbsp;Technologie hingegen strebt danach, sie zu&nbsp;beherrschen.</q><br>
-<cite>- Nikola Tesla (1856-1943)</cite></aside>
-</article></div><br>
-<div class="grid-container">
-<article id="area-6" class="content flow">
-<!-- HELLO WORLD -->
-<h1>print("hello world")</h1>
-<section>
-<h4>wtf is <span class="jumi-font">jumi.biz</span> ?</h4>
-<p>Kompakte Inhalte über
-<b class="r">Linux</b>
-<b class="g">Windows</b>
-<b class="b">Infosec</b>
-<b class="y">Coding</b>
-<b class="c">Shell</b>
-<b class="m">Tools</b> und
-<b class="o">Exobiologie.</b>
-Text&nbsp;minimalisiert, fragmentiert und visuell ergonomisiert.</p></section>
-<Section id="beschreibung">
-<h3>Kinderleichtes Lesen</h3>
-Gewöhnlicher Text hat <b>~25%</b> relevanten Kerninhalt,
-davon verbleibt nach einem Tag vermutlich ~50%,
-nach zwei Tagen <b>~30%</b> im Gedächtnis. Ergibt <b>~7,5%</b> Text.</section>
-<section class="bsp-txt">
-<h3>Text-Beispiele</h3>
-<b>Beispiel A</b><aside>Zwanzig Zwerge machen Handstand,
-zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
-<b>Beispiel B</b><aside>Zwergenhandstände,Ort: 10,Schrank&nbsp;10,Strand</aside>
-<table id="tabelle-1">
-<caption>23% Mehrwert</caption>
-    <thead>
-        <tr>
-        <th>Text</th>
-        <th>Wörter</th>
-        <th>Zeichenfolgen</th>
-        <th>Kerninhalte</th>
-        <th>Relevanz</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-        <td><span><b>A</b></span></td>
-        <td><span>13</span></td>
-        <td><span>10</span></td>
-        <td><span>6</span></td>
-        <td><span>60%</span></td>
-        </tr>
-        <tr>
-        <td><span><b>B</b></span></td>
-        <td><span>8</span></td>
-        <td><span>6</span></td>
-        <td><span>5</span></td>
-        <td><span><b>83%</b></span></td>
-        </tr>
-    </tbody>
-</table></section>
-<!-- INFOS -->
-<section class="flex">
-<aside><h4>$ history</h4><ul>
-    <li>[19-06] Domain gemietet</li>
-    <li>[20/21] Konzeptentwicklung</li>
-    <li>[22-11] Ausarbeitung</li>
-    <li>[23-03] Designentwicklung</li>
-    <li>[23-08] Github-Anbindung</li>
-    <li>[23-10] Integration</li></ul></aside>
-<aside><h4>To-Do</h4><ul>
-    <li>[23-11] Edits/Content</li>
-    <li>[23-11] Instagram Content</li>
-    <li>[23-12] JavaScript AddOns</li>
-    <li>[24-01] PHP-Implement</li>
-    <li>[24-01] Quiz-Feature</li>
-    <li>[24-01] Themes-Feature</li></ul></aside>
-</section>
-<section class="flex">
-<table id="tabelle-2">
-<caption>Tasten-Steuerung</caption>
-    <thead>
-        <tr>
-        <th>Vollbild</th>
-        <th>Zurück</th>
-        <th>Weiter</th>
-        <th>Öffnen</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr class="button-styled">
-        <td><span>F11</span></td>
-        <td><span>Shift</span> &#43; <span>TAB</span></td>
-        <td><span>TAB</span></td>
-        <td><span>Enter</span></td>
-        </tr>
-    </tbody>
-</table></section>
-</article>
-<article id="area-7" class="content flow">
-
-<h2>&#36; whoami</h2>
-<div class="flex">
-  <!-- PICTURE -->
-  <img id="modalTrigger01" src="assets/img/profile-img-1.png" alt="Picture shows Jumi">
-  <dialog id="openModal01">
-    <figure>
-      <img src="assets/img/modal/profile-img-modal-01.png" alt="Image-Modal" id="imgModal01">
-      <figcaption>
-        <h2>Human Interface</h2>
-      </figcaption>
-    </figure>
-    <button id="closeModal01"> &times; </button>
-  </dialog>
-  <!-- PICTURE -->
-  <img id="modalTrigger02" src="assets/img/profile-img-2.png" alt="Picture shows shoe">
-  <dialog id="openModal02">
-    <figure>
-      <img src="assets/img/modal/profile-img-modal-02.png" alt="Image-Modal" id="imgModal02">
-      <figcaption>
-        <h2>Local Area</h2>
-      </figcaption>
-    </figure>
-    <button id="closeModal02"> &times; </button>
-  </dialog>
-  <!-- PICTURE -->
-  <img id="modalTrigger03" src="assets/img/profile-img-3.png" alt="Picture shows computer">
-  <dialog id="openModal03">
-    <figure>
-      <img src="assets/img/modal/profile-img-modal-03.png" alt="Image-Modal" id="imgModal03">
-      <figcaption>
-        <h2>Central Processing</h2>
-      </figcaption>
-    </figure>
-    <button id="closeModal03"> &times; </button>
-  </dialog>
-</div>
-<br>
-<!-- PERSON -->
-    <section><p>Mich interessiert das&nbsp;Verborgene. Neugier&nbsp;will leben, will&nbsp;<b class="b">Wasser</b> zum Trinken, will&nbsp;<b class="y">Luft</b> zum&nbsp;Atmen. Bitte&nbsp;Ende, flüster das größte Geheimnis, das im&nbsp;Tausch, wieder verborgen zurückkehrt. Dessen Wahrheit im <b class="g">Rauch</b> des <b class="r">Feuers</b> versteckt, unfassbar wie <b class="o">Erde</b> im <b>Wind</b> lebt.</p></section>
-    <aside><q>Wer? Wer ist nur die Form als Konsequenz der Funktion des&nbsp;Was. Und&nbsp;was ich bin, das ist ein Mann mit Maske.</q><br><cite>- V wie Vendetta (2005)</cite></aside>
-</article>
-<article id="area-8" class="content flow">
-<!-- STUFF -->
-<h4>Dark Mode Only</h4>
-    <p>Ein dunkler Bildschirm spart bis zu <b>60%</b> Energie und schont die&nbsp;Augen.
-    Wenn&nbsp;du den hellen Modus immer noch bevorzugst dann&nbsp;GTFO!</p>
-    <aside><q>Come with me. It&nbsp;is the&nbsp;only&nbsp;way.</q><br>
-    <cite>- Darth Vader (1980)</cite></aside>
-</article>
-<article id="area-9" class="content flow">
-<!-- STUFF -->
-<h3>IT &#126; Kung Fu</h3>
-    <section>Der chinesische Begriff "Kung&nbsp;Fu" bezieht sich auf Fähigkeiten und Techniken, die&nbsp;durch lange, harte&nbsp;<b class="r">Übung</b> und <b class="g">Geduld</b> erlangt&nbsp;werden.
-    Es&nbsp;ist eine Disziplin, die&nbsp;zur Meisterung viel <b class="b">Engagement und Einsatz</b>&nbsp;erfordert.
-    Kung&nbsp;Fu kombiniert Bewegungen und&nbsp;Strategien, IT&nbsp;überträgt Signale und Daten, die&nbsp;durch konstruierter, physikalischer&nbsp;Technik und Logik gesteuert&nbsp;werden. Das&nbsp;Beherrschen von Kung&nbsp;Fu verbessert Beweglichkeit, während&nbsp;die Verarbeitung von Informationen <b class="y">analytisches Denken</b> entwickelt. In&nbsp;der&nbsp;IT, wie&nbsp;im Kung&nbsp;Fu, geht es um <b class="c">Hingabe</b>, <b class="m">Ausdauer</b> und
-    <b class="o">Skills</b>.</section>
-    <aside><q>Der Meister erscheint wenn der Schüler bereit&nbsp;ist.</q><br>
-    <cite>- Karate Tiger (1986)</cite></aside>
-</article>
-<article id="area-10" class="content flow">
-<h3>Click to open</h3>
-<details class="flow">
-<summary>I have keys but no doors. I&nbsp;have space but no room. You&nbsp;can enter but can’t leave. What&nbsp;am&nbsp;I ?</summary>
-<br><span class="quiz-answers">A keyboard</span>
-</details>
-<details class="flow">
-<summary>Wieso nimmt Windows keine Drogen ?</summary>
-<br><span class="quiz-answers">Damit es nicht abstürzt...</span>
-</details>
-<details class="flow">
-<summary>Nikola&nbsp;Tesla's Apartment Number in the New York Hotel ?</summary>
-<br><span class="quiz-answers">3327</span>
-</details>
-<aside><q>Die Wissenschaft ist bestrebt, die&nbsp;Welt um uns herum zu&nbsp;verstehen. Die&nbsp;Technologie hingegen strebt danach, sie zu&nbsp;beherrschen.</q><br>
+<article class="content flow" id="site-topics">
+<h4>Linux </h4>
+  <ul>
+    <li><a href="pages/template.htm">Dateisystem</a></li>
+    <li><a href="pages/template.htm">Konfiguration</a></li>
+    <li><a href="pages/template.htm">Good-Practice</a></li>
+  </ul>
+<h4>Windows </h4>
+  <ul>
+    <li><a href="pages/template.htm">DC/AD-Server-2019</a></li>
+    <li><a href="pages/template.htm">Firewall</a></li>
+    <li><a href="pages/template.htm">Pentesting</a></li>
+  </ul>
+<h4>Infosec </h4>
+  <ul>
+    <li><a href="pages/IT-Sicherheit.htm">IT-Grundschutz </a></li>
+    <li><a href="pages/Projektmanagement.htm">Projektmanagement </a></li>
+    <li><a href="pages/Qualitätssicherung.htm">Qualitätssicherung </a></li>
+  </ul>
+<h4>Coding </h4>
+  <ul>
+    <li><a href="pages/template.htm">HTML,CSS,PHP</a></li>
+    <li><a href="pages/template.htm">Bash,Python</a></li>
+    <li><a href="pages/template.htm">Cmdlets</a></li>
+  </ul>
+<h4>Shell </h4>
+  <ul>
+    <li><a href="pages/template.htm">LinuxShell</a></li>
+    <li><a href="pages/template.htm">Powershell</a></li>
+    <li><a href="pages/template.htm">Networking</a></li>
+  </ul>
+<h4>Tools </h4>
+  <ul>
+    <li><a href="pages/template.htm">Forensic</a></li>
+    <li><a href="pages/template.htm">Monitoring</a></li>
+    <li><a href="pages/template.htm">Hacking</a></li>
+  </ul>
+<aside class="more-text zitiert">
+<q>If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.</q><br>
 <cite>- Nikola Tesla (1856-1943)</cite></aside>
 </article></div></main>
 
