@@ -100,13 +100,12 @@ mark {
     color: revert;
     font-size: 0.85em;
 }
-hr {
-    border-color: #000;}
+hr {border-color: #000;}
 .top-right{
     display:none;
 }
 .animated-banner{
-    display:inline-block;
+    display:none;
 }
 .ascii-mascot{
     display:none;
@@ -204,7 +203,7 @@ hr {
 #page-slogan{
     display:none;
 }
-//#smiles-friendly {
+#smiles-friendly {
     align-items: center;
     animation: creepshow 60s infinite;
     color: var(--shadow-grey);

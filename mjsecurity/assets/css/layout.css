@@ -1,33 +1,36 @@
 :root { /* Colors */
-  --basic-glow-frame-1: rgba(202,228,225,0.92);
-  --basic-glow-frame-2: rgba(202,228,225,0.34);
-  --basic-glowbox-frame-1: rgba(202,228,225,0.98);
-  --basic-glowbox-frame-2: rgba(202,228,225,0.42);
-  --glow-red: #FF0000;
-  --glow-indigo: #4B0082;
-  --glow-blue: #0000FF;
-  --glow-yellow: #FFFF00;
-  --glow-green: #00FF00;
-  --glow-magenta: #FF00FF;
-  --glow-orange: #FFA500;
-  --glow-cyan: #00f0f0;
-  --glow-lightgreen: #8dd88e;
-  --glow-pink: #ffbfea;
-  --glow-lightyellow: #ebebd3;
-  --base-font-size: 16px;
-  --high-ground: rgba(0,0,0,0.1);
-  --laser-blue: #00f0f0;
-  --matrix-green: #8dd88e;
-  --neon-pink: #ffbfea;
-  --pipi-white: #ebebd3;
-  --shadow-grey: #131313;
-  --space-motion:
+    --basic-glow-frame-1: rgba(202,228,225,0.92);
+    --basic-glow-frame-2: rgba(202,228,225,0.34);
+    --basic-glowbox-frame-1: rgba(202,228,225,0.98);
+    --basic-glowbox-frame-2: rgba(202,228,225,0.42);
+    --glow-red: #FF0000;
+    --glow-indigo: #4B0082;
+    --glow-blue: #0000FF;
+    --glow-laserblue: #00f0f0;
+    --glow-yellow: #FFFF00;
+    --glow-green: #00FF00;
+    --glow-magenta: #FF00FF;
+    --glow-orange: #FFA500;
+    --glow-lightgreen: #8dd88e;
+    --glow-pink: #ffbfea;
+    --glow-lightyellow: #ebebd3;
+    --base-font-size: 16px;
+    --high-ground: rgba(0,0,0,0.1);
+    --laser-blue: #00f0f0;
+    --matrix-green: #8dd88e;
+    --neon-pink: #ffbfea;
+    --pipi-white: #ebebd3;
+    --shadow-grey: #131313;
+    --space-motion:
     rgba(0, 240, 240, 0.4) 0px 2px 4px,
     rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
     rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
-  --ants-cry:
+    --ants-cry:
     rgba(0, 0, 0, 0.1) 0px 2px 4px,
     rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
+    --glow-color-1: #FF0000;
+    --glow-color-2: #00FF00;
+    --glow-color-3: #0000FF;
 }
 /* Colored Words */
 .r{color:#FF1337 !important }
@@ -37,9 +40,24 @@
 .c{color:#119988 !important }
 .m{color:#FF00FF !important }
 .o{color:#FFA500 !important }
+.lb{color:var(--laser-blue);animation:neon 0.08s ease-in-out infinite alternate;}
 .pink{color:var(--neon-pink) !important }
 .green{color: var(--matrix-green) !important }
 .glow-font {animation: neon 1s ease-in-out infinite alternate;}
+/* glowing-text-by-cgpt3.5 */
+.gtc3 {animation: colorfulGlow 2s ease-in-out infinite alternate;}
+.gtc3v2 {animation: colorfulGlow 40s ease-in-out infinite alternate;}
+@keyframes colorfulGlow {
+  0% {
+    text-shadow: 0 0 10px var(--glow-color-1), 0 0 20px var(--glow-color-1), 0 0 30px var(--glow-color-1);
+  }
+  50% {
+    text-shadow: 0 0 20px var(--glow-color-2), 0 0 30px var(--glow-color-2), 0 0 40px var(--glow-color-2);
+  }
+  100% {
+    text-shadow: 0 0 10px var(--glow-color-3), 0 0 20px var(--glow-color-3), 0 0 30px var(--glow-color-3);
+  }
+}
 @font-face {
 font-family:'Sarpanch';font-style:normal;src:
 url('../fonts/sarpanch-v11-latin-regular.woff2')

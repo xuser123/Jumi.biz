@@ -41,7 +41,7 @@
     }
 }
 @media screen and (max-width: 54em) {
-    #table_01 {
+    #table_02, #navigieren-Sie {
     display:none;
     }
 }
@@ -55,6 +55,8 @@ ul, ol {
     list-style: none;
     font-size:x-small;
     padding-left:0;
+    background-color:var(--high-ground);
+    box-shadow:var(--ants-cry);
 }
 
 th {
@@ -77,7 +79,7 @@ caption {
 }
 aside {
     position:relative;
-    width:75%;
+    //width:75%;
 }
 code {
     display: inline-table;
@@ -98,6 +100,7 @@ mark {
     color: revert;
     font-size: 0.85em;
 }
+hr {border-color: #000;}
 .top-right{
     display:none;
 }
@@ -124,16 +127,6 @@ mark {
     font-weight:lighter;
     width: 100%;
     text-align: center;
-}
-.quiz-answers {
-    animation: neon 0.08s ease-in-out infinite alternate;
-    transition: all ease-in-out 300ms;
-    color: var(--neon-pink);
-    width: 100%;
-    text-align:match-parent;
-    font-family:'c64-Pro';
-    display:inline-block;
-    font-size: large;
 }
 .domain-font {
     font-family: 'Sarpanch', sans-serif;
@@ -183,10 +176,27 @@ mark {
     font-size:small;
     width: 100%;
 }
-.this_too_deep{}
+.this_too_deep{font-size:small}
 .this_personal_statements{}
-.quiz-area
-.site-topics
+.quiz-area{}
+.quiz-answers {
+    animation: neon 0.08s ease-in-out infinite alternate;
+    transition: all ease-in-out 300ms;
+    color: var(--neon-pink);
+    width: 100%;
+    text-align:match-parent;
+    font-family:'c64-Pro';
+    display:inline-block;
+    font-size: large;
+}
+.site-topics{
+    position: relative;
+    text-align: center;
+    table-layout: fixed;
+    margin: 0 0 3vw;
+    box-shadow:var(--ants-cry);
+    width:max-content;
+}
 #site-slogan{
     display:none;
 }
@@ -228,15 +238,18 @@ mark {
     animation: neon 0.08s ease-in-out infinite alternate;
     color: var(--neon-pink);
 }
-#this_hello_world h1{animation-delay:2s}
+#this_hello_world * {transform: translateZ(0);}
 #table_01 {
     position: relative;
     text-align: center;
     table-layout: fixed;
+    margin: 0 0 3vw;
+    box-shadow:var(--ants-cry);
 }
 #table_02 {
     position: relative;
     text-align: center;
+    width:max-content;
     padding:0.6em 0;
     border: 1px solid #000;
     border-radius:0.5rem;
@@ -245,7 +258,12 @@ mark {
     outline: none;
     box-shadow:var(--ants-cry);
 }
-#this_milestones{}
+#this_milestones{
+    display:flex;
+    justify-content:space-around;
+    width:100%;
+    margin:0 0 3vw;
+}
 #this_whoami{}
 #instagram-link {
     cursor: pointer;
