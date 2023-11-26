@@ -43,6 +43,10 @@ CNAME
 templates
 php.ini
 
+# submodul for subdomain
+mjsecurity/
+
+
 # Miscellaneous system files
 .directory
 _backup_
