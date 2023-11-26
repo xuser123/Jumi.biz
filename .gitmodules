@@ -1,0 +1,3 @@
+[submodule "mjsecurity"]
+	path = mjsecurity
+	url = git@github.com:xuser123/mjsecurity.de.git
