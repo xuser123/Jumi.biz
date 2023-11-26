@@ -14,6 +14,102 @@
 <link rel="stylesheet" type="text/css" href="assets/css/layout.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <style>
+:root { /* Colors */
+    --basic-glow-frame-1: rgba(202,228,225,0.92);
+    --basic-glow-frame-2: rgba(202,228,225,0.34);
+    --basic-glowbox-frame-1: rgba(202,228,225,0.98);
+    --basic-glowbox-frame-2: rgba(202,228,225,0.42);
+    --glow-red: #FF0000;
+    --glow-indigo: #4B0082;
+    --glow-blue: #0000FF;
+    --glow-laserblue: #00f0f0;
+    --glow-yellow: #FFFF00;
+    --glow-green: #00FF00;
+    --glow-magenta: #FF00FF;
+    --glow-orange: #FFA500;
+    --glow-lightgreen: #8dd88e;
+    --glow-pink: #ffbfea;
+    --glow-lightyellow: #ebebd3;
+    --base-font-size: 16px;
+    --high-ground: rgba(0,0,0,0.1);
+    --laser-blue: #00f0f0;
+    --matrix-green: #8dd88e;
+    --neon-pink: #ffbfea;
+    --pipi-white: #ebebd3;
+    --shadow-grey: #131313;
+    --space-motion:
+    rgba(0, 240, 240, 0.4) 0px 2px 4px,
+    rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+    rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+    --ants-cry:
+    rgba(0, 0, 0, 0.1) 0px 2px 4px,
+    rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
+    --glow-color-1: #FF0000;
+    --glow-color-2: #00FF00;
+    --glow-color-3: #0000FF;
+}
+@media screen and (min-width: 35em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two three"
+        "five five"
+        "four four";
+    }
+}
+@media screen and (min-width: 38em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two five"
+        "three five"
+        "four four";
+    }
+}
+@media screen and (min-width: 54em) {
+    .grid-container {grid-template-areas:
+        "one one two"
+        "five five five"
+        "three four four";
+    }
+}
+@media screen and (min-width: 75em) {
+    .grid-container {grid-template-areas:
+        "one one two five"
+        "three four four five";
+    }
+}
+@media screen and (max-width: 35em) {
+    #tasten-steuerung {
+    display:none;
+    }
+}
+@keyframes neon {
+     from {text-shadow:
+          0 0 6px rgba(202,228,225,0.92),
+          0 0 30px rgba(202,228,225,0.34),
+          0 0 12px rgba(30,132,242,0.52),
+          0 0 21px rgba(30,132,242,0.92),
+          0 0 34px rgba(30,132,242,0.78),
+          0 0 54px rgba(30,132,242,0.92);
+    } to {text-shadow:
+          0 0 6px rgba(202,228,225,0.98),
+          0 0 30px rgba(202,228,225,0.42),
+          0 0 12px rgba(30,132,242,0.58),
+          0 0 22px rgba(30,132,242,0.84),
+          0 0 38px rgba(30,132,242,0.88),
+          0 0 60px rgba(30,132,242,1);}}
+@keyframes neon-box {
+    from {box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),0 0 24px rgba(202, 228, 225, 0.34), 0 0 9.6px rgba(30, 132, 242, 0.52), 0 0 16.8px rgba(30, 132, 242, 0.92), 0 0 27.2px rgba(30, 132, 242, 0.78), 0 0 43.2px rgba(30, 132, 242, 0.92);
+    }
+    to {box-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 24px rgba(202, 228, 225, 0.42), 0 0 9.6px rgba(30, 132, 242, 0.58), 0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);}}
+html {background-color: var(--shadow-grey);}
+body {
+  font-size: var(--base-font-size);
+  height: 100%;/* Footer-Einfluss */
+  margin:0;padding:0;
+  position: relative;/* Footer-Einfluss */
+  text-rendering: optimizeSpeed;
+}
+*,*::before,*::after {box-sizing: border-box;}
 </style>
 </head>
 <!-- BODY,HEADER -->
@@ -65,15 +161,16 @@
 <b class="o">Off-Topics.</b>
 Text&nbsp;minimalisiert, fragmentiert und visuell ergonomisiert.
 <span class="more-text"><br>...btw brauche RAM für <i class="glow-font">"ଘ(੭*ˊᵕˋ)੭*☆ﾟ.</i><b class="gtc3">*･｡ﾟᴸᵉᵘᶜʰᵗᵉᶠᶠᵉᵏᵗᵉ</b></span>
-<h3>...so what?</h3>
+<h4>...hier meine Theorie:</h4>
 <p>Gewöhnlicher Text hat <b>~25%</b> relevanten Kerninhalt,
-davon verbleibt nach einem Tag vermutlich ~50%,</p>
+davon verbleibt nach einem Tag vermutlich ~50%,
+nach zwei Tagen <b>~30%</b> im Gedächtnis. Ergibt <b>~7,5%</b> Text.</p>
 <b>Beispiel A</b><aside class="more-text">Zwanzig Zwerge machen Handstand,
 zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
 <b>Beispiel B</b><aside class="more-text">Zwergenhandstände,Ort: 10,Schrank&nbsp;10,Strand</aside>
-<div class="catchem flex">
+<div class="catchem">
 <table id="table_01">
-<caption>minimaler Text(B) = 23% merkbarer</caption>
+<caption>Text(B) ist 23% leichter zu merken</caption>
     <thead>
         <tr>
         <th>Text</th>
@@ -101,15 +198,14 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
     </tbody>
 </table>
 </div>
-</div>
-<hr><br>
+<p>Nach diesem Konzept gestaltet, kann Information in kürzester Zeit intepretiert werden.</p>
+<div id="desktop-only">
+<p class="keyboard-buttons">Außerdem soll für Desktops die schnelle Navigation per Tasten unterstützt werden. So kann beispielsweise folgende Quizfrage per <span>TAB</span> selektiert und mit <span>Enter</span> oder <span>Leer</span> aufgelöst werden.</p>
 <details>
 <summary>I have keys but no doors. I&nbsp;have space but no room. You&nbsp;can enter but can’t leave. What&nbsp;am&nbsp;I ?</summary>
-<br><span class="quiz-answers">A keyboard</span>
-</details>
-<div class="catchem flex">
+<span class="quiz-answers">A keyboard</span>
+<aside class="catchem flex">
 <table id="table_02">
-<caption>Tasten-Steuerung</caption>
     <thead>
         <tr>
         <th>Vollbild</th>
@@ -119,7 +215,7 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
         </tr>
     </thead>
     <tbody>
-        <tr class="keyboard-styled">
+        <tr class="keyboard-buttons">
         <td><span>F11</span></td>
         <td><span>Shift</span> &#43; <span>TAB</span></td>
         <td><span>TAB</span></td>
@@ -127,14 +223,15 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
         </tr>
     </tbody>
 </table>
-</div>
-<aside class="more-text zitiert" id="navigieren-Sie">Sie Navigieren ganz bequem und schonen Ihren Arm für andere Aktivitäten!</aside>
-<hr><br>
-<h2><span class="pink domain-font">jumi.biz</span> Seit 2019</h2>
+</aside>
+<aside class="more-text zitiert">Navigation auch ganz ohne Maus möglich!</aside>
+</details>
+</div><br>
+<h2><span class="np domain-font">jumi.biz</span> Seit 2019</h2>
 <!-- HISTORY,TO-DO,BUTTONS -->
-<div class="catchem flex" id="this_milestones">
+<div class="catchem compact-lists" id="this_milestones">
 <aside>
-<h4>$ history</h4>
+<h2>$ history</h2>
 <ul>
   <li>[19-06] Domain gemietet</li>
   <li>[20/21] Konzeptentwicklung</li>
@@ -144,15 +241,16 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
   <li>[23-10] Integration</li>
 </ul></aside>
 <aside>
-<h4>To-Do</h4>
+<h2>To-Do</h2>
 <ul>
   <li>[23-11] Edits/Content</li>
   <li>[23-11] Instagram Content</li>
-  <li>[23-12] JavaScript AddOns</li>
+  <li>[23-12] JavaScript Addons</li>
   <li>[24-01] PHP-Implement</li>
   <li>[24-01] Quiz-Feature</li>
   <li>[24-01] Themes-Feature</li>
 </ul></aside>
+</div>
 </div>
 </article>
 <article class="content flow" id="this_whoami">
@@ -194,7 +292,7 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
 </div>
 <br>
 <!-- ABOUT_ME -->
-    <div class="catchem this_too_deep"><h3>Admin, User, Gamer, Distro-Hopper, Human-Designer</h3><p>Mich interessiert das Verborgene. Bin ich Licht, Frequenz oder Vibration? Ist alles eine Simulation? Neugier will leben, will <b class="b">Wasser</b> zum Trinken, will <b class="y">Luft</b> zum Atmen. Bitter endet, das letzte Geheimnis, das im Tausch, wieder verborgen zurückkehrt. Dessen Wahrheit im <b class="g">Rauch</b> des <b class="r">Feuers</b> versteckt, unfassbar wie feinste  <b class="o">Erde</b> im <b>Wind</b>.</p>
+    <div class="catchem this_too_deep"><h3>Admin, User, Gamer, Distro-Hopper, Human-Designer</h3><p>Mich interessiert das Verborgene. Bin ich Licht, Frequenz oder Vibration? Ist alles eine Simulation? Neugier will leben, will <b class="b">Wasser</b> zum Trinken, will <b class="y">Luft</b> zum Atmen. Bitter endet, das letzte Geheimnis, das im Tausch, wieder verborgen zurückkehrt. Dessen Wahrheit unfassbar im Rauch des <b class="r">Feuers</b> versteckt, und sind nur schweigende Zeugen aus <b class="o">Erde</b>, verweht im <b>Wind</b>.</p>
     <aside class="more-text zitiert">Wer? Wer ist nur die Form als Konsequenz der Funktion des Was. Und was ich bin, das ist ein Mann mit Maske.<br><cite>- V wie Vendetta (2005)</cite></aside></div>
 </article>
 <article class="content flow">
@@ -214,45 +312,52 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
     <aside class="more-text zitiert"><q>Der Meister erscheint wenn der Schüler bereit&nbsp;ist.</q><br>
     <cite>- Karate Tiger (1986)</cite></aside></div>
 </article>
-<article class="content flow" id="table_01">
+<article class="content flow">
+<h2>Themen</h2>
+<div class="catchem">
 <aside>
-<h2>Linux </h2>
+<h4>Linux </h4>
   <ul>
     <li><a href="pages/template.htm">Dateisystem</a></li>
     <li><a href="pages/template.htm">Konfiguration</a></li>
     <li><a href="pages/template.htm">Good-Practice</a></li>
   </ul>
-<h2>Windows </h2>
+<h4>Windows </h4>
   <ul>
     <li><a href="pages/template.htm">DC/AD-Server-2019</a></li>
     <li><a href="pages/template.htm">Firewall</a></li>
     <li><a href="pages/template.htm">Pentesting</a></li>
   </ul>
-<h2>Infosec </h2>
+</aside>
+<aside>
+<h4>Infosec </h4>
   <ul>
     <li><a href="pages/IT-Sicherheit.htm">IT-Grundschutz </a></li>
     <li><a href="pages/Projektmanagement.htm">Projektmanagement </a></li>
     <li><a href="pages/Qualitätssicherung.htm">Qualitätssicherung </a></li>
   </ul>
-<h2>Coding </h2>
+<h4>Coding </h4>
   <ul>
     <li><a href="pages/template.htm">HTML,CSS,PHP</a></li>
     <li><a href="pages/template.htm">Bash,Python</a></li>
     <li><a href="pages/template.htm">Cmdlets</a></li>
   </ul>
-<h2>Shell </h2>
+</aside>
+<aside>
+<h4>Shell </h4>
   <ul>
     <li><a href="pages/template.htm">LinuxShell</a></li>
     <li><a href="pages/template.htm">Powershell</a></li>
     <li><a href="pages/template.htm">Networking</a></li>
   </ul>
-<h2>Tools </h2>
+<h4>Tools </h4>
   <ul>
     <li><a href="pages/template.htm">Forensic</a></li>
     <li><a href="pages/template.htm">Monitoring</a></li>
     <li><a href="pages/template.htm">Hacking</a></li>
   </ul>
 </aside>
+</div>
 <aside class="more-text zitiert">
 <q>If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.</q><br>
 <cite>- Nikola Tesla (1856-1943)</cite></aside>

@@ -1,37 +1,3 @@
-:root { /* Colors */
-    --basic-glow-frame-1: rgba(202,228,225,0.92);
-    --basic-glow-frame-2: rgba(202,228,225,0.34);
-    --basic-glowbox-frame-1: rgba(202,228,225,0.98);
-    --basic-glowbox-frame-2: rgba(202,228,225,0.42);
-    --glow-red: #FF0000;
-    --glow-indigo: #4B0082;
-    --glow-blue: #0000FF;
-    --glow-laserblue: #00f0f0;
-    --glow-yellow: #FFFF00;
-    --glow-green: #00FF00;
-    --glow-magenta: #FF00FF;
-    --glow-orange: #FFA500;
-    --glow-lightgreen: #8dd88e;
-    --glow-pink: #ffbfea;
-    --glow-lightyellow: #ebebd3;
-    --base-font-size: 16px;
-    --high-ground: rgba(0,0,0,0.1);
-    --laser-blue: #00f0f0;
-    --matrix-green: #8dd88e;
-    --neon-pink: #ffbfea;
-    --pipi-white: #ebebd3;
-    --shadow-grey: #131313;
-    --space-motion:
-    rgba(0, 240, 240, 0.4) 0px 2px 4px,
-    rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
-    rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
-    --ants-cry:
-    rgba(0, 0, 0, 0.1) 0px 2px 4px,
-    rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
-    --glow-color-1: #FF0000;
-    --glow-color-2: #00FF00;
-    --glow-color-3: #0000FF;
-}
 /* Colored Words */
 .r{color:#FF1337 !important }
 .g{color:#A3B8C8 !important }
@@ -40,9 +6,9 @@
 .c{color:#119988 !important }
 .m{color:#FF00FF !important }
 .o{color:#FFA500 !important }
+.np{color:var(--neon-pink)}
+.mg{color: var(--matrix-green)}
 .lb{color:var(--laser-blue);animation:neon 0.08s ease-in-out infinite alternate;}
-.pink{color:var(--neon-pink) !important }
-.green{color: var(--matrix-green) !important }
 .glow-font {animation: neon 1s ease-in-out infinite alternate;}
 /* glowing-text-by-cgpt3.5 */
 .gtc3 {animation: colorfulGlow 2s ease-in-out infinite alternate;}
@@ -443,7 +409,7 @@ figcaption > h2 {
 details {
     justify-content: space-around;
     text-align:center;
-    padding: 0 0 2em;
+    padding: 1vw 0 0;
 }
 details[open] > summary {
     color: var(--laser-blue);
@@ -451,6 +417,7 @@ details[open] > summary {
     border: none;
     outline: none;
     box-shadow: none;
+    display:none;
 }
 summary {
     transform: translateZ(0);
@@ -460,10 +427,10 @@ summary {
     line-height: 1.6em;
     cursor: pointer;
     display:inline-block;
-    margin: 1em 0 2em;
+    margin: 1vw 0;
     font-family:'c64-Pro';
     font-size: small;
-    padding: 1.6em;
+    padding: 1em;
     box-shadow:var(--ants-cry);
     background-color:var(--high-ground);
 }

@@ -41,24 +41,11 @@
     }
 }
 @media screen and (max-width: 54em) {
-    #table_02, #navigieren-Sie {
+    #desktop-only {
     display:none;
     }
 }
-.catchem {
-    justify-content: space-evenly;
-    position: relative;
-    width: 100%;
-    text-align: justify;
-}
-ul, ol {
-    list-style: none;
-    font-size:x-small;
-    padding-left:0;
-    background-color:var(--high-ground);
-    box-shadow:var(--ants-cry);
-}
-
+li {list-style: none;}
 th {
     color:var(--pipi-white);
 	font-weight: 50;
@@ -76,10 +63,6 @@ caption {
     margin: 0.3rem;
     font-weight: bold;
     color: var(--matrix-green);
-}
-aside {
-    position:relative;
-    //width:75%;
 }
 code {
     display: inline-table;
@@ -101,6 +84,12 @@ mark {
     font-size: 0.85em;
 }
 hr {border-color: #000;}
+.catchem {
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    text-align: justify;
+}
 .top-right{
     display:none;
 }
@@ -132,7 +121,7 @@ hr {border-color: #000;}
     font-family: 'Sarpanch', sans-serif;
     letter-spacing: 0.23rem;
 }
-.keyboard-styled span {
+.keyboard-buttons span{
     background-color: #333;
     border-radius: 3px;
     border: 1px solid #000;
@@ -177,7 +166,7 @@ hr {border-color: #000;}
     width: 100%;
 }
 .this_too_deep{font-size:small}
-.this_personal_statements{}
+.this_personal_statement{font-size:smaller}
 .quiz-area{}
 .quiz-answers {
     animation: neon 0.08s ease-in-out infinite alternate;
@@ -187,16 +176,9 @@ hr {border-color: #000;}
     text-align:match-parent;
     font-family:'c64-Pro';
     display:inline-block;
-    font-size: large;
+    font-size: larger;
 }
-.site-topics{
-    position: relative;
-    text-align: center;
-    table-layout: fixed;
-    margin: 0 0 3vw;
-    box-shadow:var(--ants-cry);
-    width:max-content;
-}
+.compact-lists {}
 #site-slogan{
     display:none;
 }
@@ -243,8 +225,7 @@ hr {border-color: #000;}
     position: relative;
     text-align: center;
     table-layout: fixed;
-    margin: 0 0 3vw;
-    box-shadow:var(--ants-cry);
+    margin: 1vw 0 2vw;
 }
 #table_02 {
     position: relative;
@@ -257,12 +238,13 @@ hr {border-color: #000;}
     table-layout: fixed;
     outline: none;
     box-shadow:var(--ants-cry);
+    font-size:small;
 }
-#this_milestones{
+#this_milestones {
+    justify-content: center;
     display:flex;
-    justify-content:space-around;
-    width:100%;
-    margin:0 0 3vw;
+    font-size:xx-small;
+    margin: 1vw 0 2vw;
 }
 #this_whoami{}
 #instagram-link {
