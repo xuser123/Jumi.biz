@@ -1,15 +1,4 @@
 #!/bin/bash
-clear; cd ~/Github/jumi.biz
-
-printf '\n### RECENT CHANGES ###\n'
-git log -n 3 --oneline
-printf '# FOR MORE DO "git log --graph --oneline --all"\n'
-
-printf '\n### STATUS ###\n'
-git status
-
-printf '\n### REPOSITORY ###\n'
-ls -R --tree --sort size *.* pages/*.htm assets/css assets/js
 
 # Check for user input options
 for arg in "$@"; do
@@ -29,3 +18,13 @@ for arg in "$@"; do
             ;;
     esac
 done
+
+clear; cd ~/Github/jumi.biz
+
+printf '\n### RECENT CHANGES ###\n'
+git log -n 3 --oneline
+
+printf '# FOR MORE DO "git log --graph --oneline --all"\n'
+printf '\n### STATUS ###\n'
+git status
+
