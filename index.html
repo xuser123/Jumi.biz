@@ -82,6 +82,11 @@
     display:none;
     }
 }
+@media screen and (max-width: 35em) {
+    #tasten-steuerung {
+    display:none;
+    }
+}
 @keyframes neon {
      from {text-shadow:
           0 0 6px rgba(202,228,225,0.92),
@@ -150,18 +155,16 @@ body {
 <article class="content flow" id="this_hello_world">
 <h1>print("<b class="gtc3v2">hello world</b>")</h1>
 <div class="catchem this_page-intro">
-<h4>wtf is <span class="domain-font">jumi.biz</span> ?</h4>
-<p>Kompakte Inhalte über
+<h3>wtf is <span class="domain-font">jumi.biz</span> ?</h3>
+<p>Minimalisierte Texte über
 <b class="r">Linux</b> 
 <b class="g">Windows</b> 
-<b class="b">Infosec</b> 
+<b class="b">Infosec</b>
 <b class="y">Coding</b> 
 <b class="c">Shell</b> 
-<b class="m">Tools</b> und
-<b class="o">Off-Topics.</b>
-Text&nbsp;minimalisiert, fragmentiert und visuell ergonomisiert.
-<span class="more-text"><br>...btw brauche RAM für <i class="glow-font">"ଘ(੭*ˊᵕˋ)੭*☆ﾟ.</i><b class="gtc3">*･｡ﾟᴸᵉᵘᶜʰᵗᵉᶠᶠᵉᵏᵗᵉ</b></span>
-<h4>...hier meine Theorie:</h4>
+<b class="m">Tools</b>, kompakt.
+<br>Und <span class="more-text">ଘ(੭<i class="glow-font">*ˊᵕˋ)੭*☆ﾟ</i></span><b class="gtc3">*･｡ﾟᴸᵉᵘᶜʰᵗᵉᶠᶠᵉᵏᵗᵉ</b></p>
+<h3>In Theorie</h3>
 <p>Gewöhnlicher Text hat <b>~25%</b> relevanten Kerninhalt,
 davon verbleibt nach einem Tag vermutlich ~50%,
 nach zwei Tagen <b>~30%</b> im Gedächtnis. Ergibt <b>~7,5%</b> Text.</p>
@@ -170,7 +173,7 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
 <b>Beispiel B</b><aside class="more-text">Zwergenhandstände,Ort: 10,Schrank&nbsp;10,Strand</aside>
 <div class="catchem">
 <table id="table_01">
-<caption>Text(B) ist 23% leichter zu merken</caption>
+<caption>Text B ist 23% leichter zu merken</caption>
     <thead>
         <tr>
         <th>Text</th>
@@ -198,12 +201,13 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
     </tbody>
 </table>
 </div>
-<p>Nach diesem Konzept gestaltet, kann Information in kürzester Zeit intepretiert werden.</p>
+<p>Schnelle Interpretation visueller Information durch ergonomisches Darstellungs-Konzept.</p>
 <div id="desktop-only">
-<p class="keyboard-buttons">Außerdem soll für Desktops die schnelle Navigation per Tasten unterstützt werden. So kann beispielsweise folgende Quizfrage per <span>TAB</span> selektiert und mit <span>Enter</span> oder <span>Leer</span> aufgelöst werden.</p>
+<h3>Tastensteuerung</h3>
+<p class="keyboard-buttons">Unterstützung schneller Navigation per Tasten. Blaue Elemente oder Bilder mit <span>TAB</span> selektiert und mit <span>Enter</span> oder <span>Leer</span> öffnen.</p>
 <details>
 <summary>I have keys but no doors. I&nbsp;have space but no room. You&nbsp;can enter but can’t leave. What&nbsp;am&nbsp;I ?</summary>
-<span class="quiz-answers">A keyboard</span>
+<span class="quiz-answer">A keyboard</span>
 <aside class="catchem flex">
 <table id="table_02">
     <thead>
@@ -224,11 +228,24 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
     </tbody>
 </table>
 </aside>
-<aside class="more-text zitiert">Navigation auch ganz ohne Maus möglich!</aside>
+<aside class="more-text zitiert">Navigation ganz ohne Maus möglich!</aside>
 </details>
-</div><br>
-<h2><span class="np domain-font">jumi.biz</span> Seit 2019</h2>
-<!-- HISTORY,TO-DO,BUTTONS -->
+</div>
+</div>
+</article>
+<article class="content flow">
+<!-- INFO,STATEMENT -->
+<h4>Dark Mode Only</h4>
+    <div class="catchem this_personal_statement"><p>Ein dunkler Bildschirm spart bis zu <b>60%</b> Energie und schont die Augen.
+    Wenn du den hellen Modus immer noch bevorzugst dann GTFO!</p>
+    <aside class="more-text zitiert"><q>Come with me. It is the only way.</q><br>
+    <cite>- Darth Vader (1980)</cite></aside></div>
+</article>
+<article class="content flow">
+
+</article>
+<article class="content flow" id="this_whoami">
+<h2>About <span class="domain-font">jumi</span></h2>
 <div class="catchem compact-lists" id="this_milestones">
 <aside>
 <h2>$ history</h2>
@@ -251,10 +268,7 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
   <li>[24-01] Themes-Feature</li>
 </ul></aside>
 </div>
-</div>
-</article>
-<article class="content flow" id="this_whoami">
-<h2>&#36; whoami</h2>
+<h3>&#36; whoami</h3>
 <div class="flex">
   <!-- PICTURE -->
   <img id="modalTrigger01" src="assets/img/profile-img-1.png" alt="Picture shows Jumi">
@@ -292,86 +306,75 @@ zehn&nbsp;im&nbsp;Wandschrank, zehn am Sandstrand.</aside>
 </div>
 <br>
 <!-- ABOUT_ME -->
-    <div class="catchem this_too_deep"><h3>Admin, User, Gamer, Distro-Hopper, Human-Designer</h3><p>Mich interessiert das Verborgene. Bin ich Licht, Frequenz oder Vibration? Ist alles eine Simulation? Neugier will leben, will <b class="b">Wasser</b> zum Trinken, will <b class="y">Luft</b> zum Atmen. Bitter endet, das letzte Geheimnis, das im Tausch, wieder verborgen zurückkehrt. Dessen Wahrheit unfassbar im Rauch des <b class="r">Feuers</b> versteckt, und sind nur schweigende Zeugen aus <b class="o">Erde</b>, verweht im <b>Wind</b>.</p>
-    <aside class="more-text zitiert">Wer? Wer ist nur die Form als Konsequenz der Funktion des Was. Und was ich bin, das ist ein Mann mit Maske.<br><cite>- V wie Vendetta (2005)</cite></aside></div>
-</article>
-<article class="content flow">
-<!-- INFO,STATEMENT -->
-<h4>Dark Mode Only</h4>
-    <div class="catchem this_personal_statement"><p>Ein dunkler Bildschirm spart bis zu <b>60%</b> Energie und schont die Augen.
-    Wenn du den hellen Modus immer noch bevorzugst dann GTFO!</p>
-    <aside class="more-text zitiert"><q>Come with me. It is the only way.</q><br>
-    <cite>- Darth Vader (1980)</cite></aside></div>
-</article>
-<article class="content flow">
-<!-- CREATIVE,DEEP -->
-    <div class="catchem this_too_deep"><h3>IT &#126; Kung Fu</h3>Der chinesische Begriff "Kung&nbsp;Fu" bezieht sich auf Fähigkeiten und Techniken, die&nbsp;durch lange, harte&nbsp;<b class="r">Übung</b> und <b class="g">Geduld</b> erlangt&nbsp;werden.
-    Es&nbsp;ist eine Disziplin, die&nbsp;zur Meisterung viel <b class="b">Engagement und Einsatz</b>&nbsp;erfordert.
-    Kung&nbsp;Fu kombiniert Bewegungen und&nbsp;Strategien, IT&nbsp;überträgt Signale und Daten, die&nbsp;durch konstruierter, physikalischer&nbsp;Technik und Logik gesteuert&nbsp;werden. Das&nbsp;Beherrschen von Kung&nbsp;Fu verbessert Beweglichkeit, während&nbsp;die Verarbeitung von Informationen <b class="y">analytisches Denken</b> entwickelt. In&nbsp;der&nbsp;IT, wie&nbsp;im Kung&nbsp;Fu, geht es um <b class="c">Hingabe</b>, <b class="m">Ausdauer</b> und
-    <b class="o">Skills</b>.
-    <aside class="more-text zitiert"><q>Der Meister erscheint wenn der Schüler bereit&nbsp;ist.</q><br>
-    <cite>- Karate Tiger (1986)</cite></aside></div>
+    <div class="catchem this_too_deep"><h3>Admin, User, Gamer, Hikikomori</h3>
+    <aside class="more-text zitiert">Wer? Wer ist nur die Form als Konsequenz der Funktion des Was. Und was ich bin, das ist ein Mann mit Maske.<br><cite>- V wie Vendetta (2005)</cite></aside><p>Sich selbst, das Universum, unwissend. Bin ich Licht, Frequenz oder Vibration? Alles simuliert? Gottes Körper, den er nur spürt und bewegt. Ist Neugier das Leben, will <b class="b">Wasser</b> zum Trinken, will <b class="y">Luft</b> zum Atmen. Bitter, das letzte Geheimnis, das im Tausch, wieder verborgen zurückkehrt. Dessen Wahrheit unfassbar im Rauch des <b class="r">Feuers</b> versteckt, und sind nur schweigende Zeugen aus <b class="o">Erde</b>, verweht im <b>Wind</b>. Paarweise zu je 5 Elementen, flüsterts 3 6 9 und bewegt durch 1/137.</p>
+<aside class="more-text zitiert">
+<q>If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.</q><br>
+<cite>- Nikola Tesla (1856-1943)</cite></aside></div>
 </article>
 <article class="content flow">
 <h2>Themen</h2>
-<div class="catchem">
-<aside>
-<h4>Linux </h4>
+<div id="topics">
   <ul>
-    <li><a href="pages/template.htm">Dateisystem</a></li>
+<h4>Linux</h4>
+    <li><a href="pages/template.htm">Distribution</a></li>
     <li><a href="pages/template.htm">Konfiguration</a></li>
-    <li><a href="pages/template.htm">Good-Practice</a></li>
+    <li><a href="pages/template.htm">Hardening</a></li>
   </ul>
-<h4>Windows </h4>
   <ul>
-    <li><a href="pages/template.htm">DC/AD-Server-2019</a></li>
+<h4>Windows</h4>
+    <li><a href="pages/template.htm">Active-Directory</a></li>
     <li><a href="pages/template.htm">Firewall</a></li>
     <li><a href="pages/template.htm">Pentesting</a></li>
   </ul>
-</aside>
-<aside>
-<h4>Infosec </h4>
   <ul>
-    <li><a href="pages/IT-Sicherheit.htm">IT-Grundschutz </a></li>
-    <li><a href="pages/Projektmanagement.htm">Projektmanagement </a></li>
-    <li><a href="pages/Qualitätssicherung.htm">Qualitätssicherung </a></li>
+<h4>IT-Grundschutz</h4>
+    <li><a href="pages/Projektmanagement.htm">Standards</a></li>
+    <li><a href="pages/IT-Sicherheit.htm">Maßnahmen</a></li>
+    <li><a href="pages/Projektmanagement.htm">Management</a></li>
   </ul>
-<h4>Coding </h4>
   <ul>
-    <li><a href="pages/template.htm">HTML,CSS,PHP</a></li>
-    <li><a href="pages/template.htm">Bash,Python</a></li>
-    <li><a href="pages/template.htm">Cmdlets</a></li>
+<h4>Tools</h4>
+    <li><a href="pages/template.htm">Forensic</a></li>
+    <li><a href="pages/template.htm">Monitoring</a></li>
+    <li><a href="pages/template.htm">Virenschutz</a></li>
   </ul>
-</aside>
-<aside>
-<h4>Shell </h4>
   <ul>
+<h4>Shell</h4>
     <li><a href="pages/template.htm">LinuxShell</a></li>
     <li><a href="pages/template.htm">Powershell</a></li>
     <li><a href="pages/template.htm">Networking</a></li>
   </ul>
-<h4>Tools </h4>
   <ul>
-    <li><a href="pages/template.htm">Forensic</a></li>
-    <li><a href="pages/template.htm">Monitoring</a></li>
-    <li><a href="pages/template.htm">Hacking</a></li>
+<h4>Coding</h4>
+    <li><a href="pages/template.htm">Bash</a></li>
+    <li><a href="pages/template.htm">Python</a></li>
+    <li><a href="pages/template.htm">Cmdlets</a></li>
   </ul>
-</aside>
+  <ul>
+<h4>Cheatsheets</h4>
+    <li><a href="pages/template.htm">Linux </a></li>
+    <li><a href="pages/template.htm">Bash </a></li>
+    <li><a href="pages/template.htm">Windows </a></li>
+  </ul>
+  <ul>
+<h4>Off-Topics</h4>
+    <li><a href="pages/template.htm">Human-Design </a></li>
+    <li><a href="pages/template.htm">Affirmationen </a></li>
+    <li><a href="pages/template.htm">Quiz-Game </a></li>
+  </ul>
 </div>
-<aside class="more-text zitiert">
-<q>If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.</q><br>
-<cite>- Nikola Tesla (1856-1943)</cite></aside>
 </article></div></main>
 
 <!-- ### Debugger: Auto-Refresh Page (-option)
-    <meta http-equiv="refresh" content="5">-->
+    <meta http-equiv="refresh" content="3"> -->
 <!-- ### Debugger: Show Borders (-option)
-    <style>* {border: 1px dotted #00B140;}</style>-->
+    <style>* {border: 1px dotted #00B140;}</style> -->
 <!-- ### Debugger: HTML-Analyzer JavaScript (-option)
     <div id="analyzer" class="flex" style="background-color:#000000;color:#8dd88e"><h2>HTML-Analyzer</h2>
-    <h3>Tags:</h3><ul id="tagList"></ul>
-    <h3>Classes:</h3><ul id="classList"></ul>
-    <h3>IDs:</h3><ul id="idList"></ul></div>
+    <ul id="tagList"><caption>HTML</caption></ul>
+    <ul id="classList"><caption>CSS</caption></ul>
+    <ul id="idList"></ul></div>
     <script src="assets/js/html-analyzer.js"></script>-->
 
 <footer><div class="footer-container">

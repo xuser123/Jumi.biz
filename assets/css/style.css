@@ -58,12 +58,6 @@ td {
     padding:0 1.6vw 0;
     text-align: center;
 }
-caption {
-    caption-side: top;
-    margin: 0.3rem;
-    font-weight: bold;
-    color: var(--matrix-green);
-}
 code {
     display: inline-table;
     font-family: 'Source Code Pro', monospace;
@@ -162,13 +156,13 @@ hr {border-color: #000;}
     margin-left: 3vw;
 }
 .this_page-intro {
-    font-size:small;
+    font-size:large;
     width: 100%;
 }
 .this_too_deep{font-size:small}
 .this_personal_statement{font-size:smaller}
 .quiz-area{}
-.quiz-answers {
+.quiz-answer {
     animation: neon 0.08s ease-in-out infinite alternate;
     transition: all ease-in-out 300ms;
     color: var(--neon-pink);
@@ -177,6 +171,7 @@ hr {border-color: #000;}
     font-family:'c64-Pro';
     display:inline-block;
     font-size: larger;
+    margin-bottom:1em;
 }
 .compact-lists {}
 #site-slogan{
@@ -227,6 +222,11 @@ hr {border-color: #000;}
     table-layout: fixed;
     margin: 1vw 0 2vw;
 }
+#table_01 caption {
+    caption-side: top;
+    font-weight: bold;
+    color: var(--matrix-green);
+}
 #table_02 {
     position: relative;
     text-align: center;
@@ -269,7 +269,34 @@ hr {border-color: #000;}
     cursor: pointer;
 }
 #analyzer {
+	box-size:border-box;
+	width:80vw;
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
+    font-size:xx-small;
+}
+#analyzer > * {
+	background-color:darkblue;
+	font-color:lightyellow;
+	text-align:left;
+}
+
+#topics {
+	width:100%;
+	height:max-content;
+	display:flex;
+	flex-wrap:wrap;
+	margin-right: 0;
+	left: 1em;
+	position: relative;
+}
+#topics ul {
+  flex-grow: 1;
+  flex-basis: calc(33.33%);
+  min-width:max-content,30%;
+  
+}
+#topics ul>li {
+	margin:1em;
 }
 
