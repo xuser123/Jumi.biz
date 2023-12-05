@@ -6,7 +6,6 @@ topics:
 - coding
 - shell
 - tools
-- networking
-- Exobiologie (off-topic)
+- Human-Design
 
 this site is my playground for what ever i want to share, but mainly its about informationsecurity.
