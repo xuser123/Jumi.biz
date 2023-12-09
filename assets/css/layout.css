@@ -64,7 +64,7 @@ main {
     background-color: #000;
     font-family: Arial, Verdana, Helvetica, sans-serif;
     font-size:var(--base-font-size);
-    letter-spacing: 0.28vw;
+    letter-spacing: 0.2em;//0.28vw;
     padding: 2vw 0.5vw 8vw;
     min-height:89vh;
 }
