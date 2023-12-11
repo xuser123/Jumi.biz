@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<!-- ENCODE --><meta charset="utf-8">
+<!-- OPTIMIZE --><meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SUPPORT --><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- INFO -->
+<meta name="description" content="Sammlung von Themen über Informatik, kompakt.">
+<meta name="keywords" content="linux,windows,cybersecurity,hacking,coding,shell,tools,network,basics">
+<meta name="author" content="Jumi">
+<!-- FAVICON --><link rel="icon" href="../assets/img/ico/jumi.ico">
+<!-- TITLE --><title>jumi.biz</title>
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../assets/css/animations.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+<style>
+:root { /* Colors */
+    --basic-glow-frame-1: rgba(202,228,225,0.92);
+    --basic-glow-frame-2: rgba(202,228,225,0.34);
+    --basic-glowbox-frame-1: rgba(202,228,225,0.98);
+    --basic-glowbox-frame-2: rgba(202,228,225,0.42);
+    --glow-red: #FF0000;
+    --glow-indigo: #4B0082;
+    --glow-blue: #0000FF;
+    --glow-laserblue: #00f0f0;
+    --glow-yellow: #FFFF00;
+    --glow-green: #00FF00;
+    --glow-magenta: #FF00FF;
+    --glow-orange: #FFA500;
+    --glow-lightgreen: #8dd88e;
+    --glow-pink: #ffbfea;
+    --glow-lightyellow: #ebebd3;
+    --base-font-size: 16px;
+    --high-ground: rgba(0,0,0,0.1);
+    --laser-blue: #00f0f0;
+    --matrix-green: #8dd88e;
+    --neon-pink: #ffbfea;
+    --pipi-white: #ebebd3;
+    --shadow-grey: #131313;
+    --space-motion:
+    rgba(0, 240, 240, 0.4) 0px 2px 4px,
+    rgba(0, 240, 240, 0.3) 0px 7px 13px -3px,
+    rgba(0, 240, 240, 0.2) 0px -3px 0px inset;
+    --ants-cry:
+    rgba(0, 0, 0, 0.1) 0px 2px 4px,
+    rgba(0, 0, 0, 0.4) 0px -2px 0px inset;
+    --glow-color-1: #FF0000;
+    --glow-color-2: #00FF00;
+    --glow-color-3: #0000FF;
+}
+@media screen and (min-width: 35em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two three"
+        "five five"
+        "four four";
+    }
+}
+@media screen and (min-width: 38em) {
+    .grid-container {grid-template-areas:
+        "one one"
+        "two five"
+        "three five"
+        "four four";
+    }
+}
+@media screen and (min-width: 54em) {
+    .grid-container {grid-template-areas:
+        "one one two"
+        "five five five"
+        "three four four";
+    }
+}
+@media screen and (min-width: 75em) {
+    .grid-container {grid-template-areas:
+        "one one two five"
+        "three four four five";
+    }
+}
+@media screen and (max-width: 35em) {
+    #tasten-steuerung {
+    display:none;
+    }
+}
+@media screen and (max-width: 35em) {
+    #tasten-steuerung {
+    display:none;
+    }
+}
+@keyframes neon {
+     from {text-shadow:
+          0 0 6px rgba(202,228,225,0.92),
+          0 0 30px rgba(202,228,225,0.34),
+          0 0 12px rgba(30,132,242,0.52),
+          0 0 21px rgba(30,132,242,0.92),
+          0 0 34px rgba(30,132,242,0.78),
+          0 0 54px rgba(30,132,242,0.92);
+    } to {text-shadow:
+          0 0 6px rgba(202,228,225,0.98),
+          0 0 30px rgba(202,228,225,0.42),
+          0 0 12px rgba(30,132,242,0.58),
+          0 0 22px rgba(30,132,242,0.84),
+          0 0 38px rgba(30,132,242,0.88),
+          0 0 60px rgba(30,132,242,1);}}
+@keyframes neon-box {
+    from {box-shadow: 0 0 6px rgba(202, 228, 225, 0.92),0 0 24px rgba(202, 228, 225, 0.34), 0 0 9.6px rgba(30, 132, 242, 0.52), 0 0 16.8px rgba(30, 132, 242, 0.92), 0 0 27.2px rgba(30, 132, 242, 0.78), 0 0 43.2px rgba(30, 132, 242, 0.92);
+    }
+    to {box-shadow: 0 0 6px rgba(202, 228, 225, 0.98), 0 0 24px rgba(202, 228, 225, 0.42), 0 0 9.6px rgba(30, 132, 242, 0.58), 0 0 17.6px rgba(30, 132, 242, 0.84), 0 0 30.4px rgba(30, 132, 242, 0.88), 0 0 48px rgba(30, 132, 242, 1);}}
+html {background-color: var(--shadow-grey);}
+body {
+  font-size: var(--base-font-size);
+  height: 100%;/* Footer-Einfluss */
+  margin:0;padding:0;
+  position: relative;/* Footer-Einfluss */
+  text-rendering: optimizeSpeed;
+}
+*,*::before,*::after {box-sizing: border-box;}
+</style>
+</head>
+<!-- BODY,HEADER -->
+<body id="ଘ(੭*ˊᵕˋ)੭*ˋhello_ɪɴᴛᴇʀɴᴇᴛ">
+<header>
+<!-- LOGO -->
+<div class="top-left">
+<a href="https://www.jumi.biz" tabindex="0">
+<div class="jumi-logo" id="alien-head"></div>
+<span id="this-domain">jumi.biz</span></a>
+<!-- SLOGAN -->
+<span id="site-slogan"></span>
+<span id="page-slogan"></span></div>
+<!-- BANNER -->
+<div class="top-right">
+<div class="animated-banner">
+<span class="ascii-mascot" id="smiles-friendly">ଘ(੭*ˊᵕˋ)੭*</span>
+<span class="ascii-mascot" id="spooks-creepy">(&lt;&gt;..&lt;&gt;)</span>
+</div></div><nav>
+<!-- BUTTON,MENU -->
+<button class="menu-button"
+        aria-controls="menu-list"
+        aria-expanded="false">
+  <span class="hidden-menu">Menu</span>
+  <div class="menu-icon" aria-hidden="true"></div>
+</button>
+<ul data-state="closed" class="menu-list">
+<li><a href="Content.htm"><i class="list-icon">
+<img src="../assets/img/ico/menu-content.ico" alt="Content"></i>options</a></li>
+<li><a href="Links.htm"><i class="list-icon">
+<img src="../assets/img/ico/menu-links.ico" alt="Links"></i>links</a></li>
+<li><a href="Cheats.htm"><i class="list-icon">
+<img src="../assets/img/ico/menu-cheats.ico" alt="Cheats"></i>cheats</a></li>
+</ul></nav></header><main>
+<!-- MAIN,CONTAINER,GRID -->
+<div class="grid-container">
+<!-- HELLO WORLD -->
+<article class="content flow">
+<h1>GNU/<b class="gtc3v2">Linux</b> Betriebssystem</h1>
+<div class="catchem this_page-intro">
+<h3>Kernel von Linus Torvalds (1991)</h3>
+<p>Familie von
+<b class="r">Open-Source</b>,
+<b class="g">Unix-ähnlichen</b>,
+<b class="b">Distributionen</b> mit
+<b class="y">Systemsoftware</b> und
+<b class="c">Libaries</b> aus dem
+<b class="m">GNU Project</b> von
+<b class="o">Richard Stallman (1983)</b>.</p>
+<p class="more-text"><q><b>G</b>NU is <b>n</b>ot <b>U</b>nix</q></p>
+<h4>Derivate</h4>
+<ul>
+<li><b class="b">Ubuntu</b> (Canonical Ltd.)</li>
+<li><b class="b">Fedora</b> (Red Hat)</li>
+<li><b class="b">Linux Mint</b> (Linux Mint team)</li>
+<li><b class="b">Debian</b> (The Debian Project)</li>
+<li><b class="b">openSUSE</b> (SUSE)</li>
+<li><b class="b">CentOS</b> (Red Hat)</li>
+<li><b class="b">Kali Linux</b> (Offensive Security)</li>
+<li><b class="b">Elementary OS</b> (Elementary LLC)</li>
+<li><b class="b">Manjaro</b> (Manjaro GmbH &amp; Co. KG)</li>
+<li><b class="b">Zorin OS</b> (Zorin Group Ltd.)</li>
+<li><b class="b">Solus</b> (Solus Project)</li>
+<li><b class="b">Void Linux</b> (Void Linux)</li>
+<li><b class="b">LXLE</b> (LXLE Team)</li>
+<li><b class="b">SparkyLinux</b> (SparkyLinux Team)</li>
+<li><b class="b">Gentoo</b> (Gentoo Foundation)</li>
+<li><b class="b">Slackware</b> (Patrick Volkerding)</li>
+<li><b class="b">PCLinuxOS</b> (PCLinuxOS Team)</li>
+<li>...und viele mehr!</li>
+<p>Forum: <a href="https://distrowatch.com/"><i>DistroWatch.com</i></a></p>
+</ul>
+</div><hr>
+<h4>Installation</h4>
+<ol>
+<li>1. ISO herunterladen</li>
+<li>2. Medium erstellen</li>
+<li>3. Medium booten</li>
+<ul class="more-text">
+<h4>Assistenten:</h4>
+<li><b class="y">Anaconda</b> (Anaconda, Inc.)</li>
+<li><b class="y">YaST</b> (SUSE)</li>
+<li><b class="y">Calamares</b> (KaOS)</li>
+<li><b class="y">Ubiquity</b> (Ubuntu)</li>
+<li><b class="y">Parted Magic</b> (Parted Magic)</li>
+<li><b class="y">SystemRescueCD</b> (Falko Timme)</li>
+<li><b class="y">GParted</b> (GNOME)</li>
+<li><b class="y">Puppy Linux</b> (Puppy Linux)</li>
+<li><b class="y">Red Hat Anaconda</b> (Red Hat)</li>
+<li><b class="y">LILO</b> (Linux International)</li>
+<li><b class="y">SUSE Studio Image</b> (SUSE)</li>
+<li><b class="y">Fedora Installation Program</b> (Fedora Project)</li>
+<li><b class="y">Debian Installer</b> (Debian)</li>
+<li><b class="y">GRUB</b> (GNU Project)</li>
+<li><b class="y">Ubuntu Installer</b> (Ubuntu)</li>
+<li><b class="y">Linux Mint Installer</b> (Linux Mint)</li>
+<li><b class="y">Vagrant</b> (HashiCorp)</li>
+<li><b class="y">Chef</b> (Chef Software)</li>
+<li><b class="y">Puppet</b> (Puppet Labs)</li>
+<li><b class="y">Ansible</b> (Red Hat)</li>
+<li><b class="y">SaltStack</b> (SaltStack, Inc.)</li>
+</ul>
+<li>4. System aktualisieren:</li>
+<ul><li><code>sudo apt update &amp;&amp; sudo apt upgrade -y</code></li>
+<p class="more-text">Bei veralteten Systemen können Upgrade-Konflikte entstehen, diese löst man durch das Neuinstallieren betroffener Abhängigkeiten:<br><code>sudo apt dist-upgrade</code></p></ul></ol>
+</article>
+<article class="content flow">
+<h2 class="domain-font">Links</h2>
+<div id="topics">
+  <ul>
+<h4>Linux</h4>
+    <li><a href="../pages/template.htm">Distribution</a></li>
+    <li><a href="../pages/template.htm">Konfiguration</a></li>
+    <li><a href="../pages/template.htm">Hardening</a></li>
+    <li><a href="../pages/template.htm">Active-Directory</a></li>
+    <li><a href="../pages/template.htm">Firewall</a></li>
+    <li><a href="../pages/template.htm">Pentesting</a></li>
+  </ul>
+  <ul>
+<h4>IT-Grundschutz</h4>
+    <li><a href="../pages/template.htm">Standards</a></li>
+    <li><a href="../pages/template.htm">Maßnahmen</a></li>
+    <li><a href="../pages/template.htm">Management</a></li>
+    <li><a href="../pages/template.htm">Forensic</a></li>
+    <li><a href="../pages/template.htm">Monitoring</a></li>
+    <li><a href="../pages/template.htm">Virenschutz</a></li>
+  </ul>
+  <ul>
+<h4>Shell</h4>
+    <li><a href="../pages/template.htm">LinuxShell</a></li>
+    <li><a href="../pages/template.htm">Powershell</a></li>
+    <li><a href="../pages/template.htm">Networking</a></li>
+    <li><a href="../pages/template.htm">Bash</a></li>
+    <li><a href="../pages/template.htm">Python</a></li>
+    <li><a href="../pages/template.htm">Cmdlets</a></li>
+  </ul>
+</div>
+</article>
+<article class="content flow">
+<h2>Human Design</h2>
+<div id="topics">
+  <ul>
+<h4>Ra Uru Hu</h4>
+    <li><a href="../pages/template.htm">Bodygraph</a></li>
+<h4>Chakren</h4>
+    <li><a href="../pages/template.htm">Energetische Signatur</a></li>
+<h4>I Ging</h4>
+    <li><a href="../pages/template.htm">64 Hexagramme</a></li>
+<h4>Astrologie</h4>
+    <li><a href="../pages/template.htm">Planeten</a></li>
+<h4>Kabbala</h4>
+    <li><a href="../pages/template.htm">Die Sephiroth</a></li>
+  </ul>
+  <ul>
+<h4>Strategien</h4>
+    <li><a href="../pages/template.htm">Generator</a></li>
+    <li><a href="../pages/template.htm">Projektor</a></li>
+    <li><a href="../pages/template.htm">Manifestor</a></li>
+    <li><a href="../pages/template.htm">Reflektor</a></li>
+    <li><a href="../pages/template.htm">Selbstprojektor</a></li>
+    <li><a href="../pages/template.htm">Selbstreflektor</a></li>
+  </ul>
+  <ul>
+<h4>Profile</h4>
+    <li><a href="../pages/template.htm">Mannifester Generator</a></li>
+    <li><a href="../pages/template.htm">Mannifester Projektor</a></li>
+    <li><a href="../pages/template.htm">Mannifester Reflektor</a></li>
+    <li><a href="../pages/template.htm">Randalierender generator</a></li>
+    <li><a href="../pages/template.htm">Randalierender Projektor</a></li>
+    <li><a href="../pages/template.htm">Randalierender Reflektor</a></li>
+  </ul>
+  <ul>
+  </ul>
+</div>
+</article>
+<article class="content flow" id="this_whoami">
+<h2>About <span class="domain-font">jumi</span></h2>
+<div class="catchem compact-lists" id="this_milestones">
+<aside>
+<h2>$ history</h2>
+<ul>
+  <li>[19-06]Domain_gemietet</li>
+  <li>[20/21]Konzepierung</li>
+  <li>[22-11]Ausarbeitung</li>
+  <li>[23-03]Design-Struktur</li>
+  <li>[23-08]Github-Anbindung</li>
+  <li>[23-10]Workflow-Struktur</li>
+</ul></aside>
+<aside>
+<h2>To-Do</h2>
+<ul>
+  <li>[23-11]Edits/Content</li>
+  <li>[23-11]Instagram-Content</li>
+  <li>[23-12]JavaScript-Addons</li>
+  <li>[24-01]PHP-Implement</li>
+  <li>[24-01]Quiz-Feature</li>
+  <li>[24-01]Themes-Feature</li>
+</ul></aside>
+</div>
+<h3>&#36; whoami</h3>
+<div class="flex">
+  <!-- PICTURE -->
+  <img id="modalTrigger01" src="../assets/img/profile-img-1.png" alt="Picture shows Jumi">
+  <dialog id="openModal01">
+    <figure>
+      <img src="../assets/img/modal/profile-img-modal-01.png" alt="Image-Modal" id="imgModal01">
+      <figcaption>
+        <h3>Human Interface</h3>
+      </figcaption>
+    </figure>
+    <button id="closeModal01"> &times; </button>
+  </dialog>
+  <!-- PICTURE -->
+  <img id="modalTrigger02" src="../assets/img/profile-img-2.png" alt="Picture shows shoe">
+  <dialog id="openModal02">
+    <figure>
+      <img src="../assets/img/modal/profile-img-modal-02.png" alt="Image-Modal" id="imgModal02">
+      <figcaption>
+        <h3>Local Area</h3>
+      </figcaption>
+    </figure>
+    <button id="closeModal02"> &times; </button>
+  </dialog>
+  <!-- PICTURE -->
+  <img id="modalTrigger03" src="../assets/img/profile-img-3.png" alt="Picture shows computer">
+  <dialog id="openModal03">
+    <figure>
+      <img src="../assets/img/modal/profile-img-modal-03.png" alt="Image-Modal" id="imgModal03">
+      <figcaption>
+        <h3>Central Processing</h3>
+      </figcaption>
+    </figure>
+    <button id="closeModal03"> &times; </button>
+  </dialog>
+</div>
+<br>
+<!-- ABOUT_ME -->
+    <div class="catchem this_too_deep"><h3>Admin, User, Gamer, Hikikomori</h3>
+    <aside class="more-text zitiert">Wer? Wer ist nur die Form als Konsequenz der Funktion des Was. Und was ich bin, das ist ein Mann mit Maske.<br><cite>- V wie Vendetta (2005)</cite></aside><p>Unwissend, das Universum selbst. Bin ich Licht, Frequenz, Vibration? Simulation? Ist Neugier der Sinn? Ist es <b class="b">Wasser</b> zu trinken und <b class="y">Luft</b> zu atmen? Wohin führt das Geheimnis, das im Tausch, wieder verborgen zurückkehrt. Unfassbare Wahrheit im Rauch des <b class="r">Feuers</b> versteckt, als schweigende Zeugen aus <b class="o">Erde</b>, verweht im <b>Wind</b>. Sein um zu Suchen, wir von 2 Ganzen als 1 aus 2 mal 2 Teile mit jeweils 5 Elementen, für 1 nach <b class="m">3 6 9</b>, in <b class="glow-font gtc3">1/137</b>.</p>
+<aside class="more-text zitiert">
+<q>If you want to find the secrets of the universe, think in terms of energy, frequency and vibration.</q><br>
+<cite>- Nikola Tesla (1856-1943)</cite></aside></div>
+</article>
+<article class="content flow">
+<h2 class="domain-font">Themen</h2>
+<div id="topics">
+  <ul>
+<h4>Linux</h4>
+    <li><a href="../pages/template.htm">Distribution</a></li>
+    <li><a href="../pages/template.htm">Konfiguration</a></li>
+    <li><a href="../pages/template.htm">Hardening</a></li>
+  </ul>
+  <ul>
+<h4>Windows</h4>
+    <li><a href="../pages/template.htm">Active-Directory</a></li>
+    <li><a href="../pages/template.htm">Firewall</a></li>
+    <li><a href="../pages/template.htm">Pentesting</a></li>
+  </ul>
+  <ul>
+<h4>IT-Grundschutz</h4>
+    <li><a href="../pages/Projektmanagement.htm">Standards</a></li>
+    <li><a href="../pages/IT-Sicherheit.htm">Maßnahmen</a></li>
+    <li><a href="../pages/Projektmanagement.htm">Management</a></li>
+  </ul>
+  <ul>
+<h4>Tools</h4>
+    <li><a href="../pages/template.htm">Forensic</a></li>
+    <li><a href="../pages/template.htm">Monitoring</a></li>
+    <li><a href="../pages/template.htm">Virenschutz</a></li>
+  </ul>
+  <ul>
+<h4>Shell</h4>
+    <li><a href="../pages/template.htm">LinuxShell</a></li>
+    <li><a href="../pages/template.htm">Powershell</a></li>
+    <li><a href="../pages/template.htm">Networking</a></li>
+  </ul>
+  <ul>
+<h4>Coding</h4>
+    <li><a href="../pages/template.htm">Bash</a></li>
+    <li><a href="../pages/template.htm">Python</a></li>
+    <li><a href="../pages/template.htm">Cmdlets</a></li>
+  </ul>
+  <ul>
+<h4>Cheatsheets</h4>
+    <li><a href="../pages/template.htm">Linux </a></li>
+    <li><a href="../pages/template.htm">Bash </a></li>
+    <li><a href="../pages/template.htm">Windows </a></li>
+  </ul>
+  <ul>
+<h4>Off-Topics</h4>
+    <li><a href="../pages/template.htm">Human-Design </a></li>
+    <li><a href="../pages/template.htm">Affirmationen </a></li>
+    <li><a href="../pages/template.htm">Quiz-Game </a></li>
+  </ul>
+</div>
+<div class="catchem this_personal_statement">
+<h3>Dark Mode Only</h3>
+<p>Ein dunkler Bildschirm spart bis zu <b>60%</b> Energie und schont die Augen.
+Wenn du den hellen Modus immer noch bevorzugst dann GTFO!</p>
+<aside class="more-text zitiert"><q>Come with me. It is the only way.</q><br>
+<cite>- Darth Vader (1980)</cite></aside></div>
+</article></main>
+
+<!-- ### Debugger: Auto-Refresh Page (-option)
+    <meta http-equiv="refresh" content="3"> -->
+<!-- ### Debugger: Show Borders (-option)
+    <style>* {border: 1px dotted #00B140;}</style> -->
+<!-- ### Debugger: HTML-Analyzer JavaScript (-option)
+    <div id="analyzer" class="flex" style="background-color:#000000;color:#8dd88e"><h2>HTML-Analyzer</h2>
+    <ul id="tagList"><caption>HTML</caption></ul>
+    <ul id="classList"><caption>CSS</caption></ul>
+    <ul id="idList"></ul></div>
+    <script src="../assets/js/html-analyzer.js"></script>-->
+
+<footer><div class="footer-container">
+<div class="leftside-profil-icons">
+<!-- GITHUB -->
+<a id="github-link" href="https://www.github.com/xuser123" target="_blank">
+<img src="../assets/img/ico/github.ico" alt="Github/xuser123"></a>
+<!-- INSTAGRAM -->
+<a id="instagram-link" href="https://www.instagram.com/jumicontent" target="_blank">
+<img src="../assets/img/ico/instagram.ico" alt="Instagram/jumicontent"></a></div>
+<!-- EMAIL -->
+<span id="contact-email">contact&#64;jumi.biz</span>
+<div class="rightside-site-features">
+<!-- EXPORT PDF -->
+<a id="export-icon" href="#">
+<img src="../assets/img/ico/export-pdf.ico" alt="Download as PDF"></a>
+<!-- GO TOP -->
+<a id="goto-top" href="#">
+<img src="../assets/img/ico/go-top.ico" alt="Zum Seitenanfang"></a></div></div></footer>
+<!-- SCRIPTS -->
+<script defer src="../assets/js/menu.js"></script>
+<script defer src="../assets/js/modal.js"></script>
+
+</body></html>

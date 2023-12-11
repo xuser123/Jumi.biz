@@ -347,6 +347,14 @@ footer {
     box-shadow:var(--ants-cry);
     border-radius: 0.35rem;
 }
+div [id*="modalTrigger"] {
+    cursor: pointer;
+    margin: 1vh;
+    max-width: 100%;
+    display: block;
+    border-radius: 0.2rem;
+}
+
 div [id*="modalTrigger"]:hover,
 div [id*="modalTrigger"]:focus {
     animation: neon-box 0.08s ease-in-out infinite alternate;
@@ -371,21 +379,21 @@ dialog::backdrop {
 dialog [id*="closeModal"] {
     align-items: center;
     background-color: transparent;
-    border-radius: 0.3vw;
+    border-radius: 0.3rem;
     border: none;
     color: var(--laser-blue);
     display: flex;
-    font-size:7vw;
-    height: 1em;
+    font-size:4rem;
+    height: 3rem;
     justify-content: center;
     margin: 0;
     padding: 0;
     position: absolute;
     text-align: center;
-    width: 1em;
+    width: 2em;
     cursor: pointer;
-    right: 1vw;
-    bottom: 1vw;
+    right: 1rem;
+    bottom: 2rem;
 }
 dialog button:hover,
 dialog button:focus {
@@ -397,15 +405,9 @@ dialog button:focus {
     text-shadow: none;
 }
 figure {
-    margin: 0;
-    padding: 0;
-}
-figure > img {
-    margin-bottom:2vw;
-}
-figcaption > h2 {
-    font-size:3vw;
+    width:55rem;
     margin:0;
+    padding:1em 1em 2em 1em;
 }
 details {
     justify-content: space-around;
